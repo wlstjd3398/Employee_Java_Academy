@@ -5,12 +5,12 @@ public class Ex8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Customer c1 = new Customer("È«±æµ¿", "010-1234-5678", 1);
-		Customer c2 = new Customer("È«±æµ¿", "010-1234-5678", 1);
-		// c1¿¡ Á¤º¸°¡ µé¾îÀÖ´Â°Ô ¾Æ´Ï¶ó Á¤º¸°¡ µé¾îÀÖ´Â ¸Þ¸ð¸®ÁÖ¼Ò°¡ µé¾îÀÖÀ½
+		Customer c1 = new Customer("í™ê¸¸ë™", "010-1234-5678", 1);
+		Customer c2 = new Customer("í™ê¸¸ë™", "010-1234-5678", 1);
+		// c1ì— ì •ë³´ê°€ ë“¤ì–´ìžˆëŠ”ê²Œ ì•„ë‹ˆë¼ ì •ë³´ê°€ ë“¤ì–´ìžˆëŠ” ë©”ëª¨ë¦¬ì£¼ì†Œê°€ ë“¤ì–´ìžˆìŒ
 		
-		// c1¿¡ µé¾îÀÖ´Â Á¤º¸¿Í c2¿¡ µé¾îÀÖ´Â Á¤º¸°¡ °°³ª¿ä?ÀÇ °á°ú¸¦ Ãâ·ÂÇÏ´Â ÄÚµå¸¦ ¸¸µå¼¼¿ä
-		// c1Name°ú °°ÀÌ Á¤º¸¸¦ ²¨³¿
+		// c1ì— ë“¤ì–´ìžˆëŠ” ì •ë³´ì™€ c2ì— ë“¤ì–´ìžˆëŠ” ì •ë³´ê°€ ê°™ë‚˜ìš”?ì˜ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” ì½”ë“œë¥¼ ë§Œë“œì„¸ìš”
+		// c1Nameê³¼ ê°™ì´ ì •ë³´ë¥¼ êº¼ëƒ„
 		String c1Name = c1.getName();
 		String c1Tel = c1.getTel();
 		int c1Seat = c1.getSeat();
@@ -19,13 +19,13 @@ public class Ex8 {
 		String c2Tel = c2.getTel();
 		int c2Seat = c2.getSeat();
 		
-		// º¯¼ö ¾È¿¡´Â °ªÀÌ µé¾îÀÖÀ¸´Ï±î ¹Ù·Î º¯¼ö¸í1 == º¯¼ö¸í2 ¸¦ ÇØ¼­
-		// µÎ º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀÌ °°ÀºÁö ºñ±³ ÇÒ ¼ö ÀÖÀ½
-		// °´Ã¼ ¾È¿¡´Â µ¥ÀÌÅÍ°¡ ¸ð¿©¼­ Á¤º¸¸¦ ÀÌ·ç°í ÀÖ±â ¶§¹®¿¡
-		// ¹Ù·Î °´Ã¼¸í1 == °´Ã¼¸í2 À¸·Î µÎ °´Ã¼°¡ °°ÀºÁö ºñ±³ÇÒ ¼ö ¾øÀ½
-		// °´Ã¼ ¾È¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ ÇÏ³ª¾¿ ²¨³»¼­ ¼­·Î ºñ±³¸¦ ÇØ¾ßÇÔ
-		// ¸ðµç µ¥ÀÌÅÍ°¡ °°´Ù¸é °°´Ù(true) ´Ù¸£´Ù¸é ´Ù¸£´Ù(false)·Î µ¿ÀÛÇÏµµ·Ï
-		// ÄÚµå¸¦ Á÷Á¢ Â¥¾ßÇÔ
+		// ë³€ìˆ˜ ì•ˆì—ëŠ” ê°’ì´ ë“¤ì–´ìžˆìœ¼ë‹ˆê¹Œ ë°”ë¡œ ë³€ìˆ˜ëª…1 == ë³€ìˆ˜ëª…2 ë¥¼ í•´ì„œ
+		// ë‘ ë³€ìˆ˜ì— ë“¤ì–´ìžˆëŠ” ê°’ì´ ê°™ì€ì§€ ë¹„êµ í•  ìˆ˜ ìžˆìŒ
+		// ê°ì²´ ì•ˆì—ëŠ” ë°ì´í„°ê°€ ëª¨ì—¬ì„œ ì •ë³´ë¥¼ ì´ë£¨ê³  ìžˆê¸° ë•Œë¬¸ì—
+		// ë°”ë¡œ ê°ì²´ëª…1 == ê°ì²´ëª…2 ìœ¼ë¡œ ë‘ ê°ì²´ê°€ ê°™ì€ì§€ ë¹„êµí•  ìˆ˜ ì—†ìŒ
+		// ê°ì²´ ì•ˆì— ìžˆëŠ” ë°ì´í„°ë¥¼ í•˜ë‚˜ì”© êº¼ë‚´ì„œ ì„œë¡œ ë¹„êµë¥¼ í•´ì•¼í•¨
+		// ëª¨ë“  ë°ì´í„°ê°€ ê°™ë‹¤ë©´ ê°™ë‹¤(true) ë‹¤ë¥´ë‹¤ë©´ ë‹¤ë¥´ë‹¤(false)ë¡œ ë™ìž‘í•˜ë„ë¡
+		// ì½”ë“œë¥¼ ì§ì ‘ ì§œì•¼í•¨
 		if(c1Name.equals(c2Name) && c1Tel.equals(c2Tel) && c1Seat == c2Seat) {
 			System.out.println(true);
 		}else {
@@ -34,11 +34,11 @@ public class Ex8 {
 		
 		
 		
-		// ±âÃÊ ¼³¸í
+		// ê¸°ì´ˆ ì„¤ëª…
 //		int num1 = 1;
 //		int num2 = 2;
 //		
-//		// num1¿¡ µé¾îÀÖ´Â °ª°ú num2¿¡ µé¾îÀÖ´Â °ªÀÌ °°³ª¿ä? ÀÇ °á°ú¸¦ Ãâ·ÂÇÏ´Â ÄÚµå¸¦ ¸¸µå¼¼¿ä
+//		// num1ì— ë“¤ì–´ìžˆëŠ” ê°’ê³¼ num2ì— ë“¤ì–´ìžˆëŠ” ê°’ì´ ê°™ë‚˜ìš”? ì˜ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” ì½”ë“œë¥¼ ë§Œë“œì„¸ìš”
 //		System.out.println(num1 == num2);
 		
 		

@@ -5,7 +5,7 @@ public class Ex8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// AppleÅ¸ÀÔ, BananaÅ¸ÀÔ, OnionÅ¸ÀÔÀ» basket¿¡ ´ã¾Æ¾ßÇÑ´Ù
+		// Appleíƒ€ì…, Bananaíƒ€ì…, Onioníƒ€ì…ì„ basketì— ë‹´ì•„ì•¼í•œë‹¤
 //		Apple[] applebasket = new Apple[3];
 //		
 //		applebasket[0] = new Apple();
@@ -28,15 +28,15 @@ public class Ex8 {
 		basket[1] = new Banana();
 		basket[2] = new Onion();
 		
-		// °úÀÏÀº °ú¿­Áø¿­´ë, Ã¤¼Ò´Â Ã¤¼ÒÁø¿­´ë¸¸ Áø¿­ÇÏ°í, ¹Ù±¸´Ï¿¡ ´ã´Â ÇÁ·Î±×·¥ °³¹ß
+		// ê³¼ì¼ì€ ê³¼ì—´ì§„ì—´ëŒ€, ì±„ì†ŒëŠ” ì±„ì†Œì§„ì—´ëŒ€ë§Œ ì§„ì—´í•˜ê³ , ë°”êµ¬ë‹ˆì— ë‹´ëŠ” í”„ë¡œê·¸ë¨ ê°œë°œ
 		Fruit[] fruitShelf = new Fruit[3];
 		fruitShelf[0] = new Apple();
 		fruitShelf[1] = new Banana();
-		//fruitShelf[2] = new Onion(); // ´ÙÇü¼º¿¡ ÀÇÇØ Æ²¸° ÄÚµå°¡ ¸Â´Â°Í
+		//fruitShelf[2] = new Onion(); // ë‹¤í˜•ì„±ì— ì˜í•´ í‹€ë¦° ì½”ë“œê°€ ë§ëŠ”ê²ƒ
 		
 		Vegetable[] VegetableShelf = new Vegetable[3];
 		VegetableShelf[0] = new Onion();
-		//VegetableShelf[1] = new Banana(); // ´ÙÇü¼º¿¡ ÀÇÇØ Æ²¸° ÄÚµå°¡ ¸Â´Â °Í
+		//VegetableShelf[1] = new Banana(); // ë‹¤í˜•ì„±ì— ì˜í•´ í‹€ë¦° ì½”ë“œê°€ ë§ëŠ” ê²ƒ
 		
 	
 	}

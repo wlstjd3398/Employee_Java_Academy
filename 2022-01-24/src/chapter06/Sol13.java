@@ -15,11 +15,11 @@ public class Sol13 {
 		
 		int sumDice = dice1 + dice2;
 		
-		¼öÀÇ ÇÕÀÌ 5°¡ ³ª¿Ã¶§±îÁö °è¼Ó ÁÖ»çÀ§ ´øÁö±â
+		ìˆ˜ì˜ í•©ì´ 5ê°€ ë‚˜ì˜¬ë•Œê¹Œì§€ ê³„ì† ì£¼ì‚¬ìœ„ ë˜ì§€ê¸°
 		
 		while(true) {
 			if(sumDice == 5) {
-				System.out.println(dice1 + " + " + dice2 + "ÇÁ·Î±×·¥ÀÌ Á¾·áÇÕ´Ï´Ù.");
+				System.out.println(dice1 + " + " + dice2 + "í”„ë¡œê·¸ë¨ì´ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			}else {
 				dice1 = random.nextInt(6) + 1;
 				dice2 = random.nextInt(6) + 1;

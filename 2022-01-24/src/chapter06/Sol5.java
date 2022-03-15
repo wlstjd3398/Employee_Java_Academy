@@ -14,8 +14,8 @@ public class Sol5 {
 		}
 		double avg = (double) sum / arr.length;
 		
-		System.out.println("ÇÕ°è = " + sum);
-		System.out.println("Æò±Õ = " + avg);
+		System.out.println("í•© = " + sum);
+		System.out.println("í‰ê·  = " + avg);
 		
 		int max = arr[0];
 		for(int l=0; l<arr.length; l++) {
@@ -23,7 +23,7 @@ public class Sol5 {
 				  max = arr[l];
 			 }
 		}
-		System.out.println("ÃÖ´ë°ª = " + max);
+		System.out.println("ìµœëŒ€ê°’ = " + max);
 		
 		int min = arr[0];
 		for(int l=0; l<arr.length; l++) {
@@ -31,7 +31,7 @@ public class Sol5 {
 				  min = arr[l];
 			 }
 		}
-		System.out.println("ÃÖ¼Ò°ª = " + min);
+		System.out.println("ìµœì†Œê°’ = " + min);
 	}
 
 }

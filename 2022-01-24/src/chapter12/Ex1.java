@@ -5,9 +5,9 @@ public class Ex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÀÌ ÄÚµåÀÇ µ¿ÀÛ ¿ø¸®¸¦ ÆÄ¾ÇÇØ¶ó
-		// ¸Ş¼­µå´Â °£´ÜÇÏ°Ô ÀÌ¸§¸¸ ¾²±â
-		// getter & setter »ı·«
+		// ì´ ì½”ë“œì˜ ë™ì‘ ì›ë¦¬ë¥¼ íŒŒì•…í•´ë¼
+		// ë©”ì„œë“œëŠ” ê°„ë‹¨í•˜ê²Œ ì´ë¦„ë§Œ ì“°ê¸°
+		// getter & setter ìƒëµ
 		
 		Person p1 = new Person();
 		

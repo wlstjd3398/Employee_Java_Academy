@@ -2,8 +2,8 @@ package chapter07;
 
 public class Phone1 {
 
-//	Å¬·¡½º ¸â¹ö º¯¼ö : Å¬·¡½º¸íÀ» »ç¿ëÇØ¼­ Á¢±ÙÇÒ ¼ö ÀÖ´Â ¸â¹ö º¯¼ö,
-//	Å¬·¡½º ¸â¹ö º¯¼ö´Â ¼±¾ðÇÒ ¶§ ¸Ç ¾Õ¿¡ static Å°¿öµå°¡ ºÙÀ½
+//	í´ëž˜ìŠ¤ ë©¤ë²„ ë³€ìˆ˜ : í´ëž˜ìŠ¤ëª…ì„ ì‚¬ìš©í•´ì„œ ì ‘ê·¼í•  ìˆ˜ ìžˆëŠ” ë©¤ë²„ ë³€ìˆ˜,
+//	í´ëž˜ìŠ¤ ë©¤ë²„ ë³€ìˆ˜ëŠ” ì„ ì–¸í•  ë•Œ ë§¨ ì•žì— static í‚¤ì›Œë“œê°€ ë¶™ìŒ
 		
 	
 		static String maker;
@@ -12,6 +12,6 @@ public class Phone1 {
 		static int ram;
 		
 	
-// ÀÎ½ºÅÏ½º ¸â¹ö º¯¼ö´Â Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ ¸¸µå´Â ½ÃÁ¡¿¡ »ý¼ºµÊ
-// Å¬·¡½º ¸â¹ö º¯¼ö´Â ÇÁ·Î±×·¥ÀÌ ½ÇÇàµÇ¸é¼­ ¸¸µé¾îÁü
+// ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ ë³€ìˆ˜ëŠ” í´ëž˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë§Œë“œëŠ” ì‹œì ì— ìƒì„±ë¨
+// í´ëž˜ìŠ¤ ë©¤ë²„ ë³€ìˆ˜ëŠ” í”„ë¡œê·¸ëž¨ì´ ì‹¤í–‰ë˜ë©´ì„œ ë§Œë“¤ì–´ì§
 }

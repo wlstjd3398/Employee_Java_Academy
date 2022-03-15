@@ -8,8 +8,8 @@ public class Sol1 {
 		int hour = 3;
 		int minute =5;
 		int second = (hour*3600) + (minute*60);
-		System.out.println("°øºÎÇÑ ½Ã°£Àº " + hour + "½Ã°£" + minute + "ºĞÀ¸·Î");
-		System.out.println("ÃÊ·Î º¯È¯ÇÏ¸é ÃÑ " + second + "ÃÊ·Î °øºÎÇß½À´Ï´Ù.");
+		System.out.println("ê³µë¶€í•œ ì‹œê°„ì€ " + hour + "ì‹œê°„" + minute + "ë¶„ìœ¼ë¡œ");
+		System.out.println("ì´ˆë¡œ ë³€í™˜í•˜ë©´ ì´ " + second + "ì´ˆë¡œ ê³µë¶€í–ˆìŠµë‹ˆë‹¤.");
 	}
 
 }

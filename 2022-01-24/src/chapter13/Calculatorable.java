@@ -2,22 +2,22 @@ package chapter13;
 
 public interface Calculatorable {
 
-	// ¸â¹öº¯¼ö
-//	¾îµğ¼­µçÁ¢±Ù°¡´ÉÇÑ Å¬·¡½º¸â¹öº¯¼ö »ó¼öÈ­µÈ µ¥ÀÌÅÍÅ¸ÀÔ º¯¼öÀÌ¸§;
-//	Á¢±ÙÁ¦¾îÀÚ µ¥ÀÌÅÍÅ¸ÀÔ º¯¼öÀÌ¸§;
+	// ë©¤ë²„ë³€ìˆ˜
+//	ì–´ë””ì„œë“ ì ‘ê·¼ê°€ëŠ¥í•œ í´ë˜ìŠ¤ë©¤ë²„ë³€ìˆ˜ ìƒìˆ˜í™”ëœ ë°ì´í„°íƒ€ì… ë³€ìˆ˜ì´ë¦„;
+//	ì ‘ê·¼ì œì–´ì ë°ì´í„°íƒ€ì… ë³€ìˆ˜ì´ë¦„;
 	
-	// ÀÎÅÍÆäÀÌ½º¿¡´Â »ó¼öÈ­µÈ ¸â¹öº¯¼ö(public static final ~)¿Í Ãß»ó¸Ş¼­µå(abstract°¡ ÀÖÀ¸¸é ¼Ò½ºÄÚµå ¾øÀ½)°¡ ÇÊ¼ö
+	// ì¸í„°í˜ì´ìŠ¤ì—ëŠ” ìƒìˆ˜í™”ëœ ë©¤ë²„ë³€ìˆ˜(public static final ~)ì™€ ì¶”ìƒë©”ì„œë“œ(abstractê°€ ìˆìœ¼ë©´ ì†ŒìŠ¤ì½”ë“œ ì—†ìŒ)ê°€ í•„ìˆ˜
 	public static final int value = 10;
 	
 	
-	// Ãß»ó¸Ş¼­µå
-	// µ¡¼À
+	// ì¶”ìƒë©”ì„œë“œ
+	// ë§ì…ˆ
 	public abstract int plus(int num1, int num2);
-	// »¬¼À
+	// ëº„ì…ˆ
 	public abstract int minus(int num1, int num2);
-	// °ö¼À
+	// ê³±ì…ˆ
 	public abstract int multiply(int num1, int num2);
-	// ³ª´°¼À
+	// ë‚˜ëˆ—ì…ˆ
 	public abstract int division(int num1, int num2);
 	
 }

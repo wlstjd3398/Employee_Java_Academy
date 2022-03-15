@@ -14,7 +14,7 @@ public class Lion extends Animal{
 	
 	
 	public Lion(String name) {
-//		super(); ±âº»»ı¼ºÀÚ°¡ È£ÃâµÇ¾î ¼û°ÜÁ®ÀÖÀ½
+//		super(); ê¸°ë³¸ìƒì„±ìê°€ í˜¸ì¶œë˜ì–´ ìˆ¨ê²¨ì ¸ìˆìŒ
 		super(name);
 		
 	}

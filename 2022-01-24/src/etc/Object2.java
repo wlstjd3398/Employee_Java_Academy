@@ -1,7 +1,7 @@
 package etc;
 
 import chapter12.Object1;
-// ´Ù¸¥ÆÐÅ°ÁöÁö¸¸ ÀÚ½ÄÅ¬·¡½º Object2·Î ºÎ¸ðÅ¬·¡½ºObject1¿¡°Ô ÄÚµå ¹°·Á¹ÞÀ½ -> »ç¿ë°¡´É
+// ë‹¤ë¥¸íŒ¨í‚¤ì§€ì§€ë§Œ ìžì‹í´ëž˜ìŠ¤ Object2ë¡œ ë¶€ëª¨í´ëž˜ìŠ¤Object1ì—ê²Œ ì½”ë“œ ë¬¼ë ¤ë°›ìŒ -> ì‚¬ìš©ê°€ëŠ¥
 public class Object2 extends Object1{
 
 	public void func() {

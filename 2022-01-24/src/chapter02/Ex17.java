@@ -5,7 +5,7 @@ public class Ex17 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// mod  ¿¬»êÀÇ °á°ú´Â  0 ~ ºĞ¸ğ-1 »çÀÌÀÇ ¼ö Áß ÇÏ³ª
+		// mod  ì—°ì‚°ì˜ ê²°ê³¼ëŠ”  0 ~ ë¶„ëª¨-1 ì‚¬ì´ì˜ ìˆ˜ ì¤‘ í•˜ë‚˜
 		System.out.println(1 % 3);
 		System.out.println(2 % 3);
 		System.out.println(3 % 3);
@@ -13,16 +13,16 @@ public class Ex17 {
 		System.out.println(5 % 3);
 
 		
-		// ¾î¶² ¼ö°¡ Â¦¼öÀÎÁö È¦¼öÀÎÁö ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥
+		// ì–´ë–¤ ìˆ˜ê°€ ì§ìˆ˜ì¸ì§€ í™€ìˆ˜ì¸ì§€ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨
 		System.out.println(5 % 2);
 	
 		
-		// Ã¶¼ö³× °úÀÏ°¡°Ô »ç°ú3, ¹Ù³ª³ª3, ¿À·»Áö2
+		// ì² ìˆ˜ë„¤ ê³¼ì¼ê°€ê²Œ ì‚¬ê³¼3, ë°”ë‚˜ë‚˜3, ì˜¤ë Œì§€2
 		int shopApple = 3;
 		int shopBanana = 3;
 		int shopOrange = 2;
 		
-		// Ã¶¼ö³× °úÀÏ°¡°Ô °úÀÏÃÑ·®(total) °è»êÇÏ°í Æò±Õ °úÀÏ º¸À¯·®(avg)À» °è»êÇØ º¸±âÁÁ°Ô Ãâ·Â
+		// ì² ìˆ˜ë„¤ ê³¼ì¼ê°€ê²Œ ê³¼ì¼ì´ëŸ‰(total) ê³„ì‚°í•˜ê³  í‰ê·  ê³¼ì¼ ë³´ìœ ëŸ‰(avg)ì„ ê³„ì‚°í•´ ë³´ê¸°ì¢‹ê²Œ ì¶œë ¥
 		int total = shopApple + shopBanana + shopOrange;
 		double avg = (double) total / 3;
 		

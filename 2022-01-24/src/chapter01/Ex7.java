@@ -4,9 +4,9 @@ public class Ex7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("¿À´ÃÀÇ ±â¿Â : "+-5.3+"¡É");
-		System.out.println("Ä¿ÇÇ °¡°İ : "+1500+"¿ø");
-		System.out.println("Ã¶¼öÀÇ Java °ú¸ñ ÇĞÁ¡ : "+'A');
+		System.out.println("ì˜¤ëŠ˜ì˜ ê¸°ì˜¨ : "+-5.3+"â„ƒ");
+		System.out.println("ì»¤í”¼ ê°€ê²© : "+1500+"ì›");
+		System.out.println("ì² ìˆ˜ì˜ Java ê³¼ëª© í•™ì  : "+'A');
 	}
 
 

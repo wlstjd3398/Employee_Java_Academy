@@ -6,16 +6,16 @@ public class Sol3 {
 		// TODO Auto-generated method stub
 
 		Person p1 = new Person(); 
-		p1.name = "ÃÖÃ¶¼ö";
+		p1.name = "ìµœì² ìˆ˜";
 		p1.age = 37;
 		p1.number = "010-1234-5678";
-		p1.address = "Á¦ÁÖÆ¯º°½Ã";
+		p1.address = "ì œì£¼íŠ¹ë³„ì‹œ";
 		
 		Person p2 = new Person();
-		p2.name = "¿À¿µÈñ";
+		p2.name = "ì˜¤ì˜í¬";
 		p2.age = 25;
 		p2.number = "010-09874-6543";
-		p2.address = "¼­¿ïÆ¯º°½Ã";
+		p2.address = "ì„œìš¸íŠ¹ë³„ì‹œ";
 		
 	}
 

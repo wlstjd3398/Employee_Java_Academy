@@ -6,15 +6,15 @@ public class Sol15 {
 		// TODO Auto-generated method stub
 
 		Food f1 = new Food();
-		f1.name = "»Ñ¸µÅ¬";
+		f1.name = "ë¿Œë§í´";
 		f1.price = 18000;
 		
 		Food f2 = new Food();
-		f2.name = "ÆÄÀÎ¾ÖÇÃ ÇÇÀÚ";
+		f2.name = "íŒŒì¸ì• í”Œ í”¼ì";
 		f2.price = 28000;
 		
 		Food f3 = new Food();
-		f3.name = "¿¬¾î ÃÊ¹ä ¼¼Æ®";
+		f3.name = "ì—°ì–´ ì´ˆë°¥ ì„¸íŠ¸";
 		f3.price = 22000;
 		
 	}

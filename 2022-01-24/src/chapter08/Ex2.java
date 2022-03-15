@@ -9,7 +9,7 @@ public class Ex2 {
 		
 		obj.printLines1();
 		
-		// ¸Ş¼­µå¸¦ È£ÃâÇÒ¶§ ³Ö´Â °ªÀ» ÀÎÀÚ ¶ó°íÇÔ
+		// ë©”ì„œë“œë¥¼ í˜¸ì¶œí• ë•Œ ë„£ëŠ” ê°’ì„ ì¸ì ë¼ê³ í•¨
 		obj.printLines2(3);
 		obj.printLines2(-1);
 		

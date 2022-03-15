@@ -5,7 +5,7 @@ public class Ex6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	// ¼±¾ğ°ú ÀúÀåÀ» ÇÑ¹ø¿¡ ÇÏ°ÔµÇ¸é ¹è¿­¾ÈÀÇ ¹è¿­ÀÌ ´õ Àßº¸ÀÌ°ÔµÈ´Ù
+	// ì„ ì–¸ê³¼ ì €ì¥ì„ í•œë²ˆì— í•˜ê²Œë˜ë©´ ë°°ì—´ì•ˆì˜ ë°°ì—´ì´ ë” ì˜ë³´ì´ê²Œëœë‹¤
 		int[][] studentScores = {
 				{84, 62, 55},
 				{93, 71, 80},
@@ -17,30 +17,30 @@ public class Ex6 {
 		
 		int total1 = student1[0] + student1[1] + student1[2];
 		
-		// ÇĞ»ıµé ±¹¾îÁ¡¼ö Æò±Õ
-//		System.out.println("ÇĞ»ıµé ±¹¾îÁ¡¼ö Æò±Õ = " + 
+		// í•™ìƒë“¤ êµ­ì–´ì ìˆ˜ í‰ê· 
+//		System.out.println("í•™ìƒë“¤ êµ­ì–´ì ìˆ˜ í‰ê·  = " + 
 //		(double)(studentScores[0][0] + studentScores[1][0] + studentScores[2][0] + studentScores[3][0]) / 4);
 		
-		// °­»ç´Ô ¹æ¹ı
+		// ê°•ì‚¬ë‹˜ ë°©ë²•
 		int totalKor = studentScores[0][0] + studentScores[1][0] + studentScores[2][0] + studentScores[3][0];
 		double avgKor1 = (double) totalKor / 4;
 		double avgKor2 = (double) totalKor / studentScores.length;
 
-		System.out.println("°­»ç´Ô ±¹¾îÆò±Õ = " + avgKor1);
-		System.out.println("°­»ç´Ô ±¹¾îÆò±Õ = " + avgKor2);
+		System.out.println("ê°•ì‚¬ë‹˜ êµ­ì–´í‰ê·  = " + avgKor1);
+		System.out.println("ê°•ì‚¬ë‹˜ êµ­ì–´í‰ê·  = " + avgKor2);
 		
 		System.out.println(studentScores.length);
 		
 		
-		// ±æµ¿ÀÌ Æò±Õ
-		System.out.println("±æµ¿ÀÌÀÇ Æò±Õ = " + (double)(studentScores[2][0] + studentScores[2][1] + studentScores[2][2]) / 3);
+		// ê¸¸ë™ì´ í‰ê· 
+		System.out.println("ê¸¸ë™ì´ì˜ í‰ê·  = " + (double)(studentScores[2][0] + studentScores[2][1] + studentScores[2][2]) / 3);
 		
-		// °­»ç´Ô ¹æ¹ı
+		// ê°•ì‚¬ë‹˜ ë°©ë²•
 		double[] student3Total = {studentScores[2][0] +studentScores[2][1] + studentScores[2][2]};
-		  // student3Total ¹è¿­¾È¿¡ 20, 21, 22 °¡ µé¾îÀÖÀ¸´Ï ÇÏ³ªÀÇ ¹è¿­ÀÌ´Ù ±×·¡¼­ ¹Ø¿¡ student3Total[0]À¸·Î ÃÑÁ¡À» ´ëÃ¼°¡´É
+		  // student3Total ë°°ì—´ì•ˆì— 20, 21, 22 ê°€ ë“¤ì–´ìˆìœ¼ë‹ˆ í•˜ë‚˜ì˜ ë°°ì—´ì´ë‹¤ ê·¸ë˜ì„œ ë°‘ì— student3Total[0]ìœ¼ë¡œ ì´ì ì„ ëŒ€ì²´ê°€ëŠ¥
 		double student3Avg = (double) student3Total[0] / studentScores[2].length;
 		
-		System.out.println("±æµ¿ÀÌÀÇ Æò±Õ = " + student3Avg);
+		System.out.println("ê¸¸ë™ì´ì˜ í‰ê·  = " + student3Avg);
 		
 		
 		

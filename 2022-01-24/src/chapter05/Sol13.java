@@ -7,18 +7,18 @@ public class Sol13 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Sol12¹øÀ» if¹®À¸·Î °íÃÄ¶ó
-		// ³ª´°¼ÀÀ» ÇÒ °æ¿ì ºĞ¸ğ°¡ 0ÀÌ¸é ÇÁ·Î±×·¥ÀÌ ºñÁ¤»óÀûÀ¸·Î Á¾·áµÊ
-		// ³ª´°¼ÀÀ» ÇÒ ¶§ ºĞ¸ğ°¡ 0ÀÌ¶ó¸é "ºĞ¸ğ´Â 0ÀÏ ¼ö ¾ø½À´Ï´Ù"¸¦ Ãß°¡ÇØ¼­ if¹® ¹Ù²ã¶ó
+		// Sol12ë²ˆì„ ifë¬¸ìœ¼ë¡œ ê³ ì³ë¼
+		// ë‚˜ëˆ—ì…ˆì„ í•  ê²½ìš° ë¶„ëª¨ê°€ 0ì´ë©´ í”„ë¡œê·¸ë¨ì´ ë¹„ì •ìƒì ìœ¼ë¡œ ì¢…ë£Œë¨
+		// ë‚˜ëˆ—ì…ˆì„ í•  ë•Œ ë¶„ëª¨ê°€ 0ì´ë¼ë©´ "ë¶„ëª¨ëŠ” 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤"ë¥¼ ì¶”ê°€í•´ì„œ ifë¬¸ ë°”ê¿”ë¼
 		
 		Scanner scanf = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° °ªÀ» ÀÔ·ÂÇØ¶ó -->");
+		System.out.print("ì²«ë²ˆì§¸ ê°’ì„ ì…ë ¥í•´ë¼ -->");
 		int num1 = scanf.nextInt();
 		
-		System.out.print("µÎ¹øÂ° °ªÀ» ÀÔ·ÂÇØ¶ó -->");
+		System.out.print("ë‘ë²ˆì§¸ ê°’ì„ ì…ë ¥í•´ë¼ -->");
 		int num2 = scanf.nextInt();
 		
-		System.out.print("¿¬»êÀÚ¸¦ (+, -, *, /) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇØ¶ó -->");
+		System.out.print("ì—°ì‚°ìë¥¼ (+, -, *, /) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•´ë¼ -->");
 		char operator = scanf.next().charAt(0);
 		
 		int result = 0;
@@ -31,7 +31,7 @@ public class Sol13 {
 			System.out.println(num1 + " " + operator + " " + num2 + " == " + (num1 * num2));
 		}else if(operator == '/') {
 			if(num1 == 0) {
-				System.out.println("ºĞ¸ğ°¡ 0ÀÏ ¼ö ¾ø½À´Ï´Ù");
+				System.out.println("ë¶„ëª¨ê°€ 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤");
 				return;
 			}
 			System.out.println(num1 + " " + operator + " " + num2 + " == " + (num1 / num2));

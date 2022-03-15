@@ -9,7 +9,7 @@ public class Sol8 {
 		
 		int middleIndex = 4;
 		
-		System.out.println("¹è¿­ÀÇ °¡¿îµ¥ ¹®ÀÚ´Â \'" + charArr[middleIndex] + "\' ÀÔ´Ï´Ù.");
+		System.out.println("ë°°ì—´ì˜ ê°€ìš´ë° ë¬¸ìëŠ” \'" + charArr[middleIndex] + "\' ì…ë‹ˆë‹¤.");
 
 	}
 

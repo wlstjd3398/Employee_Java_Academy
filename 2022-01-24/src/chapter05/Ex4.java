@@ -8,23 +8,23 @@ public class Ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³°¡ ÇÑ °ÔÀÓ, ·Î¶Ç ´çÃ· ¹øÈ£¸¦ »Ì´Â ÇÁ·Î±×·¥À» °³¹ßÇØ¶ó
+		// 1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œê°€ í•œ ê²Œì„, ë¡œë˜ ë‹¹ì²¨ ë²ˆí˜¸ë¥¼ ë½‘ëŠ” í”„ë¡œê·¸ë¨ì„ ê°œë°œí•´ë¼
 		Random random = new Random();
 		
 		int lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 1¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 1ë²ˆì¬ ìˆ«ì = " + lotto);
 		lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 2¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 2ë²ˆì¬ ìˆ«ì = " + lotto);
 		lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 3¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 3ë²ˆì¬ ìˆ«ì = " + lotto);
 		lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 4¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 4ë²ˆì¬ ìˆ«ì = " + lotto);
 		lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 5¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 5ë²ˆì¬ ìˆ«ì = " + lotto);
 		lotto = random.nextInt(45) + 1;
-		System.out.println("1 ~ 45 »çÀÌÀÇ ¼ıÀÚ 6°³ Áß 6¹øÀç ¼ıÀÚ = " + lotto);
+		System.out.println("1 ~ 45 ì‚¬ì´ì˜ ìˆ«ì 6ê°œ ì¤‘ 6ë²ˆì¬ ìˆ«ì = " + lotto);
 		
-		// ¹è¿­À» »ç¿ëÇÑ ·Î¶Ç¹øÈ£ ÃßÃ·
+		// ë°°ì—´ì„ ì‚¬ìš©í•œ ë¡œë˜ë²ˆí˜¸ ì¶”ì²¨
 		int[] lottoNumbers = {
 				random.nextInt(45) + 1,
 				random.nextInt(45) + 1,

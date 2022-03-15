@@ -2,8 +2,8 @@ package chapter11;
 
 public class SimpleType {
 
-	// Á¢±ÙÁ¦¾îÀÚ ¾È¾²¸é default·Î
-	// Á¢±ÙÁ¦¾îÀÚ ¾²¸é public privateÃ³·³ ºÙÀÓ
+	// ì ‘ê·¼ì œì–´ì ì•ˆì“°ë©´ defaultë¡œ
+	// ì ‘ê·¼ì œì–´ì ì“°ë©´ public privateì²˜ëŸ¼ ë¶™ì„
 	
 	public int num1;
 	int num2;

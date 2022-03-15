@@ -9,41 +9,41 @@ public class Ex16 {
 
 		Scanner scanf = new Scanner(System.in);
 		
-		System.out.println("----ÀÚÆÇ°¡----");
+		System.out.println("----ìíŒê°€----");
 		
-		System.out.println("1.Äİ¶ó");
-		System.out.println("2.Äİ¶ó");
-		System.out.println("3.È¯Å¸");
-		System.out.println("4.»çÀÌ´Ù");
-		System.out.println("5.»çÀÌ´Ù");
-		System.out.println("6.»çÀÌ´Ù");
-		System.out.println("7.¸¶¿îÆ¾µà");
+		System.out.println("1.ì½œë¼");
+		System.out.println("2.ì½œë¼");
+		System.out.println("3.í™˜íƒ€");
+		System.out.println("4.ì‚¬ì´ë‹¤");
+		System.out.println("5.ì‚¬ì´ë‹¤");
+		System.out.println("6.ì‚¬ì´ë‹¤");
+		System.out.println("7.ë§ˆìš´í‹´ë“€");
 		
-		System.out.println("¸Ş´º¼±ÅÃ ÇØÁÖ¼¼¿ä(1 ~ 7) ->");
+		System.out.println("ë©”ë‰´ì„ íƒ í•´ì£¼ì„¸ìš”(1 ~ 7) ->");
 
 		int menu = scanf.nextInt();
 		switch(menu) {
 			case 1:
 			case 2:
-				System.out.println("Äİ¶ó°¡ ³ª¿Ô½À´Ï´Ù.");
+				System.out.println("ì½œë¼ê°€ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 				break;
 				
 			case 3:
-				System.out.println("È¯Å¸°¡ ³ª¿Ô½À´Ï´Ù.");
+				System.out.println("í™˜íƒ€ê°€ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 				break;
 				
 			case 4:
 			case 5:
 			case 6:
-				System.out.println("»çÀÌ´Ù°¡ ³ª¿Ô½À´Ï´Ù.");
+				System.out.println("ì‚¬ì´ë‹¤ê°€ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 				break;
 			
 			case 7:
-				System.out.println("¸¶¿îÆ¾µà°¡ ³ª¿Ô½À´Ï´Ù.");
+				System.out.println("ë§ˆìš´í‹´ë“€ê°€ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 				break;
 				
 			default :
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ¿Ã¹Ù¸¥ ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ì˜¬ë°”ë¥¸ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 				break;
 		}
 	}

@@ -12,7 +12,7 @@ public class Sol12 {
 				total = total + sum;
 			}
 		}
-		System.out.println("1 ~ 100 Á¤¼ö Áß¿¡¼­ 3¹è¼ö ÃÑÇÕ = " + total);
+		System.out.println("1 ~ 100 ê¹Œì§€ í•© = " + total);
 		
 	}
 

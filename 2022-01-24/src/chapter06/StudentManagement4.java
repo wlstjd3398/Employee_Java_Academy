@@ -40,39 +40,39 @@ public class StudentManagement4 {
 		for(int i=2; i<studentCount; i=i+2) {
 			System.out.print("\t");
 		}
-		System.out.println("<< ÇÐ»ýµéÀÇ ¼ºÀû >>");
+		System.out.println("<< í•™ìƒë“¤ì˜ ì„±ì  >>");
 		
-		System.out.print("±¹¾î :\t");
+		System.out.print("êµ­ì–´ :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%5d |", kor[i]);
 		}
 		System.out.println();
 		
-		System.out.print("¿µ¾î :\t");
+		System.out.print("ì˜ì–´ :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%5d |", eng[i]);
 		}
 		System.out.println();
 		
-		System.out.print("¼öÇÐ :\t");
+		System.out.print("ìˆ˜í•™ :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%5d |", mat[i]);
 		}
 		System.out.println();
 		
-		System.out.print("ÃÑÁ¡ :\t");
+		System.out.print("ì´ì  :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%5d |", sums[i]);
 		}
 		System.out.println();
 		
-		System.out.print("Æò±Õ :\t");
+		System.out.print("í‰ê·  :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%3.2f |", avgs[i]);
 		}
 		System.out.println();
 		
-		System.out.print("¼®Â÷ :\t");
+		System.out.print("ì„ì°¨ :\t");
 		for(int i=0; i<sums.length; i++) {
 			System.out.printf("%5d |", ranks[i]);
 		}

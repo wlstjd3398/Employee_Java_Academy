@@ -1,18 +1,18 @@
 package chapter13;
 
-public interface Å¬·¡½º¸í {
+public interface í´ëž˜ìŠ¤ëª… {
 
-	// Å¬·¡½º´Â ¸â¹öº¯¼ö¿Í ¸Þ¼­µå¸¦ °¡Áú¼öÀÖ´Ù
-	// Ãß»óÅ¬·¡½º´Â ¿©±â¼­ Ãß»ó¸Þ¼­µå¸¦ ÇÑ°³ ´õ °¡Áü
+	// í´ëž˜ìŠ¤ëŠ” ë©¤ë²„ë³€ìˆ˜ì™€ ë©”ì„œë“œë¥¼ ê°€ì§ˆìˆ˜ìžˆë‹¤
+	// ì¶”ìƒí´ëž˜ìŠ¤ëŠ” ì—¬ê¸°ì„œ ì¶”ìƒë©”ì„œë“œë¥¼ í•œê°œ ë” ê°€ì§
 	
-//	private int ¸â¹öº¯¼ö;
+//	private int ë©¤ë²„ë³€ìˆ˜;
 //	
-//	public void ¸Þ¼­µå() {
+//	public void ë©”ì„œë“œ() {
 //		
 //	}
-//	Ãß»ó¸Þ¼­µå´Â ¼±¾ð¸¸ µÇ¾îÀÖ´Â ±¸ÇöµÇÁö ¾ÊÀº ¸Þ¼­µå
-//	abstract Å°¿öµå°¡ ÀÖÀ¸¸é ¼Ò½ºÄÚµå¸¦ °¡Áú ¼ö ¾øÀ½
-	public abstract void Ãß»ó¸Þ¼­µå();
+//	ì¶”ìƒë©”ì„œë“œëŠ” ì„ ì–¸ë§Œ ë˜ì–´ìžˆëŠ” êµ¬í˜„ë˜ì§€ ì•Šì€ ë©”ì„œë“œ
+//	abstract í‚¤ì›Œë“œê°€ ìžˆìœ¼ë©´ ì†ŒìŠ¤ì½”ë“œë¥¼ ê°€ì§ˆ ìˆ˜ ì—†ìŒ
+	public abstract void ì¶”ìƒë©”ì„œë“œ();
 	
 	
 }

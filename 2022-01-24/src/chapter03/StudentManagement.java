@@ -20,19 +20,19 @@ public class StudentManagement {
 		int order1 = avg1>avg2 ? 1 : 2;
 		int order2 = avg1<avg2 ? 1 : 2;
 		
-		System.out.println("±¹¾î ¼ºÀû : " + kor1);
-		System.out.println("¿µ¾î ¼ºÀû : " + eng1);
-		System.out.println("¼öÇÐ ¼ºÀû : " + mat1);
-		System.out.println("ÃÑÁ¡ : " + sum1);
-		System.out.println("Æò±Õ : " + avg1);
-		System.out.println("¼®Â÷ : " + order1);
+		System.out.println("êµ­ì–´ ì„±ì  : " + kor1);
+		System.out.println("ì˜ì–´ ì„±ì  : " + eng1);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " + mat1);
+		System.out.println("ì´ì  : " + sum1);
+		System.out.println("í‰ê·  : " + avg1);
+		System.out.println("ì„ì°¨ : " + order1);
 		
-		System.out.println("±¹¾î ¼ºÀû : " + kor2);
-		System.out.println("¿µ¾î ¼ºÀû : " + eng2);
-		System.out.println("¼öÇÐ ¼ºÀû : " + mat2);
-		System.out.println("ÃÑÁ¡ : " + sum2);
-		System.out.println("Æò±Õ : " + avg2);
-		System.out.println("¼®Â÷ : " + order2);
+		System.out.println("êµ­ì–´ ì„±ì  : " + kor2);
+		System.out.println("ì˜ì–´ ì„±ì  : " + eng2);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " + mat2);
+		System.out.println("ì´ì  : " + sum2);
+		System.out.println("í‰ê·  : " + avg2);
+		System.out.println("ì„ì°¨ : " + order2);
 		
 		
 	}

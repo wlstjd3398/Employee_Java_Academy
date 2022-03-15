@@ -7,7 +7,7 @@ public class Sol6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 4¿ùÀÇ ÀÏ¼ö¸¦ Ãâ·ÂÇØ¶ó
+		// ì¸ë±ìŠ¤ë²ˆí˜¸ 3ë²ˆì€ 0,1,2,3ë²ˆì§¸
 		int[] day = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		System.out.println(day[3]);
 	}

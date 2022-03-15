@@ -10,18 +10,18 @@ public class Sol4 {
 		
 		double BMI = (weight / (height * height)) * 10000;
 		
-		System.out.println("´ç½ÅÀÇ BMI Áö¼ö´Â " + BMI + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì˜ BMI ì§€ìˆ˜ëŠ” " + BMI + "ì…ë‹ˆë‹¤.");
 		
 		if(BMI >= 30) {
-			System.out.println("°íµµ ºñ¸¸ÀÔ´Ï´Ù.");
+			System.out.println("ê³ ë„ ë¹„ë§Œì…ë‹ˆë‹¤.");
 		} else if(BMI >= 25) {
-			System.out.println("ºñ¸¸ÀÔ´Ï´Ù.");
+			System.out.println("ë¹„ë§Œì…ë‹ˆë‹¤.");
 		} else if(BMI >= 23) {
-			System.out.println("°úÁ¦Áß ÀÇ½ÉÀÔ´Ï´Ù.");
+			System.out.println("ê³¼ì œì¤‘ ì˜ì‹¬ì…ë‹ˆë‹¤.");
 		} else if(BMI >= 18.5) {
-			System.out.println("Á¤»óÀÔ´Ï´Ù.");
+			System.out.println("ì •ìƒì…ë‹ˆë‹¤.");
 		} else if(BMI < 18.5) {
-			System.out.println("ÀúÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ì €ì²´ì¤‘ì…ë‹ˆë‹¤.");
 		}
 
 	}

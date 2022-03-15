@@ -8,21 +8,21 @@ public class Sol15 {
 		// TODO Auto-generated method stub
 
 		Random random = new Random();
-		int hour = random.nextInt(24); // 24¹Ì¸¸ÀÇ ¼öÁß¿¡ ·£´ýÀ¸·Î »Ì¾Æ¼­ hour¿¡ ³ÖÀ½ 
+		int hour = random.nextInt(24); // 24ë¯¸ë§Œì˜ ìˆ˜ì¤‘ì— ëžœë¤ìœ¼ë¡œ ë½‘ì•„ì„œ hourì— ë„£ìŒ 
 		int sunny = random.nextInt(2);
 		
 		
 		if(sunny == 0) {
-			System.out.println("È­Ã¢ÇÏ´Ù");
+			System.out.println("í™”ì°½í•˜ë‹¤");
 		}else if(sunny == 1) {
-			System.out.println("È­Ã¢ÇÏÁö ¾Ê´Ù");
+			System.out.println("í™”ì°½í•˜ì§€ ì•Šë‹¤");
 		}	
-		System.out.println("Áö±Ý ½Ã°£Àº " + hour + "ÀÌ°í, " + "ÇöÀç ³¯¾¾´Â " + sunny + "ÀÔ´Ï´Ù.");
+		System.out.println("ì§€ê¸ˆ ì‹œê°„ì€ " + hour + "ì´ê³ , " + "í˜„ìž¬ ë‚ ì”¨ëŠ” " + sunny + "ìž…ë‹ˆë‹¤.");
 		
 
 		if(hour >= 6 && hour <= 9) {
 			if(sunny == 0) {
-				System.out.println("Á¾´Þ»õ°¡ ³ë·¡ÇÕ´Ï´Ù~");
+				System.out.println("ì¢…ë‹¬ìƒˆê°€ ë…¸ëž˜í•©ë‹ˆë‹¤~");
 			}
 		}
 		

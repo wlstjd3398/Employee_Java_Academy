@@ -9,54 +9,54 @@ public class Ex14 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÀúÀåÇÒ Á¦³×¸¯½ºÅ¸ÀÔ CustomerÀÇ ÀÌ¸§À¸·Î °í°´µéÀÇ Á¤º¸¸¦ ±¸º°
+		// ì €ì¥í•  ì œë„¤ë¦­ìŠ¤íƒ€ì… Customerì˜ ì´ë¦„ìœ¼ë¡œ ê³ ê°ë“¤ì˜ ì •ë³´ë¥¼ êµ¬ë³„
 		Map<String, Customer> customerList = new HashMap<>();
 		
-		// »ı¼ºÀÚ¿¡ ¸Â°Ô ÀÎÀÚ¸¦ ³Ö¾î¶ó°í ÄÄÆÄÀÏ¿À·ù³² -> CustomerÅ¬·¡½º°¡¼­ ¸Â´Â »ı¼ºÀÚ»ı¼º
-		Customer c1 = new Customer("010-1111-1111", "Çö±İ"); 
-		Customer c2 = new Customer("010-2222-2222", "Ä«µå");
-		Customer c3 = new Customer("010-3333-3333", "»óÇ°±Ç");
+		// ìƒì„±ìì— ë§ê²Œ ì¸ìë¥¼ ë„£ì–´ë¼ê³  ì»´íŒŒì¼ì˜¤ë¥˜ë‚¨ -> Customerí´ë˜ìŠ¤ê°€ì„œ ë§ëŠ” ìƒì„±ììƒì„±
+		Customer c1 = new Customer("010-1111-1111", "í˜„ê¸ˆ"); 
+		Customer c2 = new Customer("010-2222-2222", "ì¹´ë“œ");
+		Customer c3 = new Customer("010-3333-3333", "ìƒí’ˆê¶Œ");
 		
-		customerList.put("È«±æµ¿", c1);
-		customerList.put("±èÃ¶¼ö", c2);
-		customerList.put("°í¿µÈñ", c3);
+		customerList.put("í™ê¸¸ë™", c1);
+		customerList.put("ê¹€ì² ìˆ˜", c2);
+		customerList.put("ê³ ì˜í¬", c3);
 		
-		// map¿¡ µé¾îÀÖ´ÂÅ°¸¦ setÇüÅÂ·Î ¸®ÅÏÇØÁÜ
-		// Á¦³×¸¯½ºÅ¸ÀÔÀÌ Å°ÀÇ µ¥ÀÌÅÍÅ¸ÀÔÀÌ String
+		// mapì— ë“¤ì–´ìˆëŠ”í‚¤ë¥¼ setí˜•íƒœë¡œ ë¦¬í„´í•´ì¤Œ
+		// ì œë„¤ë¦­ìŠ¤íƒ€ì…ì´ í‚¤ì˜ ë°ì´í„°íƒ€ì…ì´ String
 		Set<String> keySet = customerList.keySet(); 
-		// for¹®
+		// forë¬¸
 		for(String key : keySet) {
 			Customer nthCustomer = customerList.get(key);
-			System.out.println("°í°´ÀÇ ÀÌ¸§ : " + key);
-			System.out.println("°í°´ÀÇ ¿¬¶ôÃ³ : " + nthCustomer.getTel());
-			System.out.println("°í°´ÀÇ °áÁ¦¹æ¹ı : " + nthCustomer.getPaymentMethod());
+			System.out.println("ê³ ê°ì˜ ì´ë¦„ : " + key);
+			System.out.println("ê³ ê°ì˜ ì—°ë½ì²˜ : " + nthCustomer.getTel());
+			System.out.println("ê³ ê°ì˜ ê²°ì œë°©ë²• : " + nthCustomer.getPaymentMethod());
 		}
 		
 		// iterator
 		
-//		System.out.println("Ã¹ ¹øÂ° °í°´ÀÇ ÀÌ¸§ : È«±æµ¿");
-//		System.out.println("Ã¹ ¹øÂ° °í°´ÀÇ ¿¬¶ôÃ³ : " + c1.getTel());
-//		System.out.println("Ã¹ ¹øÂ° °í°´ÀÇ °áÁ¦¹æ¹ı : " + c1.getPaymentMethod());
+//		System.out.println("ì²« ë²ˆì§¸ ê³ ê°ì˜ ì´ë¦„ : í™ê¸¸ë™");
+//		System.out.println("ì²« ë²ˆì§¸ ê³ ê°ì˜ ì—°ë½ì²˜ : " + c1.getTel());
+//		System.out.println("ì²« ë²ˆì§¸ ê³ ê°ì˜ ê²°ì œë°©ë²• : " + c1.getPaymentMethod());
 		
 		
 		
 		
 		
-//		// mapÀÌ¿ëÇÏ¿© ²¨³»¼­ Ãâ·Â
-//		Customer nthCustomer = customerList.get("È«±æµ¿");
-//		System.out.println("1 ¹øÂ° °í°´ÀÇ ÀÌ¸§ : È«±æµ¿");
-//		System.out.println("1 ¹øÂ° °í°´ÀÇ ¿¬¶ôÃ³ : " + nthCustomer.getTel());
-//		System.out.println("1 ¹øÂ° °í°´ÀÇ °áÁ¦¹æ¹ı : " + nthCustomer.getPaymentMethod());
+//		// mapì´ìš©í•˜ì—¬ êº¼ë‚´ì„œ ì¶œë ¥
+//		Customer nthCustomer = customerList.get("í™ê¸¸ë™");
+//		System.out.println("1 ë²ˆì§¸ ê³ ê°ì˜ ì´ë¦„ : í™ê¸¸ë™");
+//		System.out.println("1 ë²ˆì§¸ ê³ ê°ì˜ ì—°ë½ì²˜ : " + nthCustomer.getTel());
+//		System.out.println("1 ë²ˆì§¸ ê³ ê°ì˜ ê²°ì œë°©ë²• : " + nthCustomer.getPaymentMethod());
 //		
-//		nthCustomer = customerList.get("±èÃ¶¼ö");
-//		System.out.println("2 ¹øÂ° °í°´ÀÇ ÀÌ¸§ : ±èÃ¶¼ö");
-//		System.out.println("2 ¹øÂ° °í°´ÀÇ ¿¬¶ôÃ³ : " + nthCustomer.getTel());
-//		System.out.println("2 ¹øÂ° °í°´ÀÇ °áÁ¦¹æ¹ı : " + nthCustomer.getPaymentMethod());
+//		nthCustomer = customerList.get("ê¹€ì² ìˆ˜");
+//		System.out.println("2 ë²ˆì§¸ ê³ ê°ì˜ ì´ë¦„ : ê¹€ì² ìˆ˜");
+//		System.out.println("2 ë²ˆì§¸ ê³ ê°ì˜ ì—°ë½ì²˜ : " + nthCustomer.getTel());
+//		System.out.println("2 ë²ˆì§¸ ê³ ê°ì˜ ê²°ì œë°©ë²• : " + nthCustomer.getPaymentMethod());
 //		
-//		nthCustomer = customerList.get("°í¿µÈñ");
-//		System.out.println("3 ¹øÂ° °í°´ÀÇ ÀÌ¸§ : °í¿µÈñ");
-//		System.out.println("3 ¹øÂ° °í°´ÀÇ ¿¬¶ôÃ³ : " + nthCustomer.getTel());
-//		System.out.println("3 ¹øÂ° °í°´ÀÇ °áÁ¦¹æ¹ı : " + nthCustomer.getPaymentMethod());
+//		nthCustomer = customerList.get("ê³ ì˜í¬");
+//		System.out.println("3 ë²ˆì§¸ ê³ ê°ì˜ ì´ë¦„ : ê³ ì˜í¬");
+//		System.out.println("3 ë²ˆì§¸ ê³ ê°ì˜ ì—°ë½ì²˜ : " + nthCustomer.getTel());
+//		System.out.println("3 ë²ˆì§¸ ê³ ê°ì˜ ê²°ì œë°©ë²• : " + nthCustomer.getPaymentMethod());
 //		
 
 	}

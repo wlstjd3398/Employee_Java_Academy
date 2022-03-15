@@ -7,33 +7,33 @@ public class Ex2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Ã¶¼öÀÇ Á¤º¸¸¦ ÀÔ·Â ¹Ş´Â ÇÁ·Î±×·¥À» °³¹ßÇØ¶ó
-		// ÀÌ¸§ ±èÃ¶¼ö, ³ªÀÌ 23¼¼, ¿¬¶ôÃ³ 010-1234-5678, Å° 156.7cm, Ç÷¾×Çü AÇü
+		// ì² ìˆ˜ì˜ ì •ë³´ë¥¼ ì…ë ¥ ë°›ëŠ” í”„ë¡œê·¸ë¨ì„ ê°œë°œí•´ë¼
+		// ì´ë¦„ ê¹€ì² ìˆ˜, ë‚˜ì´ 23ì„¸, ì—°ë½ì²˜ 010-1234-5678, í‚¤ 156.7cm, í˜ˆì•¡í˜• Aí˜•
 		
 		Scanner scanf = new Scanner(System.in);
-		System.out.println("Ã¶¼öÀÇ Á¤º¸¸¦ ÀÔ·ÂÇØ¶ó.");
+		System.out.println("ì² ìˆ˜ì˜ ì •ë³´ë¥¼ ì…ë ¥í•´ë¼.");
 		
 		String str1 = scanf.next();
-		System.out.println("ÀÌ¸§  = " + str1);
+		System.out.println("ì´ë¦„  = " + str1);
 		
 		int age = scanf.nextInt();
-		System.out.println("³ªÀÌ = " + age + "¼¼"); 
+		System.out.println("ë‚˜ì´ = " + age + "ì„¸"); 
 		
 		String num1 = scanf.next();
-		System.out.println("¿¬¶ôÃ³ = " + num1);
+		System.out.println("ì—°ë½ì²˜ = " + num1);
 		
 		double height = scanf.nextDouble();
-		System.out.println("Å° = " + height);
+		System.out.println("í‚¤ = " + height);
 		
 		char blood = scanf.next().charAt(0);
-		System.out.println("Ç÷¾×Çü = " + blood + "Çü");
+		System.out.println("í˜ˆì•¡í˜• = " + blood + "í˜•");
 		
-		System.out.println("Ã¶¼öÀÇ ¸ğµç Á¤º¸´Â = ");
-		System.out.println("ÀÌ¸§  = " + str1);
-		System.out.println("³ªÀÌ = " + age + "¼¼"); 
-		System.out.println("¿¬¶ôÃ³ = " + num1);
-		System.out.println("Å° = " + height);
-		System.out.println("Ç÷¾×Çü = " + blood + "Çü");
+		System.out.println("ì² ìˆ˜ì˜ ëª¨ë“  ì •ë³´ëŠ” = ");
+		System.out.println("ì´ë¦„  = " + str1);
+		System.out.println("ë‚˜ì´ = " + age + "ì„¸"); 
+		System.out.println("ì—°ë½ì²˜ = " + num1);
+		System.out.println("í‚¤ = " + height);
+		System.out.println("í˜ˆì•¡í˜• = " + blood + "í˜•");
 		
 		
 	}

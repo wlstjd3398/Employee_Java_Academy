@@ -5,20 +5,20 @@ public class Ex6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÇÁ·Î±×·¥Àº Å¸ÀÌÇÎ ÇÏ°í ³¡! ¾Æ´Ô
-		// ³»°¡ ÀÇµµÇÑ´ë·Î µ¿ÀÛÇÏ´ÂÁö ¿©·¯¹ø Å×½ºÆ® ÇØºÁ¾ßÇÔ(°ÔÀÓ ¿ÀÇÂº£Å¸, Å¬·ÎÁîº£Å¸Ã³·³)
+		// í”„ë¡œê·¸ë¨ì€ íƒ€ì´í•‘ í•˜ê³  ë! ì•„ë‹˜
+		// ë‚´ê°€ ì˜ë„í•œëŒ€ë¡œ ë™ì‘í•˜ëŠ”ì§€ ì—¬ëŸ¬ë²ˆ í…ŒìŠ¤íŠ¸ í•´ë´ì•¼í•¨(ê²Œì„ ì˜¤í”ˆë² íƒ€, í´ë¡œì¦ˆë² íƒ€ì²˜ëŸ¼)
 		
-		// if Á¶°Ç¹® - ¹®Á¦
+		// if ì¡°ê±´ë¬¸ - ë¬¸ì œ
 		int score = 61;
 		
 		if(score >= 60) {
-			System.out.println("Åë°ú");
-			System.out.println("Â¦Â¦Â¦~ ÃàÇÏÇÕ´Ï´Ù!");
+			System.out.println("í†µê³¼");
+			System.out.println("ì§ì§ì§~ ì¶•í•˜í•©ë‹ˆë‹¤!");
 		}
 		
 		if(score < 60) {
-			System.out.println("Àç½ÃÇè");
-			System.out.println("´ÙÀ½ÁÖ±îÁö ´Ù½Ã °øºÎÇØ¿À¼¼¿ä");
+			System.out.println("ì¬ì‹œí—˜");
+			System.out.println("ë‹¤ìŒì£¼ê¹Œì§€ ë‹¤ì‹œ ê³µë¶€í•´ì˜¤ì„¸ìš”");
 		}
 	}
 

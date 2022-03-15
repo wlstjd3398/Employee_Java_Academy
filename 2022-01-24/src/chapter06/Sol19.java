@@ -9,20 +9,20 @@ public class Sol19 {
 		// TODO Auto-generated method stub
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("µÎ Á¤¼ö¸¦ ÇÑÁÙ¿¡ ÇÏ³ª¾¿ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ í•œì¤„ì— í•˜ë‚˜ì”© ì…ë ¥í•´ì£¼ì„¸ìš”");
 		int i = scan.nextInt();
 		int j = scan.nextInt();
-		System.out.println("µÎ Á¤¼ö´Â "+ i+" ¿Í"+j+" ÀÔ´Ï´Ù.");
-		System.out.println("µÎ Á¤¼öÀÇ ÇÕÀº ¾ó¸¶¶ó°í »ı°¢ÇÏ¼¼¿ä?");
+		System.out.println("ë‘ ì •ìˆ˜ëŠ” "+ i+" ì™€"+j+" ì…ë‹ˆë‹¤.");
+		System.out.println("ë‘ ì •ìˆ˜ì˜ í•©ì€ ì–¼ë§ˆë¼ê³  ìƒê°í•˜ì„¸ìš”?");
 		int think=scan.nextInt();
 		
-		ÀÓÀÇÀÇ µÎ Á¤¼ö´Â 1 ~ 100 »çÀÌ¿¡ Á¸Àç
-		Á¤´äÀ» ¸ÂÃß¸é ¹İº¹ÀûÀ¸·Î ¹®Á¦¸¦ ³»±â
+		ì„ì˜ì˜ ë‘ ì •ìˆ˜ëŠ” 1 ~ 100 ì‚¬ì´ì— ì¡´ì¬
+		ì •ë‹µì„ ë§ì¶”ë©´ ë°˜ë³µì ìœ¼ë¡œ ë¬¸ì œë¥¼ ë‚´ê¸°
 		
 		if(think==(i+j)) {
-			System.out.println("Á¤´ä!!");
+			System.out.println("ì •ë‹µ!!");
 		}else {
-			System.out.println("¿À´ä!! ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ì˜¤ë‹µ!! í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		}
 		
 	}

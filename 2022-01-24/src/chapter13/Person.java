@@ -5,7 +5,7 @@ public class Person extends Animal{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("µÎ ¹ß·Î ´Ş¸³´Ï´Ù.");
+		System.out.println("ë‘ë°œë¡œ ë›´ë‹¤");
 	}
 
 	

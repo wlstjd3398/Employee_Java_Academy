@@ -14,34 +14,34 @@ public class Sol14 {
 //		h1.defense = 10;
 //		h1.weight = 5.5;
 //		h1.durable = 50;
-//		h1.grade = "ÀÏ¹Ý";
+//		h1.grade = "ì¼ë°˜";
 //		
 //		Upper u1 = new Upper();
 //		u1.defense = 10;
 //		u1.weight = 5.5;
 //		u1.durable = 50;
-//		u1.grade = "ÀÏ¹Ý";
+//		u1.grade = "ì¼ë°˜";
 //		
 //		Lower l1 = new Lower();
 //		l1.defense = 10;
 //		l1.weight = 5.5;
 //		l1.durable = 50;
-//		l1.grade = "ÀÏ¹Ý";
+//		l1.grade = "ì¼ë°˜";
 //		
 //		Shoes s1 = new Shoes();
 //		s1.defense = 10;
 //		s1.weight = 5.5;
 //		s1.durable = 50;
-//		s1.grade = "ÀÏ¹Ý";
+//		s1.grade = "ì¼ë°˜";
 //		
 //		Weapon w1 = new Weapon();
-//		w1.type = "Ä®";
+//		w1.type = "ì¹¼";
 //		w1.offense = 10;
 //		w1.durable = 50;
 //		w1.grade = 4;
 		
-		// °ÔÀÓ Ä³¸¯ÅÍ¸¦ »ý¼ºÇÏ¸é Ä³¸¯ÅÍ °´Ã¼°¡ ¸¸µé¾îÁü -> Å¬·¡½º ¸â¹öº¯¼ö
-		// Å¬·¡½º ¸â¹öº¯¼ö¸¦ ÅëÇØ¼­ ÇØ´ç Ä³¸¯ÅÍ°¡ Âø¿ëÇÏ°í ÀÖ´Â ÀåºñÀÇ Á¤º¸¿¡ Á¢±ÙÇÒ¼öÀÖ¾î¾ßÇÔ
+		// ê²Œìž„ ìºë¦­í„°ë¥¼ ìƒì„±í•˜ë©´ ìºë¦­í„° ê°ì²´ê°€ ë§Œë“¤ì–´ì§ -> í´ëž˜ìŠ¤ ë©¤ë²„ë³€ìˆ˜
+		// í´ëž˜ìŠ¤ ë©¤ë²„ë³€ìˆ˜ë¥¼ í†µí•´ì„œ í•´ë‹¹ ìºë¦­í„°ê°€ ì°©ìš©í•˜ê³  ìžˆëŠ” ìž¥ë¹„ì˜ ì •ë³´ì— ì ‘ê·¼í• ìˆ˜ìžˆì–´ì•¼í•¨
 		
 		
 		

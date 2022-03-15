@@ -8,15 +8,15 @@ public class Pc {
 	private String HDD;
 	
 	public void powerOnOff() {
-		System.out.println("Àü¿øÀ» ÄÑ°Å³ª ²ö´Ù");
+		System.out.println("ì „ì›ì„ ì¼œê±°ë‚˜ ëˆë‹¤");
 	}
 	
 	public void typing() {
-		System.out.println("Å¸ÀÌÇÎÀ» ÇÑ´Ù");
+		System.out.println("íƒ€ì´í•‘ì„ í•œë‹¤");
 	}
 	
 	public void playGame() {
-		System.out.println("°ÔÀÓÀ» ÇÑ´Ù");
+		System.out.println("ê²Œì„ì„ í•œë‹¤");
 	}
 	
 	public void showPcInfo() {
@@ -47,7 +47,7 @@ public class Pc {
 	}
 
 	public String getCPU() {
-		return CPU; // ¿©±â¼­ return ÀÌ¶ó´Â °ÍÀº NoteBookIntoÀÇ getCPU·Î µ¹¾Æ°¨
+		return CPU; // ì—¬ê¸°ì„œ return ì´ë¼ëŠ” ê²ƒì€ NoteBookIntoì˜ getCPUë¡œ ëŒì•„ê°
 	}
 	public String getGPU() {
 		return GPU;

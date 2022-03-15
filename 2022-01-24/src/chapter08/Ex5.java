@@ -3,17 +3,17 @@ package chapter08;
 public class Ex5 {
 
 		void method1() {
-			System.out.println("ÀÎ½ºÅÏ½º ¸Ş¼­µå");
+			System.out.println("ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ");
 		}
 		
 		static void method2() {
-			System.out.println("Å¬·¡½º ¸Ş¼­µå");
+			System.out.println("í´ë˜ìŠ¤ ë©”ì„œë“œ");
 		}
 	
 		public static void main(String[] args) {
 			Ex5 ex = new Ex5();
-			ex.method1();// ÀÎ½ºÅÏ½º ¸Ş¼­µå
-			ex.method2();// Å¬·¡½º ¸Ş¼­µå
+			ex.method1();// ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ
+			ex.method2();// í´ë˜ìŠ¤ ë©”ì„œë“œ
 		}
 
 }

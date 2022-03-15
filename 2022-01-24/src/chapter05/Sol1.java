@@ -9,9 +9,9 @@ public class Sol1 {
 		double height = 160;
 		
 		if (age < 12 || height < 160) {
-			System.out.println("Å¾½Â ºÒ°¡");
+			System.out.println("íŒ¨ìŠ¤");
 		} else {
-			System.out.println("Å¾½Â °¡´É");
+			System.out.println("ë…¸íŒ¨ìŠ¤");
 		}
 
 		

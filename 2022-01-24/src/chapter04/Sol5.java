@@ -10,14 +10,14 @@ public class Sol5 {
 		int[] arr1 = {1, 2};
 		int[] arr2 = arr1;
 		
-		System.out.println("<< ±³È¯ Àü >>");
+		System.out.println("ê¸°ë³¸");
 		System.out.println("arr1 = " + Arrays.toString(arr1));
 		
 		int temp = arr2[0];		// - ( 1 )
 		arr2[0] = arr2[1];			// - ( 2 )
 		arr2[1] = temp;			// - ( 3 )
 		
-		System.out.println("<< ±³È¯ ÈÄ >>");
+		System.out.println("ìˆœì„œë°”ê¾¸ê¸°");
 		System.out.println("arr1 = " + Arrays.toString(arr1));
 
 	}

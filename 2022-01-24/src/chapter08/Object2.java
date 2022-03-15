@@ -2,8 +2,8 @@ package chapter08;
 
 public class Object2 {
 
-	// Object2 Å¬·¡½º ¾È¿¡ 1+1ÀÇ °á°ú¸¦ Ãâ·ÂÇÏ´Â add ¸Ş¼­µå¸¦ ¼±¾ğÇÏ°í
-	// Ex1ÀÇ main ¾È¿¡¼­ object2 Å¬·¡½º add ¸Ş¼­µå¸¦ È£ÃâÇØ¶ó
+	// Object2 í´ë˜ìŠ¤ ì•ˆì— 1+1ì˜ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ëŠ” add ë©”ì„œë“œë¥¼ ì„ ì–¸í•˜ê³ 
+	// Ex1ì˜ main ì•ˆì—ì„œ object2 í´ë˜ìŠ¤ add ë©”ì„œë“œë¥¼ í˜¸ì¶œí•´ë¼
 	void add() {
 		System.out.println("2 + 2 = " + (2+2));
 	}

@@ -7,12 +7,12 @@ public class Ex3 {
 
 		Object1 obj1 = new Object1();
 		Object1 obj2 = obj1;
-		// À§ ÄÚµåÀÇ µ¿ÀÛ¿ø¸®¸¦ ÆÄ¾ÇÇÏ¼¼¿ä
+		// ìœ„ ì½”ë“œì˜ ë™ìž‘ì›ë¦¬ë¥¼ íŒŒì•…í•˜ì„¸ìš”
 		
 //		obj1.
 //		obj2.
 		
-		// .Àº ¼Ò½ºÄÚµå·Î µé¾î°¡´Â °ÍÀ» ¸»ÇÔ
+		// .ì€ ì†ŒìŠ¤ì½”ë“œë¡œ ë“¤ì–´ê°€ëŠ” ê²ƒì„ ë§í•¨
 		
 		
 	}

@@ -11,11 +11,11 @@ public class Car {
 	}
 	
 	void run() {
-		System.out.println("ºÎ¸£¸ª");
+		System.out.println("ë¶€ë¦‰");
 	}
 	
 	void stop() {
-		System.out.println("³¢ÀÍ~");
+		System.out.println("ë¼ìµ~");
 	}
 	
 }

@@ -3,10 +3,10 @@ package chapter17;
 import java.util.ArrayList;
 
 public class Ex3 {
-//	¸®ÆÑÅä¸µÀÌ Áß¿ä -> ³»°¡ °³¹ßÇÑ ÄÚµå¸¦ ´Ù½Ã ÇÑ¹ø Á¡°ËÇØ¼­ °³¼±ÇÏ´Â ÀÛ¾÷
+//	ë¦¬íŒ©í† ë§ì´ ì¤‘ìš” -> ë‚´ê°€ ê°œë°œí•œ ì½”ë“œë¥¼ ë‹¤ì‹œ í•œë²ˆ ì ê²€í•´ì„œ ê°œì„ í•˜ëŠ” ì‘ì—…
 	
-	// ¹İÈ¯Å¸ÀÔÀ» ¸ô¶ó¼­ ÀÏ´Ü void, ¸Å°³º¯¼öµµ ¾ÆÁ÷¸ô¶ó¼­ ºóÄ­
-	// return ¾øÀ¸´Ï void·Î »ç¿ë, customerList°¡ ¾Æ·¡ ¸Ş¼­µå¿¡ ¾øÀ½ ±×·¡¼­ ¸Å°³º¯¼ö¿¡ ±¸¸ÅÀÚÁ¤º¸¸¦ Àü´ŞÇØÁà¾ßÇÔ
+	// ë°˜í™˜íƒ€ì…ì„ ëª°ë¼ì„œ ì¼ë‹¨ void, ë§¤ê°œë³€ìˆ˜ë„ ì•„ì§ëª°ë¼ì„œ ë¹ˆì¹¸
+	// return ì—†ìœ¼ë‹ˆ voidë¡œ ì‚¬ìš©, customerListê°€ ì•„ë˜ ë©”ì„œë“œì— ì—†ìŒ ê·¸ë˜ì„œ ë§¤ê°œë³€ìˆ˜ì— êµ¬ë§¤ìì •ë³´ë¥¼ ì „ë‹¬í•´ì¤˜ì•¼í•¨
 	public void printAllCustomer(ArrayList<Customer> customerList) {
 		for(int i=0; i<customerList.size(); i++) {
 			Customer nthCustomer = customerList.get(i);
@@ -14,10 +14,10 @@ public class Ex3 {
 			String nthCustomerTel = nthCustomer.getTel();
 			int nthCustomerSeat = nthCustomer.getSeat();
 			
-			System.out.println("<< " + (i+1) + "¹øÂ° ±¸¸ÅÀÚÀÇ Á¤º¸ >>");
-			System.out.println("ÀÌ¸§ : " + nthCustomerName);
-			System.out.println("¿¬¶ôÃ³ : " + nthCustomerTel);
-			System.out.println("ÁÂ¼®¹øÈ£ : " + nthCustomerSeat);
+			System.out.println("<< " + (i+1) + "ë²ˆì§¸ êµ¬ë§¤ìì˜ ì •ë³´ >>");
+			System.out.println("ì´ë¦„ : " + nthCustomerName);
+			System.out.println("ì—°ë½ì²˜ : " + nthCustomerTel);
+			System.out.println("ì¢Œì„ë²ˆí˜¸ : " + nthCustomerSeat);
 		}
 	}
 
@@ -32,46 +32,46 @@ public class Ex3 {
 		
 		
 		
-		// KTX ½ÂÂ÷±Ç °ü¸® ÇÁ·Î±×·¥À» °³¹ßÇØ¶ó
-		Customer c1 = new Customer("È«±æµ¿", "010-1473-3698", 32);
-		Customer c2 = new Customer("°í¿µÈñ", "010-1598-7894", 55);
+		// KTX ìŠ¹ì°¨ê¶Œ ê´€ë¦¬ í”„ë¡œê·¸ë¨ì„ ê°œë°œí•´ë¼
+		Customer c1 = new Customer("í™ê¸¸ë™", "010-1473-3698", 32);
+		Customer c2 = new Customer("ê³ ì˜í¬", "010-1598-7894", 55);
 		
 		
-//		±¸¸ÅÀÚÀÇ Á¤º¸ÀÎ Customer Å¬·¡½º¸¦ »ç¿ë
+//		êµ¬ë§¤ìì˜ ì •ë³´ì¸ Customer í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©
 		ArrayList<Customer> customerList = new ArrayList<>();
 		
-		// ÀÎ½ºÅÏ½ºÀÇ ÁÖ¼Ò°¡ add°¡ µÈ °Í
+		// ì¸ìŠ¤í„´ìŠ¤ì˜ ì£¼ì†Œê°€ addê°€ ëœ ê²ƒ
 		customerList.add(c1);
 		customerList.add(c2);
-		// °´Ã¼¸¦ sysoutÇÏ¸é ¾Æ·¡Ã³·³ ¹®ÀÚ¿­À» Ãâ·Â -> ¿À¹ö¶óÀÌµå ÇØÁÖ¸é ÇØ°á
+		// ê°ì²´ë¥¼ sysoutí•˜ë©´ ì•„ë˜ì²˜ëŸ¼ ë¬¸ìì—´ì„ ì¶œë ¥ -> ì˜¤ë²„ë¼ì´ë“œ í•´ì£¼ë©´ í•´ê²°
 		System.out.println(c2.toString());
 		
 		
 		
-		// ¸Ş¼­µå È£Ãâ
+		// ë©”ì„œë“œ í˜¸ì¶œ
 		ex3.printAllCustomer(customerList);
 		
 		
 		
-		// Ã¹¹øÂ° ±¸¸ÅÀÚÀÇ Á¤º¸¿¡ Á¢±Ù -> ³Ê¹« ¹ø°Å·Î¿ò
+		// ì²«ë²ˆì§¸ êµ¬ë§¤ìì˜ ì •ë³´ì— ì ‘ê·¼ -> ë„ˆë¬´ ë²ˆê±°ë¡œì›€
 //		String firstCustomerName = customerList.get(0).getName();
 //		String firstCustomerTel = customerList.get(0).getTel();
 //		int firstCustomerSeat = customerList.get(0).getSeat();
 		
-		// for¹®À» ÀÌ¿ëÇÑ ±¸¸ÅÀÚÁ¤º¸
+		// forë¬¸ì„ ì´ìš©í•œ êµ¬ë§¤ìì •ë³´
 //		for(int i=0; i<customerList.size(); i++) {
 //			Customer nthCustomer =customerList.get(i);
 //			String nthCustomerName = nthCustomer.getName();
 //			String nthCustomerTel = nthCustomer.getTel();
 //			int nthCustomerSeat = nthCustomer.getSeat();
 //			
-//			System.out.println("<< " + (i+1) + "¹øÂ° ±¸¸ÅÀÚÀÇ Á¤º¸ >>");
-//			System.out.println("ÀÌ¸§ : " + nthCustomerName);
-//			System.out.println("¿¬¶ôÃ³ : " + nthCustomerTel);
-//			System.out.println("ÁÂ¼®¹øÈ£ : " + nthCustomerSeat);
+//			System.out.println("<< " + (i+1) + "ë²ˆì§¸ êµ¬ë§¤ìì˜ ì •ë³´ >>");
+//			System.out.println("ì´ë¦„ : " + nthCustomerName);
+//			System.out.println("ì—°ë½ì²˜ : " + nthCustomerTel);
+//			System.out.println("ì¢Œì„ë²ˆí˜¸ : " + nthCustomerSeat);
 //		}
 		
-		// ¹İº¹¹®À» »ç¿ëÇØ¼­ À§Ã³·³ º¯°æ°¡´É
+		// ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•´ì„œ ìœ„ì²˜ëŸ¼ ë³€ê²½ê°€ëŠ¥
 //		Customer nthCustomer =customerList.get(0);
 //		String firstCustomerName = nthCustomer.getName();
 //		String firstCustomerTel = nthCustomer.getTel();
@@ -85,11 +85,11 @@ public class Ex3 {
 //		System.out.println("firstCustomerName = " + firstCustomerName);
 		
 		
-		// Ã¹¹øÂ° ±¸¸ÅÀÚÀÇ Á¤º¸°¡ ´©¶ô
-		Customer c3 = new Customer("±è¿µ¼ö", "010-7536-9514", 17);
+		// ì²«ë²ˆì§¸ êµ¬ë§¤ìì˜ ì •ë³´ê°€ ëˆ„ë½
+		Customer c3 = new Customer("ê¹€ì˜ìˆ˜", "010-7536-9514", 17);
 		customerList.add(0, c3);
 		
-		// ¸Ş¼­µå È£Ãâ
+		// ë©”ì„œë“œ í˜¸ì¶œ
 		ex3.printAllCustomer(customerList);
 		
 		
@@ -100,14 +100,14 @@ public class Ex3 {
 //			String nthCustomerTel = nthCustomer.getTel();
 //			int nthCustomerSeat = nthCustomer.getSeat();
 //			
-//			System.out.println("<< " + (i+1) + "¹øÂ° ±¸¸ÅÀÚÀÇ Á¤º¸ >>");
-//			System.out.println("ÀÌ¸§ : " + nthCustomerName);
-//			System.out.println("¿¬¶ôÃ³ : " + nthCustomerTel);
-//			System.out.println("ÁÂ¼®¹øÈ£ : " + nthCustomerSeat);
+//			System.out.println("<< " + (i+1) + "ë²ˆì§¸ êµ¬ë§¤ìì˜ ì •ë³´ >>");
+//			System.out.println("ì´ë¦„ : " + nthCustomerName);
+//			System.out.println("ì—°ë½ì²˜ : " + nthCustomerTel);
+//			System.out.println("ì¢Œì„ë²ˆí˜¸ : " + nthCustomerSeat);
 //		}
 		
 
-		//È«±æµ¿ ±¸¸ÅÀÚ È¯ºÒ·Î ±¸¸ÅÀÚÁ¤º¸ ¸ñ·Ï¿¡¼­ Á¦°Å
+		//í™ê¸¸ë™ êµ¬ë§¤ì í™˜ë¶ˆë¡œ êµ¬ë§¤ìì •ë³´ ëª©ë¡ì—ì„œ ì œê±°
 		customerList.remove(1);
 		ex3.printAllCustomer(customerList);
 		

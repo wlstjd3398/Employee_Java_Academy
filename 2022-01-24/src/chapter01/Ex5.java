@@ -4,10 +4,10 @@ public class Ex5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Áö±İÀº ");
-		System.out.println("chapter1ÀÇ ");
-		System.out.println("Ãâ·Â ºÎºĞÀ» ");
-		System.out.println("¹è¿ì°í ÀÖ½À´Ï´Ù. ");
+		System.out.print("ì§€ê¸ˆì€ ");
+		System.out.println("chapter1ì˜ ");
+		System.out.println("ì¶œë ¥ ë¶€ë¶„ì„ ");
+		System.out.println("ë°°ìš°ê³  ìˆìŠµë‹ˆë‹¤. ");
 	}
 
 }

@@ -12,14 +12,14 @@ public class Ex4 {
 		list.add(9);
 		list.add(8);
 		
-		System.out.println("ÃÊ±â : " + list);
+		System.out.println("ì´ˆê¸° : " + list);
 		
 		list.set(0, 7);
-		System.out.println("0¹ø ÀÎµ¦½º¿¡ 7 ÀúÀå : "+ list);
+		System.out.println("0ë²ˆ ì¸ë±ìŠ¤ì— 7 ì €ì¥ : "+ list);
 		
 		int originValue = list.set(0,  10);
-		System.out.println("0¹ø ÀÎµ¦½º¿¡ 10 ÀúÀå : " + list);
-		System.out.println("0¹ø ÀÎµ¦½º¿¡ µé¾îÀÖ´ø °ª : " + originValue);
+		System.out.println("0ë²ˆ ì¸ë±ìŠ¤ì— 10 ì €ì¥ : " + list);
+		System.out.println("0ë²ˆ ì¸ë±ìŠ¤ì— ë“¤ì–´ìˆë˜ ê°’ : " + originValue);
 		
 		
 		

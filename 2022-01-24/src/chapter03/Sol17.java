@@ -8,7 +8,7 @@ public class Sol17 {
 		int number = 1235;
 		int il = number % 1000 % 100 % 10 / 1 ;
 		
-		System.out.println(il >= 5 ? "¿ÀÀü" : "¿ÀÈÄ");
+		System.out.println(il >= 5 ? "ì˜¤ì „" : "ì˜¤í›„");
 	}
 
 }

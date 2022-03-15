@@ -13,9 +13,9 @@ public class Sol18 {
 		int cash = random.nextInt();
 		
 		if(pollution >= 5 && cash >= 15000) {
-			System.out.println("ÅÃ½Ã¸¦ ºÎ¸¦±î¿ä?");
+			System.out.println("íƒì‹œë¥¼ ë¶€ë¥¼ê¹Œìš”?");
 		}else {
-			System.out.println("Æò¼Ò´ë·Î °£´Ù");
+			System.out.println("í‰ì†ŒëŒ€ë¡œ ê°„ë‹¤");
 		}
 		
 	}

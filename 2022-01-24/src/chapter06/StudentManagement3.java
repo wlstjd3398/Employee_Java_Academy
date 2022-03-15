@@ -40,13 +40,13 @@ public class StudentManagement3 {
 				
 				
 		for(int i=0; i<sums.length; i++) {
-			System.out.println("<<" + (i+1) +" ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
-			System.out.println("±¹¾î = " + kor[i]);
-			System.out.println("¿µ¾î = " + eng[i]);
-			System.out.println("¼öÇĞ = " + mat[i]);
-			System.out.println("ÃÑÁ¡ = " + sums[i]);
-			System.out.println("Æò±Õ = " + avgs[i]);
-			System.out.println("¼®Â÷ = " + ranks[i]);
+			System.out.println("<<" + (i+1) +" ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
+			System.out.println("êµ­ì–´ = " + kor[i]);
+			System.out.println("ì˜ì–´ = " + eng[i]);
+			System.out.println("ìˆ˜í•™ = " + mat[i]);
+			System.out.println("ì´ì  = " + sums[i]);
+			System.out.println("í‰ê·  = " + avgs[i]);
+			System.out.println("ì„ì°¨ = " + ranks[i]);
 
 		}		
 				

@@ -9,8 +9,8 @@ public class Sol4 {
 		p1.xaxis = 1;
 		p1.yaxis = 1;
 		
-		System.out.println("x ÀÇ ÇÑÁ¡Àº = " + p1.xaxis);
-		System.out.println("y ÀÇ ÇÑÁ¡Àº = " + p1.yaxis);
+		System.out.println("x ì¶• = " + p1.xaxis);
+		System.out.println("y ì¶• = " + p1.yaxis);
 	}
 
 }

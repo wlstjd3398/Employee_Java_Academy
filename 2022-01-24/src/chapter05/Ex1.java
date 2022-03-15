@@ -7,25 +7,25 @@ public class Ex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Scanner ¶óÀÌºê·¯¸® -> »ç¿ëÀÚ¿¡°Ô °ªÀ» ÀÔ·Â ¹Ş±â À§ÇÑ ±â´ÉµéÀÌ µé¾îÀÖÀ½, ÀÎ½ºÅÏ½º = Scanner°¡ scanf¸¦ ±¸Ã¼È­½ÃÄ×´Ù
-		// scanf. = .¾È¿¡¶ó´Â ¶æÀ¸·Î, nextInt ¾È¿¡ Á¤¼ö¸¦ ¹Ş¾Æº»´Ù
+		// Scanner ë¼ì´ë¸ŒëŸ¬ë¦¬ -> ì‚¬ìš©ìì—ê²Œ ê°’ì„ ì…ë ¥ ë°›ê¸° ìœ„í•œ ê¸°ëŠ¥ë“¤ì´ ë“¤ì–´ìˆìŒ, ì¸ìŠ¤í„´ìŠ¤ = Scannerê°€ scanfë¥¼ êµ¬ì²´í™”ì‹œì¼°ë‹¤
+		// scanf. = .ì•ˆì—ë¼ëŠ” ëœ»ìœ¼ë¡œ, nextInt ì•ˆì— ì •ìˆ˜ë¥¼ ë°›ì•„ë³¸ë‹¤
 		
 		Scanner scanf = new Scanner(System.in);
 		
-		System.out.println("Ã¶¼öÀÇ ±¹¾îÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä -> ");
+		System.out.println("ì² ìˆ˜ì˜ êµ­ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” -> ");
 		
 		int kor = scanf.nextInt();
 		
-		System.out.println("½Ç¼ö ÀÔ·Â -> ");
+		System.out.println("ì‹¤ìˆ˜ ì…ë ¥ -> ");
 		double num = scanf.nextDouble();
 		
-		System.out.println("¹®ÀÚ¿­ ÀÔ·Â -> ");
+		System.out.println("ë¬¸ìì—´ ì…ë ¥ -> ");
 		String str = scanf.next();
 		
-		System.out.println("¹®ÀÚ ÀÔ·Â -> ");
+		System.out.println("ë¬¸ì ì…ë ¥ -> ");
 		char ch = scanf.next().charAt(0);
 		
-		System.out.println("Ã¶¼öÀÇ ±¹¾îÁ¡¼ö = " + kor);
+		System.out.println("ì² ìˆ˜ì˜ êµ­ì–´ì ìˆ˜ = " + kor);
 		
 		
 				

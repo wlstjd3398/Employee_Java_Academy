@@ -6,13 +6,13 @@ public class Sol8 {
 		// TODO Auto-generated method stub
 
 		int book = 33000;
-		System.out.println(book + "¿ø");
+		System.out.println(book + "ì›");
 		
 
 		int point = (int)(book * 0.75);
-		System.out.println(point + "¿ø");
+		System.out.println(point + "ì›");
 		
-		// ÇöÀç±îÁö ¹è¿î °Í¿¡¼­ ¼Ò¼öÁ¡ÀÚ¸® µÚ ¾ø¾Ö±â 
+		// í˜„ì¬ê¹Œì§€ ë°°ìš´ ê²ƒì—ì„œ ì†Œìˆ˜ì ìë¦¬ ë’¤ ì—†ì• ê¸° 
 		
 	}
 

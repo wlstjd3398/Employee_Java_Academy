@@ -5,9 +5,9 @@ public class Ex8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Person p1 = new Person("±èÃ¶¼ö", 33, 177.3);
-		Person p2 = new Person("°í¿µÈñ", 29, 168.3);
-		Person p3 = new Person("ÀÌ", 30, 173.1);
+		Person p1 = new Person("ê¹€ì² ìˆ˜", 33, 177.3);
+		Person p2 = new Person("ì´ì˜í¬", 29, 168.3);
+		Person p3 = new Person("ë°•í¬ìˆ˜", 30, 173.1);
 		
 	}
 

@@ -8,25 +8,25 @@ public class Ex13 {
 		int week = 7;
 		int dayOfMonth = 13;
 		int dayOfWeek = dayOfMonth % week;
-		System.out.print("2022³â 8¿ù " + dayOfMonth + "ÀÏÀº ");
+		System.out.print("2022ë…„ 8ì›” " + dayOfMonth + "ì¼ì€ ");
 		
 		if(dayOfWeek == 0) {
-			System.out.println("ÀÏ¿äÀÏ");
+			System.out.println("ì¼ìš”ì¼");
 		}else if(dayOfWeek == 1) {
-			System.out.println("¿ù¿äÀÏ");
+			System.out.println("ì›”ìš”ì¼");
 		}else if(dayOfWeek == 2) {
-			System.out.println("È­¿äÀÏ");
+			System.out.println("í™”ìš”ì¼");
 		}else if(dayOfWeek == 3) {
-			System.out.println("¼ö¿äÀÏ");
+			System.out.println("ìˆ˜ìš”ì¼");
 		}else if(dayOfWeek == 4) {
-			System.out.println("¸ñ¿äÀÏ");
+			System.out.println("ëª©ìš”ì¼");
 		}else if(dayOfWeek == 5) {
-			System.out.println("±İ¿äÀÏ");
+			System.out.println("ê¸ˆìš”ì¼");
 		}else {
-			System.out.println("Åä¿äÀÏ");
+			System.out.println("í† ìš”ì¼");
 		}
 		
-		// Áö±İ ¿©±â »óÈ²¿¡¼­ else if(dayOfWeek == 6)À» ¾È¾²°í else ½á¼­ Ãâ·Â°¡´É
+		// ì§€ê¸ˆ ì—¬ê¸° ìƒí™©ì—ì„œ else if(dayOfWeek == 6)ì„ ì•ˆì“°ê³  else ì¨ì„œ ì¶œë ¥ê°€ëŠ¥
 		
 	}
 

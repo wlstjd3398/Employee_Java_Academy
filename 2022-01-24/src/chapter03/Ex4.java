@@ -5,9 +5,9 @@ public class Ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ºñÆ®¿¬»êÀÚ¿¡´Â ÀÌ·¯ÇÑ ±âÈ£µéÀÌ ÀÖ´Ù
-		// 2Áø¼ö·Î °è»êÇØ¼­ true false
-		// Á¤º¸Ã³¸® ±â´É»ç ÇÊ±â ºÒ´ë¼ö ÆÄÆ®¿¡ ÀÖÀ½
+		// ë¹„íŠ¸ì—°ì‚°ìì—ëŠ” ì´ëŸ¬í•œ ê¸°í˜¸ë“¤ì´ ìˆë‹¤
+		// 2ì§„ìˆ˜ë¡œ ê³„ì‚°í•´ì„œ true false
+		// ì •ë³´ì²˜ë¦¬ ê¸°ëŠ¥ì‚¬ í•„ê¸° ë¶ˆëŒ€ìˆ˜ íŒŒíŠ¸ì— ìˆìŒ
 		System.out.println(17 & 3);
 		System.out.println(17 | 3);
 		System.out.println(17 ^ 3);

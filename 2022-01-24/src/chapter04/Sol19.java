@@ -7,8 +7,8 @@ public class Sol19 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 2Â÷¿ø ¹è¿­ charArr ÇÏ³ª¸¸À» »ç¿ëÇØ¼­ ÀÎµ¦½º¹øÈ£¸¸À» »ç¿ëÇÏ¿© 
-		// charArr ¹è¿­ ³» µ¥ÀÌÅÍµéÀ» 90µµ È¸Àü½ÃÄÑ Ãâ·ÂÇØ¶ó
+		// 2ì°¨ì› ë°°ì—´ charArr í•˜ë‚˜ë§Œì„ ì‚¬ìš©í•´ì„œ ì¸ë±ìŠ¤ë²ˆí˜¸ë§Œì„ ì‚¬ìš©í•˜ì—¬ 
+		// charArr ë°°ì—´ ë‚´ ë°ì´í„°ë“¤ì„ 90ë„ íšŒì „ì‹œì¼œ ì¶œë ¥í•´ë¼
 		
 		char[][] charArr = {
 				{'A', 'B', 'C'},

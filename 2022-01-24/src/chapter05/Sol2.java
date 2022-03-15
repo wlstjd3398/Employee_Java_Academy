@@ -17,7 +17,7 @@ public class Sol2 {
 		}else {
 			max = num3;
 		}
-		System.out.println("¼¼ ¼ö Áß °¡Àå Å« ¼ö´Â " + max + " ÀÔ´Ï´Ù.");
+		System.out.println("ì„¸ ìˆ˜ ì¤‘ ê°€ì¥ í° ìˆ˜ëŠ” " + max + " ì…ë‹ˆë‹¤.");
 		
 		
 	}

@@ -7,9 +7,9 @@ public class Sol1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[] name = {"±èÃ¶¼ö", "°í¿µÈñ", "¹Ú¼ö¿µ"};
+		String[] name = {"ê¹€ì² ìˆ˜", "ê³ ì˜í¬", "ë°•ìˆ˜ì˜"};
 		
-		System.out.println("A°íµîÇĞ±³ ÀÌ¸§ = " +Arrays.toString(name));
+		System.out.println("Aê³ ë“±í•™êµ ì´ë¦„ = " +Arrays.toString(name));
 	}
 
 }

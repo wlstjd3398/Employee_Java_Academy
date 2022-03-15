@@ -5,12 +5,12 @@ public class Ex11 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Person person1 = new Person("±èÃ¶¼ö", 175.7);
+		Person person1 = new Person("ê¹€ì² ìˆ˜", 175.7);
 		
-		Person person2 = new Person("±èÃ¶¼ö", 27);
-		// ÀÌ ÇÁ·Î±×·¥ÀÇ µ¿ÀÛ¿ø¸®¸¦ ºĞ¼®ÇØ person1 °´Ã¼¸¦ »ı¼ºÇÏ´Â ÄÚµå°¡
-		// ÄÄÆÄÀÏ ¿À·ù°¡ ¹ß»ıÇÏÁö ¾Êµµ·Ï ¼öÁ¤ÇØ¶ó
-		// person1ÀÇ ½Ç¼ö¸¦ ¹ŞÀ» ¼ö ÀÖ´Â »ı¼ºÀÚ°¡ ¾øÀ½
+		Person person2 = new Person("ê¹€ì² ìˆ˜", 27);
+		// ì´ í”„ë¡œê·¸ë¨ì˜ ë™ì‘ì›ë¦¬ë¥¼ ë¶„ì„í•´ person1 ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ” ì½”ë“œê°€
+		// ì»´íŒŒì¼ ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì§€ ì•Šë„ë¡ ìˆ˜ì •í•´ë¼
+		// person1ì˜ ì‹¤ìˆ˜ë¥¼ ë°›ì„ ìˆ˜ ìˆëŠ” ìƒì„±ìê°€ ì—†ìŒ
 		
 		
 		

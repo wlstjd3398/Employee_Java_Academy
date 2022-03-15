@@ -6,21 +6,21 @@ public class Ex4 {
 		// TODO Auto-generated method stub
 
 		Phone p1 = new Phone();
-		// p1 °´Ã¼ ¾È¿¡ÀÖ´Â maker´Â ¸â¹öº¯¼ö¶ó°í ºÎ¸§
-		p1.maker = "»ï¼º";
+		// p1 ê°ì²´ ì•ˆì—ìˆëŠ” makerëŠ” ë©¤ë²„ë³€ìˆ˜ë¼ê³  ë¶€ë¦„
+		p1.maker = "ì‚¼ì„±";
 		p1.price = 1300000;
 		p1.displaySize = 170.3;
 		p1.ram = 8;
 		
 		
 		Phone p2 = new Phone();
-		p2.maker = "»ï¼º";
+		p2.maker = "ì‚¼ì„±";
 		p2.price = 2100000;
 		p2.displaySize = 191.9;
 		p2.ram = 12;
 		
 		Phone p3 = new Phone();
-		p3.maker = "¾ÖÇÃ";
+		p3.maker = "ì• í”Œ";
 		p3.price = 2100000;
 		p3.displaySize = 160.8;
 		p3.ram = 6;

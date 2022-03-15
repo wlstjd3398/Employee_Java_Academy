@@ -1,11 +1,11 @@
 package chapter12;
 
-// Object3ÀÌ °°ÀºÆĞÅ°Áö³»¶ó¼­ protected »ç¿ë°¡´É
+// Object3ì´ ê°™ì€íŒ¨í‚¤ì§€ë‚´ë¼ì„œ protected ì‚¬ìš©ê°€ëŠ¥
 public class Object3 {
 
 	public void func2() {
 		
-		Object1 object1 = new Object1(); // Å¬·¡½º ³» ¸â¹öº¯¼ö¿¡ Á¢±ÙÇÏ·Á¸é ÀÎ½ºÅÏ½º »ı¼ºÇØ¾ßÇÔ
+		Object1 object1 = new Object1(); // í´ë˜ìŠ¤ ë‚´ ë©¤ë²„ë³€ìˆ˜ì— ì ‘ê·¼í•˜ë ¤ë©´ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±í•´ì•¼í•¨
 		
 		object1.num = 10;
 		

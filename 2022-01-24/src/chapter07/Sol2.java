@@ -6,14 +6,14 @@ public class Sol2 {
 		// TODO Auto-generated method stub
 
 		Book book1 = new Book();
-		book1.title = "Ãë¾÷À» À§ÇÑ ÄÚµù Å×½ºÆ®";
-		book1.writer = "³ªµ¿ºó";
+		book1.title = "ì·¨ì—…ì„ ìœ„í•œ ì½”ë”© í…ŒìŠ¤íŠ¸";
+		book1.writer = "ë‚˜ë™ë¹ˆ";
 		Book book2 = new Book();
-		book2.title = "¾Ë°í¸®Áò ÀÎÅÍºä";
-		book2.writer = "¹Ú»ó±æ";
+		book2.title = "ì•Œê³ ë¦¬ì¦˜ ì¸í„°ë·°";
+		book2.writer = "ë°•ìƒê¸¸";
 		Book book3 = new Book();
-		book3.title = "ÆÄÀÌ½ã ÀÚ·á±¸Á¶";
-		book3.writer = "½Ã¹ÙÅ¸ º¸¿ä";
+		book3.title = "íŒŒì´ì¬ ìë£Œêµ¬ì¡°";
+		book3.writer = "ì‹œë°”íƒ€ ë³´ìš”";
 		
 		System.out.println(book3.title);
 		

@@ -7,27 +7,27 @@ public class Sol10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// »ç¿ëÀÚ¿¡°Ô ÀÔ·ÂÀ» ¹Þ±â À§ÇÑ scanf °´Ã¼ »ý¼º
+		// ì‚¬ìš©ìžì—ê²Œ ìž…ë ¥ì„ ë°›ê¸° ìœ„í•œ scanf ê°ì²´ ìƒì„±
 				Scanner scanf = new Scanner(System.in);
 				
-				System.out.println("¹®Á¦. ¼¼»ó¿¡¼­ °¡Àå ºñ½Ñ »õ´Â?");
+				System.out.println("ë¬¸ì œ. ì„¸ìƒì—ì„œ ê°€ìž¥ ë¹„ì‹¼ ìƒˆëŠ”?");
 				
-				System.out.print("Á¤´ä -> ");
-				// »ç¿ëÀÚ·ÎºÎÅÍ Á¤´äÀ» Àü´Þ ¹ÞÀ½
-				String userAnswer = scanf.nextLine();// nextLine()Àº Enter¸¦ Ä¡±â Àü±îÁö ¾´ ¹®ÀÚ¿­À» ¸ðµÎ ¸®ÅÏÇÑ´Ù´Â °Í
+				System.out.print("ì •ë‹µ -> ");
+				// ì‚¬ìš©ìžë¡œë¶€í„° ì •ë‹µì„ ì „ë‹¬ ë°›ìŒ
+				String userAnswer = scanf.nextLine();// nextLine()ì€ Enterë¥¼ ì¹˜ê¸° ì „ê¹Œì§€ ì“´ ë¬¸ìžì—´ì„ ëª¨ë‘ ë¦¬í„´í•œë‹¤ëŠ” ê²ƒ
 				
-				// ÄûÁîÀÇ Á¤´ä
-				String correctAnswer = "¹éÁ¶";
+				// í€´ì¦ˆì˜ ì •ë‹µ
+				String correctAnswer = "ë°±ì¡°";
 				
-				// »ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ Á¤´ä°ú ÄûÁîÀÇ Á¤´äÀÌ ÀÏÄ¡ÇÏ´Ù¸é Á¤´äÀÔ´Ï´Ù. Ãâ·Â
+				// ì‚¬ìš©ìžê°€ ìž…ë ¥í•œ ì •ë‹µê³¼ í€´ì¦ˆì˜ ì •ë‹µì´ ì¼ì¹˜í•˜ë‹¤ë©´ ì •ë‹µìž…ë‹ˆë‹¤. ì¶œë ¥
 				if(correctAnswer.equals(userAnswer)) {
-					System.out.println("Á¤´äÀÔ´Ï´Ù.");
+					System.out.println("ì •ë‹µìž…ë‹ˆë‹¤.");
 				} else {
-					System.out.println("Æ²·È½À´Ï´Ù");
+					System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤");
 				}
 
-//		¿Ö Æ²¸°°ÅÁö?? -> if(correctAnswer.equals(userAndwer)) ÀÌ ºÎºÐ¿¡ correctAnswer = userAnswerÀÌ
-//				°¢°¢ÀÇ ¸Þ¸ð¸®ÁÖ¼Ò°¡ ÀúÀåµÇ¾îÀÖ±â¶§¹®¿¡ ¹®ÀÚ¿­ÀÇ °ªÀº equal¶ó´Â ¸Þ¼­µå¸¦ »ç¿ëÇØ¼­ treu or false¸¦ Ãâ·Â½ÃÅ´
+//		ì™œ í‹€ë¦°ê±°ì§€?? -> if(correctAnswer.equals(userAndwer)) ì´ ë¶€ë¶„ì— correctAnswer = userAnswerì´
+//				ê°ê°ì˜ ë©”ëª¨ë¦¬ì£¼ì†Œê°€ ì €ìž¥ë˜ì–´ìžˆê¸°ë•Œë¬¸ì— ë¬¸ìžì—´ì˜ ê°’ì€ equalë¼ëŠ” ë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ì„œ treu or falseë¥¼ ì¶œë ¥ì‹œí‚´
 	}
 
 }

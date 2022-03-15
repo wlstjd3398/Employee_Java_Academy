@@ -8,16 +8,16 @@ public class Ex9 {
 		int score = 59;
 		
 		if(score >= 60) {
-			System.out.println("Åë°ú");
+			System.out.println("í†µê³¼");
 		}else {
-			System.out.println("Àç½ÃÇè");
+			System.out.println("ìž¬ì‹œí—˜");
 		}
 		
-		// ¹æ¹ý2
+		// ë°©ë²•2
 //		if(score < 60) {
-//			System.out.println("Àç½ÃÇè");
+//			System.out.println("ìž¬ì‹œí—˜");
 //		}else {
-//			System.out.println("Åë°ú");
+//			System.out.println("í†µê³¼");
 //		}
 		
 		

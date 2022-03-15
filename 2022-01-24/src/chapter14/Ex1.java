@@ -9,30 +9,30 @@ public class Ex1 {
 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("ºĞÀÚ >>");
+		System.out.print("ë¶„ì >>");
 		int val1 = scan.nextInt();
 		
-		System.out.print("ºĞ¸ğ >>");
+		System.out.print("ë¶„ëª¨ >>");
 		int val2 = scan.nextInt();
 		
 		if(val2==0) {
-			System.out.println("ºĞ¸ğ´Â 0ÀÏ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ë¶„ëª¨ëŠ” 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}else {
 //			int result = val1 / val2;
 //			System.out.println("result = " + result);
 		}
-		// if¿¹¿ÜÃ³¸®³¡
+		// ifì˜ˆì™¸ì²˜ë¦¬ë
 		
-		// ¿¹¿ÜÃ³¸® try catch
+		// ì˜ˆì™¸ì²˜ë¦¬ try catch
 		try {
 			int result = val1 / val2;
 			System.out.println("result = " + result);
-			System.out.println("try ³¡");
+			System.out.println("try ë");
 		}catch(ArithmeticException e) {
-			System.out.println("ºĞ¸ğ´Â 0ÀÏ ¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("catch ³¡");
+			System.out.println("ë¶„ëª¨ëŠ” 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("catch ë");
 		}
-		System.out.println("try ÈÄ");
+		System.out.println("try í›„");
 		
 		
 	}

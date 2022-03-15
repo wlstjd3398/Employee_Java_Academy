@@ -6,20 +6,20 @@ public class Ex14 {
 		// TODO Auto-generated method stub
 
 		
-		System.out.println("switchÇÁ·Î±×·¥ ½ÃÀÛ");
+		System.out.println("switchí”„ë¡œê·¸ë¨ ì‹œì‘");
 		
 		switch(1) {
 			case 1:
-				System.out.println("switch·Î µé¾î¿Â °ª 1ÀÔ´Ï´Ù.");
+				System.out.println("switchë¡œ ë“¤ì–´ì˜¨ ê°’ 1ì…ë‹ˆë‹¤.");
 				break;
 			case 2:
-				System.out.println("switch·Î µé¾î¿Â °ªÀº");
-				System.out.println("2ÀÔ´Ï´Ù.");
+				System.out.println("switchë¡œ ë“¤ì–´ì˜¨ ê°’ì€");
+				System.out.println("2ì…ë‹ˆë‹¤.");
 			case 3:
-				System.out.println("switch·Î µé¾î¿Â °ªÀº 3ÀÔ´Ï´Ù.");
+				System.out.println("switchë¡œ ë“¤ì–´ì˜¨ ê°’ì€ 3ì…ë‹ˆë‹¤.");
 		}
 		
-		System.out.println("switch ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("switch í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		
 		
 		

@@ -9,13 +9,13 @@ public class Ex3 {
 		
 		type.num1 = 10;
 		type.num2 = 20;
-//		type.num3 = 30; private·Î ¿ÀÁ÷ ÀÚ±â ÀÚ½Å ³»ºÎ¿¡¼­¸¸ »ç¿ë °¡´ÉÇØ¼­ Á¢±Ù ¸øÇÔ
+//		type.num3 = 30; privateë¡œ ì˜¤ì§ ìžê¸° ìžì‹  ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥í•´ì„œ ì ‘ê·¼ ëª»í•¨
 		
-		// Á¢±ÙÁ¦¾îÀÚ¿¡ ¸Â°Ô È£ÃâÇÒ¼ö ÀÖ´Â ¸Þ¼­µå´Â
-		// ¸ðµÎ È£ÃâÇÏ°í ¸Þ¸ð¸®ÀÇ »óÅÂ¸¦ Á¤È®ÇÏ°Ô Ç¥ÇöÇØ¶ó
+		// ì ‘ê·¼ì œì–´ìžì— ë§žê²Œ í˜¸ì¶œí• ìˆ˜ ìžˆëŠ” ë©”ì„œë“œëŠ”
+		// ëª¨ë‘ í˜¸ì¶œí•˜ê³  ë©”ëª¨ë¦¬ì˜ ìƒíƒœë¥¼ ì •í™•í•˜ê²Œ í‘œí˜„í•´ë¼
 		type.func1();
 		type.func2();
-//		type.func3(); private·Î ¿ÀÁ÷ ÀÚ±â ÀÚ½Å ³»ºÎ¿¡¼­¸¸ »ç¿ë °¡´ÉÇØ¼­ Á¢±Ù ¸øÇÔ
+//		type.func3(); privateë¡œ ì˜¤ì§ ìžê¸° ìžì‹  ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥í•´ì„œ ì ‘ê·¼ ëª»í•¨
 	}
 
 }

@@ -5,7 +5,7 @@ public class Sol7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		// °Å½º¸§µ·ÀÇ °³¼ö ÃÖ¼ÒÈ­ °è»ê
+//		// ê±°ìŠ¤ë¦„ëˆì˜ ê°œìˆ˜ ìµœì†Œí™” ê³„ì‚°
 //		int money = 10000;
 //		int store = 1900;
 //		int change = money - store;
@@ -54,12 +54,12 @@ public class Sol7 {
 		int osip = charge % 5000 % 1000 % 500 % 100 / 50;
 		int sip = charge % 5000 % 1000 % 500 % 100 % 50 / 10;
 
-		System.out.println("¿ÀÃµ¿ø = " + ocheon);
-		System.out.println("Ãµ¿ø = " + cheon);
-		System.out.println("¿À¹é¿ø = " + obeak);
-		System.out.println("¹é¿ø = " + beak);
-		System.out.println("¿À½Ê¿ø = " + osip);
-		System.out.println("½Ê¿ø = " + sip);
+		System.out.println("ì˜¤ì²œì› = " + ocheon);
+		System.out.println("ì²œì› = " + cheon);
+		System.out.println("ì˜¤ë°±ì› = " + obeak);
+		System.out.println("ë°±ì› = " + beak);
+		System.out.println("ì˜¤ì‹­ì› = " + osip);
+		System.out.println("ì‹­ì› = " + sip);
 		
 	}
 

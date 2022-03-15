@@ -17,15 +17,15 @@ public class Sol11 {
 		c2.AP = 7;
 		c2.DP = 3;
 		
-		System.out.println("Àü»ç Ä³¸¯ÅÍÀÇ Ã¼·Â = " + c1.HP);
-		System.out.println("Àü»ç Ä³¸¯ÅÍÀÇ ¸¶·Â = " + c1.MP);
-		System.out.println("Àü»ç Ä³¸¯ÅÍÀÇ °ø°İ·Â = " + c1.AP);
-		System.out.println("Àü»ç Ä³¸¯ÅÍÀÇ ¹æ¾î·Â = " + c1.DP);
+		System.out.println("ì „ì‚¬ ìºë¦­í„°ì˜ ì²´ë ¥ = " + c1.HP);
+		System.out.println("ì „ì‚¬ ìºë¦­í„°ì˜ ë§ˆë ¥ = " + c1.MP);
+		System.out.println("ì „ì‚¬ ìºë¦­í„°ì˜ ê³µê²©ë ¥ = " + c1.AP);
+		System.out.println("ì „ì‚¬ ìºë¦­í„°ì˜ ë°©ì–´ë ¥ = " + c1.DP);
 		System.out.println();
-		System.out.println("±Ã¼ö Ä³¸¯ÅÍÀÇ Ã¼·Â = " + c2.HP);
-		System.out.println("±Ã¼ö Ä³¸¯ÅÍÀÇ ¸¶·Â = " + c2.MP);
-		System.out.println("±Ã¼ö Ä³¸¯ÅÍÀÇ °ø°İ·Â = " + c2.AP);
-		System.out.println("±Ã¼ö Ä³¸¯ÅÍÀÇ ¹æ¾î·Â = " + c2.DP);
+		System.out.println("ê¶ìˆ˜ ìºë¦­í„°ì˜ ì²´ë ¥ = " + c2.HP);
+		System.out.println("ê¶ìˆ˜ ìºë¦­í„°ì˜ ë§ˆë ¥ = " + c2.MP);
+		System.out.println("ê¶ìˆ˜ ìºë¦­í„°ì˜ ê³µê²©ë ¥ = " + c2.AP);
+		System.out.println("ê¶ìˆ˜ ìºë¦­í„°ì˜ ë°©ì–´ë ¥ = " + c2.DP);
 		
 	}
 

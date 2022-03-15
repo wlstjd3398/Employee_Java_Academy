@@ -6,13 +6,13 @@ public class Sol16 {
 		// TODO Auto-generated method stub
 
 		Menu menu1 = new Menu();
-		menu1.name = "Â¥Àå¸é"; menu1.price = 4900;
+		menu1.name = "ì§œì¥ë©´"; menu1.price = 4900;
 		
 		Menu menu2 = new Menu();
-		menu2.name = "Â«»Í"; menu2.price = 5900;
+		menu2.name = "ì§¬ë½•"; menu2.price = 5900;
 		
 		Menu menu3 = new Menu();
-		menu3.name = "ÅÁ¼öÀ°"; menu3.price = 13900;
+		menu3.name = "íƒ•ìˆ˜ìœ¡"; menu3.price = 13900;
 		
 		Menu[] menuList = {menu1, menu2, menu3};
 		
@@ -20,20 +20,20 @@ public class Sol16 {
 		bill.orderNumber = 1;
 		bill.menuList = menuList;
 		
-		// ¡é ¡é ¾Æ·¡·Î ÄÚµå°¡ ÀÌ¾îÁı´Ï´Ù ¡é¡é
+		// â†“ â†“ ì•„ë˜ë¡œ ì½”ë“œê°€ ì´ì–´ì§‘ë‹ˆë‹¤ â†“â†“
 		
 		int total = 0;
-		System.out.println("ÁÖ¹®ÇÑ ¸Ş´º");
+		System.out.println("ì£¼ë¬¸í•œ ë©”ë‰´");
 		for(int i=0; i<bill.menuList.length; i++) {
 			Menu menu = bill.menuList[i];
 			
-			System.out.println(menu.name + "(" + menu.price + "¿ø)");
+			System.out.println(menu.name + "(" + menu.price + "ì›)");
 			
 			total += menu.price;
 		}
 		System.out.println("===== ===== =====");
 		
-		System.out.println("°áÁ¦ ±İ¾× : " + total + "¿ø");
+		System.out.println("ê²°ì œ ê¸ˆì•¡ : " + total + "ì›");
 
 		
 	}

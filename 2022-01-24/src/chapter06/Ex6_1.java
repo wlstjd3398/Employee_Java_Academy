@@ -7,22 +7,22 @@ public class Ex6_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ¸ñÇ¥ Ã¼Áß¿¡ µµ´ŞÇÒ ¶§±îÁö ¿îµ¿À» ÇÑ´Ù
-		// while(³ªÀÇÃ¼ÁßweightÀÌ ¸ñÇ¥Ã¼Áßgoal¿¡ µµ´ŞÇß³ª¿ä?)
+		// ëª©í‘œ ì²´ì¤‘ì— ë„ë‹¬í•  ë•Œê¹Œì§€ ìš´ë™ì„ í•œë‹¤
+		// while(ë‚˜ì˜ì²´ì¤‘weightì´ ëª©í‘œì²´ì¤‘goalì— ë„ë‹¬í–ˆë‚˜ìš”?)
 		Random random = new Random();
 		
 		int weight = 100;
 		int goal = 70;
 		int lose = random.nextInt();
 		
-		// ¿îµ¿À» ÇØ¼­ ºüÁú ¸ö¹«°Ô
-		// ¿îµ¿À» ÇÏ°í ³­µÚ ºüÁø ³ªÀÇ Ã¼ÁßÀ» °è»ê
+		// ìš´ë™ì„ í•´ì„œ ë¹ ì§ˆ ëª¸ë¬´ê²Œ
+		// ìš´ë™ì„ í•˜ê³  ë‚œë’¤ ë¹ ì§„ ë‚˜ì˜ ì²´ì¤‘ì„ ê³„ì‚°
 		
 		for(weight=weight; goal<=weight; weight=weight-lose) {
-			System.out.println("¿îµ¿À» ÇÑ´Ù");
+			System.out.println("ìš´ë™ì„ í•œë‹¤");
 			
 		}
-		System.out.println("´ÙÀÌ¾îÆ® ¼º°ø! ÀÌÁ¦ ¸ö¹«°Ô¸¦ À¯ÁöÇÏ¼¼¿ä");
+		System.out.println("ë‹¤ì´ì–´íŠ¸ ì„±ê³µ! ì´ì œ ëª¸ë¬´ê²Œë¥¼ ìœ ì§€í•˜ì„¸ìš”");
 
 		
 		

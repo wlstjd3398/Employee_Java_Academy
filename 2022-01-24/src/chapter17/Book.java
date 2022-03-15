@@ -5,7 +5,7 @@ public class Book {
 	private String title;
 	private int price;
 	
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	public Book(String title, int price) {
 		this.title = title;
 		this.price = price;
@@ -26,7 +26,7 @@ public class Book {
 	}
 
 
-	// Hashcode ¿À¹ö¶óÀÌµå´Â ¾ÏÈ£ÇĞÀ» Á¶±İ ¾Ë¾Æ¾ßÇØ¼­ Á» ¾î·Á¿ò
+	// Hashcode ì˜¤ë²„ë¼ì´ë“œëŠ” ì•”í˜¸í•™ì„ ì¡°ê¸ˆ ì•Œì•„ì•¼í•´ì„œ ì¢€ ì–´ë ¤ì›€
 	@Override
 	public int hashCode() {
 		int hashValue = title.hashCode() + price;
@@ -38,7 +38,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return title + "(" + price + "¿ø)";
+		return title + "(" + price + "ì›)";
 	}
 
 

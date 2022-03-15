@@ -7,24 +7,24 @@ public class Ex1 {
 
 		Object1 obj1 = new Object1();
 		
-		// ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù
+		// ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤
 		obj1.printLines();
 		
 //		System.out.println("----- ----- -----");
 //		System.out.println("----- ----- -----");
 
-		System.out.println("1. ·Î±×ÀÎ");
-		System.out.println("2. È¸¿ø°¡ÀÔ");
-		System.out.println("3. Á¤º¸¼öÁ¤");
-		System.out.println("4. È¸¿øÅ»Åğ");
+		System.out.println("1. ë¡œê·¸ì¸");
+		System.out.println("2. íšŒì›ê°€ì…");
+		System.out.println("3. ì •ë³´ìˆ˜ì •");
+		System.out.println("4. íšŒì›íƒˆí‡´");
 
-		// ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù
+		// ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤
 		obj1.printLines();
 		
 //		System.out.println("----- ----- -----");
 //		System.out.println("----- ----- -----");
 
-		// ¸Ş¼­µå¸¦ È£ÃâÇÑ´Ù
+		// ë©”ì„œë“œë¥¼ í˜¸ì¶œí•œë‹¤
 		obj1.add();
 		
 		Object2 obj2 = new Object2();

@@ -6,11 +6,11 @@ public class Car {
 	private int door;
 	
 	public void drive() {
-		System.out.println("�θ�!");
+		System.out.println("시동 켬 부릉");
 	}
 	
 	public void stop() {
-		System.out.println("����!!");
+		System.out.println("브레이크밟음 끼익!");
 	}
 	
 }

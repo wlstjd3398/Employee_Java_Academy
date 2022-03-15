@@ -1,10 +1,10 @@
 package chapter13;
 
-public interface ÀÎÅÍÆäÀÌ½º¸í {
-// class ´ë½Å interface¸¦ ¼±¾ğ
+public interface ì¸í„°í˜ì´ìŠ¤ëª… {
+// class ëŒ€ì‹  interfaceë¥¼ ì„ ì–¸
 	
-//	Á¢±ÙÁ¦¾îÀÚ Å°¿öµå ¹İÈ¯Å¸ÀÔ ¸Ş¼­µå¸í(¸Å°³º¯¼ö) {
-//		¼Ò½ºÄÚµå
+//	ì ‘ê·¼ì œì–´ì í‚¤ì›Œë“œ ë°˜í™˜íƒ€ì… ë©”ì„œë“œëª…(ë§¤ê°œë³€ìˆ˜) {
+//		ì†ŒìŠ¤ì½”ë“œ
 //	}
 	
 	 public abstract int login(String email, String password);

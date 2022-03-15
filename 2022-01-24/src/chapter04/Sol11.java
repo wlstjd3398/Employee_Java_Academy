@@ -16,7 +16,7 @@ public class Sol11 {
 		double avgScore = scoreList[0][0] + scoreList[0][1] + scoreList[0][2] + scoreList[0][3];
 		avgScore = avgScore / movieAmount;
 		
-		System.out.println("µÎ ¹øÂ° Æò·Ğ°¡ÀÇ Æò±Õ ÆòÁ¡Àº " + avgScore + "Á¡ÀÔ´Ï´Ù.");
+		System.out.println("ë‘ ë²ˆì§¸ í‰ë¡ ê°€ì˜ í‰ê·  í‰ì ì€ " + avgScore + "ì ì…ë‹ˆë‹¤.");
 
 	}
 

@@ -3,7 +3,7 @@ package chapter12;
 public class FireEngine extends Car{
 
 	public void water() {
-		System.out.println("ºÒ³­ °÷¿¡ ¹°½î±â");
+		System.out.println("ë¬¼ì„ ìœë‹¤");
 	}
 	
 }

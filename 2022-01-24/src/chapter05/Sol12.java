@@ -7,16 +7,16 @@ public class Sol12 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// »ç¿ëÀÚ¿¡°Ô ÀÔ·ÂÀ» ¹Þ±â À§ÇÑ scanf °´Ã¼ »ý¼º
+		// ì‚¬ìš©ìžì—ê²Œ ìž…ë ¥ì„ ë°›ê¸° ìœ„í•œ scanf ê°ì²´ ìƒì„±
 				Scanner scanf = new Scanner(System.in);
 				
-				System.out.print("Ã¹ ¹øÂ° °ª ÀÔ·Â >> ");
+				System.out.print("ì²« ë²ˆì§¸ ê°’ ìž…ë ¥ >> ");
 				int num1 = scanf.nextInt();
 				
-				System.out.print("µÎ ¹øÂ° °ª ÀÔ·Â >> ");
+				System.out.print("ë‘ ë²ˆì§¸ ê°’ ìž…ë ¥ >> ");
 				int num2 = scanf.nextInt();
 				
-				System.out.print("¿¬»êÀÚ ÀÔ·Â >> ");
+				System.out.print("ì—°ì‚°ìž ìž…ë ¥ >> ");
 				char operator = scanf.next().charAt(0);
 				
 				int result = 0;

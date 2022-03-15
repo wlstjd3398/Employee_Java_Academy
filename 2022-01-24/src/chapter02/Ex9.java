@@ -9,12 +9,12 @@ public class Ex9 {
 		System.out.println("Hello\nWorld~!");
 		System.out.println("Hello\tWorld~!");
 		
-		// ÀÎ¿ë±¸´Â ÀÏ¹ÝÀûÀ¸·Î ½Öµû¿ÈÇ¥¸¦ »ç¿ëÇØ¼­ Ç¥Çö
+		// ì¸ìš©êµ¬ëŠ” ì¼ë°˜ì ìœ¼ë¡œ ìŒë”°ì˜´í‘œë¥¼ ì‚¬ìš©í•´ì„œ í‘œí˜„
 		
-		// "¾È³çÇÏ¼¼¿ä" ¶ó°í ´«»ç¶÷ÀÌ ¸»Çß½À´Ï´Ù
-		// ¹®ÀÚ¿­ÀÌ ½Öµû¿ÈÇ¥·Î ½ÃÀÛÀ» ÇÏ´Ï ¹®ÀÚ¿­ ¾È¿¡¼­ ½Öµû¿ÈÇ¥¸¦ »ç¿ë ÇÒ¶§´Â 
-		// \¸¦ »ç¿ëÇØ¾ßÇÔ
-		System.out.println("\"¾È³çÇÏ¼¼¿ä\" ¶ó°í ´«»ç¶÷ÀÌ ¸»Çß½À´Ï´Ù.");
+		// "ì•ˆë…•í•˜ì„¸ìš”" ë¼ê³  ëˆˆì‚¬ëžŒì´ ë§í–ˆìŠµë‹ˆë‹¤
+		// ë¬¸ìžì—´ì´ ìŒë”°ì˜´í‘œë¡œ ì‹œìž‘ì„ í•˜ë‹ˆ ë¬¸ìžì—´ ì•ˆì—ì„œ ìŒë”°ì˜´í‘œë¥¼ ì‚¬ìš© í• ë•ŒëŠ” 
+		// \ë¥¼ ì‚¬ìš©í•´ì•¼í•¨
+		System.out.println("\"ì•ˆë…•í•˜ì„¸ìš”\" ë¼ê³  ëˆˆì‚¬ëžŒì´ ë§í–ˆìŠµë‹ˆë‹¤.");
 	}
 
 }

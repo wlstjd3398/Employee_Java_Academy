@@ -7,8 +7,8 @@ public class Sol21 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// trim() ÇÔ¼ö´Â ¹®ÀÚ¿­ÀÇ ¾ÕµÚ °ø¹é¸¸  Á¦°Å°¡´É
-		// replaceAll(" ","") ÇÔ¼ö´Â °¡¿îµ¥ °ø¹é Á¦°Å°¡´É
+		// trim() í•¨ìˆ˜ëŠ” ë¬¸ìì—´ì˜ ì•ë’¤ ê³µë°±ë§Œ  ì œê±°ê°€ëŠ¥
+		// replaceAll(" ","") í•¨ìˆ˜ëŠ” ê°€ìš´ë° ê³µë°± ì œê±°ê°€ëŠ¥
 		
 		Scanner scan = new Scanner(System.in);
 		

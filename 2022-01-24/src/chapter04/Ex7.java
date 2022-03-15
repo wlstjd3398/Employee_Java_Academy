@@ -5,7 +5,7 @@ public class Ex7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ±¹¾î Á¡¼ö¸¦ 0¹ø ÀÎµ¦½º, ¼öÇĞÁ¡¼ö¸¦ 1¹øÀÎµ¦½º, ¿µ¾îÁ¡¼ö¸¦ 2¹øÀÎµ¦½º
+		// êµ­ì–´ ì ìˆ˜ë¥¼ 0ë²ˆ ì¸ë±ìŠ¤, ìˆ˜í•™ì ìˆ˜ë¥¼ 1ë²ˆì¸ë±ìŠ¤, ì˜ì–´ì ìˆ˜ë¥¼ 2ë²ˆì¸ë±ìŠ¤
 		int[][] stScores = {
 				{84, 93, 52, 42},
 				{62, 71, 79, 100},
@@ -13,17 +13,17 @@ public class Ex7 {
 		};
 		
 		
-		// stScores ¹è¿­°ú ¿¬»êÀÚ¸¸À» ÀÌ¿ëÇØ¼­
-		// ÇĞ»ıµéÀÇ ±¹¾îÁ¡¼ö Æò±Õ°ú ±æµ¿ÀÌÀÇ Æò±ÕÀ» °è»êÇØ¶ó
+		// stScores ë°°ì—´ê³¼ ì—°ì‚°ìë§Œì„ ì´ìš©í•´ì„œ
+		// í•™ìƒë“¤ì˜ êµ­ì–´ì ìˆ˜ í‰ê· ê³¼ ê¸¸ë™ì´ì˜ í‰ê· ì„ ê³„ì‚°í•´ë¼
 		int korSum = stScores[0][0] + stScores[0][1] + stScores[0][2] + stScores[0][3];
-		// 0ÇàÀÌ ±¹¾îÁ¡¼ö
+		// 0í–‰ì´ êµ­ì–´ì ìˆ˜
 		double korAvg =(double) korSum / stScores[0].length;
-		System.out.println("ÇĞ»ıµé ±¹¾îÁ¡¼ö Æò±Õ = " + korAvg);
+		System.out.println("í•™ìƒë“¤ êµ­ì–´ì ìˆ˜ í‰ê·  = " + korAvg);
 				
 		int kilSum = stScores[0][2] +stScores[1][2] + stScores[2][2];
-		// ±æµ¿ÀÌÀÇ Á¡¼ö´Â 3°¡ÁöÇàÀ» °¡Áü 
+		// ê¸¸ë™ì´ì˜ ì ìˆ˜ëŠ” 3ê°€ì§€í–‰ì„ ê°€ì§ 
 		double kilAvg = (double) kilSum / stScores.length;
-		System.out.println("±æµ¿ÀÌÀÇ Æò±Õ = " + kilAvg);
+		System.out.println("ê¸¸ë™ì´ì˜ í‰ê·  = " + kilAvg);
 		
 		
 		

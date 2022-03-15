@@ -9,20 +9,20 @@ public class Object6 {
 		System.out.println("num = " + num);
 	}
 	
-	// func2¸Ş¼­µåÀÇ ¸Å°³º¯¼öÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀº? obj.func2(numArr)ÀÇ Å¸ÀÔÀº int
+	// func2ë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ì˜ ë°ì´í„° íƒ€ì…ì€? obj.func2(numArr)ì˜ íƒ€ì…ì€ int
 	void func2(int[] param) {
 		param[0] = param[0] + 1;
 		System.out.println(Arrays.toString(param));
 	}
-	// ¹Ù±ù¿¡µµ ¿µÇâÀ» ¹ÌÄ§(ÂüÁ¶ µ¥ÀÌÅÍÅ¸ÀÔÀÇ º¯¼ö·Î ¸Ş¸ğ¸®ÁÖ¼Ò°¡ º¹»çµÇ¾î Àü´ŞµÇ±â¶§¹®
+	// ë°”ê¹¥ì—ë„ ì˜í–¥ì„ ë¯¸ì¹¨(ì°¸ì¡° ë°ì´í„°íƒ€ì…ì˜ ë³€ìˆ˜ë¡œ ë©”ëª¨ë¦¬ì£¼ì†Œê°€ ë³µì‚¬ë˜ì–´ ì „ë‹¬ë˜ê¸°ë•Œë¬¸
 	
-	// func3¸Ş¼­µåÀÇ ¸Å°³º¯¼öÀÇ µ¥ÀÌÅÍÅ¸ÀÔÀº? Object7ÀÇ ¸Å°³º¯¼ö Å¸ÀÔ
+	// func3ë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ì˜ ë°ì´í„°íƒ€ì…ì€? Object7ì˜ ë§¤ê°œë³€ìˆ˜ íƒ€ì…
 	void func3(Object7 param) {
 		param.value = param.value + 1;
 		System.out.println("param.value = " + param.value);
 	}
 	
-	// func3 °ü·ÃµÈ µ¿ÀÛ¿ø¸® ÆÄ¾ÇÇØ¿À±â!!(Ex7, Object6, Object7)
+	// func3 ê´€ë ¨ëœ ë™ì‘ì›ë¦¬ íŒŒì•…í•´ì˜¤ê¸°!!(Ex7, Object6, Object7)
 	
 	
 	

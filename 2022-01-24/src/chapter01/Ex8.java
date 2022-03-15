@@ -3,9 +3,9 @@ package chapter01;
 public class Ex8 {
 
 	public static void main(String[] args) {
-		System.out.println("Ã¶¼öÀÇ ³ªÀÌ´Â "+13+"¼¼ ÀÔ´Ï´Ù.");
-		System.out.println("Ã¶¼öÀÇ Å°´Â "+174.6+"cm ÀÔ´Ï´Ù.");
-		System.out.println("Ã¶¼ö°¡ »ç´Â °÷Àº "+"ºÎ»ê±¤¿ª½ÃÀÔ´Ï´Ù.");
+		System.out.println("ì² ìˆ˜ì˜ ë‚˜ì´ëŠ” "+13+"ì„¸ ì…ë‹ˆë‹¤.");
+		System.out.println("ì² ìˆ˜ì˜ í‚¤ëŠ” "+174.6+"cm ì…ë‹ˆë‹¤.");
+		System.out.println("ì² ìˆ˜ê°€ ì‚¬ëŠ” ê³³ì€ "+"ë¶€ì‚°ê´‘ì—­ì‹œì…ë‹ˆë‹¤.");
 	}
 
 }

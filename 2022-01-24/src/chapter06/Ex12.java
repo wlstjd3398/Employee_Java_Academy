@@ -5,7 +5,7 @@ public class Ex12 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ±¸±¸´Ü 2´Ü, 3´Ü, 4´Ü, ... À» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ for¹®À¸·Î °³¹ßÇØ¶ó(ÁßÃ¸for¹®¼³¸í)
+		// êµ¬êµ¬ë‹¨ 2ë‹¨, 3ë‹¨, 4ë‹¨, ... ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ forë¬¸ìœ¼ë¡œ ê°œë°œí•´ë¼(ì¤‘ì²©forë¬¸ì„¤ëª…)
 //		for(int num=1; num<=9; num++) {
 //			System.out.println("2 * " + num + " = " + (2 * num));
 //		}
@@ -20,7 +20,7 @@ public class Ex12 {
 //		}
 		
 		
-		// ÁßÃ¸ for¹®
+		// ì¤‘ì²© forë¬¸
 		for(int front=2; front<=9; front++) {
 			for(int back=1; back<=9; back++) {
 				System.out.println(front + " * " + back +" = " + (front * back));

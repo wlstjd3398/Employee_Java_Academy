@@ -5,21 +5,21 @@ public class StudentManagement {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("<< 1 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
+		System.out.println("<< 1 ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
 		int kor1 = 64;
 		int eng1 = 27;
 		int mat1 = 91;
-		System.out.println("±¹¾î ¼ºÀû : " + kor1);
-		System.out.println("¿µ¾î ¼ºÀû : " + eng1);
-		System.out.println("¼öÇĞ ¼ºÀû : " + mat1);
+		System.out.println("êµ­ì–´ ì„±ì  : " + kor1);
+		System.out.println("ì˜ì–´ ì„±ì  : " + eng1);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " + mat1);
 		
-		System.out.println("<< 2 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
+		System.out.println("<< 2 ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
 		int kor2 = 58;
 		int eng2 = 23;
 		int mat2 = 76;
-		System.out.println("±¹¾î ¼ºÀû : " + kor2);
-		System.out.println("¿µ¾î ¼ºÀû : " + eng2);
-		System.out.println("¼öÇĞ ¼ºÀû : " + mat2);
+		System.out.println("êµ­ì–´ ì„±ì  : " + kor2);
+		System.out.println("ì˜ì–´ ì„±ì  : " + eng2);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " + mat2);
 		
 	}
 

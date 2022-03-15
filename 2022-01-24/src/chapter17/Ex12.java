@@ -9,37 +9,37 @@ public class Ex12 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// »ç³» µµ¼­ °ü¸® ÇÁ·Î±×·¥ °³¹ß
+		// ì‚¬ë‚´ ë„ì„œ ê´€ë¦¬ í”„ë¡œê·¸ë¨ ê°œë°œ
 		Book book1 = new Book("Java Master", 34500);
-		Book book2 = new Book("JSP?Servlet ÀÔ¹®", 29000);
+		Book book2 = new Book("JSP?Servlet ì…ë¬¸", 29000);
 		
-		// setÀ» ¿Ö ¾²³Ä? Æ¯Â¡À» Á¤¸®ÇØ¼­ ÀÌÇØÇÏ°íÀÖ¾î¾ßÇÔ 
+		// setì„ ì™œ ì“°ëƒ? íŠ¹ì§•ì„ ì •ë¦¬í•´ì„œ ì´í•´í•˜ê³ ìˆì–´ì•¼í•¨ 
 		Set<Book> bookList = new HashSet<>();
 		
 		bookList.add(book1);
 		bookList.add(book2);
 		System.out.println(bookList);
 		
-		Book book3 = new Book("JSP/Servlet ÀÔ¹®", 29000);
-		// set¿¡ °°Àº Á¤º¸ÀÇ Ã¥ÀÌ Ãâ·ÂµÇ¾úÀ½ 
-		// -> equals¿Í hascode ¸Ş¼­µå·Î ¿À¹ö¶óÀÌµùÇØ¼­ È£Ãâ
-		// add µ¿ÀÛ½Ã equals ¿Í hashcodeµµ °°ÀÌ µ¿ÀÛ
+		Book book3 = new Book("JSP/Servlet ì…ë¬¸", 29000);
+		// setì— ê°™ì€ ì •ë³´ì˜ ì±…ì´ ì¶œë ¥ë˜ì—ˆìŒ 
+		// -> equalsì™€ hascode ë©”ì„œë“œë¡œ ì˜¤ë²„ë¼ì´ë”©í•´ì„œ í˜¸ì¶œ
+		// add ë™ì‘ì‹œ equals ì™€ hashcodeë„ ê°™ì´ ë™ì‘
 		
 		bookList.add(book3);
 		System.out.println(bookList);
 		
-//		¶È°°Àº Á¤º¸¸¦ ÀúÀåÇÏÁö¾Ê´Â´Ù equals Hashset
+//		ë˜‘ê°™ì€ ì •ë³´ë¥¼ ì €ì¥í•˜ì§€ì•ŠëŠ”ë‹¤ equals Hashset
 		
-		System.out.println("***** »ç³» µµ¼­ ¸ñ·Ï *****");
-		// bookList¸¦ »ç¿ëÇØ¼­ »ç³» µµ¼­µéÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏ¼¼¿ä
+		System.out.println("***** ì‚¬ë‚´ ë„ì„œ ëª©ë¡ *****");
+		// bookListë¥¼ ì‚¬ìš©í•´ì„œ ì‚¬ë‚´ ë„ì„œë“¤ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•˜ì„¸ìš”
 		for(Book book : bookList) {
-			System.out.println("µµ¼­¸í = " + book.getTitle());
-			System.out.println("µµ¼­°¡°İ = " + book.getPrice());
+			System.out.println("ë„ì„œëª… = " + book.getTitle());
+			System.out.println("ë„ì„œê°€ê²© = " + book.getPrice());
 		}
 		System.out.println("***** ***** ***** *****");
 		
 		
-		// iteratorµµ ÇØº¸±â
+		// iteratorë„ í•´ë³´ê¸°
 		Iterator<Book> iterator = bookList.iterator();
 		Book nthBook;
 		

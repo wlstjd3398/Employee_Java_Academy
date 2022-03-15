@@ -3,7 +3,7 @@ package chapter12;
 public class Ambulance extends Car{
 
 	public void siren() {
-		System.out.println("±¸±ŞÂ÷ Áö³ª°©´Ï´Ù");
+		System.out.println("ì‚ìš©ì‚ìš©");
 	}
 	
 }

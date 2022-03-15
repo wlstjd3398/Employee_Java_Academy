@@ -2,15 +2,15 @@ package chapter01;
 
 public class Ex6 {
 	public static void main(String[] args) {
-		//Á¤¼ö
+		//ì •ìˆ˜
 		System.out.println(1);
-		//½Ç¼ö
+		//ì‹¤ìˆ˜
 		System.out.println(3.14);
-		//¹®ÀÚ
+		//ë¬¸ì
 		System.out.println('a');
-		//¹®ÀÚ¿­
+		//ë¬¸ìì—´
 		System.out.println("Hello world");
-		//³í¸®
+		//ë…¼ë¦¬
 		System.out.println(true);
 	}
 }

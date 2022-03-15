@@ -7,14 +7,14 @@ public class Ex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÄÃ·¢¼Ç ÇÁ·¹ÀÓ¿öÅ© -> ÀÚ·á ±¸Á¶ÀÇ ÇÏ³ªÀÎ ArrayList
-		// ¹è¿­ -> ÀÚ·á ±¸Á¶ÀÇ ÇÏ³ª
+		// ì»¬ë™ì…˜ í”„ë ˆì„ì›Œí¬ -> ìë£Œ êµ¬ì¡°ì˜ í•˜ë‚˜ì¸ ArrayList
+		// ë°°ì—´ -> ìë£Œ êµ¬ì¡°ì˜ í•˜ë‚˜
 		
 		String[] strArr = new String[3];
 		
 		ArrayList<String> strList = new ArrayList<String>();
-		// ¹®ÀÚ¿­À» ÀúÀåÇÒ ArrayListÅ¬·¡½º¶ó¼­ package¾È¿¡ 
-		// ArrayList°¡ ¾ø¾î¼­ importÇØÁà¾ßÇÔ
+		// ë¬¸ìì—´ì„ ì €ì¥í•  ArrayListí´ë˜ìŠ¤ë¼ì„œ packageì•ˆì— 
+		// ArrayListê°€ ì—†ì–´ì„œ importí•´ì¤˜ì•¼í•¨
 		
 		strList.add("A");
 		strList.add("B");
@@ -23,21 +23,21 @@ public class Ex1 {
 		strList.add("D");
 		strList.add(2, "C");
 		System.out.println(strList);
-		// C¶ó´Â ¹®ÀÚ¸¦ 2¹øÀÎµ¦½º ÀÚ¸®¿¡(DÀÚ¸®) »õÄ¡±â¸¦ ÇÔ 
-		// -> C°¡ ±× ÀÚ¸®¸¦ Â÷ÁöÇÏ°í D°¡ ´ÙÀ½ ÀÎµ¦½º·Î ÀÌµ¿ÇÔ
+		// Cë¼ëŠ” ë¬¸ìë¥¼ 2ë²ˆì¸ë±ìŠ¤ ìë¦¬ì—(Dìë¦¬) ìƒˆì¹˜ê¸°ë¥¼ í•¨ 
+		// -> Cê°€ ê·¸ ìë¦¬ë¥¼ ì°¨ì§€í•˜ê³  Dê°€ ë‹¤ìŒ ì¸ë±ìŠ¤ë¡œ ì´ë™í•¨
 		
 		
-		// ¾Æ·¡ add ¸Ş¼­µåÀÇ µ¿ÀÛ ¿ø¸®¸¦ ºĞ¼®ÇÏ¼¼¿ä
+		// ì•„ë˜ add ë©”ì„œë“œì˜ ë™ì‘ ì›ë¦¬ë¥¼ ë¶„ì„í•˜ì„¸ìš”
 		strList.add(0, "Z");
 		System.out.println(strList);
 		
-		// 0¹ø ÀÎµ¦½º·Î ¸®ÅÏ
+		// 0ë²ˆ ì¸ë±ìŠ¤ë¡œ ë¦¬í„´
 		String firstString = strList.get(0);
-		System.out.println("Ã¹ ¹øÂ° ¹®ÀÚ¿­Àº " + firstString);
+		System.out.println("ì²« ë²ˆì§¸ ë¬¸ìì—´ì€ " + firstString);
 		
 		String removeString = strList.remove(0);
-		// 0¹ø ÀÎµ¦½º¸¦ »èÁ¦ÇÏ·Á¸é  0¹ø ´ÙÀ½ ÀÚ¸®¿¡¼­ ¾ÕÀ¸·Î ¶¯±è -> ¸¶Áö¸· ÀÎµ¦½º°ø°£À» Áö¿ò
-		System.out.println("»èÁ¦ÇÑ ¹®ÀÚ¿­Àº " + removeString);
+		// 0ë²ˆ ì¸ë±ìŠ¤ë¥¼ ì‚­ì œí•˜ë ¤ë©´  0ë²ˆ ë‹¤ìŒ ìë¦¬ì—ì„œ ì•ìœ¼ë¡œ ë•¡ê¹€ -> ë§ˆì§€ë§‰ ì¸ë±ìŠ¤ê³µê°„ì„ ì§€ì›€
+		System.out.println("ì‚­ì œí•œ ë¬¸ìì—´ì€ " + removeString);
 		System.out.println(strList);
 		
 	}

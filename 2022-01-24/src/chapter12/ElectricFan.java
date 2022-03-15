@@ -2,20 +2,20 @@ package chapter12;
 
 public class ElectricFan {
 
-	private boolean power; // Àü¿ø ¿Â/¿ÀÇÁ ¿©ºÎ
-	private int fanStrength; // ¹Ù¶÷ÀÇ ¼¼±â
-	private boolean rotation; // È¸Àü ¿©ºÎ
+	private boolean power; // ì „ì› ì˜¨/ì˜¤í”„ ì—¬ë¶€
+	private int fanStrength; // ë°”ëŒì˜ ì„¸ê¸°
+	private boolean rotation; // íšŒì „ ì—¬ë¶€
 	
 	public void powerOnOff() {
-		System.out.println("¼±Ç³±âÀÇ Àü¿ø ¿Â/¿ÀÇÁ");
+		System.out.println("ì„ í’ê¸°ì˜ ì „ì› ì˜¨/ì˜¤í”„");
 	}
 	
 	public void pushFanStrength() {
-		System.out.println("¼±Ç³±âÀÇ ¹Ù¶÷¼¼±â º¯°æ");
+		System.out.println("ì„ í’ê¸°ì˜ ë°”ëŒì„¸ê¸° ë³€ê²½");
 	}
 	
 	public void rotationSwitch() {
-		System.out.println("¼±Ç³±âÀÇ È¸Àü ¿©ºÎ º¯°æ");
+		System.out.println("ì„ í’ê¸°ì˜ íšŒì „ ì—¬ë¶€ ë³€ê²½");
 	}
 	
 }

@@ -7,20 +7,20 @@ public class Sol4 {
 
 int birth = 900318;
 		
-		int day = birth % 100; // »ı³â¿ùÀÏ µŞ µÎÀÚ¸®´Â ÅÂ¾î³­ ÀÏ
-		birth = birth / 100; // »ı³â¿ùÀÏ µŞ µÎÀÚ¸®¸¦ »ç¿ëÇßÀ¸¹Ç·Î ÀÏÀ» Á¦¿Ü
+		int day = birth % 100; // ìƒë…„ì›”ì¼ ë’· ë‘ìë¦¬ëŠ” íƒœì–´ë‚œ ì¼
+		birth = birth / 100; // ìƒë…„ì›”ì¼ ë’· ë‘ìë¦¬ë¥¼ ì‚¬ìš©í–ˆìœ¼ë¯€ë¡œ ì¼ì„ ì œì™¸
 		System.out.println(day);
 		System.out.println(birth);
 		
-		int month = birth % 100; // ÀÏÀÌ Á¦¿ÜµÈ »ı³â¿ù¿¡¼­ µŞ µÎÀÚ¸®´Â Å×¾î³­ ¿ù
-		birth = birth / 100; // »ı³â¿ùÀÇ µŞ µÎÀÚ¸®¸¦ »ç¿ëÇßÀ¸¹Ç·Î ¿ùÀ» Á¦¿Ü
+		int month = birth % 100; // ì¼ì´ ì œì™¸ëœ ìƒë…„ì›”ì—ì„œ ë’· ë‘ìë¦¬ëŠ” í…Œì–´ë‚œ ì›”
+		birth = birth / 100; // ìƒë…„ì›”ì˜ ë’· ë‘ìë¦¬ë¥¼ ì‚¬ìš©í–ˆìœ¼ë¯€ë¡œ ì›”ì„ ì œì™¸
 		System.out.println(month);
 		System.out.println(birth);
 		
-		int year = birth; // ¿¬µµ¸¸ ³²¾ÒÀ¸¹Ç·Î ±×´ë·Î year º¯¼ö¿¡ ÀúÀå
+		int year = birth; // ì—°ë„ë§Œ ë‚¨ì•˜ìœ¼ë¯€ë¡œ ê·¸ëŒ€ë¡œ year ë³€ìˆ˜ì— ì €ì¥
 		
-		System.out.println("Ã¶¼ö´Â "+ year + "³â " + month + "¿ù "
-				+ day + "ÀÏ¿¡ ÅÂ¾î³µ½À´Ï´Ù.");
+		System.out.println("ì² ìˆ˜ëŠ” "+ year + "ë…„ " + month + "ì›” "
+				+ day + "ì¼ì— íƒœì–´ë‚¬ìŠµë‹ˆë‹¤.");
 	}
 
 }

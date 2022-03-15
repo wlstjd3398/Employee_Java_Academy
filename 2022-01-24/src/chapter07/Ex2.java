@@ -15,7 +15,7 @@ public class Ex2 {
 		System.out.println(obj1);
 		System.out.println(obj2);
 		
-		// new¶ó´Â ¿¬»êÀÚ°¡ »ç¿ëµÇ¸é Object1, Car ÀÎ½ºÅÏ½º°¡ »õ·Î¿î ¸Ş¸ğ¸®ÁÖ¼Ò¸¦ °¡Áü
+		// newë¼ëŠ” ì—°ì‚°ìê°€ ì‚¬ìš©ë˜ë©´ Object1, Car ì¸ìŠ¤í„´ìŠ¤ê°€ ìƒˆë¡œìš´ ë©”ëª¨ë¦¬ì£¼ì†Œë¥¼ ê°€ì§
 		
 	}
 

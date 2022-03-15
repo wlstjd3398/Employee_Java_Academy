@@ -7,7 +7,7 @@ public class Sol3 {
 
 		Registration r1 = new Registration();
 		r1.Resident(90, 3, 18);
-		¹è¿­¿¡ ´ã¾Æ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
+		ë°°ì—´ì— ë‹´ì•„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 	}
 
 }

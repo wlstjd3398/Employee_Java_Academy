@@ -2,40 +2,40 @@ package chapter11;
 
 public class Menu {
 
-	String name; // °´Ã¼ÁöÇâÀ» ¸ð¸£´Â °³¹ßÀÚµµ °´Ã¼ÁöÇâÀ» »ç¿ëÇÏµµ·Ï ¸â¹öº¯¼ö¸¦ private¸¦ »ç¿ëÇØ °´Ã¼ÁöÇâ »ç¿ë°¡´ÉÇÏµµ·Ï µµ¿ò
-	int price; // °´Ã¼ÁöÇâÀ» ¸ð¸£´Â °³¹ßÀÚµµ °´Ã¼ÁöÇâÀ» »ç¿ëÇÏµµ·Ï ¸â¹öº¯¼ö¸¦ private¸¦ »ç¿ëÇØ °´Ã¼ÁöÇâ »ç¿ë°¡´ÉÇÏµµ·Ï µµ¿ò 
+	String name; // ê°ì²´ì§€í–¥ì„ ëª¨ë¥´ëŠ” ê°œë°œìžë„ ê°ì²´ì§€í–¥ì„ ì‚¬ìš©í•˜ë„ë¡ ë©¤ë²„ë³€ìˆ˜ë¥¼ privateë¥¼ ì‚¬ìš©í•´ ê°ì²´ì§€í–¥ ì‚¬ìš©ê°€ëŠ¥í•˜ë„ë¡ ë„ì›€
+	int price; // ê°ì²´ì§€í–¥ì„ ëª¨ë¥´ëŠ” ê°œë°œìžë„ ê°ì²´ì§€í–¥ì„ ì‚¬ìš©í•˜ë„ë¡ ë©¤ë²„ë³€ìˆ˜ë¥¼ privateë¥¼ ì‚¬ìš©í•´ ê°ì²´ì§€í–¥ ì‚¬ìš©ê°€ëŠ¥í•˜ë„ë¡ ë„ì›€ 
 	
-//	¹ÝÈ¯Å¸ÀÔ ¸Þ¼­µåÀÌ¸§(¸Å°³º¯¼ö) {
-//		¼Ò½ºÄÚµå
+//	ë°˜í™˜íƒ€ìž… ë©”ì„œë“œì´ë¦„(ë§¤ê°œë³€ìˆ˜) {
+//		ì†ŒìŠ¤ì½”ë“œ
 //	}
 	
-	// ³ªÀÇ ÀÛ¼º ¼ø¼­
-	// ¸Þ¼­µåÀÌ¸§ ³ª¿ÍÀÖ°í ¸Å°³º¯¼ö´Â À§¿Í°°ÀÌ Á¤ÇØÁ®ÀÖÀ½
-	// nameÀÌ ÆÐÅ°Áö¿ÜºÎ ³»ºÎ È®ÀÎÇÏ°í ¼Ò½ºÄÚµå ÀÔ·ÂÇÔ
-	// Á¢±ÙÁ¦¾îÀÚ public default private¿¡¼­ ¸Â´Â °ÍÀ» »ç¿ëÇØ¾ßÇÔ
+	// ë‚˜ì˜ ìž‘ì„± ìˆœì„œ
+	// ë©”ì„œë“œì´ë¦„ ë‚˜ì™€ìžˆê³  ë§¤ê°œë³€ìˆ˜ëŠ” ìœ„ì™€ê°™ì´ ì •í•´ì ¸ìžˆìŒ
+	// nameì´ íŒ¨í‚¤ì§€ì™¸ë¶€ ë‚´ë¶€ í™•ì¸í•˜ê³  ì†ŒìŠ¤ì½”ë“œ ìž…ë ¥í•¨
+	// ì ‘ê·¼ì œì–´ìž public default privateì—ì„œ ë§žëŠ” ê²ƒì„ ì‚¬ìš©í•´ì•¼í•¨
 	public void setName(String name) {
 		this.name = name;
 		
 	}
-	// setter(¼¼ÅÍ) ¸Þ¼­µå
-	// 1. setÀ¸·Î ½ÃÀÛÇÏ´Â °ÍÀÇ ÀÌ¸§Àº set¸â¹öº¯¼öÀÇ ÀÌ¸§À¸·Î ¸Þ¼­µåÀÌ¸§À» ¸¸µë
-	// 2. ÀÌ ¸Þ¼­µå´Â ÇØ´ç ¸â¹öº¯¼ö¿¡ °ªÀ» ÀúÀåÇÏ´Â ¸Þ¼­µå
+	// setter(ì„¸í„°) ë©”ì„œë“œ
+	// 1. setìœ¼ë¡œ ì‹œìž‘í•˜ëŠ” ê²ƒì˜ ì´ë¦„ì€ setë©¤ë²„ë³€ìˆ˜ì˜ ì´ë¦„ìœ¼ë¡œ ë©”ì„œë“œì´ë¦„ì„ ë§Œë“¬
+	// 2. ì´ ë©”ì„œë“œëŠ” í•´ë‹¹ ë©¤ë²„ë³€ìˆ˜ì— ê°’ì„ ì €ìž¥í•˜ëŠ” ë©”ì„œë“œ
 	
-//		¸Þ´º¹Ù¿¡¼­ source - getter setter¿¡¼­ »ý¼ºÇÒ¼öµµ ÀÖÀ½
+//		ë©”ë‰´ë°”ì—ì„œ source - getter setterì—ì„œ ìƒì„±í• ìˆ˜ë„ ìžˆìŒ
 	public void setPrice(int price) {
 		this.price = price;
 	}
 	
 	
 	public void PrintObjectInfo() {
-		System.out.println("¸Þ´ºÀÇ ÀÌ¸§ = " + name);
-		System.out.println("¸Þ´ºÀÇ °¡°Ý = " + price);
+		System.out.println("ë©”ë‰´ì˜ ì´ë¦„ = " + name);
+		System.out.println("ë©”ë‰´ì˜ ê°€ê²© = " + price);
 	}
 	
 	
-	// getter(°ÔÅÍ) ¸Þ¼­µå
-	// 1. get¸â¹öº¯¼öÀÇ ÀÌ¸§À¸·Î ¸Þ¼­µå ÀÌ¸§À» ¸¸µë
-	// 2. ÀÌ ¸Þ¼­µå´Â ÇØ´ç ¸â¹öº¯¼öÀÇ °ªÀ» ¹ÝÈ¯ÇÏ´Â ¸Þ¼­µå
+	// getter(ê²Œí„°) ë©”ì„œë“œ
+	// 1. getë©¤ë²„ë³€ìˆ˜ì˜ ì´ë¦„ìœ¼ë¡œ ë©”ì„œë“œ ì´ë¦„ì„ ë§Œë“¬
+	// 2. ì´ ë©”ì„œë“œëŠ” í•´ë‹¹ ë©¤ë²„ë³€ìˆ˜ì˜ ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 	public String getName() {
 		return name;
 	}

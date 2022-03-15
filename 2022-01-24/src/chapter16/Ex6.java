@@ -12,22 +12,22 @@ public class Ex6 {
 		
 		
 		
-		// Product Ŭ������ Box Ŭ������ ����Ͽ�"��ǻ�͸� ���ڿ� �ִ´�"
-		//  "TV�� ���ڿ� �ִ´�" �� ǥ���ϼ���.
-		// ( ��ǻ�� �� ��, TV �� ���̹Ƿ� ���ڴ� �� 3���� �ʿ��մϴ�. )
+		// Product 클래스와 Box 클래스를 사용하여"컴퓨터를 상자에 넣는다"
+		//  "TV를 상자에 넣는다" 를 표현하세요.
+		// ( 컴퓨터 두 대, TV 한 대이므로 상자는 총 3개가 필요합니다. )
 
 		
-		// ��ǻ�͸� ���� �� �ִ� ���ڸ� ����
+		// 컴퓨터를 넣을 수 있는 상자를 생성
 		Box<Product> box1 = new Box<Product>();
-		// ���ڿ� ��ǻ�͸� �ִ´�
+		// 상자에 컴퓨터를 넣는다
 		box1.setItem(com1);
-		// ��ǻ�͸� ���� �� �ִ� ���ڸ� ����
+		// 컴퓨터를 넣을 수 있는 상자를 생성
 		Box<Product> box2 = new Box<Product>();
-		// ���ڿ� ��ǻ�͸� �ִ´�
+		// 상자에 컴퓨터를 넣는다
 		box2.setItem(com2);
-		// tv�� ���� �� �ִ� ���ڸ� ����
+		// tv를 넣을 수 있는 상자를 생성
 		Box<Product> box3 = new Box<Product>();
-		// ���ڿ� tv�� �ִ´�
+		// 상자에 tv를 넣는다
 		box3.setItem(tv1);
 		
 		

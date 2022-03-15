@@ -5,7 +5,7 @@ public class Sol17 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String tomorrow = "³»ÀÏ ¶Ç ¸¸³ª¿ä~";
+		String tomorrow = "ë‚´ì¼ ë˜ ë§Œë‚˜ìš”~";
 		char together = (char) 38;
 		int order = 4321;
 		

@@ -5,22 +5,22 @@ public class Ex2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÇÑ ÇÐ»ýÀÇ ¼ºÀû Á¤º¸¸¦ ÀúÀåÇÏ°í
-		// ±× ÇÐ»ýÀÇ Æò±ÕÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» °³¹ßÇÏ·Á°íÇÔ
+		// í•œ í•™ìƒì˜ ì„±ì  ì •ë³´ë¥¼ ì €ìž¥í•˜ê³ 
+		// ê·¸ í•™ìƒì˜ í‰ê· ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ê°œë°œí•˜ë ¤ê³ í•¨
 		Student st1 = new Student();
 //		st1.kor = 1;
 //		st1.eng = 2;
 //		st1.mat = 3;
 		st1.giveCharacteristicsToObjects(1, 2, 3);
 		
-		// ±× ÇÐ»ýÀÇ Æò±ÕÀ» °è»ê
+		// ê·¸ í•™ìƒì˜ í‰ê· ì„ ê³„ì‚°
 //		int total = st1.kor + st1.eng + st1.mat;
 //		st1.avg = (double) total / 3;
 		st1.calcAvg();
-		// Student Å¬·¡½º¿¡ Æò±Õ»ý¼ºÇÏ´Â ¸Þ¼­µå¸¦ À§¿Í °°ÀÌ ½ÄÀ» °£´ÜÈ÷ ¹Ù²Ü¼öÀÖÀ½
+		// Student í´ëž˜ìŠ¤ì— í‰ê· ìƒì„±í•˜ëŠ” ë©”ì„œë“œë¥¼ ìœ„ì™€ ê°™ì´ ì‹ì„ ê°„ë‹¨ížˆ ë°”ê¿€ìˆ˜ìžˆìŒ
 		
-		// ±× ÇÐ»ýÀÇ Æò±Õµµ ¼ºÀû Á¤º¸ÀÌ´Ï±î ±× ÇÐ»ýÀÇ ¼ºÀû Á¤º¸ ¾È¿¡ °°ÀÌ ÀúÀåÇÏ°í ½ÍÀ½
-		// Æò±Õµµ ¼ºÀû°ú °°Àº °ø°£(ÀÎ½ºÅÏ½º)¿¡ ÀúÀåÇÏµµ·Ï ÄÚµå¸¦ ¼öÁ¤ÇØ¶ó -> Student double avg; »ý¼º ÈÄ À§¿¡ st1.avg = (double) total / 3;
+		// ê·¸ í•™ìƒì˜ í‰ê· ë„ ì„±ì  ì •ë³´ì´ë‹ˆê¹Œ ê·¸ í•™ìƒì˜ ì„±ì  ì •ë³´ ì•ˆì— ê°™ì´ ì €ìž¥í•˜ê³  ì‹¶ìŒ
+		// í‰ê· ë„ ì„±ì ê³¼ ê°™ì€ ê³µê°„(ì¸ìŠ¤í„´ìŠ¤)ì— ì €ìž¥í•˜ë„ë¡ ì½”ë“œë¥¼ ìˆ˜ì •í•´ë¼ -> Student double avg; ìƒì„± í›„ ìœ„ì— st1.avg = (double) total / 3;
 		
 		Student st2 = new Student();
 //		st2.kor = 2;
@@ -43,8 +43,8 @@ public class Ex2 {
 //		st3.avg = (double) total / 3;
 		st3.calcAvg();
 		
-		// st1, st2, st3 ¹Ýº¹µÊ -> ¹Ýº¹¹®(º¯¼öÀÌ¸§ÀÌ ´Þ¶ó¼­ »ç¿ëºÒ°¡) or ¸Þ¼­µå·Î ÇØ°á°¡´É
-		// Æò±ÕÀ» ÀÚÁÖ »ç¿ëÇÒ ¿¹Á¤ÀÌ´Ï Æò±ÕÀ» Student¿¡ ¸Þ¼­µå¼±¾ð ÇÒ °Í
+		// st1, st2, st3 ë°˜ë³µë¨ -> ë°˜ë³µë¬¸(ë³€ìˆ˜ì´ë¦„ì´ ë‹¬ë¼ì„œ ì‚¬ìš©ë¶ˆê°€) or ë©”ì„œë“œë¡œ í•´ê²°ê°€ëŠ¥
+		// í‰ê· ì„ ìžì£¼ ì‚¬ìš©í•  ì˜ˆì •ì´ë‹ˆ í‰ê· ì„ Studentì— ë©”ì„œë“œì„ ì–¸ í•  ê²ƒ
 		
 	}
 

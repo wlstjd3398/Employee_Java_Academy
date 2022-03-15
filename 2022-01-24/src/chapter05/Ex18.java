@@ -7,9 +7,9 @@ public class Ex18 {
 
 		int num1 = 1;
 		
-		// º¯¼ö°¡ ¸¸µé¾îÁö´Â ½Ã±â : º¯¼ö¸¦ ¼±¾ðÇÏ´Â ÄÚµå¸¦ ¸¸³µÀ» ¶§
-		// switch´Â ¿¹¿ÜÀûÀ¸·Î switch¸¦ ¸¸³ª´Â ¼ø°£
-		// switch ¾È¿¡¼­ ¼±¾ðÇÑ ¸ðµç º¯¼ö°¡ ¸¸µé¾îÁü
+		// ë³€ìˆ˜ê°€ ë§Œë“¤ì–´ì§€ëŠ” ì‹œê¸° : ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ëŠ” ì½”ë“œë¥¼ ë§Œë‚¬ì„ ë•Œ
+		// switchëŠ” ì˜ˆì™¸ì ìœ¼ë¡œ switchë¥¼ ë§Œë‚˜ëŠ” ìˆœê°„
+		// switch ì•ˆì—ì„œ ì„ ì–¸í•œ ëª¨ë“  ë³€ìˆ˜ê°€ ë§Œë“¤ì–´ì§
 		switch(num1) {
 		case 1:
 			int num2 = 1;

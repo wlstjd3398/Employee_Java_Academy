@@ -1,6 +1,6 @@
 package chapter12;
 
-// °°Àº ÆĞÅ°Áö³» Object2°¡ ÀÚ½ÄÅ¬·¡½º, Object1ÀÌ ºÎ¸ğÅ¬·¡½º protected »ç¿ë°¡´É
+// ê°™ì€ íŒ¨í‚¤ì§€ë‚´ Object2ê°€ ìì‹í´ë˜ìŠ¤, Object1ì´ ë¶€ëª¨í´ë˜ìŠ¤ protected ì‚¬ìš©ê°€ëŠ¥
 public class Object2 extends Object1{
 
 	public void func2() {

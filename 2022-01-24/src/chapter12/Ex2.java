@@ -18,7 +18,7 @@ public class Ex2 {
 		n1.charging();
 //		n1.showNoteBookInfo();
 		
-		// Çò°¥¸®°Ô °³¹ß -> ÇØ°á¹æ¹ý : ¿À¹ö¶óÀÌµù
+		// í—·ê°ˆë¦¬ê²Œ ê°œë°œ -> í•´ê²°ë°©ë²• : ì˜¤ë²„ë¼ì´ë”©
 		
 		n1.showPcInfo();
 		

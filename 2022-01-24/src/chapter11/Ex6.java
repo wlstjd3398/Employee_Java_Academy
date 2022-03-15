@@ -6,19 +6,19 @@ public class Ex6 {
 		// TODO Auto-generated method stub
 
 		Car car1 = new Car();
-		car1.setBrand("Çö´ëÀÚµ¿Â÷");
+		car1.setBrand("í˜„ëŒ€ìë™ì°¨");
 		car1.setColor(1);
-		car1.setType("½Â¿ëÂ÷");
+		car1.setType("ìŠ¹ìš©ì°¨");
 		
 		Car car2 = new Car();
-		car2.setBrand("±â¾ÆÀÚµ¿Â÷");
+		car2.setBrand("ê¸°ì•„ìë™ì°¨");
 		car2.setColor(2);
 		car2.setType("SUV");
 		
 		Car car3 = new Car();
-		car3.setBrand("½Ö¿ëÀÚµ¿Â÷");
+		car3.setBrand("ìŒìš©ìë™ì°¨");
 		car3.setColor(3);
-		car3.setType("¼ÒÇüSUV");
+		car3.setType("ì†Œí˜•SUV");
 		
 	}
 

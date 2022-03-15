@@ -9,7 +9,7 @@ public class Product {
 		this.category = category;
 		this.price = price;
 	}
-// ¸â¹öº¯¼ö¿¡ private °É·ÁÀÖ¾î¼­  getÀ¸·Î ¹İÈ¯ÇØ¼­ ¸Å°³º¯¼ö ÇüÅÂ·Î È£ÃâµÊ 
+// ë©¤ë²„ë³€ìˆ˜ì— private ê±¸ë ¤ìˆì–´ì„œ  getìœ¼ë¡œ ë°˜í™˜í•´ì„œ ë§¤ê°œë³€ìˆ˜ í˜•íƒœë¡œ í˜¸ì¶œë¨ 
 	public String getCategory() {
 		return category;
 	}

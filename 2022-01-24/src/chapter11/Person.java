@@ -2,7 +2,7 @@ package chapter11;
 
 public class Person {
 
-	// ¸Å°³º¯¼÷°¡ ´Ù¸¥ »ı¼ºÀÚ ¿À¹ö·Îµù
+	// ë§¤ê°œë³€ìˆ™ê°€ ë‹¤ë¥¸ ìƒì„±ì ì˜¤ë²„ë¡œë”©
 	public Person(int age) {
 //		this.age=age;
 		this(null, age, 0.0);

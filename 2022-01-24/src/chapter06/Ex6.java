@@ -7,8 +7,8 @@ public class Ex6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ¸ñÇ¥ Ã¼Áß¿¡ µµ´ŞÇÒ ¶§±îÁö ¿îµ¿À» ÇÑ´Ù
-		// while(³ªÀÇÃ¼ÁßweightÀÌ ¸ñÇ¥Ã¼Áßgoal¿¡ µµ´ŞÇß³ª¿ä?)
+		// ëª©í‘œ ì²´ì¤‘ì— ë„ë‹¬í•  ë•Œê¹Œì§€ ìš´ë™ì„ í•œë‹¤
+		// while(ë‚˜ì˜ì²´ì¤‘weightì´ ëª©í‘œì²´ì¤‘goalì— ë„ë‹¬í–ˆë‚˜ìš”?)
 		
 		Random random = new Random();
 		
@@ -17,16 +17,16 @@ public class Ex6 {
 		int loseWeight;
 		
 		while(goal <= weight) {
-			System.out.println("¿îµ¿À» ÇÑ´Ù");
-			// ¿îµ¿À» ÇØ¼­ ºüÁú ¸ö¹«°Ô
+			System.out.println("ìš´ë™ì„ í•œë‹¤");
+			// ìš´ë™ì„ í•´ì„œ ë¹ ì§ˆ ëª¸ë¬´ê²Œ
 			loseWeight = random.nextInt(6);
 			
-			// ¿îµ¿À» ÇÏ°í ³­µÚ ºüÁø ³ªÀÇ Ã¼ÁßÀ» °è»ê
+			// ìš´ë™ì„ í•˜ê³  ë‚œë’¤ ë¹ ì§„ ë‚˜ì˜ ì²´ì¤‘ì„ ê³„ì‚°
 			weight = weight - loseWeight;
 		
 		}
-		System.out.println("´ÙÀÌ¾îÆ® ¼º°ø! ÀÌÁ¦ ¸ö¹«°Ô¸¦ À¯ÁöÇÏ¼¼¿ä");
-		// º¹½ÀÇÏ¸é¼­ ´õº¸±â ÁÁ°Ô ¹Ù²ãº¸±â
+		System.out.println("ë‹¤ì´ì–´íŠ¸ ì„±ê³µ! ì´ì œ ëª¸ë¬´ê²Œë¥¼ ìœ ì§€í•˜ì„¸ìš”");
+		// ë³µìŠµí•˜ë©´ì„œ ë”ë³´ê¸° ì¢‹ê²Œ ë°”ê¿”ë³´ê¸°
 		
 	}
 

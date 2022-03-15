@@ -17,10 +17,10 @@ public class Sol6 {
 				break;
 			case 8:
 			case 7:
-				System.out.println("¿ì¼ö");
+				System.out.println("ìš°ìˆ˜");
 				break;
 			case 6:
-				System.out.println("ÀÏ¹İ");
+				System.out.println("ì¼ë°˜");
 		}
 
 		

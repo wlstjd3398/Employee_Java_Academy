@@ -7,7 +7,7 @@ public class Sol7 {
 
 		int hour = 3;
 		int minute = 5;
-		System.out.println("°øºÎ¸¦ ½ÃÀÛÇÑ Áö " + hour +"½Ã°£ "+ minute + "ºĞÀÌ Áö³µ½À´Ï´Ù.");
+		System.out.println("ê³µë¶€ë¥¼ ì‹œì‘í•œ ì§€ " + hour +"ì‹œê°„ "+ minute + "ë¶„ì´ ì§€ë‚¬ìŠµë‹ˆë‹¤.");
 		
 	}
 

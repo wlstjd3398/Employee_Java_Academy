@@ -2,26 +2,26 @@ package chapter08;
 
 public class Object5 {
 
-	// µÎ Á¤¼ö¸¦ Àü´Þ¹Þ¾Æ µÎ Á¤¼ö Áß Å« ¼ö¸¦ È£Ãâ ÇÑÂÊÀ¸·Î µÇµ¹·ÁÁÖ´Â ¸Þ¼­µå
+	// ë‘ ì •ìˆ˜ë¥¼ ì „ë‹¬ë°›ì•„ ë‘ ì •ìˆ˜ ì¤‘ í° ìˆ˜ë¥¼ í˜¸ì¶œ í•œìª½ìœ¼ë¡œ ë˜ëŒë ¤ì£¼ëŠ” ë©”ì„œë“œ
 	int big(int num1, int num2) {
 		if(num1 >= num2) {
 			return num1;
 		}else {
-			return num2; // return À» ¸¸³ª¼­ ¸Þ¼­µåÀÇ ³¡À¸·Î, Ex4·Î °¡¼­ ÇØ´çºÎºÐÀ» ¹ÝÈ¯ÇÑ´Ù
-			// ±×¸®°í ¹ØÀ¸·Î Âß ³»·Á°¨
+			return num2; // return ì„ ë§Œë‚˜ì„œ ë©”ì„œë“œì˜ ëìœ¼ë¡œ, Ex4ë¡œ ê°€ì„œ í•´ë‹¹ë¶€ë¶„ì„ ë°˜í™˜í•œë‹¤
+			// ê·¸ë¦¬ê³  ë°‘ìœ¼ë¡œ ì­‰ ë‚´ë ¤ê°
 		}
 	}
 	
 	
-	// ÇÏ³ªÀÇ Á¤¼ö¸¦ Àü´Þ ¹Þ¾Æ 
-	// ±× ¼ö°¡ Â¦¼ö¶ó¸é Â¦¼ö
-	// È¦¼ö¶ó¸é È¦¼ö
-	// È£ÃâÇÑÂÊÀ» µÇµ¹·ÁÁÖ´À ¸Þ¼­µå
+	// í•˜ë‚˜ì˜ ì •ìˆ˜ë¥¼ ì „ë‹¬ ë°›ì•„ 
+	// ê·¸ ìˆ˜ê°€ ì§ìˆ˜ë¼ë©´ ì§ìˆ˜
+	// í™€ìˆ˜ë¼ë©´ í™€ìˆ˜
+	// í˜¸ì¶œí•œìª½ì„ ë˜ëŒë ¤ì£¼ëŠ ë©”ì„œë“œ
 	String compare(int a) {
 		if(a % 2 == 0) {
-			return "Â¦¼ö";
+			return "ì§ìˆ˜";
 		}else {
-			return "È¦¼ö";
+			return "í™€ìˆ˜";
 		}
 	}
 	
@@ -30,10 +30,10 @@ public class Object5 {
 		System.out.println(1 + 1);
 	}
 	
-	// ¸Þ¼­µåÀÇ ¹ÝÈ¯Å¸ÀÔÀÌ void°¡ ¾Æ´Ï¸é
-	// ¹ÝÈ¯Å¸ÀÔÀÌ ÀÖ´Â ¸Þ¼­µå´Ù ¶ó°í Ç¥Çö(= void ¾È¾´´Ù¸é returnÀÌ ÀÖ´Ù)
-	// ¹ÝÈ¯Å¸ÀÔ -> ¸Þ¼­µå¸¦ È£ÃâÇÏ¸é ¹ÝÈ¯ Å¸ÀÔ°ú ÀÏÄ¡ÇÏ´Â Å¸ÀÔÀÇ µ¥ÀÌÅÍ°¡ ¹ÝÈ¯µÈ´Ù, returnÀÌ int(Á¤¼ö Áß¿¡ ÇÏ³ª)¿Í ÇÑ½Ö
-	// ¹ÝÈ¯Å¸ÀÔÀÌ ÀÖ´Â ¸Þ¼­µå = return ¹«Á¶°Ç ÀÖ¾î¾ßÇÔ
+	// ë©”ì„œë“œì˜ ë°˜í™˜íƒ€ìž…ì´ voidê°€ ì•„ë‹ˆë©´
+	// ë°˜í™˜íƒ€ìž…ì´ ìžˆëŠ” ë©”ì„œë“œë‹¤ ë¼ê³  í‘œí˜„(= void ì•ˆì“´ë‹¤ë©´ returnì´ ìžˆë‹¤)
+	// ë°˜í™˜íƒ€ìž… -> ë©”ì„œë“œë¥¼ í˜¸ì¶œí•˜ë©´ ë°˜í™˜ íƒ€ìž…ê³¼ ì¼ì¹˜í•˜ëŠ” íƒ€ìž…ì˜ ë°ì´í„°ê°€ ë°˜í™˜ëœë‹¤, returnì´ int(ì •ìˆ˜ ì¤‘ì— í•˜ë‚˜)ì™€ í•œìŒ
+	// ë°˜í™˜íƒ€ìž…ì´ ìžˆëŠ” ë©”ì„œë“œ = return ë¬´ì¡°ê±´ ìžˆì–´ì•¼í•¨
 	int sum2() {
 		System.out.println(3);
 		

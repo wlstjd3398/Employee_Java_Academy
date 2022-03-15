@@ -8,26 +8,26 @@ public class Student {
 	
 	double avg;
 	
-//	 ¹ÝÈ¯Å¸ÀÔ ¸Þ¼­µåÀÌ¸§ (¸Å°³º¯¼ö) {
-//	 ¼Ò½ºÄÚµå
+//	 ë°˜í™˜íƒ€ìž… ë©”ì„œë“œì´ë¦„ (ë§¤ê°œë³€ìˆ˜) {
+//	 ì†ŒìŠ¤ì½”ë“œ
 //	 }
-	// ¹ÝÈ¯Å¸ÀÔ ¸ð¸£°ÚÀ¸¸é ºñ¿öµµµÊ
-	// ¸Þ¼­µåÀÌ¸§µµ ¸ð¸£°ÚÀ¸¸é ºñ¿öµµµÊ
-	// ¸Å°³º¯¼öµµ ¸ð¸£°ÚÀ¸¸é ºñ¿öµµµÊ
+	// ë°˜í™˜íƒ€ìž… ëª¨ë¥´ê² ìœ¼ë©´ ë¹„ì›Œë„ë¨
+	// ë©”ì„œë“œì´ë¦„ë„ ëª¨ë¥´ê² ìœ¼ë©´ ë¹„ì›Œë„ë¨
+	// ë§¤ê°œë³€ìˆ˜ë„ ëª¨ë¥´ê² ìœ¼ë©´ ë¹„ì›Œë„ë¨
 	
-	// Æò±ÕÀ» ¸¸µå´Â ¸Þ¼­µå
-	// st1.kor º¯¼ö¾ÈÀÇ º¯¼ö
-	// st1 ¾È¿¡ µé¾îÀÖ´Â °°Àº º¯¼ö¸¦ »ç¿ëÇÒ¼ö ÀÖ±â¿¡ this »ç¿ë°¡´É
-	// return »ç¿ëÇÊ¿ä ¾øÀ¸´Ï void ¾²°í
-	// ¸Å°³º¯¼ö¸¦ »ç¿ë¾ÈÇÏ°í º¯¼ö¸¦ »ç¿ëÇÏ°í ÀÖÀ¸´Ï ¸Å°³º¯¼ö ºñ¿öµµµÊ
+	// í‰ê· ì„ ë§Œë“œëŠ” ë©”ì„œë“œ
+	// st1.kor ë³€ìˆ˜ì•ˆì˜ ë³€ìˆ˜
+	// st1 ì•ˆì— ë“¤ì–´ìžˆëŠ” ê°™ì€ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í• ìˆ˜ ìžˆê¸°ì— this ì‚¬ìš©ê°€ëŠ¥
+	// return ì‚¬ìš©í•„ìš” ì—†ìœ¼ë‹ˆ void ì“°ê³ 
+	// ë§¤ê°œë³€ìˆ˜ë¥¼ ì‚¬ìš©ì•ˆí•˜ê³  ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ê³  ìžˆìœ¼ë‹ˆ ë§¤ê°œë³€ìˆ˜ ë¹„ì›Œë„ë¨
 	void calcAvg() {
 		int total = this.kor + this.eng + this.mat;
 		this.avg = (double) total / 3;
 	}
 	
-	// ¹Ýº¹ÀûÀ¸·Î »ç¿ëÇÏ´Â ÄÚµå´Â "°´Ã¼´Â Æ¯Â¡À» ºÎ¿©ÇÏ±â" ¸Þ¼­µå
-	// °´Ã¼¿¡ Æ¯Â¡À» ºÎ¿©ÇÏ±â¸¦ ¸Þ¼­µåÀÌ¸§À¸·Î ±×³É ÆÄÆÄ°í·Î º¯¿ªÇØ¼­ ³Ö±â
-	// Ex2¿¡ give..(ÀÎÀÚµé)À» ³Ö¾î¼­ Student ¿Í¼­ ¸Å°³º¯¼ö¸¦ ³Ö¾î¼­ ¾Æ·¡ this¸¦ ÁöÁ¤ÇØ¼­ ÇØ°á ÇÒ ¼ö ÀÖÀ½
+	// ë°˜ë³µì ìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” ì½”ë“œëŠ” "ê°ì²´ëŠ” íŠ¹ì§•ì„ ë¶€ì—¬í•˜ê¸°" ë©”ì„œë“œ
+	// ê°ì²´ì— íŠ¹ì§•ì„ ë¶€ì—¬í•˜ê¸°ë¥¼ ë©”ì„œë“œì´ë¦„ìœ¼ë¡œ ê·¸ëƒ¥ íŒŒíŒŒê³ ë¡œ ë³€ì—­í•´ì„œ ë„£ê¸°
+	// Ex2ì— give..(ì¸ìžë“¤)ì„ ë„£ì–´ì„œ Student ì™€ì„œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë„£ì–´ì„œ ì•„ëž˜ thisë¥¼ ì§€ì •í•´ì„œ í•´ê²° í•  ìˆ˜ ìžˆìŒ
 	void giveCharacteristicsToObjects(int kor, int eng, int mat) {
 		this.kor = kor;
 		this.eng = eng;

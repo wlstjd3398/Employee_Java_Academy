@@ -5,11 +5,11 @@ public class Ex14 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ½Ç¼ö -> Á¤¼ö ´Ù¿îÄ³½ºÆÃ
+		// ì‹¤ìˆ˜ -> ì •ìˆ˜ ë‹¤ìš´ìºìŠ¤íŒ…
 		double myWeight = 93.3;
 		int weight = (int) myWeight;
 		
-		// Á¤¼ö -> ½Ç¼ö ¾÷Ä³½ºÆÃ »ı·«°¡´É 
+		// ì •ìˆ˜ -> ì‹¤ìˆ˜ ì—…ìºìŠ¤íŒ… ìƒëµê°€ëŠ¥ 
 		int myAge = 32;
 		double age = myAge;
 	}

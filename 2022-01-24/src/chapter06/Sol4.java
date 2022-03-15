@@ -13,8 +13,8 @@ public class Sol4 {
 			total = total + arrGrade[i];
 		};
 		double avg = (double) total / arrGrade.length;
-	System.out.println("ÇĞ»ıµéÀÇ ÃÑÇÕ Á¡¼ö = " + total);
-	System.out.println("ÇĞ»ıµéÀÇ Æò±Õ Á¡¼ö = " + avg);
+	System.out.println("í•™ìƒë“¤ì˜ ì´í•© ì ìˆ˜ = " + total);
+	System.out.println("í•™ìƒë“¤ì˜ í‰ê·  ì ìˆ˜ = " + avg);
 	}
 
 }

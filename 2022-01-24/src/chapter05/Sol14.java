@@ -9,16 +9,16 @@ public class Sol14 {
 
 		Random random = new Random();
 		
-		System.out.println("ÄÄÇ»ÅÍ°¡ µ¿ÀüÀ» ´øÁı´Ï´Ù!");
-		// µ¿ÀüÀ» ´øÁ®¼­ ³ª¿Â ¸éÀ» Boolean Å¸ÀÔÀÇ µ¥ÀÌÅÍ·Î Ç¥Çö
+		System.out.println("ì»´í“¨í„°ê°€ ë™ì „ì„ ë˜ì§‘ë‹ˆë‹¤!");
+		// ë™ì „ì„ ë˜ì ¸ì„œ ë‚˜ì˜¨ ë©´ì„ Boolean íƒ€ì…ì˜ ë°ì´í„°ë¡œ í‘œí˜„
 		boolean coin = random.nextBoolean();
 		
 		System.out.println(coin);
 		
 		if(coin == true) {
-			System.out.println("Á¤´ä!");
+			System.out.println("ì •ë‹µ!");
 		}else if(coin == false) {
-			System.out.println("¶¯~!");
+			System.out.println("ë•¡~!");
 		}
 		
 		

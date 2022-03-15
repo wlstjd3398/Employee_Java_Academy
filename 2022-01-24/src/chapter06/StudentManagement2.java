@@ -19,20 +19,20 @@ public class StudentManagement2 {
 		
 		Random random = new Random();
 		
-//		System.out.println("1 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä");
-//		System.out.println("±¹¾î => ");
+//		System.out.println("1 ë²ˆì§¸ í•™ìƒì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”");
+//		System.out.println("êµ­ì–´ => ");
 //		kor[0] = random.nextInt(101);
-//		System.out.println("¿µ¾î => ");
+//		System.out.println("ì˜ì–´ => ");
 //		eng[0] = random.nextInt(101);
-//		System.out.println("¼öÇĞ => ");
+//		System.out.println("ìˆ˜í•™ => ");
 //		mat[0] = random.nextInt(101);
 //		
-//		System.out.println("2 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä");
-//		System.out.println("±¹¾î => ");
+//		System.out.println("2 ë²ˆì§¸ í•™ìƒì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”");
+//		System.out.println("êµ­ì–´ => ");
 //		kor[1] = random.nextInt(101);
-//		System.out.println("¿µ¾î => ");
+//		System.out.println("ì˜ì–´ => ");
 //		eng[1] = random.nextInt(101);
-//		System.out.println("¼öÇĞ => ");
+//		System.out.println("ìˆ˜í•™ => ");
 //		mat[1] = random.nextInt(101);
 		
 		for(int i=0; i<sums.length; i++) {
@@ -82,13 +82,13 @@ public class StudentManagement2 {
 		}
 		
 		for(int i=0; i<sums.length; i++) {
-			System.out.println("<<" + (i+1) +" ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
-			System.out.println("±¹¾î = " + kor[i]);
-			System.out.println("¿µ¾î = " + eng[i]);
-			System.out.println("¼öÇĞ = " + mat[i]);
-			System.out.println("ÃÑÁ¡ = " + sums[i]);
-			System.out.println("Æò±Õ = " + avgs[i]);
-			System.out.println("¼®Â÷ = " + ranks[i]);
+			System.out.println("<<" + (i+1) +" ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
+			System.out.println("êµ­ì–´ = " + kor[i]);
+			System.out.println("ì˜ì–´ = " + eng[i]);
+			System.out.println("ìˆ˜í•™ = " + mat[i]);
+			System.out.println("ì´ì  = " + sums[i]);
+			System.out.println("í‰ê·  = " + avgs[i]);
+			System.out.println("ì„ì°¨ = " + ranks[i]);
 
 		}
 		

@@ -5,9 +5,9 @@ public class Ex2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Ã¶¼öÀÇ ±¹¼ö¿µ Á¡¼ö¸¦ st1Scores ¹è¿­¿¡ ÀúÀåÇÏ°í
-		// st1scores ¹è¿­°ú ¿¬»êÀÚ¸¦ È°¿ëÇØ¼­
-		// Ã¶¼öÀÇ ÃÑÁ¡, Æò±ÕÀ» °è»êÇØ Ãâ·ÂÇØ¶ó
+		// ì² ìˆ˜ì˜ êµ­ìˆ˜ì˜ ì ìˆ˜ë¥¼ st1Scores ë°°ì—´ì— ì €ì¥í•˜ê³ 
+		// st1scores ë°°ì—´ê³¼ ì—°ì‚°ìë¥¼ í™œìš©í•´ì„œ
+		// ì² ìˆ˜ì˜ ì´ì , í‰ê· ì„ ê³„ì‚°í•´ ì¶œë ¥í•´ë¼
 		
 //		int[] st1Scores = new int[4];
 //		st1Scores = new int[3];

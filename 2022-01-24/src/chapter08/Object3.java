@@ -2,32 +2,32 @@ package chapter08;
 
 public class Object3 {
 
-	// ¸Å°³º¯¼ö´Â ÀÌ ¸Ş¼­µå¸¦ È£ÃâÇÒ ¶§ ¹İµå½Ã Àü´ŞÇØ¾ßÇÏ´Â °ªÀÇ Å¸ÀÔ°ú °³¼ö¸¦ ³ªÅ¸³¿
+	// ë§¤ê°œë³€ìˆ˜ëŠ” ì´ ë©”ì„œë“œë¥¼ í˜¸ì¶œí•  ë•Œ ë°˜ë“œì‹œ ì „ë‹¬í•´ì•¼í•˜ëŠ” ê°’ì˜ íƒ€ì…ê³¼ ê°œìˆ˜ë¥¼ ë‚˜íƒ€ëƒ„
 	
-	// ¸Å°³º¯¼ö Å¸ÀÔ ¾øÀ½, °ªÀ» Àü´ŞÇÏ¸é ¾ÈµÈ´Ù
+	// ë§¤ê°œë³€ìˆ˜ íƒ€ì… ì—†ìŒ, ê°’ì„ ì „ë‹¬í•˜ë©´ ì•ˆëœë‹¤
 	void  printLines1() {
-		System.out.println("printLines1 ¸Ş¼­µå È£Ãâ");
+		System.out.println("printLines1 ë©”ì„œë“œ í˜¸ì¶œ");
 	}
 	
 	
-	// ¸Å°³º¯¼ö Å¸ÀÔ int, °³¼ö 1°³
-	// ¸Å°³º¯¼ö°¡ ÀÖ´Ù¸é ¸Å°³º¯¼öµµ °¡Áö°í Ãâ·ÂµÊ
+	// ë§¤ê°œë³€ìˆ˜ íƒ€ì… int, ê°œìˆ˜ 1ê°œ
+	// ë§¤ê°œë³€ìˆ˜ê°€ ìˆë‹¤ë©´ ë§¤ê°œë³€ìˆ˜ë„ ê°€ì§€ê³  ì¶œë ¥ë¨
 	void printLines2(int n) {
-		System.out.println("printLines2 ¸Ş¼­µå È£Ãâ");
-		System.out.println("¸Å°³º¯¼ö n = " + n);
+		System.out.println("printLines2 ë©”ì„œë“œ í˜¸ì¶œ");
+		System.out.println("ë§¤ê°œë³€ìˆ˜ n = " + n);
 	}
 	
-	// ¸Å°³º¯¼ö Å¸ÀÔ double, °³¼ö 1°³
+	// ë§¤ê°œë³€ìˆ˜ íƒ€ì… double, ê°œìˆ˜ 1ê°œ
 	void printLines3(double n) {
-		System.out.println("printLines3 ¸Ş¼­µå È£Ãâ");
-		System.out.println("¸Å°³º¯¼ö n = " + n);
+		System.out.println("printLines3 ë©”ì„œë“œ í˜¸ì¶œ");
+		System.out.println("ë§¤ê°œë³€ìˆ˜ n = " + n);
 	}
 	
-	// ¸Å°³º¯¼ö Å¸ÀÔ int, °³¼ö 2°³
+	// ë§¤ê°œë³€ìˆ˜ íƒ€ì… int, ê°œìˆ˜ 2ê°œ
 	void printLines4(int x, int y) {
-		System.out.println("printLines4 ¸Ş¼­µå È£Ãâ");
-		System.out.println("¸Å°³º¯¼ö x = " + x);
-		System.out.println("¸Å°³º¯¼ö y = " + y);
+		System.out.println("printLines4 ë©”ì„œë“œ í˜¸ì¶œ");
+		System.out.println("ë§¤ê°œë³€ìˆ˜ x = " + x);
+		System.out.println("ë§¤ê°œë³€ìˆ˜ y = " + y);
 	}
 	
 	

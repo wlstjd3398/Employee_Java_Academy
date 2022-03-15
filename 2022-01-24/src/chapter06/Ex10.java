@@ -5,7 +5,7 @@ public class Ex10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ±¸±¸´Ü 2´ÜÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» for¹®À¸·Î °³¹ßÇØ¶ó
+		// êµ¬êµ¬ë‹¨ 2ë‹¨ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ forë¬¸ìœ¼ë¡œ ê°œë°œí•´ë¼
 		for(int num=1; num<=9; num++) {
 			System.out.println("2 * "+ num + " = " + (2 * num));
 		}

@@ -34,7 +34,7 @@ public class Sol16 {
 		if(pc == think) {
 			System.out.println("Right!!");
 		}else if(pc !=think) {
-			System.out.println("³»°¡ »ı°¢ÇÑ ¼ıÀÚ´Â " + "{1 ~ 50 »çÀÌÀÇ ¼ö} ¾ß");
+			System.out.println("ë‚´ê°€ ìƒê°í•œ ìˆ«ìëŠ” " + "{1 ~ 50 ì‚¬ì´ì˜ ìˆ˜} ì•¼");
 		}
 		
 		

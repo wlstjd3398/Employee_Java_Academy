@@ -7,26 +7,26 @@ public class Ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("MyException ¹ß»ı Àü");
+		System.out.println("MyException ë°œìƒ ì „");
 		
-		// ¿¹¿ÜÁ¤º¸¸¦ °¡Áø ³ª¸¸ÀÇ °´Ã¼¸¦ »ı¼ºÇÏ´Â°Í = throw »ç¿ëÇØ¼­ ¹ß»ı½ÃÅ´
+		// ì˜ˆì™¸ì •ë³´ë¥¼ ê°€ì§„ ë‚˜ë§Œì˜ ê°ì²´ë¥¼ ìƒì„±í•˜ëŠ”ê²ƒ = throw ì‚¬ìš©í•´ì„œ ë°œìƒì‹œí‚´
 		try {
 			Scanner scan = new Scanner(System.in);
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			int number = scan.nextInt();
 			
 			if(number % 2 ==0) {
-				System.out.println("Â¦¼ö");
+				System.out.println("ì§ìˆ˜");
 			}else {
 				throw new MyException();
 			}
 		}catch(Exception e) {
-			System.out.println("MyException ¹ß»ı");
+			System.out.println("MyException ë°œìƒ");
 		}finally {
-			// ¿¹¿Ü ¹ß»ı ¿©ºÎ¿¡ »ó°ü¾øÀÌ Ç×»ó µ¿ÀÛÇØ¾ßÇÏ´Â ¼Ò½ºÄÚµå
-			System.out.println("finally ¾ÈÀÇ ¼Ò½ºÄÚµå");
+			// ì˜ˆì™¸ ë°œìƒ ì—¬ë¶€ì— ìƒê´€ì—†ì´ í•­ìƒ ë™ì‘í•´ì•¼í•˜ëŠ” ì†ŒìŠ¤ì½”ë“œ
+			System.out.println("finally ì•ˆì˜ ì†ŒìŠ¤ì½”ë“œ");
 		}
-//		System.out.println("MyException ¹ß»ı Àü");
+//		System.out.println("MyException ë°œìƒ ì „");
 		
 	}
 

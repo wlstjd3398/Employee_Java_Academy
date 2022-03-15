@@ -2,12 +2,12 @@ package chapter07;
 
 public class Object2 {
 
-	// ÀÎ½ºÅÏ½º ¸â¹ö º¯¼ö´Â ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ¶§¸¶´Ù ¸¸µé¾îÁö¹Ç·Î
-//	°¢ ÀÎ½ºÅÏ½ºÀÇ °íÀ¯ÇÑ °ªÀ» ÀúÀåÇÒ¶§ »ç¿ë
+	// ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í• ë•Œë§ˆë‹¤ ë§Œë“¤ì–´ì§€ë¯€ë¡œ
+//	ê° ì¸ìŠ¤í„´ìŠ¤ì˜ ê³ ìœ í•œ ê°’ì„ ì €ìž¥í• ë•Œ ì‚¬ìš©
 	
-//	µÎ°³´Ù ÀÖÀ»¼ö ÀÖÀ½
-	int num1;// ÀÎ½ºÅÏ½º ¸â¹ö º¯¼ö
-	static int num2;// Å¬·¡½º ¸â¹ö º¯¼ö
+//	ë‘ê°œë‹¤ ìžˆì„ìˆ˜ ìžˆìŒ
+	int num1;// ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ ë³€ìˆ˜
+	static int num2;// í´ëž˜ìŠ¤ ë©¤ë²„ ë³€ìˆ˜
 	
 	
 }

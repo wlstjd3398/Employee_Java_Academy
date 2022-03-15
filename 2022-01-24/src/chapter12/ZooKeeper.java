@@ -3,19 +3,19 @@ package chapter12;
 public class ZooKeeper {
 
 //	public void feed(Lion lion) {
-//		System.out.println(lion.getName() + " ¿¡°Ô ¸ÔÀÌ ÁÖ±â");
+//		System.out.println(lion.getName() + " ì—ê²Œ ë¨¹ì´ ì£¼ê¸°");
 //	}
 //	
 //	public void feed(Rabbit rabbit) {
-//		System.out.println(rabbit.getName() + " ¿¡°Ô ¸ÔÀÌ ÁÖ±â");
+//		System.out.println(rabbit.getName() + " ì—ê²Œ ë¨¹ì´ ì£¼ê¸°");
 //	}
 	
-	// ¿À¹ö·ÎµùÀÇ ÇÑ°è : ÇÏ³ªÀÇ µ¿¹°¿¡°Ô ÁöÁ¤ÇØÁà¾ßÇÔ
-	// -> ´ÙÇü¼º Àû¿ëÇÏ¿© Å¬·¡½º °øÅëºĞ¸ğ¸¦ »Ì¾Æ¼­ »ó¼Ó È°¿ëÇØ¾ßÇÔ(´ÙÇü¼ºÀº »ó¼Ó¿¡¼­¸¸ »ç¿ë°¡´ÉÇØ¼­)
-	// -> Rabbit LionÀÌ Å¬·¡½ºÀÇ °øÅëºÎºĞ ¸¹À½ -> ÀÚ½Ä ºÎ¸ğ¸¦ ¼³Á¤ÇØ¾ßÇÔ
-	// extends Animal ¼³Á¤
+	// ì˜¤ë²„ë¡œë”©ì˜ í•œê³„ : í•˜ë‚˜ì˜ ë™ë¬¼ì—ê²Œ ì§€ì •í•´ì¤˜ì•¼í•¨
+	// -> ë‹¤í˜•ì„± ì ìš©í•˜ì—¬ í´ë˜ìŠ¤ ê³µí†µë¶„ëª¨ë¥¼ ë½‘ì•„ì„œ ìƒì† í™œìš©í•´ì•¼í•¨(ë‹¤í˜•ì„±ì€ ìƒì†ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥í•´ì„œ)
+	// -> Rabbit Lionì´ í´ë˜ìŠ¤ì˜ ê³µí†µë¶€ë¶„ ë§ìŒ -> ìì‹ ë¶€ëª¨ë¥¼ ì„¤ì •í•´ì•¼í•¨
+	// extends Animal ì„¤ì •
 	
 	public void feed(Animal animal) {
-		System.out.println(animal.getName() + " ¿¡°Ô ¸ÔÀÌ ÁÖ±â");
+		System.out.println(animal.getName() + " ì—ê²Œ ë¨¹ì´ ì£¼ê¸°");
 	}
 }

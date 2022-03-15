@@ -11,16 +11,16 @@ public class Ex6 {
 		obj2.num1 = 1;
 		obj3.num1 = 2;
 		
-		// ÀÌ ÇÁ·Î±×·¥ÀÇ µ¿ÀÛ ¿ø¸®¸¦ ºĞ¼®ÇÏ¼¼¿ä
+		// ì´ í”„ë¡œê·¸ë¨ì˜ ë™ì‘ ì›ë¦¬ë¥¼ ë¶„ì„í•˜ì„¸ìš”
 		System.out.println("obj2.num1 = " + obj2.num1);
 		System.out.println("obj3.num1 = " + obj3.num1);
 		
-		// Object2¸¦ º¸¸é num2´Â Å¬·¡½º ¸â¹öº¯¼ö·Î staticÀÌ ºÙ¾îÀÖÀ½
+		// Object2ë¥¼ ë³´ë©´ num2ëŠ” í´ë˜ìŠ¤ ë©¤ë²„ë³€ìˆ˜ë¡œ staticì´ ë¶™ì–´ìˆìŒ
 		Object2.num2 = 3;
 		System.out.println("Object2.num2 = " + Object2.num2);
 		
-		// obj2ÀÇ int num1=1; ºÎºĞ¿¡ ÀúÀåÇÏ·Á°í µé¾î°¬´Âµ¥
-		// Object2 Å¬·¡½ºÀÇ Á¤º¸·Î ÀÌµ¿ÇØ¼­ int num2 = 4;¸¦ ÀúÀåÇÔ
+		// obj2ì˜ int num1=1; ë¶€ë¶„ì— ì €ì¥í•˜ë ¤ê³  ë“¤ì–´ê°”ëŠ”ë°
+		// Object2 í´ë˜ìŠ¤ì˜ ì •ë³´ë¡œ ì´ë™í•´ì„œ int num2 = 4;ë¥¼ ì €ì¥í•¨
 		obj2.num2 =4;
 		System.out.println("obj2.num2 = " + obj2.num2);
 		

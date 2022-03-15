@@ -7,25 +7,25 @@ public class Ex3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Random ±¸Ã¼È­½ÃÄÑÁà¾ßÇÔ
-		// Random ¶óÀÌºê·¯¸® -> ³­¼ö »ı¼º°ú °ü·ÃµÈ ±â´ÉµéÀ» °®°í ÀÖ´Â ¶óÀÌºê·¯¸®
-		// ³­¼ö -> ÀÏÁ¤ÇÑ ¹üÀ§ ¾ÈÀÇ ¼ıÀÚ¸¦ ¹«ÀÛÀ§·Î ¼±ÅÃÇÑ ¼ö ¶Ç´Â ¼ö¿­
+		// Random êµ¬ì²´í™”ì‹œì¼œì¤˜ì•¼í•¨
+		// Random ë¼ì´ë¸ŒëŸ¬ë¦¬ -> ë‚œìˆ˜ ìƒì„±ê³¼ ê´€ë ¨ëœ ê¸°ëŠ¥ë“¤ì„ ê°–ê³  ìˆëŠ” ë¼ì´ë¸ŒëŸ¬ë¦¬
+		// ë‚œìˆ˜ -> ì¼ì •í•œ ë²”ìœ„ ì•ˆì˜ ìˆ«ìë¥¼ ë¬´ì‘ìœ„ë¡œ ì„ íƒí•œ ìˆ˜ ë˜ëŠ” ìˆ˜ì—´
 		Random random = new Random();
 		
-		// Á¤¼ö Áß¿¡¼­ ³­¼ö
+		// ì •ìˆ˜ ì¤‘ì—ì„œ ë‚œìˆ˜
 		int su = random.nextInt();
 		System.out.println(su);
 		
-		// ´Ù¸¥ nextInt(¹üÀ§)
-		// 1 ~ 6 ±îÁö ÀÖ´Â Á¤À°¸éÃ¼ ÁÖ»çÀ§¸¦ ±¼¸°´Ù 3¹ø
+		// ë‹¤ë¥¸ nextInt(ë²”ìœ„)
+		// 1 ~ 6 ê¹Œì§€ ìˆëŠ” ì •ìœ¡ë©´ì²´ ì£¼ì‚¬ìœ„ë¥¼ êµ´ë¦°ë‹¤ 3ë²ˆ
 		int dice = random.nextInt(6) + 1;
-		System.out.println("ÁÖ»çÀ§¸¦ ±¼·Á¼­ ³ª¿Â ¼ö " + dice);
+		System.out.println("ì£¼ì‚¬ìœ„ë¥¼ êµ´ë ¤ì„œ ë‚˜ì˜¨ ìˆ˜ " + dice);
 		
 		dice = random.nextInt(6) + 1;
-		System.out.println("ÁÖ»çÀ§¸¦ ±¼·Á¼­ ³ª¿Â ¼ö " + dice);
+		System.out.println("ì£¼ì‚¬ìœ„ë¥¼ êµ´ë ¤ì„œ ë‚˜ì˜¨ ìˆ˜ " + dice);
 		
 		dice = random.nextInt(6) + 1;		
-		System.out.println("ÁÖ»çÀ§¸¦ ±¼·Á¼­ ³ª¿Â ¼ö " + dice);
+		System.out.println("ì£¼ì‚¬ìœ„ë¥¼ êµ´ë ¤ì„œ ë‚˜ì˜¨ ìˆ˜ " + dice);
 		
 	}
 

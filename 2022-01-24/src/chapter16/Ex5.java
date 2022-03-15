@@ -6,21 +6,21 @@ public class Ex5 {
 		// TODO Auto-generated method stub
 
 		Box<Object> box1 = new Box<Object>();
-		// ¹Ú½º¿¡ Á¦³×¸¯½ºÀ» ÁöÁ¤ÇØÁà¾ßÇÏ´Âµ¥ ¾ÈÇØÁà¼­ ³ë¶õ»öÁÙ»ý±è
-		// ¹®¹ýÀûÀ¸·Î Æ²¸°°ÍÀº ¾Æ´Ô
+		// ë°•ìŠ¤ì— ì œë„¤ë¦­ìŠ¤ì„ ì§€ì •í•´ì¤˜ì•¼í•˜ëŠ”ë° ì•ˆí•´ì¤˜ì„œ ë…¸ëž€ìƒ‰ì¤„ìƒê¹€
+		// ë¬¸ë²•ì ìœ¼ë¡œ í‹€ë¦°ê²ƒì€ ì•„ë‹˜
 		
-		// ¾ÈµÊ
+		// ì•ˆë¨
 //		String box1_item = box1.getItem();
-		String box1_item = box1.getItem("¾ÆÀÌÅÛ1");
-		// ¹®ÀÚ¿­À» ÀúÀåÇÏ¸é ¹®ÀÚ¿­·Î, ¼ýÀÚ¸¦ ÀúÀåÇÏ¸é ¼ýÀÚ·Î
-		// µ¥ÀÌÅÍÅ¸ÀÔÀÌ T·Î´Â ÇÒ¼ö¾ø¾î¼­ Object·Î ¹Ù²ñ 
-		// µ¥ÀÌÅÍÅ¸ÀÔÀÌ Object¶ó´Â °Ç ¾î¶² °ªÀÌµç ´Ù Àû¿ëÇÒ¼öÀÖ´Ù
+		String box1_item = box1.getItem("ì•„ì´í…œ1");
+		// ë¬¸ìžì—´ì„ ì €ìž¥í•˜ë©´ ë¬¸ìžì—´ë¡œ, ìˆ«ìžë¥¼ ì €ìž¥í•˜ë©´ ìˆ«ìžë¡œ
+		// ë°ì´í„°íƒ€ìž…ì´ Të¡œëŠ” í• ìˆ˜ì—†ì–´ì„œ Objectë¡œ ë°”ë€œ 
+		// ë°ì´í„°íƒ€ìž…ì´ Objectë¼ëŠ” ê±´ ì–´ë–¤ ê°’ì´ë“  ë‹¤ ì ìš©í• ìˆ˜ìžˆë‹¤
 		Object box1_item = box1.getItem();
 		
 		
 		
 		Box<String> box2 = new Box<String>();
-		box2.item = "¾ÆÀÌÅÛ1";
+		box2.item = "ì•„ì´í…œ1";
 		
 		
 		

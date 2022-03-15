@@ -7,15 +7,15 @@ public class Ex14 {
 
 		int[] ageArray = {21, 21, 23, 22};
 		
-		// ageArray ¾È¿¡´Â ³× ÇÐ»ýÀÇ ³ªÀÌ°¡ µé¾îÀÖ½À´Ï´Ù.
-		// ³× ÇÐ»ýÀÇ ÇÕ°è ³ªÀÌ¿Í Æò±Õ ³ªÀÌ¸¦ °è»êÇØ Ãâ·ÂÇØ¶ó
+		// ageArray ì•ˆì—ëŠ” ë„¤ í•™ìƒì˜ ë‚˜ì´ê°€ ë“¤ì–´ìžˆìŠµë‹ˆë‹¤.
+		// ë„¤ í•™ìƒì˜ í•©ê³„ ë‚˜ì´ì™€ í‰ê·  ë‚˜ì´ë¥¼ ê³„ì‚°í•´ ì¶œë ¥í•´ë¼
 		
 //		for(int n=0; n<=ageArray.length; n++) {
 //			System.out.println(ageArray[n]);
 //			
 //		}
 		
-		// ¹æ¹ý2
+		// ë°©ë²•2
 		int totalAge = 0;
 //		totalAge = totalAge + ageArray[0];
 //		totalAge = totalAge + ageArray[1];
@@ -25,19 +25,19 @@ public class Ex14 {
 		for(int i=0; i<=3; i++) {
 			totalAge = totalAge + ageArray[i];
 		}
-		System.out.println("ÇÐ»ýµé ÃÑ³ªÀÌ = " + totalAge);
+		System.out.println("í•™ìƒë“¤ ì´ë‚˜ì´ = " + totalAge);
 		
 		double avgAge = (double) totalAge / ageArray.length;
-		System.out.println("ÇÐ»ýµé Æò±Õ³ªÀÌ = " + avgAge);
+		System.out.println("í•™ìƒë“¤ í‰ê· ë‚˜ì´ = " + avgAge);
 		
 		
 		
 		
-		// ¹æ¹ý1
+		// ë°©ë²•1
 //		int totalAge = ageArray[0] + ageArray[1] + ageArray[2] + ageArray[3];
 //		double avgAge =(double) totalAge / ageArray.length;
-//		System.out.println("ÇÐ»ýµé ÃÑ³ªÀÌ = " + totalAge);
-//		System.out.println("ÇÐ»ýµé ³ªÀÌ Æò±Õ = " + avgAge);
+//		System.out.println("í•™ìƒë“¤ ì´ë‚˜ì´ = " + totalAge);
+//		System.out.println("í•™ìƒë“¤ ë‚˜ì´ í‰ê·  = " + avgAge);
 		
 	}
 

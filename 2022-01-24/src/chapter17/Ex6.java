@@ -14,12 +14,12 @@ public class Ex6 {
 		list.add(3);
 		
 		System.out.println(list.contains(1));
-		// ÀÌ ¸®½ºÆ®¿¡ µ¥ÀÌÅÍ°¡ µé¾îÀÖ³ª¿ä? -> ÀÌ ¸®½ºÆ®¿¡ 1ÀÌ µé¾îÀÖ³ª¿ä?
-		// -> ³× -> true, ¾Æ´Ï¿ä -> false
+		// ì´ ë¦¬ìŠ¤íŠ¸ì— ë°ì´í„°ê°€ ë“¤ì–´ìžˆë‚˜ìš”? -> ì´ ë¦¬ìŠ¤íŠ¸ì— 1ì´ ë“¤ì–´ìžˆë‚˜ìš”?
+		// -> ë„¤ -> true, ì•„ë‹ˆìš” -> false
 		
-		// contains´Â ³»ºÎÀûÀ¸·Î ÀÎÀÚ·Î Àü´Þ ¹ÞÀº °ª°ú ÀÌ ¸®½ºÆ®¿¡ µé¾îÀÖ´Â ¸ðµç µ¥ÀÌÅÍ¸¦
-		// ºñ±³ ¿¬»êÇØ¼­ true°¡ ³ª¿À¸é true¸¦ ¹ÝÈ¯
-		// ¸¶Áö¸·±îÁö true°¡ ³ª¿ÀÁö ¾Ê¾Ò´Ù¸é false¸¦ ¹ÝÈ¯
+		// containsëŠ” ë‚´ë¶€ì ìœ¼ë¡œ ì¸ìžë¡œ ì „ë‹¬ ë°›ì€ ê°’ê³¼ ì´ ë¦¬ìŠ¤íŠ¸ì— ë“¤ì–´ìžˆëŠ” ëª¨ë“  ë°ì´í„°ë¥¼
+		// ë¹„êµ ì—°ì‚°í•´ì„œ trueê°€ ë‚˜ì˜¤ë©´ trueë¥¼ ë°˜í™˜
+		// ë§ˆì§€ë§‰ê¹Œì§€ trueê°€ ë‚˜ì˜¤ì§€ ì•Šì•˜ë‹¤ë©´ falseë¥¼ ë°˜í™˜
 		
 		
 	}

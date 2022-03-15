@@ -4,30 +4,30 @@ import java.util.Scanner;
 
 public class Ex5 {
 
-	// static : °´Ã¼ »ı¼º ¾øÀÌ »ç¿ë°¡´ÉÇÏ°Ô Å¬·¡½º ¸¸µë
-	// ¸Ş¼­µå static ³»¿¡¼­´Â static ¸â¹ö¸¸ »ç¿ë°¡´É
+	// static : ê°ì²´ ìƒì„± ì—†ì´ ì‚¬ìš©ê°€ëŠ¥í•˜ê²Œ í´ë˜ìŠ¤ ë§Œë“¬
+	// ë©”ì„œë“œ static ë‚´ì—ì„œëŠ” static ë©¤ë²„ë§Œ ì‚¬ìš©ê°€ëŠ¥
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ¹®ÀÚ¿­ÀÇ ¹®ÀÚÇÏ³ª¿Í Ã£°íÀÚÇÏ´Â ¹®ÀÚÇÏ³ª¿Í ºñ±³ÇØ¼­ ÀÖÀ¸¸é ¸î¹øÀÎµ¦½ºÀÎÁö, ¾øÀ¸¸é Ã£Áö ¸øÇß½À´Ï´Ù. Ãâ·Â
+		// ë¬¸ìì—´ì˜ ë¬¸ìí•˜ë‚˜ì™€ ì°¾ê³ ìí•˜ëŠ” ë¬¸ìí•˜ë‚˜ì™€ ë¹„êµí•´ì„œ ìˆìœ¼ë©´ ëª‡ë²ˆì¸ë±ìŠ¤ì¸ì§€, ì—†ìœ¼ë©´ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ì¶œë ¥
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¹®ÀÚ¿­ ÀÔ·Â >> ");
+		System.out.println("ë¬¸ìì—´ ì…ë ¥ >> ");
 //		String target = scan.nextLine();
 		
 		String target = null;
 		
-		System.out.println("Ã£°íÀÚ ÇÏ´Â ¹®ÀÚ ÀÔ·Â >> ");
+		System.out.println("ì°¾ê³ ì í•˜ëŠ” ë¬¸ì ì…ë ¥ >> ");
 		char data = scan.next().charAt(0);
 		try {
 			int index = Util.findChar(target, data);
 			if(index == -1) {
-				System.out.println(data + "À»(¸¦) Ã£Áö ¸øÇß½À´Ï´Ù.");
+				System.out.println(data + "ì„(ë¥¼) ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.");
 			}else {
-				System.out.println(data + "Àº(´Â) " + index + "¹ø ÀÎµ¦½º¿¡ µé¾îÀÖ½À´Ï´Ù.");
+				System.out.println(data + "ì€(ëŠ”) " + index + "ë²ˆ ì¸ë±ìŠ¤ì— ë“¤ì–´ìˆìŠµë‹ˆë‹¤.");
 			}
 		}catch(NullPointerException e) {
-			System.out.println("targetÀÌ NullÀÔ´Ï´Ù. È®ÀÎÇØÁÖ¼¼¿ä.");
+			System.out.println("targetì´ Nullì…ë‹ˆë‹¤. í™•ì¸í•´ì£¼ì„¸ìš”.");
 		}
 		
 		

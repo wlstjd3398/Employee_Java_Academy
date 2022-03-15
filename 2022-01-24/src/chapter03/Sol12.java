@@ -15,8 +15,8 @@ public class Sol12 {
 		avg = (int) avg;			// - ( 3 )
 		avg = avg / 100;			// - ( 4 )
 		
-		System.out.println("Ã¶¼öÀÇ ÃÑÁ¡ = " + sum + "Á¡ÀÔ´Ï´Ù.");
-		System.out.println("Ã¶¼öÀÇ Æò±Õ = " + avg + "Á¡ÀÔ´Ï´Ù.");
+		System.out.println("ì² ìˆ˜ì˜ ì´ì  = " + sum + "ì ì…ë‹ˆë‹¤.");
+		System.out.println("ì² ìˆ˜ì˜ í‰ê·  = " + avg + "ì ì…ë‹ˆë‹¤.");
 
 	}
 

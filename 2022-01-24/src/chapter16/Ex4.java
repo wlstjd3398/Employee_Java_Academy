@@ -5,16 +5,16 @@ public class Ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Integer obj1 = 10; // ¿ÀÅä ¹Ú½Ì
-		int num1 = obj1; // ¿ÀÅä ¾ð¹Ú½Ì
+		Integer obj1 = 10; // ì˜¤í†  ë°•ì‹±
+		int num1 = obj1; // ì˜¤í†  ì–¸ë°•ì‹±
 		System.out.println("num1 = " +num1);
 		
-		Double obj2 = new Double(3.14); // ¿ÀÅä ¹Ú½Ì Àü
-		double num2 = obj2; // ¿ÀÅä ¾ð¹Ú½Ì
+		Double obj2 = new Double(3.14); // ì˜¤í†  ë°•ì‹± ì „
+		double num2 = obj2; // ì˜¤í†  ì–¸ë°•ì‹±
 		System.out.println("num2 = " + num2);
 		
-		Character obj3 = 'a'; // ¿ÀÅä ¹Ú½Ì
-		char num3 = obj3.charValue(); // ¿ÀÅä ¾ð¹Ú½Ì Àü
+		Character obj3 = 'a'; // ì˜¤í†  ë°•ì‹±
+		char num3 = obj3.charValue(); // ì˜¤í†  ì–¸ë°•ì‹± ì „
 		System.out.println("num3 = " + num3);
 		
 	}

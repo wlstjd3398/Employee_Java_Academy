@@ -5,22 +5,22 @@ public class Ex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// int Å¸ÀÔÀÇ µ¥ÀÌÅÍµéÀ» ÀúÀåÇÒ ¼ö ÀÖ´Â arr1 º¯¼ö -> int Å¸ÀÔÀÇ ¹è¿­
+		// int íƒ€ì…ì˜ ë°ì´í„°ë“¤ì„ ì €ì¥í•  ìˆ˜ ìˆëŠ” arr1 ë³€ìˆ˜ -> int íƒ€ì…ì˜ ë°°ì—´
 		int[] arr1;
 		arr1 = new int[4];
 		
-		// ´ëÀÔ¿¬»êÀÚÀÇ ¿ŞÂÊÀÌ º¯¼ö, ¿À¸¥ÂÊÀÌ °ª
+		// ëŒ€ì…ì—°ì‚°ìì˜ ì™¼ìª½ì´ ë³€ìˆ˜, ì˜¤ë¥¸ìª½ì´ ê°’
 		arr1[0] = 4;
 		arr1[1] = 3;
 		arr1[2] = 2;
 		arr1[3] = 1;
 		
 		
-		// double Å¸ÀÔÀÇ ¹è¿­
+		// double íƒ€ì…ì˜ ë°°ì—´
 		double[] arr2;
 		arr2 = new double[2];
 		
-		// char Å¸ÀÔÀÇ ¹è¿­
+		// char íƒ€ì…ì˜ ë°°ì—´
 		char[] arr3;
 		arr3 = new char[1];
 	}

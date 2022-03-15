@@ -2,7 +2,7 @@ package chapter14;
 
 public class MyException extends RuntimeException{
 
-	// RuntimeÀ» »ó¼Ó¹Ş´Â My
-	// ³ª¸¸ÀÇ ¿¹¿Ü¸¦ ¸¸µé ¼ö ÀÖÀ½
+	// Runtimeì„ ìƒì†ë°›ëŠ” My
+	// ë‚˜ë§Œì˜ ì˜ˆì™¸ë¥¼ ë§Œë“¤ ìˆ˜ ìˆìŒ
 	
 }

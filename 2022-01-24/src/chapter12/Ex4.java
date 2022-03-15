@@ -6,25 +6,25 @@ public class Ex4 {
 		// TODO Auto-generated method stub
 
 		ElectricFan fan1 = new ElectricFan();
-		// fan1.  ÀÌ¶ó´Â °ÍÀº ¹Ù·Î À§ °´Ã¼ÀÇ Å¸ÀÔ EletricFan¿¡¼­ ¾î¶² ¸Þ¼­µå¿¡ Á¢±ÙÇÒ¼öÀÖ´ÂÁö º¸¿©ÁÜ
+		// fan1.  ì´ë¼ëŠ” ê²ƒì€ ë°”ë¡œ ìœ„ ê°ì²´ì˜ íƒ€ìž… EletricFanì—ì„œ ì–´ë–¤ ë©”ì„œë“œì— ì ‘ê·¼í• ìˆ˜ìžˆëŠ”ì§€ ë³´ì—¬ì¤Œ
 		
 		WallMountedFan fan2 = new WallMountedFan();
-		// fan2. ÀÌ¶ó´Â °ÍÀº ¹Ù·Î À§ °´Ã¼ÀÇ Å¸ÀÔ WallMountedFan¿¡¼­ ¾î¶² ¸Þ¼­µå¿¡ Á¢±ÙÇÒ¼öÀÖ´ÂÁö º¸¿©ÁÜ
+		// fan2. ì´ë¼ëŠ” ê²ƒì€ ë°”ë¡œ ìœ„ ê°ì²´ì˜ íƒ€ìž… WallMountedFanì—ì„œ ì–´ë–¤ ë©”ì„œë“œì— ì ‘ê·¼í• ìˆ˜ìžˆëŠ”ì§€ ë³´ì—¬ì¤Œ
 		
-		// °´Ã¼ Å¸ÀÔ°ú ÀÎ½ºÅÏ½º Å¸ÀÔÀ» °°°Ô ÇØÁá¾úÀ½
-		// ´ÙÇü¼º = °´Ã¼¿Í ÀÎ½ºÅÏ½º ÀÌ¸§ ´Ù¸£°Ô ÇÔ
-		// ºÎ¸ð Å¸ÀÔÀÇ °´Ã¼(ElectricFan)°¡ ÀÚ½Ä Å¸ÀÔ(WallMountedFan)ÀÇ ÀÎ½ºÅÏ½º¸¦ ÀúÀåÇÏ´Â °Í
+		// ê°ì²´ íƒ€ìž…ê³¼ ì¸ìŠ¤í„´ìŠ¤ íƒ€ìž…ì„ ê°™ê²Œ í•´ì¤¬ì—ˆìŒ
+		// ë‹¤í˜•ì„± = ê°ì²´ì™€ ì¸ìŠ¤í„´ìŠ¤ ì´ë¦„ ë‹¤ë¥´ê²Œ í•¨
+		// ë¶€ëª¨ íƒ€ìž…ì˜ ê°ì²´(ElectricFan)ê°€ ìžì‹ íƒ€ìž…(WallMountedFan)ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì €ìž¥í•˜ëŠ” ê²ƒ
 		
 		ElectricFan fan3 = new WallMountedFan();
-		// ¼±Ç³±â¸¦ ÇÏ³ª ÀúÀåÇÒ¼öÀÖ´Â °Í¿¡ º®°ÉÀÌ¼±Ç³±â¸¦ ÀúÀåÇß´Ù
-		// fan3. ElectricFan °´Ã¼ Å¸ÀÔ¿¡¼­ ÀÎ½ºÅÏ½º¸¦ 100ÆÛ È°¿ë¸øÇÔ -> hangFan »ç¿ë ¸øÇÔ
-		// »ó¼ÓÀ» ²÷À¸¸é ÀÌ°Íµµ ¹®¹ýÀû ¿À·ù»ý±è
+		// ì„ í’ê¸°ë¥¼ í•˜ë‚˜ ì €ìž¥í• ìˆ˜ìžˆëŠ” ê²ƒì— ë²½ê±¸ì´ì„ í’ê¸°ë¥¼ ì €ìž¥í–ˆë‹¤
+		// fan3. ElectricFan ê°ì²´ íƒ€ìž…ì—ì„œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ 100í¼ í™œìš©ëª»í•¨ -> hangFan ì‚¬ìš© ëª»í•¨
+		// ìƒì†ì„ ëŠìœ¼ë©´ ì´ê²ƒë„ ë¬¸ë²•ì  ì˜¤ë¥˜ìƒê¹€
 		
 //		WallMountedFan fan4 = new ElectricFan();
-		// ÄÄÆÄÀÏ ¿À·ù -> ÀÚ½Ä(WallMountedFan)ÀÌ ºÎ¸ð(ElectricFan)º¸´Ù ´õ ¸¹Àº °ÍÀ» ¾Ë°í ÀÖÀ½(ex.hangFan)
-		// ´ÙÇü¼ºÀ» Àû¿ëÇÏ·Á¸é »ó¼Ó °ü°è¿¡ ÀÖ´Â Å¬·¡½ºµéÀ» È°¿ëÇØ¾ßÇÔ
-		// ´ÙÇü¼ºÀ» Àû¿ëÇÏ·Á¸é °´Ã¼ÀÇ Å¸ÀÔÀº ºÎ¸ð Å¬·¡½ºÀÌ¾î¾ßÇÏ°í
-		// ÀÎ½ºÅÏ½º Å¸ÀÔÀº ÀÚ½Ä Å¬·¡½º Å¸ÀÔÀÌ¾î¾ßÇÔ
+		// ì»´íŒŒì¼ ì˜¤ë¥˜ -> ìžì‹(WallMountedFan)ì´ ë¶€ëª¨(ElectricFan)ë³´ë‹¤ ë” ë§Žì€ ê²ƒì„ ì•Œê³  ìžˆìŒ(ex.hangFan)
+		// ë‹¤í˜•ì„±ì„ ì ìš©í•˜ë ¤ë©´ ìƒì† ê´€ê³„ì— ìžˆëŠ” í´ëž˜ìŠ¤ë“¤ì„ í™œìš©í•´ì•¼í•¨
+		// ë‹¤í˜•ì„±ì„ ì ìš©í•˜ë ¤ë©´ ê°ì²´ì˜ íƒ€ìž…ì€ ë¶€ëª¨ í´ëž˜ìŠ¤ì´ì–´ì•¼í•˜ê³ 
+		// ì¸ìŠ¤í„´ìŠ¤ íƒ€ìž…ì€ ìžì‹ í´ëž˜ìŠ¤ íƒ€ìž…ì´ì–´ì•¼í•¨
 		
 	}
 

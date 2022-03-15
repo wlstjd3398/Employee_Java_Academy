@@ -15,7 +15,7 @@ public class Ex7 {
 		System.out.println("obj1.value = " + obj1.value);
 		
 		
-		// ¸Þ¼­µå func2
+		// ë©”ì„œë“œ func
 //		int[] numArr = {1, 2, 3};
 //		System.out.println(Arrays.toString(numArr));
 //		
@@ -25,7 +25,7 @@ public class Ex7 {
 //		System.out.println(Arrays.toString(numArr));
 		
 		
-		// ¸Þ¼­µå func
+		// Â¸ÃžÂ¼Â­ÂµÃ¥ func
 //		int num = 10;
 //		System.out.println("num = " + num);
 //		Object6 obj = new Object6();

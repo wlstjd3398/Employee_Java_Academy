@@ -3,15 +3,15 @@ package chapter08;
 public class Calculator {
 
 	
-	// ¸Þ¼­µå È£ÃâÇÏ´Â ÄÚµå¸¦ ¸¸³ª¼­ ÄÄÇ»ÅÍ°¡ ¸Þ¼­µå ¾ÈÀ¸·Î µé¾î¿À°Ô µÇ¸é
-	// RAM ¾È¿¡ ¸Þ¼­µåÀÇ °ø°£ÀÌ »ý±è
+	// ë©”ì„œë“œ í˜¸ì¶œí•˜ëŠ” ì½”ë“œë¥¼ ë§Œë‚˜ì„œ ì»´í“¨í„°ê°€ ë©”ì„œë“œ ì•ˆìœ¼ë¡œ ë“¤ì–´ì˜¤ê²Œ ë˜ë©´
+	// RAM ì•ˆì— ë©”ì„œë“œì˜ ê³µê°„ì´ ìƒê¹€
 	double calcuAvg(int a, int b, int c) {
 		int total = a + b + c;
 		double avg = (double) total / 3;
 		
 		return avg;
 	}
-	// À§ calcuAvg¿Í main ¾Æ·¡¿Í °°ÀÌ Ã¥°ú ÀÚ·á¿¡´Â ÇÑ²¨¹ø¿¡ ÇØ³õ¾ÒÀ½
+	// ìœ„ calcuAvgì™€ main ì•„ëž˜ì™€ ê°™ì´ ì±…ê³¼ ìžë£Œì—ëŠ” í•œêº¼ë²ˆì— í•´ë†“ì•˜ìŒ
 	
 	
 	void swap(int num1, int num2) {

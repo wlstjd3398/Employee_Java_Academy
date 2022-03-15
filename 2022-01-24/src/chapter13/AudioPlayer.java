@@ -5,13 +5,13 @@ public class AudioPlayer extends Player{
 	@Override
 	public void play(int pos) {
 		// TODO Auto-generated method stub
-		System.out.println("À½¾ÇÀ» Àç»ıÇÕ´Ï´Ù");
+		System.out.println("ìŒì•…ì„ ì¬ìƒí•©ë‹ˆë‹¤");
 	}
 
 	@Override
 	public void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("À½¾ÇÀ» Á¤ÁöÇÕ´Ï´Ù");
+		System.out.println("ìŒì•…ì„ ì •ì§€í•©ë‹ˆë‹¤");
 	}
 
 	

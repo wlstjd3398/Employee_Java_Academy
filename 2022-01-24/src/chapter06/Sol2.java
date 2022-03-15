@@ -9,7 +9,7 @@ public class Sol2 {
 		for(int num2=1; num2<=16; num2++) {
 			num1 = num1 + 6;
 		}
-		System.out.println("µîÂ÷¼ö¿­ 17¹øÂ°ÀÇ ¼ö´Â " + num1);
+		System.out.println("ë“±ì°¨ìˆ˜ì—´ 17ë²ˆì§¸ ìˆ«ìž " + num1);
 		
 	}
 

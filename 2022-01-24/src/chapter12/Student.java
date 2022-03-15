@@ -7,20 +7,20 @@ public class Student extends Person{
 	private double height;
 	
 	public void say() {
-		System.out.println("¸»ÇÏ´Ù");
+		System.out.println("ë§í•˜ë‹¤");
 	}
 	
 	public void eat() {
-		System.out.println("¸Ô´Ù");
+		System.out.println("ë¨¹ë‹¤");
 	}
 	
 	public void study() {
-		System.out.println("°øºÎÇÏ´Ù");
+		System.out.println("ê³µë¶€í•˜ë‹¤");
 	}
 
 	
-	// getter setter ´ÜÃàÅ° alt + shift + s -> r
-	// °³¹ßÅøÀ» ´ÜÃàÅ°·Î ¾²´Â °Íµµ ½Ç·Â!!
+	// getter setter ë‹¨ì¶•í‚¤ alt + shift + s -> r
+	// ê°œë°œíˆ´ì„ ë‹¨ì¶•í‚¤ë¡œ ì“°ëŠ” ê²ƒë„ ì‹¤ë ¥!!
 	public void setName(String name) {
 		this.name = name;
 	}

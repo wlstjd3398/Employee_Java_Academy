@@ -6,42 +6,42 @@ public class Ex4 {
 		// TODO Auto-generated method stub
 
 		Menu menu1 = new Menu();
-//		menu1.name = "Â¥Àå¸é"; // ÇÁ·Î½ÃÁ®ÁöÇâ=ÀýÂ÷ÁöÇâ
-		menu1.setName("Â¥Àå¸é"); // °´Ã¼ÁöÇâ
+//		menu1.name = "ì§œìž¥ë©´"; // í”„ë¡œì‹œì ¸ì§€í–¥=ì ˆì°¨ì§€í–¥
+		menu1.setName("ì§œìž¥ë©´"); // ê°ì²´ì§€í–¥
 		
-//		menu1.price = 4900; // ÇÁ·Î½ÃÁ®ÁöÇâ=ÀýÂ÷ÁöÇâ
-		menu1.setPrice(4900); // °´Ã¼ÁöÇâ
+//		menu1.price = 4900; // í”„ë¡œì‹œì ¸ì§€í–¥=ì ˆì°¨ì§€í–¥
+		menu1.setPrice(4900); // ê°ì²´ì§€í–¥
 		
 		Menu menu2 = new Menu();
-//		menu2.name = "Â«»Í"; // ÇÁ·Î½ÃÁ®ÁöÇâ=ÀýÂ÷ÁöÇâ
-		menu2.setName("Â«»Í"); // °´Ã¼ÁöÇâ
+//		menu2.name = "ì§¬ë½•"; // í”„ë¡œì‹œì ¸ì§€í–¥=ì ˆì°¨ì§€í–¥
+		menu2.setName("ì§¬ë½•"); // ê°ì²´ì§€í–¥
 		
-//		menu2.price = 6000; // ÇÁ·Î½ÃÁ®ÁöÇâ=ÀýÂ÷ÁöÇâ
-		menu2.setPrice(6000); // °´Ã¼ÁöÇâ
+//		menu2.price = 6000; // í”„ë¡œì‹œì ¸ì§€í–¥=ì ˆì°¨ì§€í–¥
+		menu2.setPrice(6000); // ê°ì²´ì§€í–¥
 		
 //		System.out.println(menu1);
 //		System.out.println(menu2);
-		// chapter11 ÆÐÅ°ÁöÀÇ ¾ÈÀÇ ¸Þ¸ð¸®ÁÖ¼Ò°¡ ³ª¿À°ÔµÊ
+		// chapter11 íŒ¨í‚¤ì§€ì˜ ì•ˆì˜ ë©”ëª¨ë¦¬ì£¼ì†Œê°€ ë‚˜ì˜¤ê²Œë¨
 		
-		// °´Ã¼ÀÇ Á¤º¸(°´Ã¼°¡ °®°íÀÖ´Â µ¥ÀÌÅÍµé)¸¦ Ãâ·ÂÇÏ±â À§ÇØ¼­´Â?
-		// ÀÚ¹Ù´Â °´Ã¼ ÁöÇâ ÇÁ·Î±×·¡¹Ö ¾ð¾î
-		// °´Ã¼ÁöÇâ ÇÁ·Î±×·¥¾ð¾î¶õ?
-		// °´Ã¼¸¦ »ç¿ë ÇÒ ¶§´Â ¸Þ¼­µå(±â´É)À» ¸ÕÀú »ý°¢ÇØ¶ó
+		// ê°ì²´ì˜ ì •ë³´(ê°ì²´ê°€ ê°–ê³ ìžˆëŠ” ë°ì´í„°ë“¤)ë¥¼ ì¶œë ¥í•˜ê¸° ìœ„í•´ì„œëŠ”?
+		// ìžë°”ëŠ” ê°ì²´ ì§€í–¥ í”„ë¡œê·¸ëž˜ë° ì–¸ì–´
+		// ê°ì²´ì§€í–¥ í”„ë¡œê·¸ëž¨ì–¸ì–´ëž€?
+		// ê°ì²´ë¥¼ ì‚¬ìš© í•  ë•ŒëŠ” ë©”ì„œë“œ(ê¸°ëŠ¥)ì„ ë¨¼ì € ìƒê°í•´ë¼
 		
-//		°´Ã¼ÀÇ Á¤º¸¸¦ Ãâ·ÂÇÒ ¸Þ¼­µå¸¦ ¸ÕÀú »ý°¢,
-//		Á¢±ÙÁ¦¾îÀÚ ¹ÝÈ¯Å¸ÀÔ ¸Þ¼­µåÀÌ¸§(¸Å°³º¯¼ö) {
-//			¼Ò½ºÄÚµå
+//		ê°ì²´ì˜ ì •ë³´ë¥¼ ì¶œë ¥í•  ë©”ì„œë“œë¥¼ ë¨¼ì € ìƒê°,
+//		ì ‘ê·¼ì œì–´ìž ë°˜í™˜íƒ€ìž… ë©”ì„œë“œì´ë¦„(ë§¤ê°œë³€ìˆ˜) {
+//			ì†ŒìŠ¤ì½”ë“œ
 //		}
 		menu1.PrintObjectInfo();
 		menu2.PrintObjectInfo();
 		
 		
-		// getter ¸Þ¼­µå¸¦ ¼±¾ðÇØ¶ó
+		// getter ë©”ì„œë“œë¥¼ ì„ ì–¸í•´ë¼
 		
-		// Ã¹¹øÂ° ¸Þ´ºÀÇ ÀÌ¸§À» °¡Á®¿Í¼­ ÀÌ ¾È¿¡¼­ »ç¿ëÇÏ°í ½ÍÀ½
+		// ì²«ë²ˆì§¸ ë©”ë‰´ì˜ ì´ë¦„ì„ ê°€ì ¸ì™€ì„œ ì´ ì•ˆì—ì„œ ì‚¬ìš©í•˜ê³  ì‹¶ìŒ
 		String firstMenuName = menu1.getName();
 		
-		// Ã¹¹øÂ° ¸Þ´ºÀÇ °¡°ÝÀ» °¡Á®¿Í¼­ ÀÌ¾È¿¡¼­ »ç¿ëÇÏ°í ½ÍÀ½
+		// ì²«ë²ˆì§¸ ë©”ë‰´ì˜ ê°€ê²©ì„ ê°€ì ¸ì™€ì„œ ì´ì•ˆì—ì„œ ì‚¬ìš©í•˜ê³  ì‹¶ìŒ
 		int firstMenuPrice = menu1.getPrice();
 		
 	}

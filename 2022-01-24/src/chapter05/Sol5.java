@@ -8,12 +8,12 @@ public class Sol5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// Áß°£°í»ç Æò±ÕÀÌ»óÀÎ ÇĞ»ıµé ¼ö Ãâ·Â
+		// ì¤‘ê°„ê³ ì‚¬ í‰ê· ì´ìƒì¸ í•™ìƒë“¤ ìˆ˜ ì¶œë ¥
 		int[] test = {38, 86, 68, 68, 97, 25, 84, 72, 34, 8};
 		double sum = test[0] + test[1] + test[2] + test[3] + test[4] + test[5] + test[6] + test[7] + test[8] + test[9]; 
 		double avg = sum / test.length; 
-		System.out.println("10¸íÀÇ Áß°£°í»ç Á¡¼ö ÃÑÇÕ = " + sum);
-		System.out.println("10¸íÀÇ Áß°£°í»ç Á¡¼ö Æò±Õ = "  + avg);
+		System.out.println("10ëª…ì˜ ì¤‘ê°„ê³ ì‚¬ ì ìˆ˜ ì´í•© = " + sum);
+		System.out.println("10ëª…ì˜ ì¤‘ê°„ê³ ì‚¬ ì ìˆ˜ í‰ê·  = "  + avg);
 		
 		int pass = 0;
 		
@@ -27,7 +27,7 @@ public class Sol5 {
 		
 
 		
-		System.out.println("Áß°£°í»ç Æò±ÕÁ¡¼ö ÀÌ»óÀÇ ÇĞ»ı ¼ö´Â " + pass + "¸íÀÔ´Ï´Ù.");
+		System.out.println("ì¤‘ê°„ê³ ì‚¬ í‰ê· ì ìˆ˜ ì´ìƒì˜ í•™ìƒ ìˆ˜ëŠ” " + pass + "ëª…ì…ë‹ˆë‹¤.");
 		
 	}
 

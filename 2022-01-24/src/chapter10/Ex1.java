@@ -6,7 +6,7 @@ public class Ex1 {
 		// TODO Auto-generated method stub
 
 		Object1 obj = new Object1();
-		// Object1ÀÌ º¹»çÇØ¼­ new Object1¿¡ µé¾î¿È
+		// Object1 objê°ì²´ì— Object1ì¸ìŠ¤í„´ìŠ¤ìƒì„±
 		
 		obj.num1 = 10;
 		obj.num2 = 3.14;

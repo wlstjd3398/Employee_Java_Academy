@@ -6,13 +6,13 @@ public class Sol12 {
 		// TODO Auto-generated method stub
 
 		Song song = new Song();
-		song.title = "ÀÌº° ÅÃ½Ã";
-		song.genre = "¹ß¶óµå";
+		song.title = "ì´ë³„ íƒì‹œ";
+		song.genre = "ë°œë¼ë“œ";
 		
 		Singer singer = new Singer();
-		singer.singer = "±è¿¬¿ì";
-		singer.RepresentativeSong = "ÀÌº° ÅÃ½Ã";
-		singer.RepresentativeGenre = "¹ß¶óµå";
+		singer.singer = "ê¹€ì—°ìš°";
+		singer.RepresentativeSong = "ì´ë³„ íƒì‹œ";
+		singer.RepresentativeGenre = "ë°œë¼ë“œ";
 		
 	}
 

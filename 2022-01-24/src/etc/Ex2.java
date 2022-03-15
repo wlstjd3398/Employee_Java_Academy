@@ -10,7 +10,7 @@ public class Ex2 {
 	Dog1 dog1 = new Dog1();
 	
 //	Dog2 dog2 = new Dog2();
-	// ÄÄÆÄÀÏ¿À·ù -> etcÆÐÅ°Áö ¾È¿¡¼­ Ã£´Â°Å¶ó Ã£À»¼ö°¡ ¾øÀ½ -> ´Ù¸¥ ÆÐÅ°Áö¸¦ ¾²·Á¸é import chapter11.Dog1;À» »ç¿ëÇØ¾ßÇÔ
+	// ì»´íŒŒì¼ì˜¤ë¥˜ -> etcíŒ¨í‚¤ì§€ ì•ˆì—ì„œ ì°¾ëŠ”ê±°ë¼ ì°¾ì„ìˆ˜ê°€ ì—†ìŒ -> ë‹¤ë¥¸ íŒ¨í‚¤ì§€ë¥¼ ì“°ë ¤ë©´ import chapter11.Dog1;ì„ ì‚¬ìš©í•´ì•¼í•¨
 		
 	}
 

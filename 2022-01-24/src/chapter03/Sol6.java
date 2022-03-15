@@ -7,7 +7,7 @@ public class Sol6 {
 
 		int score = 85;
 		
-		char result = (!(score > 90)) ? '°¡':'³ª';
+		char result = (!(score > 90)) ? 'ê°€':'ë‚˜';
 		
 		System.out.println("result = " + result);
 	}

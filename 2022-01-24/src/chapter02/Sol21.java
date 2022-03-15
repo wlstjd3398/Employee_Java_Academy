@@ -8,21 +8,21 @@ public class Sol21 {
 		String strValue = "A";
 		
 		double var1 = (double) intValue; 
-//		¾÷Ä³½ºÆÃ Á¤¼ö -> ½Ç¼ö
+//		ì—…ìºìŠ¤íŒ… ì •ìˆ˜ -> ì‹¤ìˆ˜
 		byte var2 = (byte) intValue; 
-//		¹ÙÀÌÆ®°¡ ÀÛÀº°ÍÀÌ´Ï ´Ù¿îÄ³½ºÆÃ Á¤¼ö -> Á¤¼ö?
+//		ë°”ì´íŠ¸ê°€ ìž‘ì€ê²ƒì´ë‹ˆ ë‹¤ìš´ìºìŠ¤íŒ… ì •ìˆ˜ -> ì •ìˆ˜?
 		int var3 = (int) doubleValue; 
-//		´Ù¿îÄ³½ºÆÃ ½Ç¼ö ->Á¤¼ö
+//		ë‹¤ìš´ìºìŠ¤íŒ… ì‹¤ìˆ˜ ->ì •ìˆ˜
 		
 		
 		
 		
 		
 		String var4 = strValue; 
-//		´Ù¿îÄ³½ºÆÃ ¹®ÀÚ¿­ -> ¹®ÀÚ 
+//		ë‹¤ìš´ìºìŠ¤íŒ… ë¬¸ìžì—´ -> ë¬¸ìž 
 
-//		¹®ÀÚ¿­À» ¹®ÀÚ·Î ´Ù¿îÄ³½ºÆÃ ºÒ°¡´É?
-		// ¹®ÀÚ¿­À» ¹®ÀÚ·Î ³í¸®ÀûÀ¸·Î ¸ø¹Ù²Þ
-		// º¯È¯ÇÏ·Á¸é ¹®ÀÚ¿­ Áß¿¡¼­ ÇÏ³ªÀÇ ¹®ÀÚ¸¦ »Ì¾ÆÁÖ´Â ¸Þ¼­µå ¶ó´Â °ÍÀ» ¹è¿ö¾ßÇÔ
+//		ë¬¸ìžì—´ì„ ë¬¸ìžë¡œ ë‹¤ìš´ìºìŠ¤íŒ… ë¶ˆê°€ëŠ¥?
+		// ë¬¸ìžì—´ì„ ë¬¸ìžë¡œ ë…¼ë¦¬ì ìœ¼ë¡œ ëª»ë°”ê¿ˆ
+		// ë³€í™˜í•˜ë ¤ë©´ ë¬¸ìžì—´ ì¤‘ì—ì„œ í•˜ë‚˜ì˜ ë¬¸ìžë¥¼ ë½‘ì•„ì£¼ëŠ” ë©”ì„œë“œ ë¼ëŠ” ê²ƒì„ ë°°ì›Œì•¼í•¨
 	}
 }

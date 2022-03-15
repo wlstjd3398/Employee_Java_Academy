@@ -13,9 +13,9 @@ public class Ex3 {
 //		sum = sum + 4;
 //		sum = sum + 5;
 		
-		// À§ ¾Æ·¡ ÄÚµåÀÇ ¿¬»ê °á°ú°¡ µ¿ÀÏÇØÁöµµ·Ï
-		// (whileÀÌ ³¡³ª°í ³­ ´ÙÀ½¿¡´Â sumº¯¼ö¿¡ 15(1+2+3+4+5)°¡ µé¾îÀÖ¾î¾ßÇÔ)
-		// while°ú °ü·ÃµÈ ÄÚµå¸¦ ¼öÁ¤ÇÏ¼¼¿ä
+		// ìœ„ ì•„ëž˜ ì½”ë“œì˜ ì—°ì‚° ê²°ê³¼ê°€ ë™ì¼í•´ì§€ë„ë¡
+		// (whileì´ ëë‚˜ê³  ë‚œ ë‹¤ìŒì—ëŠ” sumë³€ìˆ˜ì— 15(1+2+3+4+5)ê°€ ë“¤ì–´ìžˆì–´ì•¼í•¨)
+		// whileê³¼ ê´€ë ¨ëœ ì½”ë“œë¥¼ ìˆ˜ì •í•˜ì„¸ìš”
 		
 		int sum = 1;
 		int n = 2;

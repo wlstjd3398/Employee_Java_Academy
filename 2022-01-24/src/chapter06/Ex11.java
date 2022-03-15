@@ -5,7 +5,7 @@ public class Ex11 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 1ºÎÅÍ 9 ±îÁöÀÇ ÇÕÀ» for¹®À» ÀÌ¿ëÇØ¼­ Ãâ·ÂÇØ¶ó
+		// 1ë¶€í„° 9 ê¹Œì§€ì˜ í•©ì„ forë¬¸ì„ ì´ìš©í•´ì„œ ì¶œë ¥í•´ë¼
 		
 //		int sum = 1;
 //		sum = sum + 2;

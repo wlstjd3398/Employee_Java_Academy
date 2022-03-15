@@ -10,7 +10,7 @@ public class Sol9 {
 		c1.num2 = 15000;
 		c1.resultArr = c1.num1 + c1.num2;
 		
-		System.out.println(c1.resultArr + "¿ø");
+		System.out.println(c1.resultArr + "ì›");
 		
 	}
 

@@ -17,23 +17,22 @@ public class Ex2 {
 		ByteArrayInputStream input = new ByteArrayInputStream(inSrc);
 		ByteArrayOutputStream output = new ByteArrayOutputStream();
 		
-		// �迭�� �������¹�(Ex1 4byte�� 10��� �����͸� �о�ü�����)
-		// ���� ���� ���ڴٰ� �ƴ� ������� ����
+		// 배열로 가져오는법(Ex1 4byte의 10배로 데이터를 읽어올수있음)
+		// 누가 좋다 나쁘다가 아니 장단점이 있음
 		
-		// �迭�� ���ڷ� �ؼ� ��Ƽ� read, write�ϸ� 
+		// 배열을 인자로 해서 담아서 read, write하면 
 		try {
 			input.read(basket);	
 			output.write(basket);
 			
-			// output�� ����� ������ byteArrayȭ��Ŵ
+			// output과 연결된 공간을 byteArray화시킴
 			outSrc = output.toByteArray();
 			
 			System.out.println("Input Source : " + Arrays.toString(inSrc));
 			System.out.println("Output Source : " + Arrays.toString(outSrc));
 		}catch(IOException e) {
-			System.out.println("read ���� ���ܰ� �߻��߽��ϴ�.");
+			System.out.println("read 도중 예외가 발생했습니다.");
 		}
-		
 		
 		
 	}

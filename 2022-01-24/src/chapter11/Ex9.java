@@ -5,10 +5,10 @@ public class Ex9 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// »ı¼ºÀÚÀÇ ¿ëµµ´Â °´Ã¼ÀÇ ÃÊ±âÈ­ ¸ñÀû
-		Car car1 = new Car("Çö´ëÀÚµ¿Â÷", 1, "½Â¿ëÂ÷");
-		Car car2 = new Car("±â¾ÆÀÚµ¿Â÷", 4, "SUV");
-		Car car3 = new Car("½Ö¿ëÀÚµ¿Â÷", 2, "¼ÒÇüSUV");
+		// ìƒì„±ìì˜ ìš©ë„ëŠ” ê°ì²´ì˜ ì´ˆê¸°í™” ëª©ì 
+		Car car1 = new Car("í˜„ëŒ€ìë™ì°¨", 1, "ìŠ¹ìš©ì°¨");
+		Car car2 = new Car("ê¸°ì•„ìë™ì°¨", 4, "SUV");
+		Car car3 = new Car("ìŒìš©ìë™ì°¨", 2, "ì†Œí˜•SUV");
 		
 		
 	}

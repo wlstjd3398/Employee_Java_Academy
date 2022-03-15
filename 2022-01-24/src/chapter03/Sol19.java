@@ -5,13 +5,13 @@ public class Sol19 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 6ºÐ¿¡ 0.1
+		// 6ï¿½Ð¿ï¿½ 0.1
 		double employ = 2.7;
 		double change = employ * 60;
 		int hour = (int)change / 60;
 		int minute = (int)change % 60; 
 		System.out.println(change);
-		System.out.println(hour + "½Ã" + minute +"ºÐ");
+		System.out.println(hour + "ì‹œ" + minute +"ë¶„");
 	}
 
 }

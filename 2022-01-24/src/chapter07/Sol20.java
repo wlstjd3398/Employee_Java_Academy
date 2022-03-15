@@ -7,10 +7,10 @@ public class Sol20 {
 
 		Room r1 = new Room();
 		r1.number = "302A";
-		r1.name = "°í¿µÈñ";
+		r1.name = "ê¹€ì² ìˆ˜";
 		r1.civil = "900318-1234567";
 		r1.homein = 20210101;
-		r1.deposit = "5¹é¸¸";
+		r1.deposit = "5ë°±ë§Œ";
 		r1.monthfee = 150000;
 		r1.contractyear = 2;
 		

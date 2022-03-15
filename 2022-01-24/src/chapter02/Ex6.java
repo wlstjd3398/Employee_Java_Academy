@@ -5,11 +5,11 @@ public class Ex6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// º¯¼ö ÀÌ¸§À» ÁöÀ»¶§´Â Ç×»ó ÀÇ¹ÌÀÖ´Â ÀÌ¸§À¸·Î Áö¾î¾ßÇÔ
-		// ÀÇ¹Ì ÀÖ´Â ÀÌ¸§? º¯¼ö ÀÌ¸§¸¸ ºÁµµ º¯¼ö°¡ ÀúÀåÇÏ°í ÀÖ´Â µ¥ÀÌÅÍ¸¦ À¯ÃßÇÒ ¼ö ÀÖ¾î¾ßÇÑ´Ù´Â ¶æ
+		// ë³€ìˆ˜ ì´ë¦„ì„ ì§€ì„ë•ŒëŠ” í•­ìƒ ì˜ë¯¸ìžˆëŠ” ì´ë¦„ìœ¼ë¡œ ì§€ì–´ì•¼í•¨
+		// ì˜ë¯¸ ìžˆëŠ” ì´ë¦„? ë³€ìˆ˜ ì´ë¦„ë§Œ ë´ë„ ë³€ìˆ˜ê°€ ì €ìž¥í•˜ê³  ìžˆëŠ” ë°ì´í„°ë¥¼ ìœ ì¶”í•  ìˆ˜ ìžˆì–´ì•¼í•œë‹¤ëŠ” ëœ»
 		
-		// º¯¼ö ÀÌ¸§ÀÌ ¿©·¯ ´Ü¾î·Î ÀÌ·ç¾îÁ® ÀÖÀ» ¶§
-		// ´Ü¾î¿Í ´Ü¾î »çÀÌ¿¡ Ã¹ ¹®ÀÚ¸¦ ´ë¹®ÀÚ·Î ÁöÁ¤ÇØÁÜ
+		// ë³€ìˆ˜ ì´ë¦„ì´ ì—¬ëŸ¬ ë‹¨ì–´ë¡œ ì´ë£¨ì–´ì ¸ ìžˆì„ ë•Œ
+		// ë‹¨ì–´ì™€ ë‹¨ì–´ ì‚¬ì´ì— ì²« ë¬¸ìžë¥¼ ëŒ€ë¬¸ìžë¡œ ì§€ì •í•´ì¤Œ
 		int amoutOfApple = 33;
 		
 		int height =178;

@@ -9,13 +9,13 @@ public class Sol11 {
 
 		Scanner scanf = new Scanner(System.in);
 		
-		System.out.print("¿¬µµ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä -->");
+		System.out.print("ì—°ë„ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” -->");
 		int year = scanf.nextInt();
 		
 		if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-			System.out.println("À±³âÀÎ ¿¬µµ");
+			System.out.println("ìœ¤ë…„ì¸ ì—°ë„");
 		}else {
-			System.out.println("À±³âÀÌ ¾Æ´Ñ ¿¬µµ");
+			System.out.println("ìœ¤ë…„ì´ ì•„ë‹Œ ì—°ë„");
 		}
 		
 	}

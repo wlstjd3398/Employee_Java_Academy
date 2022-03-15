@@ -1,28 +1,28 @@
 package chapter12;
 
-// »ç¶÷µéÀº ÀÌ¸§, ³ªÀÌ, Å°¸¦ °®°í ÀÖ°í
-// ¸»ÇÏ°í ¸Ô´Â Çàµ¿À» ÇÒ ¼ö ÀÖ´Ù
-// »ç¶÷ÀÇ Æ¯Â¡
+// ì‚¬ëŒë“¤ì€ ì´ë¦„, ë‚˜ì´, í‚¤ë¥¼ ê°–ê³  ìˆê³ 
+// ë§í•˜ê³  ë¨¹ëŠ” í–‰ë™ì„ í•  ìˆ˜ ìˆë‹¤
+// ì‚¬ëŒì˜ íŠ¹ì§•
 
 public class Person {
-// Å¬·¡½º¸í(ÀÚ½ÄÅ¬·¡½º)°¡ Student(ºÎ¸ğÅ¬·¡½º)¸¦ ¼±ÅÃ
-// ¹°·Á¹Ş´Â ÄÚµå´Â Áö¿ï ¼ö ÀÖÀ½
+// í´ë˜ìŠ¤ëª…(ìì‹í´ë˜ìŠ¤)ê°€ Student(ë¶€ëª¨í´ë˜ìŠ¤)ë¥¼ ì„ íƒ
+// ë¬¼ë ¤ë°›ëŠ” ì½”ë“œëŠ” ì§€ìš¸ ìˆ˜ ìˆìŒ
 	
 	private String name;
 	private int age;
 	private double height;
 	
 	public void say() {
-		System.out.println("¸»ÇÏ´Ù");
+		System.out.println("ë§í•˜ë‹¤");
 	}
 	
 	public void eat() {
-		System.out.println("¸Ô´Ù");
+		System.out.println("ë¨¹ë‹¤");
 	}
 
 	
-	// getter setter ´ÜÃàÅ° alt + shift + s -> r
-	// °³¹ßÅøÀ» ´ÜÃàÅ°·Î ¾²´Â °Íµµ ½Ç·Â!!
+	// getter setter ë‹¨ì¶•í‚¤ alt + shift + s -> r
+	// ê°œë°œíˆ´ì„ ë‹¨ì¶•í‚¤ë¡œ ì“°ëŠ” ê²ƒë„ ì‹¤ë ¥!!
 	public void setName(String name) {
 		this.name = name;
 	}

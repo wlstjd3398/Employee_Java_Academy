@@ -16,20 +16,20 @@ public class StudentManagement2 {
 		
 		Random random = new Random();
 		
-		System.out.println("1 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä");
-		System.out.println("±¹¾î => ");
+		System.out.println("1 ë²ˆì§¸ í•™ìƒì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.println("êµ­ì–´ => ");
 		kor[0] = random.nextInt(101);
-		System.out.println("¿µ¾î => ");
+		System.out.println("ì˜ì–´ => ");
 		eng[0] = random.nextInt(101);
-		System.out.println("¼öÇĞ => ");
+		System.out.println("ìˆ˜í•™ => ");
 		mat[0] = random.nextInt(101);
 		
-		System.out.println("2 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä");
-		System.out.println("±¹¾î => ");
+		System.out.println("2 ë²ˆì§¸ í•™ìƒì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.println("êµ­ì–´ => ");
 		kor[1] = random.nextInt(101);
-		System.out.println("¿µ¾î => ");
+		System.out.println("ì˜ì–´ => ");
 		eng[1] = random.nextInt(101);
-		System.out.println("¼öÇĞ => ");
+		System.out.println("ìˆ˜í•™ => ");
 		mat[1] = random.nextInt(101);
 		
 		sums[0] = kor[0]+eng[0]+mat[0];
@@ -43,20 +43,20 @@ public class StudentManagement2 {
 		ranks[0] = avgs[0] == avgs[1] ? 1 : ranks[0]; 
 		ranks[1] = avgs[0] == avgs[1] ? 1 : ranks[1]; 
 		
-		System.out.println("<< 1 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
-		System.out.println("±¹¾î = " + kor[0]);
-		System.out.println("¿µ¾î = " + eng[0]);
-		System.out.println("¼öÇĞ = " + mat[0]);
-		System.out.println("ÃÑÁ¡ = " + sums[0]);
-		System.out.println("Æò±Õ = " + avgs[0]);
-		System.out.println("¼®Â÷ = " + ranks[0]);
-		System.out.println("<< 2 ¹øÂ° ÇĞ»ıÀÇ ¼ºÀû >>");
-		System.out.println("±¹¾î = " + kor[1]);
-		System.out.println("¿µ¾î = " + eng[1]);
-		System.out.println("¼öÇĞ = " + mat[1]);
-		System.out.println("ÃÑÁ¡ = " + sums[1]);
-		System.out.println("Æò±Õ = " + avgs[1]);
-		System.out.println("¼®Â÷ = " + ranks[1]);
+		System.out.println("<< 1 ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
+		System.out.println("êµ­ì–´ = " + kor[0]);
+		System.out.println("ì˜ì–´ = " + eng[0]);
+		System.out.println("ìˆ˜í•™ = " + mat[0]);
+		System.out.println("ì´ì  = " + sums[0]);
+		System.out.println("í‰ê·  = " + avgs[0]);
+		System.out.println("ì„ì°¨ = " + ranks[0]);
+		System.out.println("<< 2 ë²ˆì§¸ í•™ìƒì˜ ì„±ì  >>");
+		System.out.println("êµ­ì–´ = " + kor[1]);
+		System.out.println("ì˜ì–´ = " + eng[1]);
+		System.out.println("ìˆ˜í•™ = " + mat[1]);
+		System.out.println("ì´ì  = " + sums[1]);
+		System.out.println("í‰ê·  = " + avgs[1]);
+		System.out.println("ì„ì°¨ = " + ranks[1]);
 		
 	}
 

@@ -5,13 +5,13 @@ public class Ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ¹Ýº¹ÀûÀ¸·Î »ç¿ëµÇ´Â ÄÚµå¸¦ ¹Ýº¹¹®À¸·Î ¹Ù²Ü¶§´Â
-		// 1. ¹Ýº¹ÀûÀ¸·Î »ç¿ëµÇ´Â ÄÚµå¸¦ Ã£À½
-		// 2. ¹Ýº¹ÀûÀ¸·Î »ç¿ëµÇ´Â ÄÚµå¿¡¼­ º¯ÇÏ´Â ºÎºÐ, º¯ÇÏÁö ¾Ê´Â ºÎºÐÀ» Ã£À½
-		// 3. º¯ÇÏÁö ¾Ê´Â ºÎºÐÀº ¹Ýº¹¹® ¾È¿¡ ±×´ë·Î º¹ºÙ
-		// 4. º¯ÇÏ´Â ºÎºÐÀº º¯È­ÀÇ ½ÃÀÛ °ª, º¯È­ÀÇ Á¾·á °ª, º¯È­ÀÇ Áõ°¨ °ªÀ» Ã£´Â´Ù.
-		// 5. (4)¸¦ Ã£¾Ò´Ù¸é ¹Ýº¹¹®À¸·Î ¹Ù²Ü ¼ö ÀÖÀ½
-		// 6. (4)¸¦ Ã£Áö ¸øÇß´Ù¸é ¹Ýº¹¹®À» ¹Ù²Ü ¼ö ¾øÀ½
+		// ë°˜ë³µì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ì½”ë“œë¥¼ ë°˜ë³µë¬¸ìœ¼ë¡œ ë°”ê¿€ë•ŒëŠ”
+		// 1. ë°˜ë³µì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ì½”ë“œë¥¼ ì°¾ìŒ
+		// 2. ë°˜ë³µì ìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ì½”ë“œì—ì„œ ë³€í•˜ëŠ” ë¶€ë¶„, ë³€í•˜ì§€ ì•ŠëŠ” ë¶€ë¶„ì„ ì°¾ìŒ
+		// 3. ë³€í•˜ì§€ ì•ŠëŠ” ë¶€ë¶„ì€ ë°˜ë³µë¬¸ ì•ˆì— ê·¸ëŒ€ë¡œ ë³µë¶™
+		// 4. ë³€í•˜ëŠ” ë¶€ë¶„ì€ ë³€í™”ì˜ ì‹œìž‘ ê°’, ë³€í™”ì˜ ì¢…ë£Œ ê°’, ë³€í™”ì˜ ì¦ê° ê°’ì„ ì°¾ëŠ”ë‹¤.
+		// 5. (4)ë¥¼ ì°¾ì•˜ë‹¤ë©´ ë°˜ë³µë¬¸ìœ¼ë¡œ ë°”ê¿€ ìˆ˜ ìžˆìŒ
+		// 6. (4)ë¥¼ ì°¾ì§€ ëª»í–ˆë‹¤ë©´ ë°˜ë³µë¬¸ì„ ë°”ê¿€ ìˆ˜ ì—†ìŒ
 		
 //		System.out.println("2 * 1 = 2");
 //		System.out.println("2 * 2 = 4");
@@ -23,7 +23,7 @@ public class Ex4 {
 //		System.out.println("2 * 8 = 16");
 //		System.out.println("2 * 9 = 18");
 		
-		// ±¸±¸´Ü 2´Ü whileÀÌ¿ëÇØ¼­ Ãâ·Â
+		// êµ¬êµ¬ë‹¨ 2ë‹¨ whileì´ìš©í•´ì„œ ì¶œë ¥
 		int back = 1;
 		
 		while(back <= 9) {

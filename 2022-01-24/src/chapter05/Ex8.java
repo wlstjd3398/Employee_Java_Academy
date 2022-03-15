@@ -6,26 +6,26 @@ public class Ex8 {
 		// TODO Auto-generated method stub
 
 //		if(true) {
-//			System.out.println("if¹®ÀÌ");
-//			System.out.println("treuÀÏ ¶§");
-//			System.out.println("ÄÚµå ½ÇÇà");
+//			System.out.println("ifë¬¸ì´");
+//			System.out.println("treuì¼ ë•Œ");
+//			System.out.println("ì½”ë“œ ì‹¤í–‰");
 //		} else {
-//			System.out.println("if¹®ÀÌ");
-//			System.out.println("falseÀÏ ¶§");
-//			System.out.println("ÄÚµå ½ÇÇà");
+//			System.out.println("ifë¬¸ì´");
+//			System.out.println("falseì¼ ë•Œ");
+//			System.out.println("ì½”ë“œ ì‹¤í–‰");
 //		}
 		
 		
 		int num = 0;
-		// num º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀÌ 0ÀÌ¶ó¸é ifÀÇ ÄÚµåºí·Ï ½ÇÇà
+		// num ë³€ìˆ˜ì— ë“¤ì–´ìˆëŠ” ê°’ì´ 0ì´ë¼ë©´ ifì˜ ì½”ë“œë¸”ë¡ ì‹¤í–‰
 		if(num == 0) {
-			System.out.println("num º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀº 0ÀÔ´Ï´Ù.");
+			System.out.println("num ë³€ìˆ˜ì— ë“¤ì–´ìˆëŠ” ê°’ì€ 0ì…ë‹ˆë‹¤.");
 		}else {
-			// num º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀÌ 0ÀÌ ¾Æ´Ï¶ó¸é
-			// (num º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀÌ À½¼ö ¶Ç´Â ¾ç¼ö¶ó¸é)
-			// () À§¿Í °°ÀÌ Á¶°ÇÀ» ºÙ¿©¼­ else¸¦ »ı°¢ÇÏ¸é ¾ÈµÊ!
-			// ±×·¸Áö ¾Ê´Ù¸é ÀÌ¶ó°í »ı°¢ ÇØ¾ßÇÔ
-			System.out.println("num º¯¼ö¿¡ µé¾îÀÖ´Â °ªÀÌ 0ÀÌ ¾Æ´Õ´Ï´Ù.");	
+			// num ë³€ìˆ˜ì— ë“¤ì–´ìˆëŠ” ê°’ì´ 0ì´ ì•„ë‹ˆë¼ë©´
+			// (num ë³€ìˆ˜ì— ë“¤ì–´ìˆëŠ” ê°’ì´ ìŒìˆ˜ ë˜ëŠ” ì–‘ìˆ˜ë¼ë©´)
+			// () ìœ„ì™€ ê°™ì´ ì¡°ê±´ì„ ë¶™ì—¬ì„œ elseë¥¼ ìƒê°í•˜ë©´ ì•ˆë¨!
+			// ê·¸ë ‡ì§€ ì•Šë‹¤ë©´ ì´ë¼ê³  ìƒê° í•´ì•¼í•¨
+			System.out.println("num ë³€ìˆ˜ì— ë“¤ì–´ìˆëŠ” ê°’ì´ 0ì´ ì•„ë‹™ë‹ˆë‹¤.");	
 		}
 		
 	}

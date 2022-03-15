@@ -8,9 +8,9 @@ public class Ex10 {
 		int age = 12;
 		double height = 161;
 		if(age >= 12 && height >= 160) {
-			System.out.println("ΕΎ½Β °΅΄Ι");
+			System.out.println("ν¨μ¤");
 		}else {
-			System.out.println("ΕΎ½Β ΊÒ°΅");
+			System.out.println("λ…Έν¨μ¤");
 		}
 		
 	}

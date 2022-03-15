@@ -16,36 +16,36 @@ public class Ex11 {
 		}
 		
 		
-		// Çâ»óµÈ for¹®
+		// í–¥ìƒëœ forë¬¸
 //		int count = 1;
 //		
-//		for(Character ch : set) { // set¿¡¼­ Â÷·Ê´ë·Î ²¨³¾ °´Ã¼°¡ ¾øÀ»¶§±îÁö ch¿¡ ³Ö°Ú´Ù
+//		for(Character ch : set) { // setì—ì„œ ì°¨ë¡€ëŒ€ë¡œ êº¼ë‚¼ ê°ì²´ê°€ ì—†ì„ë•Œê¹Œì§€ chì— ë„£ê² ë‹¤
 //			
 //			if(count % 2==0) {
 //				System.out.println(ch + ", ");
 //			}else {
-//				System.out.println("¾ËÆÄºª Â¦¼ö¹øÂ°°¡ ¾Æ´Õ´Ï´Ù");
+//				System.out.println("ì•ŒíŒŒë²³ ì§ìˆ˜ë²ˆì§¸ê°€ ì•„ë‹™ë‹ˆë‹¤");
 //			}
 //			count++;
 //		}
 		
 		
-		// for¹® continue»ç¿ëÇÏ´Â ¹æ¹ıµµ ÇØº¸±â
+		// forë¬¸ continueì‚¬ìš©í•˜ëŠ” ë°©ë²•ë„ í•´ë³´ê¸°
 //		int count = 1;
 //		
-//		for(Character ch : set) { // set¿¡¼­ Â÷·Ê´ë·Î ²¨³¾ °´Ã¼°¡ ¾øÀ»¶§±îÁö ch¿¡ ³Ö°Ú´Ù
+//		for(Character ch : set) { // setì—ì„œ ì°¨ë¡€ëŒ€ë¡œ êº¼ë‚¼ ê°ì²´ê°€ ì—†ì„ë•Œê¹Œì§€ chì— ë„£ê² ë‹¤
 //			
 //			if(count % 2==0) {
 //				System.out.println(ch + ", ");
 //			}else {
-//				System.out.println("¾ËÆÄºª Â¦¼ö¹øÂ°°¡ ¾Æ´Õ´Ï´Ù");
+//				System.out.println("ì•ŒíŒŒë²³ ì§ìˆ˜ë²ˆì§¸ê°€ ì•„ë‹™ë‹ˆë‹¤");
 //			}
 //			count++;
 ////			continue;
 //		}
 		
 		
-		// iterator ¹æ¹ı
+		// iterator ë°©ë²•
 		Iterator<Character> iterator = set.iterator();
 		Character nthCharacter;
 		

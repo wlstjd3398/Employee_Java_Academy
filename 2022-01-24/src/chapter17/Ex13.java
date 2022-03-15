@@ -8,34 +8,34 @@ public class Ex13 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// MapÀº Á¦³×¸¯½ºÅ¸ÀÔÀÌ Å°¿Í °ª µÎ°¡Áö°¡ »ç¿ëµÊ
-		// Å° String, °ª Integer
+		// Mapì€ ì œë„¤ë¦­ìŠ¤íƒ€ìž…ì´ í‚¤ì™€ ê°’ ë‘ê°€ì§€ê°€ ì‚¬ìš©ë¨
+		// í‚¤ String, ê°’ Integer
 		
-		// 1ÇÐ³â 1¹ÝÀÇ ±¹¾îÁ¡¼ö
+		// 1í•™ë…„ 1ë°˜ì˜ êµ­ì–´ì ìˆ˜
 		Map<String, Integer>  classOneKor = new HashMap<>();
 		
-		classOneKor.put("È«±æµ¿", 95); // È«±æµ¿ÀÌ¶ó´Â Å°¿¡ °ªÀÌ 10ÀÌ ÀúÀåµÊ
-		classOneKor.put("±èÃ¶¼ö", 86); 
-		classOneKor.put("°í¿µÈñ", 35);
+		classOneKor.put("í™ê¸¸ë™", 95); // í™ê¸¸ë™ì´ë¼ëŠ” í‚¤ì— ê°’ì´ 10ì´ ì €ìž¥ë¨
+		classOneKor.put("ê¹€ì² ìˆ˜", 86); 
+		classOneKor.put("ê³ ì˜í¬", 35);
 		
 		System.out.println(classOneKor);
 		
-		// °¢ µ¥ÀÌÅÍ´ë½Å Å°°¡ ÀÖ±â¿¡ get »ç¿ë½Ã Å°¸¦ »ç¿ëÇØ¼­ °ª ºÒ·¯¿È
-		int student1Kor = classOneKor.get("È«±æµ¿");
-		System.out.println("È«±æµ¿ÀÇ ±¹¾îÁ¡¼ö : " + student1Kor);
+		// ê° ë°ì´í„°ëŒ€ì‹  í‚¤ê°€ ìžˆê¸°ì— get ì‚¬ìš©ì‹œ í‚¤ë¥¼ ì‚¬ìš©í•´ì„œ ê°’ ë¶ˆëŸ¬ì˜´
+		int student1Kor = classOneKor.get("í™ê¸¸ë™");
+		System.out.println("í™ê¸¸ë™ì˜ êµ­ì–´ì ìˆ˜ : " + student1Kor);
 		
-		// À§¿¡ ÀÖ´ø È«±æµ¿Å°°¡ »ç¶óÁö°í 73ÀÇ °ªÀ¸·Î ÀúÀåµÊ
-		classOneKor.put("È«±æµ¿", 73); 
+		// ìœ„ì— ìžˆë˜ í™ê¸¸ë™í‚¤ê°€ ì‚¬ë¼ì§€ê³  73ì˜ ê°’ìœ¼ë¡œ ì €ìž¥ë¨
+		classOneKor.put("í™ê¸¸ë™", 73); 
 		
-		// ÀÌ·¸°Ô Áö¿ì¸é Å°±îÁö ´Ù Áö¿öÁü
-		classOneKor.remove("±èÃ¶¼ö");
+		// ì´ë ‡ê²Œ ì§€ìš°ë©´ í‚¤ê¹Œì§€ ë‹¤ ì§€ì›Œì§
+		classOneKor.remove("ê¹€ì² ìˆ˜");
 		System.out.println(classOneKor); 
 		
-		// Å°¸¦ ¾Ë°íÀÖÀ¸¸é µ¥ÀÌÅÍ¸¦ °ü¸®ÇÏ±â ½¬¿ò 
-		// ±×·¯³ª Å°¸¦ ¸ð¸£¸é µ¥ÀÌÅÍ¸¦ °ü¸®ÇÏ±â ¾î·Á¿ò
+		// í‚¤ë¥¼ ì•Œê³ ìžˆìœ¼ë©´ ë°ì´í„°ë¥¼ ê´€ë¦¬í•˜ê¸° ì‰¬ì›€ 
+		// ê·¸ëŸ¬ë‚˜ í‚¤ë¥¼ ëª¨ë¥´ë©´ ë°ì´í„°ë¥¼ ê´€ë¦¬í•˜ê¸° ì–´ë ¤ì›€
 		
-		// list´Â ÀÎµ¦½º¹øÈ£´ë·Î ¼ø¼­´ë·Î ÀúÀåµÊ(³¢¿ö³Ö´Â°Í ¾Æ´Ñ ÀÌ»ó)
-		// mapÀº ³ÖÀº ¼ø¼­´ë·Î ÀúÀåµÇÁö¾ÊÀ½
+		// listëŠ” ì¸ë±ìŠ¤ë²ˆí˜¸ëŒ€ë¡œ ìˆœì„œëŒ€ë¡œ ì €ìž¥ë¨(ë¼ì›Œë„£ëŠ”ê²ƒ ì•„ë‹Œ ì´ìƒ)
+		// mapì€ ë„£ì€ ìˆœì„œëŒ€ë¡œ ì €ìž¥ë˜ì§€ì•ŠìŒ
 		
 	}
 

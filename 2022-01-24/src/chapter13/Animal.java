@@ -3,7 +3,7 @@ package chapter13;
 public abstract class Animal {
 
 	public abstract void run();
-	// »çÀÚ¿Í »ç¶÷ÀÌ ´Þ¸®´Â ÇüÅÂ°¡ ´Ù¸£±â¿¡ ±âº» Å¬·¡½º¿¡ ¸¸µå´Â °Í¿¡¼­ Ãß»óÅ¬·¡½º·Î ¿À¹ö¶óÀÌµùÀÌ ¼±ÅÃÀ¸·Î ÁÖ¾îÁ®¾ßÇÑ´Ù
-	// -> ±¸ºÐÁöÀ»¼öÀÖ´Ù
+	// ì‚¬ìžì™€ ì‚¬ëžŒì´ ë‹¬ë¦¬ëŠ” í˜•íƒœê°€ ë‹¤ë¥´ê¸°ì— ê¸°ë³¸ í´ëž˜ìŠ¤ì— ë§Œë“œëŠ” ê²ƒì—ì„œ ì¶”ìƒí´ëž˜ìŠ¤ë¡œ ì˜¤ë²„ë¼ì´ë”©ì´ ì„ íƒìœ¼ë¡œ ì£¼ì–´ì ¸ì•¼í•œë‹¤
+	// -> êµ¬ë¶„ì§€ì„ìˆ˜ìžˆë‹¤
 	
 }

@@ -5,7 +5,7 @@ public class Sol6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "ÀÚ¹Ù º¹½À ÁßÀÔ´Ï´Ù.";
+		String str = "ê°€ë‚˜ë‹¤ë¼ë§ˆë°”ì‚¬";
 		char ch = 'A';
 		
 		System.out.println("str = " + str);

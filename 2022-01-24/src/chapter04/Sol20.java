@@ -7,23 +7,23 @@ public class Sol20 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// charÅ¸ÀÔÀÇ º¯¼ö ÇÏ³ª¿Í ¹è¿­ ÀÎµ¦½º¸¸ »ç¿ëÇØ¼­ ¾ËÆÄºª ¼øÀ» ¿À¸§Â÷¼øÁ¤·ÄÇØ¶ó
+		// charíƒ€ì…ì˜ ë³€ìˆ˜ í•˜ë‚˜ì™€ ë°°ì—´ ì¸ë±ìŠ¤ë§Œ ì‚¬ìš©í•´ì„œ ì•ŒíŒŒë²³ ìˆœì„ ì˜¤ë¦„ì°¨ìˆœì •ë ¬í•´ë¼
 		// 0 5 1 2 4 3
 		// 0 1 2 3 4 5
 		// a j q s t z
 		char[] chArr = {'A', 'Z', 'J', 'Q', 'T', 'S'};
 		
-		System.out.println("<< Á¤·Ä Àü >>");
+		System.out.println("<< ì •ë ¬ ì „ >>");
 		System.out.println(Arrays.toString(chArr));
 		
-		// Á¤·Ä ÄÚµå
+		// ì •ë ¬ ì½”ë“œ
 		char nthArr = chArr[5];
 		chArr[5] = chArr[1];
 		chArr[1] = chArr[2];
 		chArr[2] = chArr[3];
 		chArr[3] = nthArr;
 		
-		System.out.println("<< Á¤·Ä ÈÄ >>");
+		System.out.println("<< ì •ë ¬ í›„ >>");
 		System.out.println(Arrays.toString(chArr));
 
 	}

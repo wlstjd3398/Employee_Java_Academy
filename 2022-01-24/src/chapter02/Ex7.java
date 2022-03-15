@@ -5,7 +5,7 @@ public class Ex7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ¾Æ½ºÅ°ÄÚµå 97ÀÌ a
+		// ì•„ìŠ¤í‚¤ì½”ë“œ 97ì´ a
 		char ch1 = 'a';
 		char ch2 = 97;
 		

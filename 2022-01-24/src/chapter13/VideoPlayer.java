@@ -5,13 +5,13 @@ public class VideoPlayer extends Player{
 	@Override
 	public void play(int pos) {
 		// TODO Auto-generated method stub
-		System.out.println("µ¿¿µ»óÀ» Àç»ıÇÕ´Ï´Ù");
+		System.out.println("ë™ì˜ìƒì„ ì¬ìƒí•©ë‹ˆë‹¤");
 	}
 
 	@Override
 	public void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("µ¿¿µ»óÀ» Á¤ÁöÇÕ´Ï´Ù");
+		System.out.println("ë™ì˜ìƒì„ ì •ì§€í•©ë‹ˆë‹¤");
 	}
 
 	

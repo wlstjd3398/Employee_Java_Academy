@@ -9,7 +9,7 @@ public class Sol6 {
 		w1.hour = 1;
 		w1.minute = 10;
 		w1.second = 32;
-		System.out.println(w1.hour + "½Ã " + w1.minute +"ºÐ " + w1.second + "ÃÊ");
+		System.out.println(w1.hour + "ì‹œ" + w1.minute +"ë¶„" + w1.second + "ì´ˆ");
 		
 	}
 

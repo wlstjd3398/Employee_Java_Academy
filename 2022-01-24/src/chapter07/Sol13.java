@@ -6,19 +6,19 @@ public class Sol13 {
 		
 	
 	Student s1 = new Student();
-	s1.name = "±è‹¯¶¯";
+	s1.name = "ê¹€Â‹ì² ìˆ˜";
 	s1.ban = 1;
 	s1.no = 11;
 	s1.kor = 70;
 	s1.eng = 80;
 	s1.mat = 90;
 	
-	System.out.println("ÇĞ»ıÀÇ ÀÌ¸§ = " + s1.name);
-	System.out.println("ÇĞ»ıÀÇ ¹İ = " + s1.ban);
-	System.out.println("ÇĞ»ıÀÇ ¹øÈ£ = " + s1.no);
-	System.out.println("ÇĞ»ıÀÇ ±¹¾î Á¡¼ö = " + s1.kor);
-	System.out.println("ÇĞ»ıÀÇ ¿µ¾î Á¡¼ö = " + s1.eng);
-	System.out.println("ÇĞ»ıÀÇ ¼öÇĞ Á¡¼ö = " + s1.mat);
+	System.out.println("í•™ìƒì˜ ì´ë¦„ = " + s1.name);
+	System.out.println("í•™ìƒì˜ ë°˜ = " + s1.ban);
+	System.out.println("í•™ìƒì˜ ë²ˆí˜¸ = " + s1.no);
+	System.out.println("í•™ìƒì˜ êµ­ì–´ ì ìˆ˜ = " + s1.kor);
+	System.out.println("í•™ìƒì˜ ì˜ì–´ ì ìˆ˜ = " + s1.eng);
+	System.out.println("í•™ìƒì˜ ìˆ˜í•™ ì ìˆ˜ = " + s1.mat);
 	
 	}
 }

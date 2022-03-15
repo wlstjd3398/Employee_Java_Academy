@@ -3,9 +3,9 @@ package chapter14;
 public class Util {
 
 	public static int findChar(String target, char findData) throws NullPointerException{
-		// findChar ¸Ş¼­µå°¡ ½ÇÇàÇÏ´Ù°¡ NullPointerExceptionÀÌ ¹ß»ıÇÏ¸é findChar·Î ´øÁ®ÁÖ°Ú´Ù
+		// findChar ë©”ì„œë“œê°€ ì‹¤í–‰í•˜ë‹¤ê°€ NullPointerExceptionì´ ë°œìƒí•˜ë©´ findCharë¡œ ë˜ì ¸ì£¼ê² ë‹¤
 		
-		// ¹®ÀÚ¿­ÀÇ ¹®ÀÚÇÏ³ª¿Í Ã£°íÀÚÇÏ´Â ¹®ÀÚÇÏ³ª¿Í ºñ±³ÇØ¼­ ÀÖÀ¸¸é ¸î¹øÀÎµ¦½ºÀÎÁö, ¾øÀ¸¸é Ã£Áö ¸øÇß½À´Ï´Ù. Ãâ·Â
+		// ë¬¸ìì—´ì˜ ë¬¸ìí•˜ë‚˜ì™€ ì°¾ê³ ìí•˜ëŠ” ë¬¸ìí•˜ë‚˜ì™€ ë¹„êµí•´ì„œ ìˆìœ¼ë©´ ëª‡ë²ˆì¸ë±ìŠ¤ì¸ì§€, ì—†ìœ¼ë©´ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ì¶œë ¥
 		try {
 			for(int i=0; i<target.length(); i++) {
 				char nthChar = target.charAt(i);
@@ -16,9 +16,9 @@ public class Util {
 				
 			}
 		}catch(NullPointerException e) {
-			System.out.println("target ¸Å°³º¯¼ö´Â Null ÀÏ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("target ë§¤ê°œë³€ìˆ˜ëŠ” Null ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		}
-		return -1; // ¹®ÀÚ¿­ ¾È¿¡ ¹®ÀÚ°¡ ¾ø´Ù¸é -1 ¹İÈ¯ ÈÄ Ex5 index·Î µé¾î°¨
+		return -1; // ë¬¸ìì—´ ì•ˆì— ë¬¸ìê°€ ì—†ë‹¤ë©´ -1 ë°˜í™˜ í›„ Ex5 indexë¡œ ë“¤ì–´ê°
 	
 	}
 	

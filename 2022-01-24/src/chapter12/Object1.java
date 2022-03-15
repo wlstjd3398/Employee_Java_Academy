@@ -5,7 +5,7 @@ public class Object1 {
 	protected int num;
 	
 	protected void func() {
-		System.out.println("func ȣ��");
+		System.out.println("func 메서드");
 	}
 	
 }

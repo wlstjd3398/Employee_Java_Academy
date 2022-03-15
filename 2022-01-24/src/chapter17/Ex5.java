@@ -9,15 +9,15 @@ public class Ex5 {
 
 		ArrayList<Integer> list = new ArrayList<>();
 		
-		System.out.println("ºñ¾îÀÖ³ª¿ä? " + list.isEmpty());
-		// isEmpty ºñ¾îÀÖ³ª¿ä? ³× -> true, ¾Æ´Ï¿ä -> false 
+		System.out.println("ë¹„ì–´ìˆë‚˜ìš”? " + list.isEmpty());
+		// isEmpty ë¹„ì–´ìˆë‚˜ìš”? ë„¤ -> true, ì•„ë‹ˆìš” -> false 
 		
 		list.add(0);
 		
-		if(list.isEmpty()) { // ºñ¾îÀÖ´Ù¸é true·Î ½ÇÇà, ºñ¾îÀÖÁö ¾Ê´Ù¸é false·Î ½ÇÇàX
-			System.out.println("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.");
+		if(list.isEmpty()) { // ë¹„ì–´ìˆë‹¤ë©´ trueë¡œ ì‹¤í–‰, ë¹„ì–´ìˆì§€ ì•Šë‹¤ë©´ falseë¡œ ì‹¤í–‰X
+			System.out.println("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}else {
-			System.out.println("µ¥ÀÌÅÍ°¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("ë°ì´í„°ê°€ ìˆìŠµë‹ˆë‹¤.");
 		}
 		
 		

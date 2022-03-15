@@ -7,28 +7,28 @@ public class Ex2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÀÌ ÇÁ·Î±×·¥Àº ¿¹¿Ü°¡ ¹ß»ıÇÏ´Â ÇÁ·Î±×·¥ÀÔ´Ï´Ù.
-		// ¿¹¿Ü°¡ ¾ğÁ¦ ¹ß»ıÇÏ´ÂÁö Ã£°í
-		// ¿¹¿Ü°¡ ¹ß»ıÇÏÁö ¾Êµµ·Ï Ã³¸®ÇØºÁ¶ó
+		// ì´ í”„ë¡œê·¸ë¨ì€ ì˜ˆì™¸ê°€ ë°œìƒí•˜ëŠ” í”„ë¡œê·¸ë¨ì…ë‹ˆë‹¤.
+		// ì˜ˆì™¸ê°€ ì–¸ì œ ë°œìƒí•˜ëŠ”ì§€ ì°¾ê³ 
+		// ì˜ˆì™¸ê°€ ë°œìƒí•˜ì§€ ì•Šë„ë¡ ì²˜ë¦¬í•´ë´ë¼
 		Scanner scan = new Scanner(System.in);
 		
 		int[] arr = {3, 2, 1};
 		
-		System.out.println("ÀÎµ¦½º ¹øÈ£ >> ");
+		System.out.println("ì¸ë±ìŠ¤ ë²ˆí˜¸ >> ");
 		int index = scan.nextInt();
 		
 //		if(index>=arr.length || index<0) {
-//			System.out.println("Ã£À» ¼ö ¾ø´Â ÀÎµ¦½º ¹øÈ£ÀÔ´Ï´Ù.");
+//			System.out.println("ì°¾ì„ ìˆ˜ ì—†ëŠ” ì¸ë±ìŠ¤ ë²ˆí˜¸ì…ë‹ˆë‹¤.");
 //		}else {
 //			System.out.println("arr[" + index + "] = " + arr[index]);
 //		}
 		
 		
-		// ¼±»ı´Ô ¹æ¹ı
+		// ì„ ìƒë‹˜ ë°©ë²•
 //		if(index<0) {
-//			System.out.println("ÀÎµ¦½º ¹øÈ£°¡ À½¼öÀÏ ¼ö ¾ø½À´Ï´Ù.");
+//			System.out.println("ì¸ë±ìŠ¤ ë²ˆí˜¸ê°€ ìŒìˆ˜ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 //		}else if(index >= arr.length) {
-//			System.out.println("ÀÎµ¦½º ¹øÈ£´Â 0 ~ " + (arr.length-1) + " »çÀÌ¸¸ »ç¿ë ÇÒ ¼ö ÀÖ½À´Ï´Ù.");
+//			System.out.println("ì¸ë±ìŠ¤ ë²ˆí˜¸ëŠ” 0 ~ " + (arr.length-1) + " ì‚¬ì´ë§Œ ì‚¬ìš© í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
 //		}else {
 //			System.out.println("arr[" + index + "] = " + arr[index]);
 //		}
@@ -37,7 +37,7 @@ public class Ex2 {
 		try {
 			System.out.println("arr[" + index + "] = " + arr[index]);
 		}catch(ArrayIndexOutOfBoundsException e){
-			System.out.println("ÀÎµ¦½º ¹øÈ£°¡ Àß¸øµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì¸ë±ìŠ¤ ë²ˆí˜¸ê°€ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		
 		

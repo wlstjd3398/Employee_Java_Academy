@@ -6,19 +6,19 @@ public class Sol9 {
 		// TODO Auto-generated method stub
 
 		String[] regionList = {
-				"¼­¿ïÆ¯º°½Ã",
-				"°æ±âµµ",
-				"ºÎ»ê±¤¿ª½Ã",
-				"´ë±¸±¤¿ª½Ã",
-				"ÀÎÃµ±¤¿ª½Ã",
-				"±¤ÁÖ±¤¿ª½Ã",
-				"´ëÀü±¤¿ª½Ã",
-				"¿ï»ê±¤¿ª½Ã",
-				"Á¦ÁÖÆ¯º°ÀÚÄ¡µµ"
+				"ì„œìš¸íŠ¹ë³„ì‹œ",
+				"ê²½ê¸°ë„",
+				"ë¶€ì‚°ê´‘ì—­ì‹œ",
+				"ëŒ€êµ¬ê´‘ì—­ì‹œ",
+				"ì¸ì²œê´‘ì—­ì‹œ",
+				"ê´‘ì£¼ê´‘ì—­ì‹œ",
+				"ëŒ€ì „ê´‘ì—­ì‹œ",
+				"ìš¸ì‚°ê´‘ì—­ì‹œ",
+				"ì œì£¼íŠ¹ë³„ìžì¹˜ë„"
 		};
 		
 		int lastRegion = regionList.length;
-		System.out.println("ÇàÁ¤±¸¿ª ¸ñ·ÏÀÇ ¸¶Áö¸· ÇàÁ¤ ±¸¿ªÀº " + lastRegion);
+		System.out.println("í–‰ì •êµ¬ì—­ ëª©ë¡ì˜ ë§ˆì§€ë§‰ í–‰ì • êµ¬ì—­ì€ " + lastRegion);
 
 	}
 

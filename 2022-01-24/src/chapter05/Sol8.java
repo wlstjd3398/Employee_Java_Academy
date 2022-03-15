@@ -8,7 +8,7 @@ public class Sol8 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("¿øÇÏ´Â ±¸±¸´ÜÀÌ ¸î´ÜÀÎ°¡¿ä?");
+		System.out.println("êµ¬êµ¬ë‹¨2~9ì¤‘ ìˆ«ìí•˜ë‚˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		Scanner scanf = new Scanner(System.in);
 		int insert = scanf.nextInt();
 		for(int i=1; i<=9; i++) {

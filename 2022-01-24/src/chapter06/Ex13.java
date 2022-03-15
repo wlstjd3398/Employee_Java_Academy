@@ -14,12 +14,12 @@ public class Ex13 {
 		
 		
 		
-		// for¹® () Ã³À½ºÎÅÍ ÀÛ¼ºÇÒ ÇÊ¿ä ¾ø´Ù ÇÒ¼ö ÀÖ´Â °ÍºÎÅÍ ½ÃÀÛÇØ¶ó
+		// forë¬¸ () ì²˜ìŒë¶€í„° ìž‘ì„±í•  í•„ìš” ì—†ë‹¤ í• ìˆ˜ ìžˆëŠ” ê²ƒë¶€í„° ì‹œìž‘í•´ë¼
 		for(int n=0; n<=numberList.length; n++) {
 			System.out.println(numberList[n]);
 		}
 		
-		// indexÀÇ ¼ö¸¦ ¾È¼¼°í ÇÏ´Â ¹æ¹ý numberList.length; (±æÀÌ - 1±îÁö¸¸ »ç¿ëÇÔ)
+		// indexì˜ ìˆ˜ë¥¼ ì•ˆì„¸ê³  í•˜ëŠ” ë°©ë²• numberList.length; (ê¸¸ì´ - 1ê¹Œì§€ë§Œ ì‚¬ìš©í•¨)
 		
 	}
 

@@ -9,10 +9,10 @@ public class Sol2 {
 		int student = 30;
 		
 		double pencilsPerStudent =(double) pencils / student;
-		System.out.println("ÇĞ»ı ÇÑ ¸í´ç °¡Áú ¼ö ÀÖ´Â ¿¬ÇÊÀÇ ¼ö´Â " + pencilsPerStudent + "°³ÀÔ´Ï´Ù.");
+		System.out.println("í•™ìƒ í•œ ëª…ë‹¹ ê°€ì§ˆ ìˆ˜ ìˆëŠ” ì—°í•„ì˜ ìˆ˜ëŠ” " + pencilsPerStudent + "ê°œì…ë‹ˆë‹¤.");
 		
 		int pencilsLeft = pencils % student;
-		System.out.println("¿¬ÇÊÀ» ³ª´²°®°í ³²Àº ¿¬ÇÊÀÇ ¼ö´Â " + pencilsLeft + "°³ ÀÔ´Ï´Ù.");
+		System.out.println("ì—°í•„ì„ ë‚˜ëˆ ê°–ê³  ë‚¨ì€ ì—°í•„ì˜ ìˆ˜ëŠ” " + pencilsLeft + "ê°œ ì…ë‹ˆë‹¤.");
 	}
 
 }

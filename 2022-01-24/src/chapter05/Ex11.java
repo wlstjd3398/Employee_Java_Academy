@@ -7,11 +7,11 @@ public class Ex11 {
 
 		int num = 3;
 		if(num == 1) {
-			System.out.println("numÀÇ °ªÀº 1ÀÔ´Ï´Ù.");
+			System.out.println("numì˜ ê°’ì€ 1ì…ë‹ˆë‹¤.");
 		}else if(num == 2) {
-			System.out.println("numÀÇ °ªÀº 2ÀÔ´Ï´Ù.");
+			System.out.println("numì˜ ê°’ì€ 2ì…ë‹ˆë‹¤.");
 		}else if(num == 3) {
-			System.out.println("numÀÇ °ªÀº 3ÀÔ´Ï´Ù.");
+			System.out.println("numì˜ ê°’ì€ 3ì…ë‹ˆë‹¤.");
 		}
 		
 		

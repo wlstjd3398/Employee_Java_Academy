@@ -9,31 +9,31 @@ public class Sol9 {
 //		
 //		switch(num) {
 //			case 1:
-//				System.out.println("1ÀÔ´Ï´Ù.");
+//				System.out.println("1ì…ë‹ˆë‹¤.");
 //				break;
 //			case 2:
-//				System.out.println("2ÀÔ´Ï´Ù.");
+//				System.out.println("2ì…ë‹ˆë‹¤.");
 //				break;
 //			case 3:
-//				System.out.println("3ÀÔ´Ï´Ù.");
+//				System.out.println("3ì…ë‹ˆë‹¤.");
 //				break;
 //			case 4:
-//				System.out.println("4ÀÔ´Ï´Ù.");
+//				System.out.println("4ì…ë‹ˆë‹¤.");
 //				break;
 //		}
 
-		// switch ¹®À» if¹®À¸·Î ¹Ù²ã¶ó
+		// switch ë¬¸ì„ ifë¬¸ìœ¼ë¡œ ë°”ê¿”ë¼
 		
 		int num = 1;
 		
 		if(num == 1) {
-			System.out.println("1ÀÔ´Ï´Ù");
+			System.out.println("1ì…ë‹ˆë‹¤");
 		}else if(num == 2){
-			System.out.println("2ÀÔ´Ï´Ù.");
+			System.out.println("2ì…ë‹ˆë‹¤.");
 		}else if(num == 3) {
-			System.out.println("3ÀÔ´Ï´Ù.");
+			System.out.println("3ì…ë‹ˆë‹¤.");
 		}else if(num == 4) {
-			System.out.println("4ÀÔ´Ï´Ù.");
+			System.out.println("4ì…ë‹ˆë‹¤.");
 		}
 		
 		

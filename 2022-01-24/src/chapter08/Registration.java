@@ -6,7 +6,7 @@ public class Registration {
 	private int month;
 	private int day;
 	
-	¹è¿­¿¡ ´ã¾Æ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
+//	ë°°ì—´ì— ë‹´ì•„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
 	public void Resident(int year, int month, int day) {
 		System.out.println(1900 + year + "-" + month + "-" + day);
 	}

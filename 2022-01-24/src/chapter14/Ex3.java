@@ -8,9 +8,9 @@ public class Ex3 {
 		// TODO Auto-generated method stub
 
 		
-		// ¿¹¿Ü°¡ µÎ°³
-//		ArrayIndexOutOfBoundsException ¹è¿­ 3¹øÂ°°¡ ¾øÀ½
-//		ArithmeticException 0À¸·Î ³ª´­¼ö ¾ø´Ù
+		// ì˜ˆì™¸ê°€ ë‘ê°œ
+//		ArrayIndexOutOfBoundsException ë°°ì—´ 3ë²ˆì§¸ê°€ ì—†ìŒ
+//		ArithmeticException 0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ë‹¤
 		
 		Random random = new Random();
 		
@@ -18,54 +18,54 @@ public class Ex3 {
 		
 		int index = random.nextInt(4);
 		
-		// try catch 2°³
+		// try catch 2ê°œ
 //		int number = 1;
 //		try {
 //			number = numberList[index];
 //		}catch(ArrayIndexOutOfBoundsException e) {
-//			System.out.println("¹è¿­ÀÇ ÀÎµ¦½º ¹üÀ§¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+//			System.out.println("ë°°ì—´ì˜ ì¸ë±ìŠ¤ ë²”ìœ„ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 //		}
 //		try {
 //			int result = 7 / number;
 //			System.out.println("7 / " + number + " = " + result);
 //		}catch(ArithmeticException e) {
-//			System.out.println("ºĞ¸ğ´Â 0ÀÏ ¼ö ¾ø½À´Ï´Ù.");
+//			System.out.println("ë¶„ëª¨ëŠ” 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 //		}
 		
 		
-		// try catch ÇÑ¹ø¿¡ 2°³ ÇÕÄ§
+		// try catch í•œë²ˆì— 2ê°œ í•©ì¹¨
 //		try {
 //			int number = numberList[index];
 //			int result = 7 / number;
 //			System.out.println("7 / " + number + " = " + result);
 //		}catch(ArithmeticException e) {
-//			System.out.println("ºĞ¸ğ´Â 0ÀÏ ¼ö ¾ø½À´Ï´Ù.");
+//			System.out.println("ë¶„ëª¨ëŠ” 0ì¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 //		}catch(ArrayIndexOutOfBoundsException e) {
-//			System.out.println("¹è¿­ÀÇ ÀÎµ¦½º ¹üÀ§¸¦ ¹ş¾î³µ½À´Ï´Ù.");
+//			System.out.println("ë°°ì—´ì˜ ì¸ë±ìŠ¤ ë²”ìœ„ë¥¼ ë²—ì–´ë‚¬ìŠµë‹ˆë‹¤.");
 //		}
 		
 		
-		// try catch¿¡¼­ catch ÇÕÄ¡±â
+		// try catchì—ì„œ catch í•©ì¹˜ê¸°
 		try {
 			int number = numberList[index];
 			int result = 7 / number;
 			System.out.println("7 / " + number + " = " + result);
 		}catch(ArithmeticException | ArrayIndexOutOfBoundsException e) {
-			// ¾ÕÀÇ ¿¹¿Ü°¡ ¹ß»ıÇß°Å³ª µÚÀÇ ¿¹¿Ü°¡ ¹ß»ıÇß´Ù¸é println Ãâ·Â
-			System.out.println("¿¹¿Ü°¡ ¹ß»ıÇß½À´Ï´Ù.");
+			// ì•ì˜ ì˜ˆì™¸ê°€ ë°œìƒí–ˆê±°ë‚˜ ë’¤ì˜ ì˜ˆì™¸ê°€ ë°œìƒí–ˆë‹¤ë©´ println ì¶œë ¥
+			System.out.println("ì˜ˆì™¸ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
 		}
 		
 //		String message = e.getMessage();
 //		System.out.println("message = " + message);
-//		 ¸Ş¼­µå¸¦ °¡Áö°í¿Ã¶§
-//		 Á¢±ÙÁ¦¾îÀÚ ¹İÈ¯Å¸ÀÔ ¸Ş¼­µåÀÌ¸§(¸Å°³º¯¼ö){
-//		 ¼Ò½ºÄÚµå
+//		 ë©”ì„œë“œë¥¼ ê°€ì§€ê³ ì˜¬ë•Œ
+//		 ì ‘ê·¼ì œì–´ì ë°˜í™˜íƒ€ì… ë©”ì„œë“œì´ë¦„(ë§¤ê°œë³€ìˆ˜){
+//		 ì†ŒìŠ¤ì½”ë“œ
 //	     }
 		 
-		 // ¹İÈ¯Å¸ÀÔÀÌ StringÀ¸·Î µ¥ÀÌÅÍÅ¸ÀÔÀ» ¹ŞÀ½
-		 // ¿¹¿Ü»çÀ¯°¡ ¸®ÅÏµÊ
+		 // ë°˜í™˜íƒ€ì…ì´ Stringìœ¼ë¡œ ë°ì´í„°íƒ€ì…ì„ ë°›ìŒ
+		 // ì˜ˆì™¸ì‚¬ìœ ê°€ ë¦¬í„´ë¨
 //		 e.printStackTrace();
-		 // ¿¹¿ÜÀÇ »ó¼¼Á¤º¸¸¦ ¾Ë·ÁÁÜ
+		 // ì˜ˆì™¸ì˜ ìƒì„¸ì •ë³´ë¥¼ ì•Œë ¤ì¤Œ
 		
 	}
 

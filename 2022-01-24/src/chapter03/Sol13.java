@@ -5,9 +5,9 @@ public class Sol13 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		Math.floor() : ¼Ò¼öÁ¡ ÀÌÇÏ¸¦ ¹ö¸²ÇÑ´Ù.
-//		Math.ceil() : ¼Ò¼öÁ¡ ÀÌÇÏ¸¦ ¿Ã¸²ÇÑ´Ù.
-//		Math.round() : ¼Ò¼öÁ¡ ÀÌÇÏ¸¦ ¹İ¿Ã¸²ÇÑ´Ù.
+//		Math.floor() : ì†Œìˆ˜ì  ì´í•˜ë¥¼ ë²„ë¦¼í•œë‹¤.
+//		Math.ceil() : ì†Œìˆ˜ì  ì´í•˜ë¥¼ ì˜¬ë¦¼í•œë‹¤.
+//		Math.round() : ì†Œìˆ˜ì  ì´í•˜ë¥¼ ë°˜ì˜¬ë¦¼í•œë‹¤.
 		
 		double num1 = 0.16;
 		double num2 = 0.2;

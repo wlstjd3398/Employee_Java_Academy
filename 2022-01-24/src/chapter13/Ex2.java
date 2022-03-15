@@ -5,7 +5,7 @@ public class Ex2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÀÌ ÇÁ·Î±×·¥ÀÇ µ¿ÀÛ¿ø¸®¸¦ ÆÄ¾ÇÇØ¶ó
+		// ì´ í”„ë¡œê·¸ë¨ì˜ ë™ì‘ì›ë¦¬ë¥¼ íŒŒì•…í•´ë¼
 		Player player = new AudioPlayer();
 		player.play(0);
 		

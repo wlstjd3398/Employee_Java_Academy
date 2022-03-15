@@ -8,9 +8,9 @@ public class Sol3 {
 		char ch = 'A';
 		
 		if(ch >= 'a' && ch <= 'z') {
-			System.out.println("¼Ò¹®ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ì†Œë¬¸ìžìž…ë‹ˆë‹¤.");
 		}else {
-			System.out.println("´ë¹®ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ëŒ€ë¬¸ìžìž…ë‹ˆë‹¤.");
 		}
 	}
 

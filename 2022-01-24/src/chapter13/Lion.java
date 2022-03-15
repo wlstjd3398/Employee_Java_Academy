@@ -5,7 +5,7 @@ public class Lion extends Animal{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		 System.out.println("³× ¹ß·Î ´Þ¸³´Ï´Ù.");
+		 System.out.println("ë„¤ë°œë¡œ ë›´ë‹¤");
 	}
 
 	

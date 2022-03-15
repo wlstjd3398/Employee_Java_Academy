@@ -4,19 +4,18 @@ public class Ex8 {
 	
 	public static void main(String[] args) {
 		
-		String name = "È«±æµ¿";
+		String name = "í™ê¸¸ë™";
 		String job = "Programmer";
 		
-		// µ¥ÀÌÅÍ Å¸ÀÔÀÌ String(¹®ÀÚ¿­)ÀÎ º¯¼ö¸¸ÀÇ Æ¯Â¡
-		// - º¯¼ö ¾È¿¡ ¹®ÀÚ¿­ÀÌ ÀúÀåµÇ´Â°Ô ¾Æ´Ñ ¹®ÀÚ¿­ÀÌ ÀúÀåµÈ ¸Þ¸ð¸® ÁÖ¼Ò°¡ ÀúÀåµÊ
-		// - sysoutÀ¸·Î String Å¸ÀÔÀÇ º¯¼ö¸¦ »ç¿ëÇÏ¸é
-		// Áö±Ý±îÁö ¹è¿î ³í¸®·Î´Â ±× º¯¼ö°¡ °®°í ÀÖ´Â ¸Þ¸ð¸® ÁÖ¼Ò°¡ Ãâ·ÂµÇ¾î¾ßÇÔ
-		// ±×·¯³ª! ¹®ÀÚ¿­Àº ¿¹¿ÜÀûÀ¸·Î ±× º¯¼ö°¡ °¡¸®Å°°í ÀÖ´Â ¹®ÀÚ¿­("È«±æµ¿" ¶Ç´Â "Programmer")
-		// Ãâ·ÂµÊ
+		// ë°ì´í„° íƒ€ìž…ì´ String(ë¬¸ìžì—´)ì¸ ë³€ìˆ˜ë§Œì˜ íŠ¹ì§•
+		// - ë³€ìˆ˜ ì•ˆì— ë¬¸ìžì—´ì´ ì €ìž¥ë˜ëŠ”ê²Œ ì•„ë‹Œ ë¬¸ìžì—´ì´ ì €ìž¥ëœ ë©”ëª¨ë¦¬ ì£¼ì†Œê°€ ì €ìž¥ë¨
+		// - sysoutìœ¼ë¡œ String íƒ€ìž…ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ë©´
+		// ì§€ê¸ˆê¹Œì§€ ë°°ìš´ ë…¼ë¦¬ë¡œëŠ” ê·¸ ë³€ìˆ˜ê°€ ê°–ê³  ìžˆëŠ” ë©”ëª¨ë¦¬ ì£¼ì†Œê°€ ì¶œë ¥ë˜ì–´ì•¼í•¨
+		// ê·¸ëŸ¬ë‚˜! ë¬¸ìžì—´ì€ ì˜ˆì™¸ì ìœ¼ë¡œ ê·¸ ë³€ìˆ˜ê°€ ê°€ë¦¬í‚¤ê³  ìžˆëŠ” ë¬¸ìžì—´("í™ê¸¸ë™" ë˜ëŠ” "Programmer")
+		// ì¶œë ¥ë¨
 		
 		System.out.println(name);
 		System.out.println(job);
 		
 	}
 }
-

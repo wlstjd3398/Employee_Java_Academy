@@ -23,20 +23,20 @@ public class StudentManagement {
 		orders[0] = avgs[0] == avgs[1] ? 1 : orders[0];
 		orders[1] = avgs[0] == avgs[1] ? 1 : orders[1];
 		
-		System.out.println("<<1¹øÂ° ÇĞ»ıÀÇ ¼ºÀû>>");
-		System.out.println("±¹¾î ¼ºÀû : " +kors[0]);
-		System.out.println("¿µ¾î ¼ºÀû : " +engs[0]);
-		System.out.println("¼öÇĞ ¼ºÀû : " +mats[0]);
-		System.out.println("ÃÑÁ¡ : " + sums[0]);
-		System.out.println("Æò±Õ : " + avgs[0]);
-		System.out.println("¼®Â÷ : " + orders[0]);
-		System.out.println("<<2¹øÂ° ÇĞ»ıÀÇ ¼ºÀû>>");
-		System.out.println("±¹¾î ¼ºÀû : " +kors[1]);
-		System.out.println("¿µ¾î ¼ºÀû : " +engs[1]);
-		System.out.println("¼öÇĞ ¼ºÀû : " +mats[1]);
-		System.out.println("ÃÑÁ¡ : " + sums[1]);
-		System.out.println("Æò±Õ : " + avgs[1]);
-		System.out.println("¼®Â÷ : " + orders[1]);
+		System.out.println("<<1ë²ˆì§¸ í•™ìƒì˜ ì„±ì >>");
+		System.out.println("êµ­ì–´ ì„±ì  : " +kors[0]);
+		System.out.println("ì˜ì–´ ì„±ì  : " +engs[0]);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " +mats[0]);
+		System.out.println("ì´ì  : " + sums[0]);
+		System.out.println("í‰ê·  : " + avgs[0]);
+		System.out.println("ì„ì°¨ : " + orders[0]);
+		System.out.println("<<2ë²ˆì§¸ í•™ìƒì˜ ì„±ì >>");
+		System.out.println("êµ­ì–´ ì„±ì  : " +kors[1]);
+		System.out.println("ì˜ì–´ ì„±ì  : " +engs[1]);
+		System.out.println("ìˆ˜í•™ ì„±ì  : " +mats[1]);
+		System.out.println("ì´ì  : " + sums[1]);
+		System.out.println("í‰ê·  : " + avgs[1]);
+		System.out.println("ì„ì°¨ : " + orders[1]);
 		
 //		int[] arr1 = {64, 21, 91};
 //		int[] arr2 = {58, 23 ,76};

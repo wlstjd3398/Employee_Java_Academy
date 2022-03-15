@@ -7,11 +7,11 @@ public class Ex9 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Customer c1 = new Customer("È«±æµ¿", "010-1234-5678", 1);
-		Customer c2 = new Customer("È«±æµ¿", "010-1234-5678", 3);
-		Customer c3 = new Customer("°í¿µÈñ", "010-1111-2222", 2);
+		Customer c1 = new Customer("í™ê¸¸ë™", "010-1234-5678", 1);
+		Customer c2 = new Customer("í™ê¸¸ë™", "010-1234-5678", 3);
+		Customer c3 = new Customer("ê³ ì˜í¬", "010-1111-2222", 2);
 		
-		System.out.println("c1¿Í c2°¡ °°³ª¿ä? " + c1.equals(c2));
+		System.out.println("c1ì™€ c2ê°€ ê°™ë‚˜ìš”? " + c1.equals(c2));
 		
 		
 		
@@ -20,28 +20,28 @@ public class Ex9 {
 		list.add(c3);
 		
 		
-		System.out.println(list.contains(c2)); // È«±æµ¿ÀÇ Á¤º¸°¡ ÀÌ ¸®½ºÆ®¿¡ µé¾îÀÖ³ª¿ä?
-		// contains¿¡ for¹İº¹¹®ÀÌ µé¾îÀÖÀ½(pptÈ®ÀÎ)
+		System.out.println(list.contains(c2)); // í™ê¸¸ë™ì˜ ì •ë³´ê°€ ì´ ë¦¬ìŠ¤íŠ¸ì— ë“¤ì–´ìˆë‚˜ìš”?
+		// containsì— forë°˜ë³µë¬¸ì´ ë“¤ì–´ìˆìŒ(pptí™•ì¸)
 		
 		
 		
-//		list.clear(); // Å¬¸®¾î¸¦ ÅëÇØ ºñ¿öÁü
-//		System.out.println(list.isEmpty()); // ±×·¡¼­ ºñ¿öÁü -> true
+//		list.clear(); // í´ë¦¬ì–´ë¥¼ í†µí•´ ë¹„ì›Œì§
+//		System.out.println(list.isEmpty()); // ê·¸ë˜ì„œ ë¹„ì›Œì§ -> true
 		
 		
 		System.out.println("----- ----- -----");
-		Customer removeCustomer = new Customer("°í¿µÈñ", "010-1111-2222", 2);
-		System.out.println("»èÁ¦ Àü -> " + list);
+		Customer removeCustomer = new Customer("ê³ ì˜í¬", "010-1111-2222", 2);
+		System.out.println("ì‚­ì œ ì „ -> " + list);
 		
 		list.remove(removeCustomer);
-		System.out.println("»èÁ¦ ÈÄ -> " + list);
+		System.out.println("ì‚­ì œ í›„ -> " + list);
 		
 		
 		if(list.remove(removeCustomer)) { 
-			// Áö¿î°á°ú¸¦ ´Ù½Ã Áö¿ì´Ï Áö¿ï µ¥ÀÌÅÍ°¡ list¾ø´Ù°í ¶ä
-			System.out.println("µ¥ÀÌÅÍ¸¦ list¿¡¼­ Áö¿ü½À´Ï´Ù.");
+			// ì§€ìš´ê²°ê³¼ë¥¼ ë‹¤ì‹œ ì§€ìš°ë‹ˆ ì§€ìš¸ ë°ì´í„°ê°€ listì—†ë‹¤ê³  ëœ¸
+			System.out.println("ë°ì´í„°ë¥¼ listì—ì„œ ì§€ì› ìŠµë‹ˆë‹¤.");
 		}else {
-			System.out.println("Áö¿ï µ¥ÀÌÅÍ°¡ list¿¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì§€ìš¸ ë°ì´í„°ê°€ listì— ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 		

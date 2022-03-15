@@ -5,23 +5,23 @@ public class Ex15 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// str ¹®ÀÚ¿­¿¡¼­ 0¹øÂ°´Â a, 4¹øÂ°´Â e
+		// str ë¬¸ìì—´ì—ì„œ 0ë²ˆì§¸ëŠ” a, 4ë²ˆì§¸ëŠ” e
 		String str = "apple";
 		
-		System.out.println("ÀÌ ¹®ÀÚ¿­ÀÇ ±æÀÌ´Â 5ÀÚÀÔ´Ï´Ù.");
+		System.out.println("ì´ ë¬¸ìì—´ì˜ ê¸¸ì´ëŠ” 5ìì…ë‹ˆë‹¤.");
 		
 		int strLength = str.length();
-		System.out.println("ÀÌ ¹®ÀÚ¿­ÀÇ ±æÀÌ´Â " + str.length() + "ÀÚÀÔ´Ï´Ù.");
+		System.out.println("ì´ ë¬¸ìì—´ì˜ ê¸¸ì´ëŠ” " + str.length() + "ìì…ë‹ˆë‹¤.");
 		
-		System.out.println("ÀÌ ¹®ÀÚ¿­ÀÇ ±æÀÌ´Â " + strLength +"ÀÚÀÔ´Ï´Ù.");
+		System.out.println("ì´ ë¬¸ìì—´ì˜ ê¸¸ì´ëŠ” " + strLength +"ìì…ë‹ˆë‹¤.");
 		
 		
-		// ¹®ÀÚ¿­¿¡¼­ ¹®ÀÚ ÃßÃâ
+		// ë¬¸ìì—´ì—ì„œ ë¬¸ì ì¶”ì¶œ
 		char firstChar = str.charAt(0);
-		System.out.println("str ¹®ÀÚ¿­¿¡¼­ 0¹øÂ° ÀÎµ¦½ºÀÇ ¹®ÀÚ(Ã¹¹øÂ°¹®ÀÚ)´Â " + firstChar);
+		System.out.println("str ë¬¸ìì—´ì—ì„œ 0ë²ˆì§¸ ì¸ë±ìŠ¤ì˜ ë¬¸ì(ì²«ë²ˆì§¸ë¬¸ì)ëŠ” " + firstChar);
 		
 		
-		// ÀÌ ¹®ÀÚ¿­ÀÇ Ã¹ ¹øÂ° ¹®ÀÚºÎÅÍ ¸¶Áö¸· ¹®ÀÚ±îÁö ÇÏ³ª¾¿ »Ì¾Æ¼­ Ãâ·ÂÇØ¶ó
+		// ì´ ë¬¸ìì—´ì˜ ì²« ë²ˆì§¸ ë¬¸ìë¶€í„° ë§ˆì§€ë§‰ ë¬¸ìê¹Œì§€ í•˜ë‚˜ì”© ë½‘ì•„ì„œ ì¶œë ¥í•´ë¼
 		char secondChar = str.charAt(1);
 		char thirdChar = str.charAt(2);
 		char forthChar = str.charAt(3);
@@ -32,14 +32,14 @@ public class Ex15 {
 		System.out.println(forthChar);
 		System.out.println(fifthChar);
 		
-		// charAtÀ» ÀÌ¿ëÇÏ¿© ÇÏ³ª¾¿ »Ì¾Æ¼­ Ãâ·Â
+		// charAtì„ ì´ìš©í•˜ì—¬ í•˜ë‚˜ì”© ë½‘ì•„ì„œ ì¶œë ¥
 		System.out.println(str.charAt(1));
 		System.out.println(str.charAt(2));
 		System.out.println(str.charAt(3));
 		System.out.println(str.charAt(4));
 		
 		
-		// for¹®À» ÀÌ¿ëÇØ¼­ ¹®ÀÚ¿­¿¡¼­ ¹®ÀÚ¸¦ ÃßÃâ
+		// forë¬¸ì„ ì´ìš©í•´ì„œ ë¬¸ìì—´ì—ì„œ ë¬¸ìë¥¼ ì¶”ì¶œ
 		for(int i=0; i<str.length(); i++) {
 			System.out.println(str.charAt(i));
 		}

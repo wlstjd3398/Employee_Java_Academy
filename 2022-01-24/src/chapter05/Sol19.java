@@ -8,10 +8,10 @@ public class Sol19 {
 		// TODO Auto-generated method stub
 
 		Scanner scanf = new Scanner(System.in);
-		System.out.println("id¿Í pw¸¦ ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù");
-		System.out.print("id¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä--> ");
+		System.out.println("idì™€ pwë¥¼ ìž…ë ¥í•´ì•¼í•©ë‹ˆë‹¤");
+		System.out.print("idë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”--> ");
 		String id = scanf.next();
-		System.out.print("pw¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä--> ");
+		System.out.print("pwë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”--> ");
 		String pw = scanf.next();
 		
 		
@@ -20,16 +20,16 @@ public class Sol19 {
 		
 		
 		if(idlen >= 4 && idlen <= 16) {
-			System.out.println("µî·ÏÇÑ ¾ÆÀÌµðÀÇ ±æÀÌ°¡ ÀÏÄ¡ÇÕ´Ï´Ù.");
+			System.out.println("ë“±ë¡í•œ ì•„ì´ë””ì˜ ê¸¸ì´ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤.");
 		}else {
-			System.out.println("µî·ÏÇÑ ¾ÆÀÌµðÀÇ ±æÀÌ°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ë“±ë¡í•œ ì•„ì´ë””ì˜ ê¸¸ì´ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 		
 		if(pwlen >= 6 && pwlen <= 16) {
-			System.out.println("µî·ÏÇÑ ÆÐ½º¿öµåÀÇ ±æÀÌ°¡ ÀÏÄ¡ÇÕ´Ï´Ù.");
+			System.out.println("ë“±ë¡í•œ íŒ¨ìŠ¤ì›Œë“œì˜ ê¸¸ì´ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤.");
 		}else {
-			System.out.println("µî·ÏÇÑ ÆÐ½º¿öµåÀÇ ±æÀÌ°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ë“±ë¡í•œ íŒ¨ìŠ¤ì›Œë“œì˜ ê¸¸ì´ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 		

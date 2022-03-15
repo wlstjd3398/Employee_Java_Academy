@@ -5,9 +5,9 @@ public class Ex10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Car car1 = new Car("Çö´ëÀÚµ¿Â÷");
-		Car car2 = new Car("±â¾ÆÀÚµ¿Â÷", 4);
-		Car car3 = new Car("½Ö¿ëÀÚµ¿Â÷", 2, "¼ÒÇüSUV");
+		Car car1 = new Car("í˜„ëŒ€ìë™ì°¨");
+		Car car2 = new Car("ê¸°ì•„ìë™ì°¨", 4);
+		Car car3 = new Car("ìŒìš©ìë™ì°¨", 2, "ì†Œí˜•SUV");
 		
 	}
 

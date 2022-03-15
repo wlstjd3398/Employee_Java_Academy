@@ -5,17 +5,17 @@ public class Ex1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// numÀÌ 1ºÎÅÍ
+		// numì´ 1ë¶€í„°
 		int num = 1;
-		// 3ÀÌÇÏÀÏ µ¿¾È
+		// 3ì´í•˜ì¼ ë™ì•ˆ
 		while(num <= 3) {
-			// ÇÏ³ª¾¿ Áõ°¡ÇÏ¸é¼­ while¾ÈÀÇ ÄÚµå¸¦ ¹İº¹ÀûÀ¸·Î ½ÇÇàÇÑ´Ù.
+			// í•˜ë‚˜ì”© ì¦ê°€í•˜ë©´ì„œ whileì•ˆì˜ ì½”ë“œë¥¼ ë°˜ë³µì ìœ¼ë¡œ ì‹¤í–‰í•œë‹¤.
 			num++;
 			System.out.println("Hello World~!");
 		}
 		System.out.println("num = " + num);
 		
-		 // num º¯¼öÀÇ ¿µÇâÀ» ¹Ş´Â ÄÚµå´Â int, while, num++ ¼¼°³ ÀüºÎ´ÙÀÌ´Ù.
+		 // num ë³€ìˆ˜ì˜ ì˜í–¥ì„ ë°›ëŠ” ì½”ë“œëŠ” int, while, num++ ì„¸ê°œ ì „ë¶€ë‹¤ì´ë‹¤.
 		
 	}
 

@@ -8,7 +8,7 @@ public class Ex2 {
 		// TODO Auto-generated method stub
 
 		ArrayList<Integer> intList = new ArrayList<Integer>();
-		// ÀÎ½ºÅÏ½ºÀÇ Á¦³×¸¯½º ¸¦ »ı·«°¡´É -> °´Ã¼ÀÇ Á¦³×¸¯½º¸¦ µû¶ó°¨(¾Æ·¡¿Í °°ÀÌ)
+		// ì¸ìŠ¤í„´ìŠ¤ì˜ ì œë„¤ë¦­ìŠ¤ ë¥¼ ìƒëµê°€ëŠ¥ -> ê°ì²´ì˜ ì œë„¤ë¦­ìŠ¤ë¥¼ ë”°ë¼ê°(ì•„ë˜ì™€ ê°™ì´)
 		// ArrayList<Integer> intList = new ArrayList<>();
 		for(int i=1; i<=10; i++) {
 			intList.add(i);
@@ -16,25 +16,25 @@ public class Ex2 {
 		System.out.println("intList = " + intList);
 		
 		
-		// intListÀÇ 2¹øÂ°, 9¹øÂ° µ¥ÀÌÅÍ¸¦ »èÁ¦ÇØ¶ó
+		// intListì˜ 2ë²ˆì§¸, 9ë²ˆì§¸ ë°ì´í„°ë¥¼ ì‚­ì œí•´ë¼
 		intList.remove(1);
 		intList.remove(8);
 		System.out.println("intList = " + intList);
 	
 		
-		// ¹İº¹¹®°ú get¸Ş¼­µå¸¦ »ç¿ëÇØ¼­ intListÀÇ Ã¹¹øÂ° µ¥ÀÌÅÍºÎÅÍ ¸¶Áö¸·µ¥ÀÌÅÍ±îÁö Â÷·Ê´ë·Î Ãâ·ÂÇØ¶ó
+		// ë°˜ë³µë¬¸ê³¼ getë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ì„œ intListì˜ ì²«ë²ˆì§¸ ë°ì´í„°ë¶€í„° ë§ˆì§€ë§‰ë°ì´í„°ê¹Œì§€ ì°¨ë¡€ëŒ€ë¡œ ì¶œë ¥í•´ë¼
 		for(int i=0; i<=7; i++) {
 			Integer number = intList.get(i);
 			System.out.println(number);
 		}
-		// -> ¹®Á¦°¡ ÀÖÀ½ i<=10; ÀÌ ¾Æ´Ï¶ó Á¾·á½ÄÀÌ ´õ ¸¹À¸¸é ±×µÚÀÇ ¼ö´Â Àß¸²
-//		int size = intList.size(); // size() : ¿ä¼ÒÀÇ ¼ö¸¦ ¾Ë·ÁÁØ´Ù
+		// -> ë¬¸ì œê°€ ìˆìŒ i<=10; ì´ ì•„ë‹ˆë¼ ì¢…ë£Œì‹ì´ ë” ë§ìœ¼ë©´ ê·¸ë’¤ì˜ ìˆ˜ëŠ” ì˜ë¦¼
+//		int size = intList.size(); // size() : ìš”ì†Œì˜ ìˆ˜ë¥¼ ì•Œë ¤ì¤€ë‹¤
 //		for(int i=0; i<size; i++) {
 //			Integer number = intList.get(i);
 //			System.out.println(number);
 //		}
-		// Çâ»óµÈ for¹® = inhanced for¹®
-		for(int number : intList) { // intList¿¡¼­ Â÷·Ê´ë·Î number·Î µ¥ÀÌÅÍ¸¦ ÀúÀå 
+		// í–¥ìƒëœ forë¬¸ = inhanced forë¬¸
+		for(int number : intList) { // intListì—ì„œ ì°¨ë¡€ëŒ€ë¡œ numberë¡œ ë°ì´í„°ë¥¼ ì €ì¥ 
 			System.out.println(number);
 		}
 		

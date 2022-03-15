@@ -5,12 +5,12 @@ public class StudentManagement {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(" << ¼ºÀû °ü¸® ÇÁ·Î±×·¥ >>");
-		System.out.println(" 1. ¼ºÀû Á¤º¸ ÀúÀå");
-		System.out.println(" 2. ¼ºÀû Á¤º¸ ÀúÀå");
-		System.out.println(" 3. ¼ºÀû Á¤º¸ ÀúÀå");
-		System.out.println(" 4. ¼ºÀû Á¤º¸ ÀúÀå");
-		System.out.println(" ¸Ş´º ¹øÈ£ ÀÔ·Â : ");
+		System.out.println(" << ì„±ì  ê´€ë¦¬ í”„ë¡œê·¸ë¨ >>");
+		System.out.println(" 1. ì„±ì  ì •ë³´ ì €ì¥");
+		System.out.println(" 2. ì„±ì  ì •ë³´ ì €ì¥");
+		System.out.println(" 3. ì„±ì  ì •ë³´ ì €ì¥");
+		System.out.println(" 4. ì„±ì  ì •ë³´ ì €ì¥");
+		System.out.println(" ë©”ë‰´ ë²ˆí˜¸ ì…ë ¥ : ");
 		
 	}
 

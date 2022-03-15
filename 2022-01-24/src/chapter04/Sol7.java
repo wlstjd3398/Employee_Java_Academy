@@ -14,7 +14,7 @@ public class Sol7 {
 		scores[3] = 50;
 		scores[4] = 75;
 		
-		System.out.println("ÇĞ»ıµéÀÇ Á¡¼ö´Â " + Arrays.toString(scores) + "ÀÔ´Ï´Ù.");
+		System.out.println("ì¸ë±ìŠ¤ë³„ ì ìˆ˜" + Arrays.toString(scores) + " ì ");
 
 	}
 

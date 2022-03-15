@@ -7,14 +7,14 @@ public class Ex17 {
 
 		int num=1;
 		while(num <= 3) {
-			int num2 = 1;// while ¾È¿¡¼­ ¼±¾ðÇÑ º¯¼ö´Â 3¹ø ¸¸µé°í, while³¡À» °¡°í ¿Ã¶ó°¡¸é¼­ 3¹ø »ç¶óÁü
+			int num2 = 1;// while ì•ˆì—ì„œ ì„ ì–¸í•œ ë³€ìˆ˜ëŠ” 3ë²ˆ ë§Œë“¤ê³ , whileëì„ ê°€ê³  ì˜¬ë¼ê°€ë©´ì„œ 3ë²ˆ ì‚¬ë¼ì§
 			
-			System.out.println(num); // 1, 2, 3 Ãâ·ÂÀº while¾È
+			System.out.println(num); // 1, 2, 3 ì¶œë ¥ì€ whileì•ˆ
 			
 			num++;
 			num2++;
 		}
-		System.out.println(num); // 4´Â while ¹Û
+		System.out.println(num); // 4ëŠ” while ë°–
 		
 	}
 

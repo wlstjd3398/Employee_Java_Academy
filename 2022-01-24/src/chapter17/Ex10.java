@@ -9,7 +9,7 @@ public class Ex10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// setÀº equals¿Í hashcode¸¦ ¿À¹ö¶óÀÌµùÇØ¾ßÇÑ´Ù
+		// setì€ equalsì™€ hashcodeë¥¼ ì˜¤ë²„ë¼ì´ë”©í•´ì•¼í•œë‹¤
 		Set<Integer> set = new HashSet<>();
 		
 		set.add(1);
@@ -17,42 +17,42 @@ public class Ex10 {
 		set.add(5);
 		set.add(7);
 		set.add(9);
-		System.out.println("ÃÊ±â : " + set);
+		System.out.println("ì´ˆê¸° : " + set);
 		
 		
-		set.add(1); // 1ÀÌ ÀúÀåµÇ¾îÀÖ¾î¼­ ¾Èµé¾î°¨(¹«½Ã)
-		System.out.println("1 ÀúÀå : " + set);
+		set.add(1); // 1ì´ ì €ì¥ë˜ì–´ìˆì–´ì„œ ì•ˆë“¤ì–´ê°(ë¬´ì‹œ)
+		System.out.println("1 ì €ì¥ : " + set);
 		
 		
 		if(set.add(3)) {
-			System.out.println("3À» Ãß°¡ÇßÀ½");
+			System.out.println("3ì„ ì¶”ê°€í–ˆìŒ");
 		}else {
-			System.out.println("3À» Ãß°¡ÇÏÁö ¸øÇßÀ½");
-		} // ÀÌ·¸°Ô È®ÀÎÇÒ ¼ö ÀÖÀ½
+			System.out.println("3ì„ ì¶”ê°€í•˜ì§€ ëª»í–ˆìŒ");
+		} // ì´ë ‡ê²Œ í™•ì¸í•  ìˆ˜ ìˆìŒ
 		
 		
-		set.remove(1); // 1À» Áö¿ö¶ó°¡ ¾Æ´Ï¶ó Å¸ÀÔÀ» Integer·Î ¹Ù²ã¼­ Áö¿ì´Â°Í
-		System.out.println("1 »èÁ¦ : " + set);
+		set.remove(1); // 1ì„ ì§€ì›Œë¼ê°€ ì•„ë‹ˆë¼ íƒ€ì…ì„ Integerë¡œ ë°”ê¿”ì„œ ì§€ìš°ëŠ”ê²ƒ
+		System.out.println("1 ì‚­ì œ : " + set);
 		
 		
-		// index¹øÈ£°¡ ¾ø¾î¼­ getÀ» ÇÒ¼ö¾øÀ½
+		// indexë²ˆí˜¸ê°€ ì—†ì–´ì„œ getì„ í• ìˆ˜ì—†ìŒ
 //		set.get
-		// Á¢±Ù¹æ¹ı1
-		for(Integer number : set) {// set¿¡¼­ Â÷·Ê´ë·Î ²¨³¾ °´Ã¼°¡ ¾øÀ»¶§±îÁö number¿¡ ³Ö°Ú´Ù
+		// ì ‘ê·¼ë°©ë²•1
+		for(Integer number : set) {// setì—ì„œ ì°¨ë¡€ëŒ€ë¡œ êº¼ë‚¼ ê°ì²´ê°€ ì—†ì„ë•Œê¹Œì§€ numberì— ë„£ê² ë‹¤
 			System.out.println(number);
 		}
 		
 		
-		// Á¢±Ù¹æ¹ı2
-//		iterator() -> set¾È¿¡ µé¾îÀÖ´Â ÀüÃ¼ µ¥ÀÌÅÍµéÀ» 
-//		iterator ÀÚ·á±¸Á¶¿¡ ´ã¾Æ¼­ iterator¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå
-//		iterator ÀÚ·á±¸Á¶ -> ÆÄÀÏ Æ÷ÀÎÅÍ(Ä¿¼­)¿Í µ¥ÀÌÅÍµéÀ» °®°íÀÖ´Â ±¸Á¶
-//		¾Æ·¡È­»ìÇ¥¸ğ¾ç (ÆÄÀÏ Æ÷ÀÎÅÍ ¶Ç´Â Ä¿¼­¶ó°í ºÎ¸§)
-		// Integer°¡ µé¾îÀÖ´Â Iterator´Ù -> Á¦³×¸¯½º Ãß°¡
+		// ì ‘ê·¼ë°©ë²•2
+//		iterator() -> setì•ˆì— ë“¤ì–´ìˆëŠ” ì „ì²´ ë°ì´í„°ë“¤ì„ 
+//		iterator ìë£Œêµ¬ì¡°ì— ë‹´ì•„ì„œ iteratorë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ
+//		iterator ìë£Œêµ¬ì¡° -> íŒŒì¼ í¬ì¸í„°(ì»¤ì„œ)ì™€ ë°ì´í„°ë“¤ì„ ê°–ê³ ìˆëŠ” êµ¬ì¡°
+//		ì•„ë˜í™”ì‚´í‘œëª¨ì–‘ (íŒŒì¼ í¬ì¸í„° ë˜ëŠ” ì»¤ì„œë¼ê³  ë¶€ë¦„)
+		// Integerê°€ ë“¤ì–´ìˆëŠ” Iteratorë‹¤ -> ì œë„¤ë¦­ìŠ¤ ì¶”ê°€
 //		Iterator<Integer> iterator = set.iterator();
 //		Integer nthInteger = iterator.next();
 //		System.out.println(nthInteger);
-		// ÆÄÀÏÆ÷ÀÎÅÍ¸¦ ÇÑÄ­µÚ·Î ¿Å±â°í ±×ÀÚ¸®¿¡ ÀÖ´Â nthInteger·Î ¸®ÅÏ 
+		// íŒŒì¼í¬ì¸í„°ë¥¼ í•œì¹¸ë’¤ë¡œ ì˜®ê¸°ê³  ê·¸ìë¦¬ì— ìˆëŠ” nthIntegerë¡œ ë¦¬í„´ 
 //		nthInteger = iterator.next();
 //		System.out.println(nthInteger);
 //		
@@ -61,18 +61,18 @@ public class Ex10 {
 //		
 //		nthInteger = iterator.next();
 //		System.out.println(nthInteger);
-		// ´õÀÌ»ó next°¡ ¾ø¾î¼­ ¸øÇÔ
+		// ë”ì´ìƒ nextê°€ ì—†ì–´ì„œ ëª»í•¨
 		
 		
-		// while ¹İº¹¹®À¸·Î ¹Ù²Ù¼¼¿ä
-		// ²À ¼ø¼­´ë·Î ÇÒ ÇÊ¿ä¾øÀ½, ¹İº¹µÇ´Â°ÍºÎÅÍ ¸ÕÀú ÇØµµµÊ
+		// while ë°˜ë³µë¬¸ìœ¼ë¡œ ë°”ê¾¸ì„¸ìš”
+		// ê¼­ ìˆœì„œëŒ€ë¡œ í•  í•„ìš”ì—†ìŒ, ë°˜ë³µë˜ëŠ”ê²ƒë¶€í„° ë¨¼ì € í•´ë„ë¨
 		Iterator<Integer> iterator = set.iterator();
 		Integer nthInteger;
 		
 //		int count = 1;
 		
 		// iterator.hasNext()
-		// hasNext ÇöÀç Ä¿¼­À§Ä¡¿¡¼­ ´ÙÀ½À¸·Î ÀÌµ¿ÇÒ¼öÀÖ´ÂÁö ¾Ë·ÁÁÖ´Â ¸Ş¼­µå
+		// hasNext í˜„ì¬ ì»¤ì„œìœ„ì¹˜ì—ì„œ ë‹¤ìŒìœ¼ë¡œ ì´ë™í• ìˆ˜ìˆëŠ”ì§€ ì•Œë ¤ì£¼ëŠ” ë©”ì„œë“œ
 		
 		while(iterator.hasNext()) {
 			nthInteger = iterator.next();

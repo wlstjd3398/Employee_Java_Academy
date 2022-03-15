@@ -3,15 +3,15 @@ package chapter12;
 public class Parent {
 
 //	public Parent() {
-//		System.out.println("Parent Å¬·¡½ºÀÇ »ý¼ºÀÚ");
+//		System.out.println("Parent í´ëž˜ìŠ¤ì˜ ìƒì„±ìž");
 //	}
 	
-	// ÀÚ½Ä Å¬·¡½ºÀÇ »ý¼ºÀÚ¿¡¼­ ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ Áß ¸Å°³º¯¼ö°¡ ÀÖ´Â »ý¼ºÀÚ¸¦ È£ÃâÇÏµµ·Ï ÀÚ½Ä Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ Ãß°¡/¼öÁ¤ ÇÏ¼¼¿ä
+	// ìžì‹ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžì—ì„œ ë¶€ëª¨í´ëž˜ìŠ¤ì˜ ìƒì„±ìž ì¤‘ ë§¤ê°œë³€ìˆ˜ê°€ ìžˆëŠ” ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ë„ë¡ ìžì‹ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ ì¶”ê°€/ìˆ˜ì • í•˜ì„¸ìš”
 	public Parent(int n) {
-		System.out.println("¸Å°³º¯¼ö°¡ ÇÏ³ªÀÎ Parent Å¬·¡½ºÀÇ »ý¼ºÀÚ");
+		System.out.println("ë§¤ê°œë³€ìˆ˜ê°€ í•˜ë‚˜ì¸ Parent í´ëž˜ìŠ¤ì˜ ìƒì„±ìž");
 	}
-	// ¸Å°³º¯¼ö°¡ ÇÏ³ªÀÎ Parent Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ ³öµÎ°í, Child¿¡ public Child() {super(1); ÀÌºÎºÐÀ» ÁÖ¼®Ã³¸®ÇÏ¸é extendsºÎºÐ¿¡ ÄÄÆÄÀÏ ¿À·ù»ý±è
-	// -> ºÎ¸ð Å¬·¡½ºÀÇ »ý¼ºÀÚ°¡ ¸Å°³º¯¼ö°¡ ÀÖ´Â »ý¼ºÀÚ¸¸ ÀÖÀ¸´Ï±î
-	// ÀÌ·² °æ¿ì¿¡´Â ¿ì¸®°¡ Á÷Á¢ ÀÚ½Ä Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ ¼±¾ðÇÏ°í
-	// ÀûÀýÇÑ ºÎ¸ð Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ È£ÃâÇÏµµ·Ï ÄÚµå¸¦ Â¥¾ßÇÔ
+	// ë§¤ê°œë³€ìˆ˜ê°€ í•˜ë‚˜ì¸ Parent í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ ë†”ë‘ê³ , Childì— public Child() {super(1); ì´ë¶€ë¶„ì„ ì£¼ì„ì²˜ë¦¬í•˜ë©´ extendsë¶€ë¶„ì— ì»´íŒŒì¼ ì˜¤ë¥˜ìƒê¹€
+	// -> ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžê°€ ë§¤ê°œë³€ìˆ˜ê°€ ìžˆëŠ” ìƒì„±ìžë§Œ ìžˆìœ¼ë‹ˆê¹Œ
+	// ì´ëŸ´ ê²½ìš°ì—ëŠ” ìš°ë¦¬ê°€ ì§ì ‘ ìžì‹ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ ì„ ì–¸í•˜ê³ 
+	// ì ì ˆí•œ ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ë„ë¡ ì½”ë“œë¥¼ ì§œì•¼í•¨
 }

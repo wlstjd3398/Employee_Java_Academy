@@ -8,9 +8,9 @@ public class Sol7 {
 		// TODO Auto-generated method stub
 
 		Scanner scanf = new Scanner(System.in);
-		String[] menuList = {"µ·±î½º", "½ºÆÄ°ÔÆ¼", "½ºÅ×ÀÌÅ©", "Á¦À°ººÀ½"};
+		String[] menuList = {"ëˆê¹ŒìŠ¤", "ìŠ¤íŒŒê²Œí‹°", "ìŠ¤í…Œì´í¬", "ì œìœ¡ë³¶ìŒ"};
 		
-		System.out.println("¾î¶² À½½ÄÀ» ÁÖ¹®ÇÏ½Ã°Ú½À´Ï±î?");
+		System.out.println("ì–´ë–¤ ìŒì‹ì„ ì£¼ë¬¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		String menu = scanf.next();
 		
 		boolean exist = false;
@@ -23,8 +23,8 @@ public class Sol7 {
 //		if(!exist) exist = menuList[2].equals(menu);
 //		if(!exist) exist = menuList[3].equals(menu);
 		
-		if(exist) System.out.println("ÁÖ¹®ÇÏ½Å " + menu + " ÀÌ(°¡) Á¢¼öµÇ¾ú½À´Ï´Ù.");
-		else System.out.println("ÁÖ¹®ÇÏ½Å " + menu + " Àº(´Â) ¾ø´Â ¸Ş´ºÀÔ´Ï´Ù.");
+		if(exist) System.out.println("ì£¼ë¬¸í•˜ì‹  " + menu + " ì´(ê°€) ì ‘ìˆ˜ë˜ì—ˆìŠµë‹ˆë‹¤.");
+		else System.out.println("ì£¼ë¬¸í•˜ì‹  " + menu + " ì€(ëŠ”) ì—†ëŠ” ë©”ë‰´ì…ë‹ˆë‹¤.");
 
 		
 	}
