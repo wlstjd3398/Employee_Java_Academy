@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Ex01")
 public class Ex01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+       //직렬화 때문에 필요한 데 쓸일이 없음
 
     public Ex01() {
         super();
