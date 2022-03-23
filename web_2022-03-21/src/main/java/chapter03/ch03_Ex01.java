@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "/chapter03/ex01", urlPatterns = {"/chapter03/ex01"})
+@WebServlet(name = "/ch03/Ex01", urlPatterns = {"/chapter03/ex01"})
 public class ch03_Ex01 extends HttpServlet {
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
