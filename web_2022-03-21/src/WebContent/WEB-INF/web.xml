@@ -9,10 +9,9 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
   <servlet>
   <servlet-name>first</servlet-name>
-  <servlet-class>chapter01.Ex02</servlet-class>
+  <servlet-class>chapter01.Ex02</servlet-class> 
   </servlet>
   
   <servlet-mapping>
@@ -20,5 +19,23 @@
   	<url-pattern>/first</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+  	<servlet-name>ch05_ex01</servlet-name>
+  	<servlet-class>chapter05.Ex01</servlet-class>
+  	
+  	<init-param>
+  		<param-name>value</param-name>	
+  		<param-value>15</param-value>	
+  	</init-param>
+  	
+  	<load-on-startup>1</load-on-startup>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>ch05_ex01</servlet-name>
+ 	<url-pattern>/ch05_ex01</url-pattern>
+ </servlet-mapping>
+ 
   
 </web-app>
