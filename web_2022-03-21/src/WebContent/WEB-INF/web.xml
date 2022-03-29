@@ -9,6 +9,13 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+
+	<context-param>
+		<param-name>shutDownTime</param-name>
+		<param-value>2022-12-31 06:00:00</param-value>
+	</context-param>
+ 
+  
   <servlet>
   <servlet-name>first</servlet-name>
   <servlet-class>chapter01.Ex02</servlet-class> 
