@@ -10,6 +10,28 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
 
+<filter>
+	<filter-name>filter1</filter-name>
+	<filter-class>chapter07.Filter1</filter-class>
+</filter>
+
+<filter>
+	<filter-name>filter2</filter-name>
+	<filter-class>chapter07.Filter2</filter-class>
+</filter>
+
+<filter-mapping>
+	<filter-name>filter2</filter-name>
+	<url-pattern>/chapter07/ex01</url-pattern>
+</filter-mapping>
+
+<filter-mapping>
+	<filter-name>filter1</filter-name>
+	<url-pattern>/chapter07/*</url-pattern>
+</filter-mapping>
+
+
+
 	<context-param>
 		<param-name>shutDownTime</param-name>
 		<param-value>2022-12-31 06:00:00</param-value>
