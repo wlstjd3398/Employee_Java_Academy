@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+main {
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+main > h2 {
+	margin-bottom: 10px;
+    padding-bottom: 10px;
+	border-bottom: 1px solid black; 
+}
+
+#notice_list {
+	padding: 5px;
+	margin-top: 10px;
+}
