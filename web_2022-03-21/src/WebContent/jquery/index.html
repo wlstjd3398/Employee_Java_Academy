@@ -40,7 +40,7 @@ background:red;}
 			type: "GET",
 			data: "name1=value1&name2=value2",
 			// 위는 요청, 아래는 응답과 관련된 것으로 생각해야함
-			dataType: "text", 
+			dataType: "text", //text or json 으로 보통 사용함
 			success: function(data) {
 				// 응답을 성공적으로 받았을때 수행할 코드
 				$(".first").text(data);
@@ -65,7 +65,7 @@ background:red;}
 				
 // 				 console.log(result);
 // 				html에서 ctrl + /의 단축키가 안먹음
-// 				ctrl + shift + c 로 사용해야함(java도 이 단축키로 사용가능)
+// 				-> ctrl + shift + c 로 사용해야함(java도 이 단축키로 사용가능)
 				
 				// 아래 조건식을 수정해서 400번대 응답이 왔을 때 로 조건을 수정하세요
 				// 500번대 응답이 왔을 때 로 조건을 수정하세요
