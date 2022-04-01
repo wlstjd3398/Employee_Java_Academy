@@ -23,7 +23,7 @@ public class Join extends HttpServlet {
 		String pw = request.getParameter("pw");
 		String nickname = request.getParameter("nickname");
 		
-		//파라미터 검증
+		//파라미터 검증 해보기
 		//1. 아이디 값이 비어있는지 확인
 		//2. 비밀번호 값이 비어있는지 확인
 		//3. 이름 값이 비어있는지 확인
@@ -43,7 +43,7 @@ public class Join extends HttpServlet {
 		Database.memberInfoTable.add(memberInfo);
 		
 		// 회원가입 성공 페이지로 이동
-		response.sendRedirect("/web_31/member/joinSucces.html");
+		response.sendRedirect("/web_31/member/joinSuccess.html");
 		
 		
 	}
