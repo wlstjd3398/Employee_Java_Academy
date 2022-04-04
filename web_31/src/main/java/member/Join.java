@@ -34,7 +34,7 @@ public class Join extends HttpServlet {
 		
 		
 		// 회원 정보 생성
-		MemberInfo memberInfo = new MemberInfo(id,pw, nickname);
+		MemberInfo memberInfo = new MemberInfo(id, pw, nickname);
 		
 		// 아이디 중복 체크
 		

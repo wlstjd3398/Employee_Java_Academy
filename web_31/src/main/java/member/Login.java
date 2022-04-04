@@ -51,47 +51,59 @@ public class Login extends HttpServlet {
 		// - 찾았으면 로그인 성공
 		// - 찾지 못했으면 로그인 실패
 		if(success) {
-			// 로그인 성공 상태 정보 기록
+			// 로그인 성공 상태 정보 기록 (로그인 성공시 상태코드 정상이라 200으로 생략)
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogin", true);
 			session.setAttribute("loginUserName", loginUserName);
 			
-			response.setContentType("text/html;charset=utf-8");
+			response.setContentType("text/plain;charset=utf-8");
 			PrintWriter out = response.getWriter();
-			out.print("<!DOCTYPE html>"
-					+ "<html>"
-					+ "<head>"
-					+ "<meta charset=\"UTF-8\">"
-					+ "<title>Servlet Project</title>"
-					+ "<link rel=\"stylesheet\" href=\"/web_31/css/header.css\">"
-					+ "<link rel=\"stylesheet\" href=\"/web_31/css/footer.css\">"
-					+ "<link rel=\"stylesheet\" href=\"/web_31/css/main_index.css\">"
-					+ "</head>"
-					+ "<body>"
-					+ "	<header>"
-					+ "		<div id=\"login_area\">"
-					+ 		loginUserName + " 님 환영합니다~"
-					+ "		</div>"
-					+ "		<div id=\"join_area\">"
-					+ "			<button type=\"button\">회원가입</button>"
-					+ "		</div>"
-					+ "	</header>"
-					+ "	"
-					+ "	<main>"
-					+ "		<h2>공지사항</h2>"
-					+ "		<div id=\"notice_list\">공지사항이 없습니다.</div>"
-					+ "	</main>"
-					+ "	"
-					+ "	<footer>메가스터디 IT 아카데미 웹개발 취업반 Servlet 프로젝트</footer>"
-					+ "</body>"
-					+ "</html>");
+			
+			out.print(loginUserName);
 			
 			out.close();
-			
 		}else {
-			// 로그인 실패
-			response.sendRedirect("/web_31/main/index.html");
+			// 로그인 실패시 상태코드
+			response.setStatus(400);
 		}
+			
+			
+//			response.setContentType("text/html;charset=utf-8");
+//			PrintWriter out = response.getWriter();
+//			out.print("<!DOCTYPE html>"
+//					+ "<html>"
+//					+ "<head>"
+//					+ "<meta charset=\"UTF-8\">"
+//					+ "<title>Servlet Project</title>"
+//					+ "<link rel=\"stylesheet\" href=\"/web_31/css/header.css\">"
+//					+ "<link rel=\"stylesheet\" href=\"/web_31/css/footer.css\">"
+//					+ "<link rel=\"stylesheet\" href=\"/web_31/css/main_index.css\">"
+//					+ "</head>"
+//					+ "<body>"
+//					+ "	<header>"
+//					+ "		<div id=\"login_area\">"
+//					+ 		loginUserName + " 님 환영합니다~"
+//					+ "		</div>"
+//					+ "		<div id=\"join_area\">"
+//					+ "			<button type=\"button\">회원가입</button>"
+//					+ "		</div>"
+//					+ "	</header>"
+//					+ "	"
+//					+ "	<main>"
+//					+ "		<h2>공지사항</h2>"
+//					+ "		<div id=\"notice_list\">공지사항이 없습니다.</div>"
+//					+ "	</main>"
+//					+ "	"
+//					+ "	<footer>메가스터디 IT 아카데미 웹개발 취업반 Servlet 프로젝트</footer>"
+//					+ "</body>"
+//					+ "</html>");
+//			
+//			out.close();
+			
+//		}else {
+//			// 로그인 실패
+////			response.sendRedirect("/web_31/main/index.html");
+//		}
 		
 		
 		
