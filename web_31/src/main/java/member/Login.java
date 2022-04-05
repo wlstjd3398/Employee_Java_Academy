@@ -17,11 +17,15 @@ import vo.MemberInfo;
 public class Login extends HttpServlet {
 	// 로그인, 회원가입으로 계속 확인하는게 번거로움
 	// 범위데이터 생성
-	public Login() {
-		MemberInfo memberInfo = new MemberInfo("id1", "pw1", "name1");
-		
-		Database.memberInfoTable.add(memberInfo);
-	}
+	
+	// 관리자 계정도 생성
+//	public Login() {
+//		MemberInfo memberInfo = new MemberInfo("id1", "pw1", "name1");
+//		MemberInfo adminInfo = new MemberInfo("admin", "admin123", "관리자");
+//		
+//		Database.memberInfoTable.add(memberInfo);
+//		Database.memberInfoTable.add(adminInfo);
+//	} StartupProcessor 클래스에서 역할을 가져감 여기서는 생략해도됨
 	// 로그인했을때 이름이 한글로 나오게하려면 일단 주석처리했음 아직X
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -54,6 +58,19 @@ public class Login extends HttpServlet {
 			// 로그인 성공 상태 정보 기록 (로그인 성공시 상태코드 정상이라 200으로 생략)
 			HttpSession session = request.getSession();
 			session.setAttribute("isLogin", true);
+			
+			
+			// 관리자가 로그인했다면 userLevel=admin
+			// 관리자가 아닌 사용자가 로그인했다면 userLevel=user
+			// 으로 상태정보를 기록해보세요.
+			session.setAttribute("userLevel", loginUserName);
+			if(id.equals("admin")) {
+				session.setAttribute("userLevel", "admin");
+			}else {
+				session.setAttribute("userLevel", "user");
+			}
+			
+			
 			session.setAttribute("loginUserName", loginUserName);
 			
 			response.setContentType("text/plain;charset=utf-8");

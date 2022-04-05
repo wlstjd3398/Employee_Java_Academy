@@ -24,6 +24,14 @@ public class Main extends HttpServlet {
 			// sendRedirect를 사용하면 클라이언트의 URL이 바뀜
 			// request.dispatcher의 forward를 사용 -> 클라이언트의 URL이 바뀌지 않음
 			
+			String userLevel = (String) session.getAttribute("userLevel");
+			String writeNoticeBtnTag = ""; //null -> ""로 고치면 사용자계정에서 null이 사라짐
+			if(userLevel.equals("admin")) {
+				// 공지사항 쓰기 버튼 태그를 문자열로 구성
+				writeNoticeBtnTag = "<button type=\"button\" id=\"admin_notice_write\">공지사항 쓰기</button>";
+				
+			}
+			
 			response.setContentType("text/html;charset=utf-8");
 			
 			// ~~님 환영합니다가 보이는 메인 페이지로 이동
@@ -43,7 +51,8 @@ public class Main extends HttpServlet {
 					+ "		" + loginUserName + "님 환영합니다~"
 					+ "		</div>"
 					+ "		<div id=\"join_area\">"
-					+ "			<button type=\"button\">로그아웃</button>"
+					+		writeNoticeBtnTag
+					+ "			<button type=\"button\" id=\"logout\">로그아웃</button>"
 					+ "		</div>"
 					+ "	</header>"
 					+ "	"
@@ -59,8 +68,9 @@ public class Main extends HttpServlet {
 					+ "	$(\"#join_area > button\").on(\"click\", function(){"
 					+ "		location.href =\"/web_31/member/logout\";"
 					+ "	});"
-					+ "	"
-					+ "	"					
+					+ "	$(\"#admin_notice_write\").on(\"click\", function(){"
+					+ "		location.href = \"/web_31/notice/form.html\";"	
+					+ "	 });"			
 					+ "	</script>"
 					+ "</body>"
 					+ "</html>");
