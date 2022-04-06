@@ -69,7 +69,7 @@ public class Main extends HttpServlet {
 					+ "		location.href =\"/web_31/member/logout\";"
 					+ "	});"
 					+ "	$(\"#admin_notice_write\").on(\"click\", function(){"
-					+ "		location.href = \"/web_31/notice/form.html\";"	
+					+ "		location.href = \"/web_31/notice/form\";"	
 					+ "	 });"			
 					+ "	</script>"
 					+ "</body>"

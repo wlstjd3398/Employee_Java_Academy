@@ -4,6 +4,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
 import vo.MemberInfo;
+import vo.NoticeInfo;
 
 // 이 서블릿을 직접 등록하고
 // 등록할 때 load-on-startup 태그를 사용해서
@@ -39,6 +40,17 @@ public class StartupProcessor extends HttpServlet{
 		
 		Database.memberInfoTable.add(memberInfo);
 		Database.memberInfoTable.add(adminInfo);
+	
+		
+		NoticeInfo noticeInfo = new NoticeInfo("제목1", "내용1");
+		Database.noticeInfoTable.add(noticeInfo);
+		noticeInfo = new NoticeInfo("제목2", "내용2");
+		Database.noticeInfoTable.add(noticeInfo);
+		noticeInfo = new NoticeInfo("제목3", "내용3");
+		Database.noticeInfoTable.add(noticeInfo);
+		noticeInfo = new NoticeInfo("제목4", "내용4");
+		Database.noticeInfoTable.add(noticeInfo);
+	
 		
 	}
 	
