@@ -13,7 +13,7 @@
 			<form action="/web_31/member/login" method="POST">
 				<input type="text" name="id" placeholder="아이디">
 				<input type="password" name="pw" placeholder="비밀번호">
-				<input type="submit" value="로그인">
+				<button type="button">로그인</button>
 			</form>
 		</div>
 		<div id="join_area">
@@ -30,24 +30,7 @@
                 <span class="title">제목</span>
             </div>
             <div id="list">
-                <div class="contents">
-                    <span class="order">3</span>
-                    <a href="">
-                        <span class="title">국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 ...</span>
-                    </a>
-                </div>
-                <div class="contents">
-                    <span class="order">2</span>
-                    <a href="">
-                        <span class="title">대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 ...</span>
-                    </a>
-                </div>
-                <div class="contents">
-                    <span class="order">1</span>
-                    <a href="">
-                        <span class="title">헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다.</span>
-                    </a>
-                </div>
+                
             </div>
             <div class="pagination">
                 <span>1</span>
@@ -68,6 +51,10 @@
 <!-- 	script type을 사용해서 javascript 쓰는 이유는 javascript를 쓴다라는 것을 인지시켜줌 -->
 <!-- 	그러나 요즘은 생략해도 되는 추세 -->
 	<script>
+	//페이지가 실행되면서 동작하는 ajax라고 생각해야함
+	//(submit버튼을 button으로 고쳐주고 Header.servlet에서 "하나가 빠져있어서 parsererror떴음)
+	
+	
 		// 헤더에서 사용할 ajax
 		$.ajax({
 			url: "/web_31/notice/header",
@@ -124,9 +111,25 @@
 			url: "/web_31/notice/list",
 			type: "GET",
 			dataType: "json",
-			success: function(noticeList){
+			success: function(result){
+				// 서버가 전달해준 공지사항 목록의 제목과 내용들을 모두 console.log를 사용해 출력하세요
+				// 웹페이지에 출력해야하니 console.log말고 태그들을 파악해서 올려야함
+				// html, append, prepend 중 하나를 사용해서 웹페이지 올려야함
+				let noticeList = result.noticeList;
 				
-				console.log(noticeList);
+				for(let i=0; i<noticeList.length; i++){
+					let notice = noticeList[i];
+					
+					let noticeTag = "<div class=\"contents\">"+
+					                   " <span class=\"order\">" + (i+1) + "</span>" +
+					                  	 " <a href=\"\">"+
+					                    	    "<span class=\"title\">" + notice["title"] + "</span>" +
+				                  	 		" </a>"+
+				              		  "</div>";
+                
+                $("#list").append(noticeTag);
+				}
+				
 			},
 			error: function(response){
 				

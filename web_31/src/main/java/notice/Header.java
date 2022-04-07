@@ -20,7 +20,7 @@ public class Header extends HttpServlet {
 		
 		try {
 			//같이 꺼내서 담는 형식을 소스코드로 읽기 쉽게 모아서 두어야함!!
-			boolean isLogin=(boolean) session.getAttribute("isLogin");
+			boolean isLogin = (boolean) session.getAttribute("isLogin");
 			String loginUserName = (String) session.getAttribute("loginUserName");
 			String userLevel = (String) session.getAttribute("userLevel");
 			
@@ -37,7 +37,7 @@ public class Header extends HttpServlet {
 			//ajax를 이용하여 javascript에서 사용할것
 			
 			//앞에 정보들을 json에 담아서 출력해줘야함
-			out.print("{\"isLogin\":true,\"loginUserName\":\"" + loginUserName + ",\"userLevel\":\"" + userLevel + "\"}");
+			out.print("{\"isLogin\":true,\"loginUserName\":\"" + loginUserName + "\",\"userLevel\":\"" + userLevel + "\"}");
 			
 			out.close();
 			

@@ -29,8 +29,9 @@ public class List extends HttpServlet {
 			data = data + "{\"title\":\""+ noticeInfo.getTitle() + "\","
 					+ "\"contents\":\"" + noticeInfo.getContents() +"\"},";
 		}
-			data = data.substring(0, data.length()-2);
+			data = data.substring(0, data.length()-1);
 			// 마지막,를 substring으로 data.length()-2로 잘라줌
+			// -2를 -1로 수정하면 원하는대로 수정됨
 			
 			out.print(data);
 			
