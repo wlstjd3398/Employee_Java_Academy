@@ -6,6 +6,11 @@ public class MemberInfo {
 	private String id;
 	private String pw;
 	
+	public MemberInfo(String id, String pw) {
+		this.id = id;
+		this.pw = pw;
+	}
+	
 	//생성자를 자동으로 추가하는법(alt + shift + o)
 	public MemberInfo(String id, String pw, String nickname) {
 //		super(); //부모생성자인 object를 불러옴 의미없음
