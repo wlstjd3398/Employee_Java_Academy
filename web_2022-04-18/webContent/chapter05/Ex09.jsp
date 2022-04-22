@@ -23,7 +23,7 @@
 <%-- 		<c:param name="age" value="10" /> --%>
 	</c:import>
 	
-	
+	<br>
 	
 	
 	<p>  << import 후 >>  </p>
