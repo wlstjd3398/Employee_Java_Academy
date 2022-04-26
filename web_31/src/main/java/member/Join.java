@@ -13,8 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.websocket.SendResult;
 
-import dao.UserInfo;
+import dao.UserInfoDao;
 import etc.Database;
+import etc.URLConfig;
 import vo.MemberInfo;
 
 @WebServlet("/member/join")
@@ -44,13 +45,13 @@ public class Join extends HttpServlet {
 		
 		// 아이디 중복 체크
 		
-		UserInfo userInfoDao = new UserInfo();
+		UserInfoDao userInfoDao = new UserInfoDao();
 		
 		boolean isJoin = userInfoDao.insertUserInfo(memberInfo);
 		
 		if(isJoin) {
 			// 회원 가입 성공 처리
-			response.sendRedirect("/web_31/member/joinSuccess.html");
+			response.sendRedirect(URLConfig.PAGE_JOIN_SUCCESS_URL);
 		}else {
 			// 회원 가입 실패 처리
 			

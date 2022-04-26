@@ -10,40 +10,62 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import dao.UserInfo;
-import etc.Database;
+import dao.UserInfoDao;
+import service.MemberService;
 import vo.MemberInfo;
 
-@WebServlet(name = "member/Login", urlPatterns = { "/member/login" })
-public class Login extends HttpServlet {
-	// 로그인, 회원가입으로 계속 확인하는게 번거로움
-	// 범위데이터 생성
+@WebServlet("/member/controller1")
+public class MemberController1 extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 로그아웃 처리 구현
+		//-> 세션에 들어있는 로그인 관련 상태 정보를 삭제한다
+		HttpSession session = request.getSession();
+		session.removeAttribute("isLogin");
+		session.removeAttribute("loginUserName");
+		session.removeAttribute("loginUserLevel");
+		//공지사항관련 세션도 지워봄
+		
+		// 로그인말고 다른 상태정보가 있을 경우에는 invalidate 사용하면 안됨
+		//session.invalidate();
+		
+//		RequestDispatcher rd = request.getRequestDispatcher("/main");
+//		rd.forward(request, response);
+		
+		//url이 바뀌는게 좋음(sendRedirect)
+		response.sendRedirect("/web_31/main/index.jsp");
+		//-> 메인 페이지로 이동한다
+				
+	}
+
 	
-	// 관리자 계정도 생성
-//	public Login() {
-//		MemberInfo memberInfo = new MemberInfo("id1", "pw1", "name1");
-//		MemberInfo adminInfo = new MemberInfo("admin", "admin123", "관리자");
-//		
-//		Database.memberInfoTable.add(memberInfo);
-//		Database.memberInfoTable.add(adminInfo);
-//	} StartupProcessor 클래스에서 역할을 가져감 여기서는 생략해도됨
-	// 로그인했을때 이름이 한글로 나오게하려면 일단 주석처리했음 아직X
+	// 로그인, 회원가입으로 계속 확인하는게 번거로움
+			// 범위데이터 생성
+			
+			// 관리자 계정도 생성
+//			public Login() {
+//				MemberInfo memberInfo = new MemberInfo("id1", "pw1", "name1");
+//				MemberInfo adminInfo = new MemberInfo("admin", "admin123", "관리자");
+//				
+//				Database.memberInfoTable.add(memberInfo);
+//				Database.memberInfoTable.add(adminInfo);
+//			} StartupProcessor 클래스에서 역할을 가져감 여기서는 생략해도됨
+			// 로그인했을때 이름이 한글로 나오게하려면 일단 주석처리했음 아직X
+	
+	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 로그인 처리 구현
+		
 		// 클라이언트가 보낸 파라미터를 꺼냄
-		String id = request.getParameter("id");
-		String pw = request.getParameter("pw");
+//		String id = request.getParameter("id");
+//		String pw = request.getParameter("pw");
+//		
+//		MemberInfo memberInfo = new MemberInfo(id, pw);
 		
-		MemberInfo memberInfo = new MemberInfo(id, pw);
+		MemberService service = new MemberService();
 		
-		UserInfo userInfo = new UserInfo();
-		
-		memberInfo = userInfo.selectUserInfo(memberInfo);
-		
-		
-		// 로그인 처리
-		boolean success = memberInfo.getNickname() == null ? false : true; 
-		// = false; 찾지 못했다를 가정하고 찾음
+		// 로그인 성공 또는 실패 결과
+		MemberInfo memberInfo  = service.getLoginResult(request);
 		
 		// - 찾았으면 로그인 성공
 		// - 찾지못했으면 로그인 실패
@@ -66,32 +88,39 @@ public class Login extends HttpServlet {
 		
 		// - 찾았으면 로그인 성공
 		// - 찾지 못했으면 로그인 실패
-		if(success) {
+		if(memberInfo != null) {
 			
 			String loginUserName = memberInfo.getNickname(); // selectuserInfo위에 순서가 이어짐
+			String loginuserId = memberInfo.getId();
+			String userLevel;
 			
 			
 			
-			// 로그인 성공 상태 정보 기록 (로그인 성공시 상태코드 정상이라 200으로 생략)
-			HttpSession session = request.getSession();
-			session.setAttribute("isLogin", true);
+			
+			
 			
 			
 			// 관리자가 로그인했다면 userLevel=admin
 			// 관리자가 아닌 사용자가 로그인했다면 userLevel=user
 			// 으로 상태정보를 기록해보세요.
-			session.setAttribute("userLevel", loginUserName);
-			if(id.equals("admin")) {
-				session.setAttribute("userLevel", "admin");
+			if(loginuserId.equals("admin")) {
+				userLevel = "admin";
 			}else {
-				session.setAttribute("userLevel", "user");
+				userLevel = "user";
 			}
 			
+			// 로그인 성공 상태 정보 기록 (로그인 성공시 상태코드 정상이라 200으로 생략)
+			HttpSession session = request.getSession();
 			
+			session.setAttribute("isLogin", true);
+			session.setAttribute("userLevel", loginUserName);
 			session.setAttribute("loginUserName", loginUserName);
 			
-			response.setContentType("text/plain;charset=utf-8");
+			response.setContentType("application/json;charset=utf-8");
 			PrintWriter out = response.getWriter();
+			
+			//json으로 값을 보내주기
+			String result = "{\"loginUserName\": \"" + loginUserName + "\", \"userLevel\": \"" + userLevel + "\"}"; 
 			
 			out.print(loginUserName);
 			
@@ -138,9 +167,6 @@ public class Login extends HttpServlet {
 //			// 로그인 실패
 ////			response.sendRedirect("/web_31/main/index.html");
 //		}
-		
-		
-		
 	}
 
 }

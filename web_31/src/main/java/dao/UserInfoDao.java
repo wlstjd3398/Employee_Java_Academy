@@ -9,7 +9,7 @@ import java.sql.Statement;
 import etc.Database;
 import vo.MemberInfo;
 
-public class UserInfo {
+public class UserInfoDao {
 
 	
 	// 쿼리 실행과관련된 메서드 합쳐놓음

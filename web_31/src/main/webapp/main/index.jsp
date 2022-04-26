@@ -1,3 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
+<%@ include file="../includes/URLConfig.jsp" %>
+
+<%-- LOGOUT_URL = ${LOGOUT_URL } --%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,18 +15,66 @@
 <link rel="stylesheet" href="/web_31/css/header.css">
 <link rel="stylesheet" href="/web_31/css/footer.css">
 <link rel="stylesheet" href="/web_31/css/main_index.css">
+
+<script src="/web_31/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<%-- 	${sessionScope } --%>
+	
+
 	<header>
 		<div id="login_area">
-			<form action="/web_31/member/login" method="POST">
-				<input type="text" name="id" placeholder="아이디">
-				<input type="password" name="pw" placeholder="비밀번호">
-				<button type="button">로그인</button>
-			</form>
-		</div>
+<!-- 		로그인을 한 상태라면 (loginUserName)님 환영합니다!를 출력하고 -->
+<!-- JSTL의 core 라이브러리를 사용하면 해결할수있음 -->
+			<c:if test="${sessionScope.isLogin eq true }">
+				${sessionScope.loginUserName }님 환영합니다!
+			</c:if>
+
+<!-- 			로그인을 하지 않은 상태라면 로그인 form을 보여주도록하세요 -->
+			<c:if test="${sessionScope.isLogin ne true }">
+				<form action="${LOGIN_URL }" method="POST">
+					<input type="text" name="id" placeholder="아이디">
+					<input type="password" name="pw" placeholder="비밀번호">
+					<button type="button">로그인</button>
+				</form>
+			</c:if>
+		</div> 
+		
+		<c:set var="buttonText" value="회원가입" />
+		<c:if test="${sessionScope.isLogin eq true }">
+			<c:set var="buttonText" value="로그아웃" />
+		</c:if>
+		
 		<div id="join_area">
+		<c:if test="${sessionScope.isLogin eq true }">
+			<c:if test="${sessionScope.userLevel eq 'admin' }">
+				<button type="button" id="admin_notice_write">공지사항 쓰기</button>
+				
+				<script>
+					$("#admin_notice_write").on("click", function(){
+						location.href="${SERVLET_NOTICE_FORM_URL }";
+					});
+				</script>
+			</c:if>
+			
+			<button type="button">로그아웃</button>
+<!-- 			로그아웃 버튼 누르면 실행되는것 -->
+			<script>
+				$("#join_area > button").on("click", function(){
+					location.href ="${LOGOUT_URL}";
+				});
+			</script>
+		</c:if>
+		
+		<c:if test="${sessionScope.isLogin ne true }">
 			<button type="button">회원가입</button>
+<!-- 			회원가입버튼을 누르면 실행되는 것 -->
+			<script>
+				$("#join_area > button").on("click", function(){
+					location.href ="${JOIN_URL }";
+				});
+			</script>
+		</c:if>
 		</div>
 	</header>
 	
@@ -35,10 +92,10 @@
 	
 	<footer>메가스터디 IT 아카데미 웹개발 취업반 Servlet 프로젝트</footer>
 	
-	<script src="/web_31/js/jquery-3.6.0.min.js"></script>
+	
 	<script type="text/javascript">
 	$("#join_area > button").on("click", function(){
-		location.href ="/web_31/member/join.html";
+		location.href ="${JOIN_URL }";
 	});
 	
 	//jquery를 ajax 사용하여 호출하게함, id,pw태그를 불러와야함
@@ -54,23 +111,34 @@
 		
 		
 		$.ajax({
-			url: "/web_31/member/login",
+			url: "${LOGIN_URL }",
 			type: "POST",
 			data: "id=" + id + "&pw=" + pw,
 // 			dataType: "text" 일반적이라 생략가능
-			success: function(loginUserName){
+			dataType: "json",
+			success: function(result){
 				// 로그인 성공했을 때
 				
 				// 로그인 한 사용자의 이름 출력
 // 				alert("로그인 성공! 사용자의 이름을 출력할 차례");
-				$("#login_area").text(loginUserName + "님 환영합니다!")
+				$("#login_area").text(result.loginUserName + "님 환영합니다!");
 				//닉넴만 노출시키게 하는게 아니라 회원가입버튼을 로그아웃버튼으로 바꿔줘야함
+				
+				
 				$("#join_area button").text("로그아웃");
 				//로그아웃기능을 아직 구현안됨 기존버튼off하고 logout눌렀을때 페이지이동구현
 				$("#join_area > button").off("click");
 				$("#join_area > button").on("click", function(){
-					location.href ="/web_31/member/logout";
+					location.href ="${LOGOUT_URL}";
 				});
+				
+				if(result.userLevel == "admin"){
+					$("#join_area").prepend("<button type=\"button\" id=\"admin_notice_write\">공지사항 쓰기</button>");
+					$("#admin_notice_write").on("click", function() {
+						location.href = "${SERVLET_NOTICE_FORM_URL}";
+					});
+				}
+				
 			},
 			error: function(){
 				// 로그인 실패했을 때
@@ -90,7 +158,7 @@
 	
 	// 공지사항 목록을 불러와 보여줄 ajax
 		$.ajax({
-			url: "/web_31/notice/list",
+			url: "${GET_NOTICE_LIST_URL }",
 			type: "GET",
 			dataType: "json",
 			success: function(result){
