@@ -14,7 +14,7 @@ public class MemberService {
 	public static final int JOIN_FAIL = 409;
 	// 이렇게 멤버변수를 활용해서 가독성 좋게 불러오게함
 	
-	public void login(MemberDTO memberDto) {
+	public boolean login(MemberDTO memberDto) {
 		// 로그인 처리
 		
 		MemberDAO dao = new MemberDAO();
