@@ -22,7 +22,7 @@ public class MemberController1 extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.removeAttribute("isLogin");
 		session.removeAttribute("loginUserName");
-		session.removeAttribute("loginUserLevel");
+		session.removeAttribute("userLevel");
 		//공지사항관련 세션도 지워봄
 		
 		// 로그인말고 다른 상태정보가 있을 경우에는 invalidate 사용하면 안됨
@@ -93,13 +93,7 @@ public class MemberController1 extends HttpServlet {
 			String loginUserName = memberInfo.getNickname(); // selectuserInfo위에 순서가 이어짐
 			String loginuserId = memberInfo.getId();
 			String userLevel;
-			
-			
-			
-			
-			
-			
-			
+
 			// 관리자가 로그인했다면 userLevel=admin
 			// 관리자가 아닌 사용자가 로그인했다면 userLevel=user
 			// 으로 상태정보를 기록해보세요.
