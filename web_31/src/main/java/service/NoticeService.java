@@ -8,32 +8,44 @@ import vo.NoticeInfo;
 public class NoticeService {
 
 	public boolean addNotice(NoticeInfo newNoticeInfo) {
+		// 공지사항 테이블에 새로운 공지사항을 저장한다.
 		
-		// 공지사항 테이블에 새로운 공지사항을 저장한다
-		 NoticeInfoDao dao = new NoticeInfoDao();
-		 
-		 boolean result = dao.inserNoticeInfo(newNoticeInfo);
-		 
-		 return result;
+		NoticeInfoDao dao = new NoticeInfoDao();
+		
+		boolean result = dao.insertNoticeInfo(newNoticeInfo);
+		
+		return result;
 	}
 	
-	public String loadNoticeInfoToJson() {
-		// 공지사항 목록을 불러옴
-		// service가 크게 하는 일이 없다면 dao에서 할수있음
+	
+	public String loadNoticeInfoListToJson(int pageNumber) {
+		// 공지사항 목록을 불러온다.(페이지 번호에 맞는 페이지넘버를 불러옴)
 		NoticeInfoDao dao = new NoticeInfoDao();
-		List<NoticeInfo> noticeInfoList = dao.selectNoticeInfo();
+		List<NoticeInfo> noticeInfoList = dao.selectNoticeInfo(pageNumber);
 		
-		// 불러온 공지사항 목록을 json으로 구성한다
-		String data = "{\"noticeList\":[";
+		int amount = dao.getAmountOfNotice();
+		
+		
+		// 불러온 공지사항 목록을 JSON으로 구성한다.
+		String data = "{\"amount\": " + amount + ",";
+		data += "\"noticeList\":[";
 		for(NoticeInfo noticeInfo : noticeInfoList) {
-			data = data + "{\"title\":\""+ noticeInfo.getTitle() + "\","
-					+ "\"contents\":\"" + noticeInfo.getContents() +"\"},";
+			data = data + "{\"title\":\"" + noticeInfo.getTitle() + "\",\"contents\":\"" + noticeInfo.getContents() + "\"},";
 		}
 		data = data.substring(0, data.length()-1);
-		data= data + "]}";
+		data = data + "]}";
 		
 		return data;
-		
 	}
 	
+	
+//	public int getAmountOfNotice() {
+//		
+//		NoticeInfoDao dao = new NoticeInfoDao();
+//		
+//		int amount = dao.getAmountOfNotice();
+//		
+//		return amount;
+//	}
+//	
 }

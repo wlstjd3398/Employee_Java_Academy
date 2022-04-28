@@ -8,7 +8,6 @@
 
 <c:set var="JOIN_URL" value="/web_31/member/join.jsp" />
 
-<c:set var="GET_NOTICE_LIST_URL" value="/web_31/notice/list" />
 
 <!-- servlet을 호출하는 URL은 SERVLET 으로 시작 -->
 <!-- 페이지를 이동하는 URL은 PAGE로 시작 -->
@@ -21,4 +20,8 @@
 <c:set var="SERVLET_NOTICE_WRITE" value="/web_31/notice/controller" />
 
 <c:set var="SERVLET_NOTICE_LIST" value="${SERVLET_NOTICE_WRITE }" />
+
+<c:set var="PAGE_NOTICE_LIST" value="/web_31/notice/list.jsp" />
+
+<c:set var="SERVLET_NOTICE_AMOUNT" value="/web_31/notice/controller2" />
 

@@ -93,7 +93,13 @@ public class MemberController1 extends HttpServlet {
 			String loginUserName = memberInfo.getNickname(); // selectuserInfo위에 순서가 이어짐
 			String loginuserId = memberInfo.getId();
 			String userLevel;
-
+			
+			
+			
+			
+			
+			
+			
 			// 관리자가 로그인했다면 userLevel=admin
 			// 관리자가 아닌 사용자가 로그인했다면 userLevel=user
 			// 으로 상태정보를 기록해보세요.
@@ -107,7 +113,7 @@ public class MemberController1 extends HttpServlet {
 			HttpSession session = request.getSession();
 			
 			session.setAttribute("isLogin", true);
-			session.setAttribute("userLevel", loginUserName);
+			session.setAttribute("userLevel", userLevel);
 			session.setAttribute("loginUserName", loginUserName);
 			
 			response.setContentType("application/json;charset=utf-8");
@@ -116,7 +122,7 @@ public class MemberController1 extends HttpServlet {
 			//json으로 값을 보내주기
 			String result = "{\"loginUserName\": \"" + loginUserName + "\", \"userLevel\": \"" + userLevel + "\"}"; 
 			
-			out.print(loginUserName);
+			out.print(result);
 			
 			out.close();
 		}else {
