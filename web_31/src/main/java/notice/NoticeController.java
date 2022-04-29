@@ -73,4 +73,27 @@ public class NoticeController extends HttpServlet {
 			// 공지사항 추가 실패와 관련된 처리를 함
 		}
 	}
+
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		int id = Integer.parseInt(req.getParameter("id"));
+		
+		// 클라이언트가 전달한 id를 사용해서 
+		// DB에서 해당 id를 가지고 있는 공지사항을 삭제
+			//서비스가 없어도되는 단순한 것
+		NoticeInfoDao dao = new NoticeInfoDao();
+		
+		boolean result = dao.deleteNoticeInfoById(id);
+		
+		// 클라이언트에게 삭제 결과인 200 상태코드를 전달
+		if(result) {
+			// 200 상태코드 전달
+			
+		} else {
+			// 삭제 하지 못했다는 의미의 상태 코드를 전달
+		}
+		
+	}
+	
+	
 }

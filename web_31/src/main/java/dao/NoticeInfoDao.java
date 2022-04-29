@@ -145,4 +145,34 @@ public class NoticeInfoDao {
 	}
 	
 	
+	public boolean deleteNoticeInfoById(int id) {
+		Database db = new Database();
+		
+		Connection conn = db.getConnection();
+		PreparedStatement pstmt = null;
+		
+		boolean result = false;
+		
+		try {
+			String sql = "DELETE FROM noticeInfo WHERE id = ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, id);
+			
+			int count = pstmt.executeUpdate();
+			
+			result = count == 1;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			db.closePstmt(pstmt);
+			db.closeConnection(conn);
+		}
+		return result;
+		
+		
+	}
+	
+	
 }

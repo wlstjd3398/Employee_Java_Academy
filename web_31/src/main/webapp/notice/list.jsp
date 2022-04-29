@@ -40,7 +40,7 @@
 			type: "GET",
 			success: function(amount){
 				
-				let roofCount = amount / 5;
+				let roofCount = Math.ceil(amount / 5);
 				
 				for(let i=1; i<=roofCount; i++){
 					// 페이지네이션 출력
@@ -87,7 +87,7 @@
 					
 					let noticeTag = "<div class=\"contents\">" +
                     					"<span class=\"order\">" + noticeOrder + "</span>" +
-                    						"<a href=\"\">" +
+                    						"<a href=\"${PAGE_NOTICE_DETAIL}?id=" + notice["id"] + "&pageNumber=" + pageNumber + "\">" +
                         						"<span class=\"title\"> " + notice["title"] + " </span>"
                     						"</a>" +
                 					"</div>";
