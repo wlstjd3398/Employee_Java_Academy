@@ -1,8 +1,16 @@
 package vo;
 
 public class NoticeInfo {
+	private int id;
 	private String title;
 	private String contents;
+	
+	public NoticeInfo(int id, String title, String contents) {
+		this.id = id;
+		this.title = title;
+		this.contents = contents;
+		
+	}
 	
 	public NoticeInfo(String title, String contents) {
 		this.title = title;
@@ -22,7 +30,12 @@ public class NoticeInfo {
 	public String getContents() {
 		return contents;
 	}
-		
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	
 		
 }

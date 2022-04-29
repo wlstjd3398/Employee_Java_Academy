@@ -79,10 +79,10 @@
 				</script>
 			</c:if>
 		
-			<button type="button">로그아웃</button>
+			<button type="button" id="logout_btn">로그아웃</button>
 			
 			<script>
-				$("#join_area > button").on("click", function() {
+				$("#logout_btn").on("click", function() {
 					location.href = "${LOGOUT_URL}";
 				});
 			</script>

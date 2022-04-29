@@ -30,7 +30,7 @@ public class NoticeService {
 		String data = "{\"amount\": " + amount + ",";
 		data += "\"noticeList\":[";
 		for(NoticeInfo noticeInfo : noticeInfoList) {
-			data = data + "{\"title\":\"" + noticeInfo.getTitle() + "\",\"contents\":\"" + noticeInfo.getContents() + "\"},";
+			data = data + "{\"id\": " + noticeInfo.getId() + ",\"title\":\"" + noticeInfo.getTitle() + "\",\"contents\":\"" + noticeInfo.getContents() + "\"},";
 		}
 		data = data.substring(0, data.length()-1);
 		data = data + "]}";
@@ -48,4 +48,21 @@ public class NoticeService {
 //		return amount;
 //	}
 //	
+	
+	public String loadNoticeInfoToJson(int id) {
+		// 공지사항의 상세 정보를 DB에서 불러옴
+		NoticeInfoDao dao = new NoticeInfoDao();
+		
+		NoticeInfo noticeInfo = dao.selectNoticeInfoById(id);
+		
+		// 불러온 상세 정보를 클라이언트에게 전달하기 위해 JSON으로 구성
+		String data = null;
+		
+		if(noticeInfo != null) {
+			// 공지사항의 상세정보를 확인했다면 
+			data = "{\"id\": " + noticeInfo.getId() + ",\"title\":\"" + noticeInfo.getTitle() + "\",\"contents\":\"" + noticeInfo.getContents() + "\"}";
+		}
+		
+			return data;
+	}
 }

@@ -25,3 +25,6 @@
 
 <c:set var="SERVLET_NOTICE_AMOUNT" value="/web_31/notice/controller2" />
 
+<c:set var="PAGE_NOTICE_DETAIL" value="/web_31/notice/detail.jsp" />
+
+<c:set var="SERVLET_NOTICE_INFO" value="/web_31/notice/controller3" />

@@ -51,7 +51,7 @@
 					let notice = noticeList[i];
 					
 					let noticeTag = "<div class=\"contents\">" +
-                   						"<a href=\"\">" +
+                   						"<a href=\"${PAGE_NOTICE_DETAIL}?id="+ notice["id"] +"\">" +
                        						"<span class=\"title\"> " + notice["title"] + " </span>"
                    						"</a>" +
                 					"</div>";
