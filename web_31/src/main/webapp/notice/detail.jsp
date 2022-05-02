@@ -64,10 +64,15 @@
 		let pageNumberParameters = parameters[1];
 		
 		idParameters = idParameters.split("=");
-		pageNumberParameters = pageNumberParameters.split("=");
+		if(pageNumberParameters != undefined){
+			pageNumberParameters = pageNumberParameters.split("=");
+		}
 		
 		let id = idParameters[1];
-		let pageNumber = pageNumberParameters[1];
+		let pageNumber = 1;
+		if(pageNumberParameters != undefined){
+			let pageNumber = pageNumberParameters[1];
+		}
 		
 		
 		$("#goList").on("click", function() {
@@ -75,7 +80,7 @@
 		});
 		
 		$("#goUpdate").on("click", function() {
-			location.href = "공지사항 수정 페이지로 이동";
+			location.href = "${PAGE_NOTICE_FORM_URL}?id="+id;
 		});
 		$("#goDelete").on("click", function() {
 			$.ajax({
@@ -91,7 +96,7 @@
 					
 				}
 			})
-			location.href = "${SERVLET_NOTICE_WRITE}";
+			
 		});
 		
 		$.ajax({

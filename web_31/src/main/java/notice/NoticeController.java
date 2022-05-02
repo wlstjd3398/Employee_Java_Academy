@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
 import dao.NoticeInfoDao;
 import etc.Database;
 import etc.URLConfig;
@@ -52,10 +55,26 @@ public class NoticeController extends HttpServlet {
 
 	// 공지사항 쓰기
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 클라이언트가 첨부파일을 보낼 가능성이 있다면
+		// request를 그대로 사용하면 안됨
+//		MultipartRequest multi = new MultipartRequest(request, "첨부파일이 저장될 경로", "5 * 1024 * 1024", "UTF-8", new DefaultFileRenamePolicy());
+		
+		
 		request.setCharacterEncoding("UTF-8");
 		
 		String title = request.getParameter("title");
 		String contents = request.getParameter("contents");
+		
+		// 클라이언트가 보낸 첨부파일을 꺼냄(컨트롤러가 처리하도록 할 것)
+		// -> MultipartRequest (cos.jar 파일이 필요)
+		// 또는 commons-fileupload (commons-fileupload.jsr, commons-io.jar 파일을 필요)
+		
+		// 첨부파일을 적절한 위치에 저장함(서비스가 처리하도록 할 것)
+		
+		
+		// DB에 첨부파일의 위치를 기록함(DAO가 처리하도록 할 것)
+		
+		
 		
 		// 클라이언트가 보낸 파라미터 값 검증
 		
@@ -94,6 +113,8 @@ public class NoticeController extends HttpServlet {
 		}
 		
 	}
-	
+
+	// 공지사항 수정
+
 	
 }

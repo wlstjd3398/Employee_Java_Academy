@@ -174,5 +174,35 @@ public class NoticeInfoDao {
 		
 	}
 	
+	public boolean updateNoticeInfo(NoticeInfo noticeInfo) {
+		Database db = new Database();
+		
+		Connection conn = db.getConnection();
+		PreparedStatement pstmt = null;
+		
+		boolean result = false;
+		
+		try {
+			String sql = "UPDATE noticeInfo SET title = ?, contents = ? WHERE id = ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,  noticeInfo.getTitle());
+			pstmt.setString(2,  noticeInfo.getContents());
+			pstmt.setInt(3,  noticeInfo.getId());
+			
+			int count = pstmt.executeUpdate();
+			
+			result = count == 1;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			db.closePstmt(pstmt);
+			db.closeConnection(conn);
+		}
+		
+		return result;
+		
+	}
+	
 	
 }
