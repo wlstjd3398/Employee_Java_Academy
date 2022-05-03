@@ -33,3 +33,5 @@
 
 <c:set var="SERVLET_NOTICE_UPDATE" value="/web_31/notice/controller2" />
 
+<c:set var="SERVLET_NOTICE_FILE_DELETE" value="${SERVLET_NOTICE_INFO}" />
+

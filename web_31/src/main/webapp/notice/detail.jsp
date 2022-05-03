@@ -38,7 +38,8 @@
 		<hr>
 		
 		<div id="file_wrapper">
-			<img src="/web_31/images/img.png" alt=""><a href="#">첨부파일</a>
+			<img src="/web_31/images/img.png" alt=""><a href="#" download>첨부파일</a>
+			
 		</div>
 
         <div id="btn_wrapper">
@@ -107,6 +108,17 @@
 			success: function(noticeInfo){
 				$("#title_wrapper span").text(noticeInfo.title);
 				$("#contents_wrapper p").text(noticeInfo.contents);
+				
+				// 첨부파일이 없는 경우 첨부파일 버튼을 안보이게 감춘다
+// 				console.log(noticeInfo); // 콘솔로 먼저 확인해본다
+				
+				if(noticeInfo.filePath == "null"){
+					$("#file_wrapper a").css("display", "none");
+				}else{
+					// 첨부파일이 있는 경우 첨부파일의 경로를 a태그의 href 속성에 지정한다
+					$("#file_wrapper a").attr("href", "/web_31" + noticeInfo.filePath);
+				}
+				
 			},
 			error: function() {
 				

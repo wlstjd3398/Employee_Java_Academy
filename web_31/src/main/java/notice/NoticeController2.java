@@ -45,7 +45,7 @@ public class NoticeController2 extends HttpServlet {
 		
 		NoticeService service = new NoticeService();
 		
-		boolean result = service.updateNotiecInfo(noticeInfo);
+		boolean result = service.updateNoticeInfo(noticeInfo);
 		
 		if(result) {
 			// 공지사항을 성공적으로 수정했다면

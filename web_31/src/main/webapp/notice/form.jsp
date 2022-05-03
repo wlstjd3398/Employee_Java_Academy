@@ -29,7 +29,7 @@
 	<div id="wrapper">
         <h2>공지사항</h2>
 
-		<form action="${SERVLET_NOTICE_WRITE }" method="POST" enctype="mutlipart/form-data">
+		<form action="${SERVLET_NOTICE_WRITE }" method="POST" enctype="multipart/form-data">
 			<div id="title_wrapper">
 				<label>제목&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="title"></label>
 			</div>
@@ -38,7 +38,7 @@
 				<label>내용<br><textarea name="contents" cols="100" rows="10"></textarea> </label>
 			</div>
 			
-			<div>
+			<div id="file_wrapper">
 				<label>첨부파일 : <input type="file" name="file"></label>
 			</div>
 
@@ -112,6 +112,39 @@
 					$title.val(noticeInfo.title);
 					$contents.val(noticeInfo.contents);
 					
+					// 첨부 파일이 있는 공지사항일 경우
+					if(noticeInfo.filePath != 'null'){
+						// type이 file인 input 태그를 삭제하고
+						$("input[type=file]").remove();
+						
+						// 그 자리에 대신 첨부파일의 이름을 표시하는 span 태그를 넣고
+						// filePath는 파일의 이름이 아닌 경로를 갖고있으므로 적절히 활용해서 이름이 출력되도록 해야함
+						$("#file_wrapper label").append("<span>" + noticeInfo.filePath + "</span>");
+						
+						// [삭제] button 태그를 넣으세요
+						$("#file_wrapper label").append("<button type=\"button\">삭제</button>");
+						
+						// 첨부파일이 있는 공지사항일 때 첨부파일 삭제 button 태그를 클릭하면 
+						// 해당 공지사항의 첨부파일을 삭제 처리하는 서블릿을 호출
+						$("#file_wrapper button").on("click", function(){
+							$.ajax({
+								url: "${SERVLET_NOTICE_FILE_DELETE}",
+								type: "POST",
+								data: "id=" + id,
+								success: function(){
+									// 해당 공지사항의 첨부파일을 성공적으로 삭제했을 경우
+									
+									$("#file_wrapper span").remove();
+									$("#file_wrapper button").remove();
+									$("#file_wrapper label").append("<input type=\"file\" name=\"file\">");
+								},
+								error: function(){
+									// 해당 공지사항의 첨부파일을 삭제하지 못했을 경우
+									
+								}
+							});
+						});
+					}
 				},
 				error: function(){
 					

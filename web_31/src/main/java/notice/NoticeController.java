@@ -57,13 +57,35 @@ public class NoticeController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 클라이언트가 첨부파일을 보낼 가능성이 있다면
 		// request를 그대로 사용하면 안됨
-//		MultipartRequest multi = new MultipartRequest(request, "첨부파일이 저장될 경로", "5 * 1024 * 1024", "UTF-8", new DefaultFileRenamePolicy());
 		
+		String path = "/file/notice";
+		path = request.getRealPath(path);
+		// path는 상대경로를 절대경로로 바꿔주며 정확한 메서드를 파악하는 것이 중요함
+		
+//		request.getServletContext().getRealPath(path);
+		// 기존방식은 이방식으로 쓰이지만 간단히 쓰기 위해 위위 코드로 사용함
+		
+		int maximumSize = 10 * 1024 * 1024;
+		String encoding = "UTF-8";
+		
+		MultipartRequest multi = new MultipartRequest(request, path, maximumSize, encoding, new DefaultFileRenamePolicy());
 		
 		request.setCharacterEncoding("UTF-8");
 		
-		String title = request.getParameter("title");
-		String contents = request.getParameter("contents");
+		String title = multi.getParameter("title");
+		String contents = multi.getParameter("contents");
+
+		
+		// file 파라미터로 전달된 파일의 실제 서버에 저장된 이름을 알 수 있음
+		// multi.getFilesystemName("file");
+		
+		String fileSystemName = multi.getFilesystemName("file");
+		String filePath = null;
+		if(fileSystemName != null) {
+			filePath = "/file/notice/" + fileSystemName;
+		}
+		
+		
 		
 		// 클라이언트가 보낸 첨부파일을 꺼냄(컨트롤러가 처리하도록 할 것)
 		// -> MultipartRequest (cos.jar 파일이 필요)
@@ -79,7 +101,7 @@ public class NoticeController extends HttpServlet {
 		// 클라이언트가 보낸 파라미터 값 검증
 		
 		// 공지사항 데이터들을 공지사항 정보로 뭉쳐줌
-		NoticeInfo noticeInfo = new NoticeInfo(title, contents);
+		NoticeInfo noticeInfo = new NoticeInfo(title, contents, filePath);
 		
 		NoticeService service = new NoticeService();
 		
