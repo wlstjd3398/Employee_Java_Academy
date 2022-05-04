@@ -28,7 +28,7 @@ public class NoticeController3 extends HttpServlet {
 		
 		String data = service.loadNoticeInfoToJson(id);
 		
-		response.setContentType("application/json;charset=utf-8");
+		response.setContentType("text/plain;charset=utf-8");
 		
 		PrintWriter out = response.getWriter();
 		
@@ -48,6 +48,8 @@ public class NoticeController3 extends HttpServlet {
 		// 공지사항 id를 사용해서 첨부파일의 경로를 가져온다
 		NoticeInfoDao dao = new NoticeInfoDao();
 		NoticeInfo noticeInfo = dao.selectNoticeInfoById(id); // filePath 까지 리턴하는지 확인
+		
+		
 		
 		// 가져온 첨부파일의 경로를 사용해서 해당 경로의 파일을 삭제한다
 		String path = req.getRealPath(noticeInfo.getFilePath()); // 실제 경로 사용

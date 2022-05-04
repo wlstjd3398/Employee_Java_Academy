@@ -104,8 +104,14 @@
 			url: "${SERVLET_NOTICE_INFO}",
 			type: "GET",
 			data: "id=" + id,
-			dataType: "JSON",
+			dataType: "text",
 			success: function(noticeInfo){
+				
+				noticeInfo = noticeInfo.replace(/\r/g, "\\r");
+				noticeInfo = noticeInfo.replace(/\n/g, "\\n");
+				
+				noticeInfo = JSON.parse(noticeInfo);
+				
 				$("#title_wrapper span").text(noticeInfo.title);
 				$("#contents_wrapper p").text(noticeInfo.contents);
 				
@@ -120,8 +126,8 @@
 				}
 				
 			},
-			error: function() {
-				
+			error: function(responseInfo) {
+				console.log(responseInfo);
 			}
 		});
 	</script>

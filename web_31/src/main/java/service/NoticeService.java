@@ -30,7 +30,23 @@ public class NoticeService {
 		String data = "{\"amount\": " + amount + ",";
 		data += "\"noticeList\":[";
 		for(NoticeInfo noticeInfo : noticeInfoList) {
-			data = data + "{\"id\": " + noticeInfo.getId() + ",\"title\":\"" + noticeInfo.getTitle() + "\",\"contents\":\"" + noticeInfo.getContents() + "\"},";
+			int id = noticeInfo.getId();
+			String title = noticeInfo.getTitle();
+			String contents = noticeInfo.getContents();
+			
+//			System.out.println(contents); // replace 하기전 확인
+			
+			// 공지사항의 내용을 작성할 때 엔터를 치면 엔터가 \r\n 으로 변환돼서 저장됨
+			// 이때 \ 때문에 자바스크립트가 전달 받은 공지사항 목록을 JSON으로 변환할 수 없게 됨
+			
+//			contents = contents.replace("\\", "\\\\"); 
+			// 서버에서 이 방법으로 하는데, 잘안되어서 다른방법인 javascript로
+			
+			
+			
+//			System.out.println(contents); // replace 한 후 확인
+			
+			data = data + "{\"id\": " + id + ",\"title\":\"" + title + "\",\"contents\":\"" + contents + "\"},";
 		}
 		data = data.substring(0, data.length()-1);
 		data = data + "]}";

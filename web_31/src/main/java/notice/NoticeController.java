@@ -1,5 +1,6 @@
 package notice;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -45,7 +46,7 @@ public class NoticeController extends HttpServlet {
 		String data = service.loadNoticeInfoListToJson(pageNumber);
 		
 		// JSON을 전달한다.
-		response.setContentType("application/json;charset=UTF-8");
+		response.setContentType("text/plain;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		
 		out.print(data);
@@ -123,6 +124,15 @@ public class NoticeController extends HttpServlet {
 		// DB에서 해당 id를 가지고 있는 공지사항을 삭제
 			//서비스가 없어도되는 단순한 것
 		NoticeInfoDao dao = new NoticeInfoDao();
+		
+		NoticeInfo noticeInfo = dao.selectNoticeInfoById(id);
+		if(noticeInfo.getFilePath() != null) {
+			String path = req.getRealPath(noticeInfo.getFilePath());
+			
+			File file = new File(path);
+			file.delete();
+		}
+		
 		
 		boolean result = dao.deleteNoticeInfoById(id);
 		

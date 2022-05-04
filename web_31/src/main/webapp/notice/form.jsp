@@ -103,8 +103,14 @@
 				type: "GET", 
 				// get으로 조회를 한다(post, put, delete 아님)
 				data: "id=" +id,
-				dataType: "json",
+				dataType: "text",
 				success: function(noticeInfo) {
+					
+					noticeInfo = noticeInfo.replace(/\r/g, "\\r");
+					noticeInfo = noticeInfo.replace(/\n/g, "\\n");
+					
+					noticeInfo = JSON.parse(noticeInfo);
+					
 					// 위에서 보면 title, contents의 name을 가진것을 불러옴
 					let $title = $("input[name=title]");
 					let $contents = $("textarea");
@@ -146,8 +152,8 @@
 						});
 					}
 				},
-				error: function(){
-					
+				error: function(responseInfo){
+					console.log(responseInfo);
 					
 				}
 			});			

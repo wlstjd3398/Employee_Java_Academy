@@ -72,11 +72,23 @@
 			url: "${SERVLET_NOTICE_LIST}",
 			type: "GET",
 			data: "pageNumber=" + pageNumber,
-			dataType: "json",
+			dataType: "text",
 			success: function(result) {
 				// 서버가 전달해준 공지사항 목록의 제목과 내용들을 console.log를 사용해 모두 출력하세요.
 				
+				result = result.replace(/\r/g, "\\r");
+				result = result.replace(/\n/g, "\\n");
+				// 위 형식을 사용하려면 정규표현식을 사용해야함
+				
 // 				console.log(result); // 그대로 가져오는지 확인하기
+				
+				// JSON 내장 객체
+				// JSON처럼 생긴 문자열을 JSON으로 변환 해주는 메서드
+				result = JSON.parse(result);
+				
+				// JSON을 문자열로 변환 해주는 메서드
+// 				JSON.stringify();
+				
 				
 				let noticeOrder = result.amount - ( (pageNumber-1) * 5 );
 				
