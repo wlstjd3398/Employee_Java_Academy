@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 public class MemberInfo {
 
+	private int idx;
 	private String id;
 	private String pw;
 	private String name;
@@ -12,7 +13,16 @@ public class MemberInfo {
 	private String email;
 	private LocalDateTime joinDate;
 	
-	public MemberInfo(String id, String pw, String name, String tel, String addr, String email, LocalDateTime joinDate){
+	public MemberInfo() {
+		
+	}
+	
+	public MemberInfo(String id, String pw, String name, String tel, String addr, String email, LocalDateTime joinDate) {
+		this(0, id, pw, name, tel, addr, email, joinDate);
+	}
+	
+	public MemberInfo(int idx, String id, String pw, String name, String tel, String addr, String email, LocalDateTime joinDate){
+		this.idx = idx;
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
@@ -22,6 +32,14 @@ public class MemberInfo {
 		this.joinDate = joinDate;
 	}
 	
+	public int getIdx() {
+		return idx;
+	}
+
+	public void setIdx(int idx) {
+		this.idx = idx;
+	}
+
 	public LocalDateTime getJoinDate() {
 		return joinDate;
 	}

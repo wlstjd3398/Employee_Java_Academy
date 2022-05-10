@@ -75,43 +75,50 @@ public class JoinController extends HttpServlet {
 			else if(!validator.emailValidator(email))	throw new BadParameterException();
 			
 			
-			System.out.println("id = " + id);
-			System.out.println("pw = " + pw);
-			System.out.println("pwChk = " + pwChk);
-			System.out.println("name = " + name);
-			System.out.println("tel = " + tel);
-			System.out.println("addr = " + addr);
-			System.out.println("email" + email);
+//			System.out.println("id = " + id);
+//			System.out.println("pw = " + pw);
+//			System.out.println("pwChk = " + pwChk);
+//			System.out.println("name = " + name);
+//			System.out.println("tel = " + tel);
+//			System.out.println("addr = " + addr);
+//			System.out.println("email" + email);
 
 			// 3. 전달 받은 값을 하나의 정보로 뭉친다
 			MemberInfo newMemberInfo = new MemberInfo(id, pw, name, tel, addr, email, joinDate);
 			
-			// Service를 활용해서 아이디 또는 연락처 또는 이메일 중에 중복된 값이 있다면 409 상태코드 보내도록 하기
+			MemberService service = new MemberService();
 			
-			// id에 unique가 걸려있음 
+			// Service를 활용해서 아이디 또는 연락처 또는 이메일 중에 중복된 값이 있다면 409 상태코드 보내도록 하기
+			if(service.isAlreadyIDorTelorEmail(newMemberInfo)) {
+				response.setStatus(HttpServletResponse.SC_CONFLICT);
+			
+				return;
+			}
+			
+			// id에 unique가 걸려있음
 			// db에 저장하기 전에 id를 사용해서 회원정보를 조회한다
 			// 조회된 결과가 있으면 사용중인 아이디이므로 409 상태코드를 보낸다
-			
-			String sql = "SELECT * FROM member_info WHERE id = ? AND pw = ?";
-			
-			// 연락처 
-			
-			
-			// 이메일
-			
-			
+//			if(service.isAlreadyID(id)) {
+//				response.setStatus(HttpServletResponse.SC_CONFLICT);
+//			}
+//			// 연락처
+//			if(service.isAlreadyTel(tel)) {
+//				response.setStatus(HttpServletResponse.SC_CONFLICT);
+//			}
+//			// 이메일
+//			if(service.isAlreadyEmail(email)) {
+//				response.setStatus(HttpServletResponse.SC_CONFLICT);
+//			}
 			
 			// 4. 새로운 회원의 정보를 DB에 저장한다
-			MemberService service = new MemberService();
 			int status = service.join(newMemberInfo);
 			
-			// 5-1. 회원 가입에 성공했을 경우 성공 시그널 보냄
+			// 5-1. 회원 가입에 성공했을경우 성공 시그널 보냄
 			response.setStatus(status);
 			
 			// 5-2. 회원 가입에 실패했을 경우 실패 시그널 보냄
 			// - 아이디나 이메일, 연락처가 이미 사용중 일때 : 409
 			// - 파라미터가 규칙에 맞지 않을 때 : 400
-			
 			
 		} catch(BadParameterException e) {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
