@@ -107,9 +107,9 @@ public class MemberService {
 			return false;
 		}else {
 			if(loginInfo.getPw().equals(memberInfo.getPw())) {
-				return false;
-			}else {
 				return true;
+			}else {
+				return false;
 			}
 		}
 	}
