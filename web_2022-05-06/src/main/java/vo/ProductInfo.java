@@ -11,6 +11,7 @@ public class ProductInfo {
 	private int price;
 	private String img;
 	private LocalDateTime insertDate;
+	
 	public ProductInfo() {
 		
 	}
@@ -21,6 +22,14 @@ public class ProductInfo {
 	
 	public ProductInfo(int idx, String name, String category, int stock, int price, String img, LocalDateTime insertDate) {
 		this.idx = idx;
+		this.name = name;
+		this.category = category;
+		this.stock = stock;
+		this.price = price;
+		this.img = img;	
+		this.insertDate = insertDate;
+	}
+	public ProductInfo(String name, String category, int stock, int price, String img, LocalDateTime insertDate) {
 		this.name = name;
 		this.category = category;
 		this.stock = stock;
