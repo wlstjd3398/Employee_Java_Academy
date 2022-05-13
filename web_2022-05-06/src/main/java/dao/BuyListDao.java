@@ -31,6 +31,7 @@ public class BuyListDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			
+			return false;
 		} finally {
 			db.closePstmt(pstmt);
 			db.closeConnection(conn);
@@ -39,12 +40,5 @@ public class BuyListDao {
 		 
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }

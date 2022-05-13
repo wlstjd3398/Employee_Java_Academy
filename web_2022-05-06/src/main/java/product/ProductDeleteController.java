@@ -42,6 +42,7 @@ public class ProductDeleteController extends HttpServlet {
 		
 		dao.deleteByIdx(productId);
 		
+		
 	}
 
 }

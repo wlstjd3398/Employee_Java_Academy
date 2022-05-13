@@ -15,6 +15,7 @@ import vo.ProductInfo;
 
 @WebServlet("/product/detail")
 public class ProductDetailController extends HttpServlet {
+       
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		try {
@@ -61,6 +62,7 @@ public class ProductDetailController extends HttpServlet {
 		}catch(BadParameterException e) {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 		}
+		
 	}
 
 

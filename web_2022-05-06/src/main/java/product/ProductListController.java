@@ -15,7 +15,6 @@ import vo.ProductInfo;
 
 @WebServlet("/product/list")
 public class ProductListController extends HttpServlet {
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		int pageNumber = 1;

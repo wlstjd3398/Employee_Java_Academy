@@ -20,7 +20,7 @@ public class BuyController extends HttpServlet {
 		
 		// request.getParameter를 하기 전에 utf-8 설정을 해줘야 정상적으로 적용됨
 //		System.out.println("utf-8 설정 전");
-//		request.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding("utf-8");
 //		System.out.println("utf-8 설정 후");
 		
 		if(request.getParameter("userId") == null || request.getParameter("productId") == null) {
@@ -29,7 +29,7 @@ public class BuyController extends HttpServlet {
 		}
 		
 //		System.out.println("utf-8 설정 전");
-		request.setCharacterEncoding("utf-8");
+//		request.setCharacterEncoding("utf-8");
 //		System.out.println("utf-8 설정 후");
 
 		

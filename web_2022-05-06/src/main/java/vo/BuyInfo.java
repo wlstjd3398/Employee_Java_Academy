@@ -43,6 +43,4 @@ public class BuyInfo {
 		this.productId = productId;
 	}
 	
-	
-	
 }

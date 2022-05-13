@@ -28,7 +28,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">홈</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/shoppingmall/index.jsp">홈</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">브랜드 소개</a></li>
                         <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그인</a></li>
                         <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원가입</a></li>

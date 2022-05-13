@@ -36,12 +36,10 @@
           <input type="checkbox" value="remember-me"> 아이디 기억하기
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" id="login-btn" type="submit">로그인</button>
-      <button class="w-100 btn btn-lg btn-secondary" type="button">회원가입</button>
+      <button class="w-100 btn btn-lg btn-primary" id="login_btn" type="submit">로그인</button>
+      <button class="w-100 btn btn-lg btn-secondary" id="join_btn" type="button">회원가입</button>
     </form>
   </main>
   
   </body>
 </html>
-
-

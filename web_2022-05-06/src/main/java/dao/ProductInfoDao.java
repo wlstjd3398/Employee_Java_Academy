@@ -14,7 +14,7 @@ import vo.ProductInfo;
 
 public class ProductInfoDao {
 
-	public boolean insertProductInfo(ProductInfo productInfo) {
+public boolean insertProductInfo(ProductInfo productInfo) {
 		
 		Database db = new Database();
 		
@@ -283,4 +283,3 @@ public class ProductInfoDao {
 	}
 	
 }
-

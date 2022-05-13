@@ -82,11 +82,9 @@
         </ul>
       </div>
 
-      <button class="w-100 btn btn-lg btn-secondary" type="button">회원가입</button>
+      <button class="w-100 btn btn-lg btn-secondary" type="button" id="join_btn">회원가입</button>
     </form>
   </main>
   
   </body>
 </html>
-
-

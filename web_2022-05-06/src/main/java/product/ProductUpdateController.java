@@ -13,15 +13,15 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import dao.ProductInfoDao;
 import vo.ProductInfo;
 
-// 상품 정보 추가, 수정과 같이 클라이언트가 multipart/form-data 로 파라미터를 보내면 
-// request로 파라미터를 꺼낼 수 없음
-// 반드시 request를 MultipartRequest로 변환해야함
+//상품 정보 추가, 수정과 같이 클라이언트가 multipart/form-data 로 파라미터를 보내면 
+//request로 파라미터를 꺼낼 수 없음
+//반드시 request를 MultipartRequest로 변환해야함
 
-// 상품 정보를 수정할 때 이미지 파일은 그대로이고
-// 상품 이름, 카테고리, 재고, 가격을 수정하는 상황에서는
-// img 파라미터를 보내지 않기 때문에
-// DB의 상품 정보에 이미지 파일이 NULL이 됨
-// -> 해결방법 : 이와 같은 상황에서는 img 파라미터에 기존에 이미지 파일명을 담아서 보내도록
+//상품 정보를 수정할 때 이미지 파일은 그대로이고
+//상품 이름, 카테고리, 재고, 가격을 수정하는 상황에서는
+//img 파라미터를 보내지 않기 때문에
+//DB의 상품 정보에 이미지 파일이 NULL이 됨
+//-> 해결방법 : 이와 같은 상황에서는 img 파라미터에 기존에 이미지 파일명을 담아서 보내도록
 //		(postman을 사용해서 이와 같이 해결하는건 쉬움, HMTL/CSS/JS를 사용해서 이와 같이 처리하는 건 약간 어려울 수 있음)
 
 

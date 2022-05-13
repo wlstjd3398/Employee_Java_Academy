@@ -19,7 +19,7 @@ import vo.ProductInfo;
 
 @WebServlet("/product/add")
 public class ProductAddController extends HttpServlet {
-
+	
 	private static final int MAXINUM_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -52,7 +52,7 @@ public class ProductAddController extends HttpServlet {
 //			else if(!validator.stockValidator(stock))		throw new BadParameterException();
 //			else if(!validator.priceValidator(price))		throw new BadParameterException();
 //			else if(!validator.imgValidator(img))			throw new BadParameterException();
-//			
+//					
 			// 3. 전달 받은 값을 하나의 정보로 뭉친다
 			ProductInfo productInfo = new ProductInfo(name, category, stock, price, img, insertDate);
 			
@@ -62,9 +62,6 @@ public class ProductAddController extends HttpServlet {
 			
 			//아무것도 하지않으면 상태코드 200을 전달함
 //			response.setStatus(HttpServletResponse.SC_OK);
-			
-		
 	}
-	
 
 }
