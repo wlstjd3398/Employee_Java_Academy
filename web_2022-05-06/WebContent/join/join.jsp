@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ include file="../includes/URLs.jsp" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +16,9 @@
     <link href="../css/logo.css" rel="stylesheet" />
 </head>
 <body class="text-center">
-    
+
   <main class="form-signin">
-    <form>
+    <form action="${JOIN_SERVLET}" method="POST">
       <h1 class="h3 mb-3 fw-normal">
     	<i class="bi bi-hand-index-thumb" id="rightHandLogo"></i>
         <i class="bi bi-hand-index-thumb" id="leftHandLogo"></i>
@@ -23,21 +26,39 @@
       </h1>
   
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Id" name="id">
         <label for="floatingInput">아이디(이메일)</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pw">
         <label for="floatingPassword">비밀번호</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">비밀번호 확인</label>
+        <input type="password" class="form-control" id="floatingPasswordCheck" placeholder="Password" name="pwChk">
+        <label for="floatingPasswordCheck">비밀번호 확인</label>
       </div>
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingName" placeholder="Name">
+        <input type="text" class="form-control" id="floatingName" placeholder="Name" name="name">
         <label for="floatingName">이름</label>
       </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingTel" placeholder="Tel" name="tel">
+        <label for="floatingName">연락처</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingAddr" placeholder="Addr" name="addr">
+        <label for="floatingName">주소</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="Email" name="email">
+        <label for="floatingName">이메일</label>
+      </div>
+      
+      <script src="../js/jquery-3.6.0.min.js"></script>
+      <script>
+      
+      </script>
+      
       
       <div class="form-floating">
         <ul class="list-group">
@@ -82,9 +103,115 @@
         </ul>
       </div>
 
-      <button class="w-100 btn btn-lg btn-secondary" type="button" id="join_btn">회원가입</button>
+      <button class="w-100 btn btn-lg btn-secondary" type="submit" id="submit_btn">회원가입</button>
     </form>
   </main>
+  
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/URLs.js"></script>
+  
+  <script>
+  // 아무것도 입력하지 않고 회원 가입 버튼을 누르거나
+  // 잘못된 값을 입력하고 회원 가입 버튼을 누를 수도 있으므로
+  // 회원 가입 버튼을 눌렀을 때 자바스크립트에서 올바른 값을 입력했는지 아닌지
+  // 				(입력값 검증)
+  // 를 체크해서 올바른 값을 입력했을 경우에만 회원 가입 서블릿으로 데이터를 전달해줘야함
+  // a태그와 submit버튼의 경우에는 기본적으로 가지고 있는 클릭했을 때 ~~행동해라 라는 이벤트가 부여되어있음
+  // submit 버튼에 부여된 기본 클릭 이벤트 -> submit버튼을 감싸고 있는 form태그의 action 경로로 데이터를 보냄
+  
+  // 회원 가입 버튼을 눌렀을 때 submit 버튼에 부여된 기본 클릭 이벤트를 무시하고
+  // 사용자가 입력한 값을 검증한 뒤에
+  // 사용자가 모두 올바른 값을 입력했을 때만
+  // submit 버튼에 부여된 기본 클릭 이벤트가 동작하도록 해야함
+  
+  // a태그에 부여된 기본 클릭 이벤트 -> href 경로로 데이터 보냄
+  $("#submit_btn").on("click", function(event){
+	 // submit 버튼에 부여된 기본 클릭 이벤트를 무시
+	 event.preventDefault();
+	 
+// 	 alert("회원 가입 버튼의 기본 클릭 이벤트가 무시되었음");
+
+	// 사용자가 입력한 값 검증
+	// (회원 가입 서블릿에서 정규표현식으로 검증했듯이 자바스크립트의 정규표현식을 사용해서 검증)
+	// 1. 아이디 검증
+	let $id = $("#floatingInput");
+	if($id.val() == ""){
+		// 아이디를 입력하지 않았다면
+		alert("아이디를 입력하세요");
+		return false;
+	}
+	
+	// 2. 비밀번호 검증
+	let $pw = $("#floatingPassword");
+	
+	// 3. 비밀번호 확인 검증
+	let $pwChk = $("#floatingPasswordCheck");
+	
+	// 4. 이름 검증
+	let $name =$("#floatingName");
+	
+	// 5. 연락처 검증
+	let $tel =$("#floatingTel");
+	
+	// 6. 주소 검증
+	let $addr =$("#floatingAddr");
+	
+	// 7. 이메일 검증
+	let $email =$("#floatingEmail");
+	
+	let id = $id.val();
+	let pw = $pw.val();
+	let pwChk = $pwChk.val();
+	let name = $name.val();
+	let tel = $tel.val();
+	let addr = $addr.val();
+	let email = $email.val();
+
+	// 사용자가 값을 모두 정상적으로 입력했다면
+	// form 태그를 활용해서 submit을 하면 페이지 자체가 서블릿으로 이동하므로
+	// ajax를 사용해서 현재 페이지에서 회원 가입 서블릿을 요청해서 회원 가입을 하고
+	// 회원 가입 서블릿의 결과를 받아서 로그인 페이지로 이동하거나 안내 문구를 출력
+// 	$("form").submit();
+	
+	
+// 	console.log("id = " +id);
+// 	console.log("pw = " +pw);
+// 	console.log("pwChk = " +pwChk);
+// 	console.log("name = " +name);
+// 	console.log("tel = " +tel);
+// 	console.log("addr = " +addr);
+// 	console.log("email = " +email);
+	
+	$.ajax({
+		url: JOIN_SERVLET,
+		type: "POST",
+		data: "id="+id+"&pw="+pw+"&pwChk="+pwChk+"&name="+name+"&tel="+tel+"&addr="+addr+"&email="+email,
+		success: function(){
+			// 회원 가입에 성공했을 경우
+			alert("회원가입이 되었습니다. 로그인 페이지로 이동합니다.");
+			
+			location.href = LOGIN_PAGE;
+		},
+		error: function(response){
+			// 회원 가입에 실패했을 경우
+			
+// 			console.log(response);
+				
+			// 의도만 이렇게 하고 일단 주석처리
+// 			// 1. 아이디, 연락처, 이메일이 이미 사용중일때 : 409
+			if(response.status == 409){
+				alert("아이디, 이메일, 연락처 중 이미 사용중인 데이터가 있습니다.");
+			}else if(response.status == 400){
+				// 2. 파라미터가 규칙에 맞지 않을때 : 400
+				alert("가입 정보를 올바르게 입력하세요");
+			}
+			
+		}
+	});
+	
+	 
+  });
+  </script>
   
   </body>
 </html>
