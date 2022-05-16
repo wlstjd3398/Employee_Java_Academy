@@ -23,6 +23,15 @@ public class ProductInfo {
 	public ProductInfo(int idx, String name, String category, int stock, int price, String img, LocalDateTime insertDate) {
 		this.idx = idx;
 		this.name = name;
+		
+		if(category.equals("computer")) {
+			category = "스마트폰";
+		}else if(category.equals("notebook")) {
+			category = "노트북";
+		}else if(category.equals("tablet")) {
+			category = "테블릿";
+		}
+		
 		this.category = category;
 		this.stock = stock;
 		this.price = price;

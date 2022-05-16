@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <%@ include file="../includes/URLs.jsp" %>
-
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@
     <link href="../css/logo.css" rel="stylesheet" />
 </head>
 <body class="text-center">
-
+    
   <main class="form-signin">
     <form action="${JOIN_SERVLET}" method="POST">
       <h1 class="h3 mb-3 fw-normal">
@@ -35,7 +35,7 @@
       </div>
       <div class="form-floating">
         <input type="password" class="form-control" id="floatingPasswordCheck" placeholder="Password" name="pwChk">
-        <label for="floatingPasswordCheck">비밀번호 확인</label>
+        <label for="floatingPassword">비밀번호 확인</label>
       </div>
       <div class="form-floating">
         <input type="text" class="form-control" id="floatingName" placeholder="Name" name="name">
@@ -58,7 +58,6 @@
       <script>
       
       </script>
-      
       
       <div class="form-floating">
         <ul class="list-group">
@@ -130,7 +129,6 @@
 	 event.preventDefault();
 	 
 // 	 alert("회원 가입 버튼의 기본 클릭 이벤트가 무시되었음");
-
 	// 사용자가 입력한 값 검증
 	// (회원 가입 서블릿에서 정규표현식으로 검증했듯이 자바스크립트의 정규표현식을 사용해서 검증)
 	// 1. 아이디 검증
@@ -141,23 +139,39 @@
 		return false;
 	}
 	
+	if($id.length() < 4 && $id.length() > 10){
+		alert("아이디는 최소 4자, 최대 10자까지 입력 가능합니다.")
+		return false;
+	}
+	
+	correctId = $id.matches("^[a-zA-Z0-9]+$")
+	if(!correctID){
+		alert("영문 대소문자와 숫자로 이루어져야합니다.");
+		return false;
+	}
+	
 	// 2. 비밀번호 검증
 	let $pw = $("#floatingPassword");
+	if($pw.val() == ""){
+		// 아이디를 입력하지 않았다면
+		alert("비밀번호를 입력하세요");
+		return false;
+	}
 	
 	// 3. 비밀번호 확인 검증
 	let $pwChk = $("#floatingPasswordCheck");
 	
 	// 4. 이름 검증
-	let $name =$("#floatingName");
+	let $name = $("#floatingName");
 	
 	// 5. 연락처 검증
-	let $tel =$("#floatingTel");
+	let $tel = $("#floatingTel");
 	
 	// 6. 주소 검증
-	let $addr =$("#floatingAddr");
+	let $addr = $("#floatingAddr");
 	
 	// 7. 이메일 검증
-	let $email =$("#floatingEmail");
+	let $email = $("#floatingEmail");
 	
 	let id = $id.val();
 	let pw = $pw.val();
@@ -166,7 +180,6 @@
 	let tel = $tel.val();
 	let addr = $addr.val();
 	let email = $email.val();
-
 	// 사용자가 값을 모두 정상적으로 입력했다면
 	// form 태그를 활용해서 submit을 하면 페이지 자체가 서블릿으로 이동하므로
 	// ajax를 사용해서 현재 페이지에서 회원 가입 서블릿을 요청해서 회원 가입을 하고
@@ -208,9 +221,42 @@
 			
 		}
 	});
-	
-	 
   });
+  
+  
+	// 과제1
+	// js jquery를 사용해서 
+	// 1. 모든 약관 동의 체크 박스를 눌렀을 때 이용 약관 동의 ,
+	// 개인 정보 수집 및 이용 동의 체크 박스가 체크되도록 하세요
+	
+	// 2. 모든 약관에 동의 했을 경우 회원 가입 버튼이 동작하도록 하세요
+  $(".form-floating").on("click", "#term1", function(){
+	  var checked = $(this).is(":cheked");
+	  
+	  let $term1Check = $("#term1");
+	  let $term2Check = $("#term2");
+	  let $term3Check = $("#term3");
+	  
+	  if(checked){
+		  $term1Check.find('input').prop("checked", true);
+	  }else{
+		  $term1Check.find('input').prop("checked", false);
+	  }
+  });
+  
+//   .form-floating
+//   .form-check
+  
+//   #term1
+//   #term2
+//   #term3
+  $(".form-floating").on("click", ".normal", function() {
+  var checked = $(this).is(":checked");
+  if (!checked) {
+  	$("#check_all").prop("checked", false);
+  }
+});
+  
   </script>
   
   </body>

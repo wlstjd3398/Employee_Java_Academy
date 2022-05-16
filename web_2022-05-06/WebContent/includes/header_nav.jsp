@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%-- ${loginUserInfo} --%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <div class="container px-4 px-lg-5">
@@ -14,8 +16,27 @@
            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/shoppingmall?active=home">홈</a></li>
                <li class="nav-item"><a class="nav-link" href="#!">브랜드 소개</a></li>
+               
+	<!--                로그인을 한 상태에서 보여지는 메뉴 -->
+			<c:if test="${loginUserInfo ne null}">
+               <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">회원정보 수정</a></li>
+               <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원 탈퇴</a></li>
+               <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">로그아웃</a></li>
+            	
+            	<c:if test="${loginUserInfo.id eq 'Admin1234' }">
+            	 	<li class="nav-item"><a class="nav-link" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">회원 탈퇴</a></li>
+            	</c:if>
+            	
+            
+            </c:if>
+               
+               <!--                로그인을 하지 않는 상태에서 보여지는 메뉴 -->
+			<c:if test="${loginUserInfo eq null}">
                <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그인</a></li>
                <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원가입</a></li>
+            </c:if>
+            
+               
                <li class="nav-item dropdown">
                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">쇼핑</a>
                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

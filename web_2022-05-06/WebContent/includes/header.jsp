@@ -10,9 +10,15 @@
 <!-- active 파라미터의 값이 product_list라면 -->
 
 <c:set var="header_title" value="홈" />
-<c:if test="${param.active eq 'product_list' }" >
-	<c:set var="header_title" value="모든 상품" />
-</c:if>
+
+<c:choose>
+	<c:when test="${param.active eq 'product_list' }">
+		<c:set var="header_title" value="모든 상품" />
+	</c:when>
+	<c:when test="${param.active eq 'product_add' }">
+		<c:set var="header_title" value="상품 추가" />
+	</c:when>
+</c:choose>
 
 <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">

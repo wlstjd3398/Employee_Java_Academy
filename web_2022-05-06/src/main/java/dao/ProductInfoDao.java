@@ -216,10 +216,10 @@ public boolean insertProductInfo(ProductInfo productInfo) {
 		List<ProductInfo> productInfoList = new ArrayList<>();
 		
 		try {
-			String sql = "SELECT * FROM product_info LIMIT ?, 10";
+			String sql = "SELECT * FROM product_info ORDER BY insertDate DESC LIMIT ?, 8";
 			
-			// * 10 에서 10이 의미하는 바는 한 페이지에 보여줘야할 상품의 수
-			int startIndex = (pageNumber - 1) * 10;
+			// * 8 에서 8이 의미하는 바는 한 페이지에 보여줘야할 상품의 수
+			int startIndex = (pageNumber - 1) * 8;
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, startIndex);

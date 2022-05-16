@@ -27,7 +27,7 @@ public class ProductListController extends HttpServlet {
 		
 		int amountOfProductInfo = dao.getCount();
 		
-		int startIndex = (pageNumber - 1) * 10;
+		int startIndex = (pageNumber - 1) * 8;
 		if(startIndex >= amountOfProductInfo) {
 			response.setStatus(HttpServletResponse.SC_NO_CONTENT);
 			return;
@@ -49,7 +49,8 @@ public class ProductListController extends HttpServlet {
 			data += productJson;
 		}
 		
-		data +="]}";
+		data = data.substring(0, data.length()-1);
+		data += "]}";
 		
 		response.setContentType("application/json;chareset=utf-8");
 		

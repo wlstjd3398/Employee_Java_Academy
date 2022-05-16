@@ -56,12 +56,18 @@ public class ProductAddController extends HttpServlet {
 			// 3. 전달 받은 값을 하나의 정보로 뭉친다
 			ProductInfo productInfo = new ProductInfo(name, category, stock, price, img, insertDate);
 			
+			// 4. DB에 새로운 상품 정보를 추가한다
 			ProductInfoDao productInfoDao = new ProductInfoDao();
 			
 			productInfoDao.insertProductInfo(productInfo);
 			
 			//아무것도 하지않으면 상태코드 200을 전달함
 //			response.setStatus(HttpServletResponse.SC_OK);
+			
+			response.sendRedirect("http://localhost:8080/shoppingmall/shop/product_list.jsp?active=product_list&pageNumber=1");
+			
+			
+			
 	}
 
 }
