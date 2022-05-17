@@ -40,12 +40,13 @@ public class ProductListController extends HttpServlet {
 		data += "\"list\":[";
 		
 		for(ProductInfo productInfo : productInfoList) {
+			int idx = productInfo.getIdx();
 			String name  = productInfo.getName();
 			String category = productInfo.getCategory();
 			int price = productInfo.getPrice();
 			String img = productInfo.getImg();
 			
-			String productJson = "{\"name\":\"" + name + "\",\"category\":\"" + category + "\",\"price\":\"" + price + "\",\"img\":\"" + img + "\"}";
+			String productJson = "{\"idx\":" + idx + ",\"name\":\"" + name + "\",\"category\":\"" + category + "\",\"price\":\"" + price + "\",\"img\":\"" + img + "\"},";
 			data += productJson;
 		}
 		

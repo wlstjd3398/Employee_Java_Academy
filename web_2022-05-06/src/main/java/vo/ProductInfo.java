@@ -24,7 +24,7 @@ public class ProductInfo {
 		this.idx = idx;
 		this.name = name;
 		
-		if(category.equals("computer")) {
+		if(category.equals("smartphone")) {
 			category = "스마트폰";
 		}else if(category.equals("notebook")) {
 			category = "노트북";

@@ -21,13 +21,11 @@
 			<c:if test="${loginUserInfo ne null}">
                <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">회원정보 수정</a></li>
                <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원 탈퇴</a></li>
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">로그아웃</a></li>
+               <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그아웃</a></li>
             	
             	<c:if test="${loginUserInfo.id eq 'Admin1234' }">
-            	 	<li class="nav-item"><a class="nav-link" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">회원 탈퇴</a></li>
+            	 	<li class="nav-item"><a class="nav-link" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">상품 추가</a></li>
             	</c:if>
-            	
-            
             </c:if>
                
                <!--                로그인을 하지 않는 상태에서 보여지는 메뉴 -->
@@ -46,6 +44,34 @@
                        <li><a class="dropdown-item" href="#!">새로운 상품</a></li>
                    </ul>
                </li>
+               
+               <li class="nav-item">
+               	<div class="dropdown text-end">
+	          		<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+	           	 		<i class="bi bi-person-circle" style="font-size:24px;"></i>
+         		 	</a>
+		          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+
+<!-- 		            로그인이 되어있다면 -->
+					<c:if test="${loginUserInfo ne null}">
+						<li><a class="dropdown-item" href="/shoppingmall/login/login.jsp">회원정보 수정</a></li>
+						<li><a class="dropdown-item" href="/shoppingmall/login/login.jsp">로그아웃</a></li>
+					
+						<c:if test="${loginUserInfo.id eq 'Admin1234' }">
+							<li><a class="dropdown-item" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">상품 추가</a></li>
+		           	 	</c:if>
+		            </c:if>
+		            
+<!-- 		            로그인이 되어있지 않다면 -->
+					<c:if test="${loginUserInfo eq null}" />
+					<li><a class="dropdown-item" href="/shoppingmall/login/login.jsp">로그인</a></li>
+					<li><a class="dropdown-item" href="/shoppingmall/join/join.jsp">회원가입</a></li>
+
+		            
+		          </ul>
+	        	</div>
+               </li>
+               
            </ul>
            <form class="d-flex">
                <button class="btn btn-outline-dark" type="submit">

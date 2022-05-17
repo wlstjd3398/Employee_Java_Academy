@@ -230,19 +230,19 @@
 	// 개인 정보 수집 및 이용 동의 체크 박스가 체크되도록 하세요
 	
 	// 2. 모든 약관에 동의 했을 경우 회원 가입 버튼이 동작하도록 하세요
-  $(".form-floating").on("click", "#term1", function(){
-	  var checked = $(this).is(":cheked");
+//   $(".form-floating").on("click", "#term1", function(){
+// 	  var checked = $(this).is(":cheked");
 	  
-	  let $term1Check = $("#term1");
-	  let $term2Check = $("#term2");
-	  let $term3Check = $("#term3");
+// 	  let $term1Check = $("#term1");
+// 	  let $term2Check = $("#term2");
+// 	  let $term3Check = $("#term3");
 	  
-	  if(checked){
-		  $term1Check.find('input').prop("checked", true);
-	  }else{
-		  $term1Check.find('input').prop("checked", false);
-	  }
-  });
+// 	  if(checked){
+// 		  $term1Check.find('input').prop("checked", true);
+// 	  }else{
+// 		  $term1Check.find('input').prop("checked", false);
+// 	  }
+//   });
   
 //   .form-floating
 //   .form-check
@@ -250,12 +250,12 @@
 //   #term1
 //   #term2
 //   #term3
-  $(".form-floating").on("click", ".normal", function() {
-  var checked = $(this).is(":checked");
-  if (!checked) {
-  	$("#check_all").prop("checked", false);
-  }
-});
+//   $(".form-floating").on("click", ".normal", function() {
+//   var checked = $(this).is(":checked");
+//   if (!checked) {
+//   	$("#check_all").prop("checked", false);
+//   }
+// });
   
   </script>
   
