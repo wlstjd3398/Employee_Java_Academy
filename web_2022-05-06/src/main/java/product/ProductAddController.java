@@ -52,7 +52,15 @@ public class ProductAddController extends HttpServlet {
 //			else if(!validator.stockValidator(stock))		throw new BadParameterException();
 //			else if(!validator.priceValidator(price))		throw new BadParameterException();
 //			else if(!validator.imgValidator(img))			throw new BadParameterException();
-//					
+//			
+			if(category.equals("smartphone")) {
+				category = "스마트폰";
+			}else if(category.equals("notebook")) {
+				category = "노트북";
+			}else if(category.equals("tablet")) {
+				category = "테블릿";
+			}
+			
 			// 3. 전달 받은 값을 하나의 정보로 뭉친다
 			ProductInfo productInfo = new ProductInfo(name, category, stock, price, img, insertDate);
 			

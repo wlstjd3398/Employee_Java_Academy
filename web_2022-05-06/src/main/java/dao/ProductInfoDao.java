@@ -57,7 +57,7 @@ public boolean insertProductInfo(ProductInfo productInfo) {
 		PreparedStatement pstmt = null;
 		
 		try {
-			String sql = "UPDATE product_info SET name = ?, category = ?, stock = ?, price = ?, img = ? WHERE idx = ?";
+			String sql = "UPDATE product_info SET name = ?, category = ?, stock = ?, price = ? WHERE idx = ?";
 //			if(productInfo.getImg() == null) {
 //				sql = "UPDATE product_info SET name = ?, category = ?, stock = ?, price = ? WHERE idx = ?";
 //			}else {
@@ -70,8 +70,7 @@ public boolean insertProductInfo(ProductInfo productInfo) {
 			pstmt.setString(2, productInfo.getCategory());
 			pstmt.setInt(3, productInfo.getStock());
 			pstmt.setInt(4, productInfo.getPrice());
-			pstmt.setString(5, productInfo.getImg());
-			pstmt.setInt(6, productInfo.getIdx());
+			pstmt.setInt(5, productInfo.getIdx());
 			
 //			if(productInfo.getImg() == null) {
 //				pstmt.setInt(5, productInfo.getIdx());
@@ -143,7 +142,10 @@ public boolean insertProductInfo(ProductInfo productInfo) {
 				int stock  = rs.getInt("stock");
 				int price = rs.getInt("price");
 				String img = rs.getString("img");
+				img = img == null ? "" : img;
+				
 				String t_insertDate = rs.getString("insertDate");
+				
 				t_insertDate = t_insertDate.substring(0, t_insertDate.indexOf('.'));
 				t_insertDate = t_insertDate.replace(' ', 'T');
 				
@@ -275,6 +277,29 @@ public boolean insertProductInfo(ProductInfo productInfo) {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			
+		} finally {
+			db.closePstmt(pstmt);
+			db.closeConnection(conn);
+		}
+	}
+
+	public void deleteImgById(int idx) {
+		
+		// idx를 사용해서 img 칼럼의 값을 null로 설정(DB상에서 이미지 삭제)
+		Database db = new Database();
+		
+		Connection conn = db.getConnection();
+		PreparedStatement pstmt = null;
+		
+		try {
+			String sql = "UPDATE product_info SET img = null WHERE idx = ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, idx);
+			
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		} finally {
 			db.closePstmt(pstmt);
 			db.closeConnection(conn);

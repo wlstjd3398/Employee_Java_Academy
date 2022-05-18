@@ -40,34 +40,13 @@
                     <p class="lead" id="product_price">가격 / 1,200,000원</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     
-<!--                     로그인한 상태 -->
-                    <c:if test="${loginUserInfo ne null}">
-                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="buy_btn">구매 하기</button>
-                    
-<!--                     	관리자 로그인상태 -->
-                		<c:if test="${loginUserInfo.id eq 'Admin1234' }">
-                    		<button type="button" class="btn btn-secondary btn-lg px-4 me-md-2" id="update_btn">상품 수정하기</button>
-                     		<button type="button" class="btn btn-danger btn-lg px-4 me-md-2" id="delete_btn">상품 삭제</button>
-                     	</c:if>
-                    </c:if>
-                    
-<!--                     	로그인하지 않은 상태 -->
-                    <c:if test="${loginUserInfo eq null}">
-                    <script>
-                    
-                    </script>
-                    </c:if>
-                    
-                    <script>
-                 		// idx를 꺼내오기 javascript로 꺼내기 쉽게 함수화 할것임
-                    	let idx = getParameter("idx");
-                 		
-                 		$("#update_btn").on("click", function(){
-                 			location.href="/shoppingmall/manager/product_form.jsp?idx=";
-                 		});
-                    
-                    
-                    </script>
+      				<button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="buy_btn">구매 하기</button>
+                      
+					<%-- 로그인이 되어있고 관리자로 로그인을 했다면 --%>
+					<c:if test="${loginUserInfo ne null and loginUserInfo.id eq 'Admin1234' }">
+					  <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2" id="update_btn">상품 수정</button>
+                      <button type="button" class="btn btn-danger btn-lg px-4 me-md-2" id="delete_btn">상품 삭제</button>
+					</c:if>
                     
                     
                     </div>
@@ -85,11 +64,52 @@
         <script src="js/scripts.js"></script>
         
         <script src="../js/jquery-3.6.0.min.js"></script>
+         <script src="../js/functions.js"></script>
+        
+        <%-- 로그인이 되어있지 않다면 --%>
+		<c:if test="${loginUserInfo eq null }">
+		<script>
+			$("#buy_btn").on("click", function() {
+				location.href = "/shoppingmall/login/login.jsp";
+			});
+		</script>
+		</c:if>
+		<%-- 로그인이 되어있다면 --%>
+		<c:if test="${loginUserInfo ne null}">
+		<script>
+			$("#buy_btn").on("click", function() {
+				alert("구현 예정 중인 기능입니다.");
+			});
+		</script>
+		</c:if>
+        
         <script>
+	   		// idx를 꺼내오기 javascript로 꺼내기 쉽게 함수화 할것임
+	      	let idx = getParameter("idx");
+	   		
+	   		
+	   		
+	   		
+	   		$("#update_btn").on("click", function(){
+	   			location.href = "/shoppingmall/manager/product_form2.jsp?active=product_update&idx="+idx;
+	   		});
+        </script>
         
+        <script>
+        	$("#delete_btn").on("click", function(){
+        		$.ajax({
+        			url: "/shoppingmall/product/delete",
+        			type: "POST",
+        			data: "productId="+idx,
+        			success: function(){
+        				alert("상품을 삭제했습니다.");
+        				location.href= "/shoppingmall/shop/product_list.jsp?active=product_list&pageNumber=1";
+        			}
+        		});
+        	});
+        </script>
         
-        	
-        	
+        <script>
         	$.ajax({
         		url: "/shoppingmall/product/detail",
         		data: "GET",
@@ -105,8 +125,6 @@
         			$productPrice.text(productInfo.price);
         			$productImage.attr("src", "/shoppingmall/images/product/" + productInfo.img);
         			
-        			
-        			console.log(productInfo);
         		},
         		error: function(response){
         			console.log(response);

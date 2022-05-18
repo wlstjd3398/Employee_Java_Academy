@@ -1,7 +1,7 @@
 /**
  * 
  */
- function getParameters(name) {
+ function getParameter(name) {
 	let value = undefined;
 	
 	let parameters = location.search;
@@ -12,7 +12,7 @@
 		let parameter = parameters[i].split("=");
 		
 		let paramName = parameter[0];
-		let paramValue = parater[1];
+		let paramValue = parameter[1];
 		
 		if(paramName == name){
 			value=paramValue;
