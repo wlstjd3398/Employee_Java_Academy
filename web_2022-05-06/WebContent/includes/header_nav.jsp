@@ -18,21 +18,21 @@
                <li class="nav-item"><a class="nav-link" href="#!">브랜드 소개</a></li>
                
 	<!--                로그인을 한 상태에서 보여지는 메뉴 -->
-			<c:if test="${loginUserInfo ne null}">
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">회원정보 수정</a></li>
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원 탈퇴</a></li>
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그아웃</a></li>
+<%-- 			<c:if test="${loginUserInfo ne null}"> --%>
+<!--                <li class="nav-item"><a class="nav-link" href="/shoppingmall/member/form.jsp">회원정보 수정</a></li> -->
+<!--                <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원 탈퇴</a></li> -->
+<!--                <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그아웃</a></li> -->
             	
-            	<c:if test="${loginUserInfo.id eq 'Admin1234' }">
-            	 	<li class="nav-item"><a class="nav-link" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">상품 추가</a></li>
-            	</c:if>
-            </c:if>
+<%--             	<c:if test="${loginUserInfo.id eq 'Admin1234' }"> --%>
+<!--             	 	<li class="nav-item"><a class="nav-link" href="/shoppingmall/manager/product_form.jsp?actvie=product_add">상품 추가</a></li> -->
+<%--             	</c:if> --%>
+<%--             </c:if> --%>
                
-               <!--                로그인을 하지 않는 상태에서 보여지는 메뉴 -->
-			<c:if test="${loginUserInfo eq null}">
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그인</a></li>
-               <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원가입</a></li>
-            </c:if>
+<!--                               로그인을 하지 않는 상태에서 보여지는 메뉴 -->
+<%-- 			<c:if test="${loginUserInfo eq null}"> --%>
+<!--                <li class="nav-item"><a class="nav-link" href="/shoppingmall/login/login.jsp">로그인</a></li> -->
+<!--                <li class="nav-item"><a class="nav-link" href="/shoppingmall/join/join.jsp">회원가입</a></li> -->
+<%--             </c:if> --%>
             
                
                <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
 
 <!-- 		            로그인이 되어있다면 -->
 					<c:if test="${loginUserInfo ne null}">
-						<li><a class="dropdown-item" href="/shoppingmall/login/login.jsp">회원정보 수정</a></li>
+						<li><a class="dropdown-item" href="/shoppingmall/member/form.jsp">회원정보 수정</a></li>
 						<li><a class="dropdown-item" href="/shoppingmall/login/login.jsp">로그아웃</a></li>
 					
 						<c:if test="${loginUserInfo.id eq 'Admin1234' }">

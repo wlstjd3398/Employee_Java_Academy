@@ -97,6 +97,7 @@
 	            	let nthProduct = productInfo.list[i];
 	            	
 	            	let nthTag = tag.replace("(1)", nthProduct.img);
+	            	console.log(nthProduct.img);
 	            	nthTag = nthTag.replace("(2)", nthProduct.name);
 	            	nthTag = nthTag.replace("(3)", nthProduct.price);
 	            	

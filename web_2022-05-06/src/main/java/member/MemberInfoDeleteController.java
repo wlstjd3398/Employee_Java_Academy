@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import service.MemberService;
 import vo.MemberInfo;
 
+// 회원탈퇴
 @WebServlet("/member/delete")
 public class MemberInfoDeleteController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

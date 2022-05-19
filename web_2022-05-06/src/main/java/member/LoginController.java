@@ -13,6 +13,7 @@ import service.MemberService;
 import util.Validator;
 import vo.MemberInfo;
 
+// 로그인
 @WebServlet("/member/login")
 public class LoginController extends HttpServlet {
 

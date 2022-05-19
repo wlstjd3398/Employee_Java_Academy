@@ -14,6 +14,7 @@ import service.MemberService;
 import util.Validator;
 import vo.MemberInfo;
 
+// 회원가입
 @WebServlet("/member/join")
 public class JoinController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
