@@ -264,10 +264,11 @@ public class MemberInfoDao {
 		
 		
 		try {
-			String sql = "UPDATE member_info SET pw = ? WHERE ";
+			String sql = "UPDATE member_info SET pw = ? WHERE id = ?";
 			
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, id);
+			pstmt.setString(1, pw);
+			pstmt.setString(2, id);
 			
 			pstmt.executeUpdate();
 		} catch (SQLException e) {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+	<h1>페이지가 서비스를 요청하는 방법</h1>
+
+	<h2>a태그로 요청</h2>
+	<a href="/shoppingmall/buy">서비스 요청</a>
+	
+	
+	<h2>location.href로 요청</h2>
+	<button type="button">서비스 요청</button>
+	<script>
+	 let $button = $("button");
+	 $button.on("click", function(){
+		location.href="/shoppingmall/buy"; 
+	 });
+	</script>
+	
+	
+	<h2>form태그로 요청</h2>
+	<form action="/shoppingmall/buy" method="POST">
+		<input type="text" name="userId" >
+		<input type="text" name="productId" >
+		
+		<input type="submit" value="서비스 요청">
+	</form>
+	
+	
+	<h2>ajax로 요청</h2>
+	<button type="button" id="ajax_btn">서비스 요청</button>
+	<script>
+	$("#ajax_btn").on("click", function(){
+		$.ajax({
+			url: "/shoppingmall/buy",
+			type: "POST",
+			data: "userId=4&productId=2",
+			success: function(data){
+				//자바스크립트에 데이터타입보다 개수가 더중요해서 data매개변수로 사용
+				alert("구매 성공!");
+				
+				location.href = "/shoppingmall/shop/product_list.jsp?active=product_list&pageNumber=1";
+			},
+			error: function(){
+				alert("재고 부족!");
+				
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>

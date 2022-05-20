@@ -40,14 +40,19 @@ public class LoginController extends HttpServlet {
 			// 4-2-1. 전달 받은 값이 규칙에 맞지 않을때 : 상태코드 400으로 응답한다
 			// 4-2-2. 아이디 또는 비밀번호가 틀렸을때 : 상태코드 401로 응답한다
 			MemberService service = new MemberService();
-			if(service.isLogin(loginInfo)) {
+			
+			loginInfo = service.selectOneMemberInfoById(id);
+			
+			if(loginInfo == null || !loginInfo.getPw().equals(pw)) {
+				
+				response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+				
+			}else {
 				HttpSession session = request.getSession();
 				session.setAttribute("loginUserInfo", loginInfo);
 				
 				response.setStatus(HttpServletResponse.SC_OK);
-			}else {
 				
-				response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 			}
 		
 		} catch(BadParameterException e) {

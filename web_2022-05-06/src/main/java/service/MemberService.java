@@ -168,4 +168,10 @@ public class MemberService {
 		
 	}
 	
+	public MemberInfo selectOneMemberInfoById(String id) {
+		MemberInfoDao dao = new MemberInfoDao();
+		
+		return dao.selectById(id);
+	}
+	
 }

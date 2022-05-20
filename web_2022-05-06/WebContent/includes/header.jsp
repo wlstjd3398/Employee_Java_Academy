@@ -24,6 +24,9 @@
 	<c:when test="${param.active eq 'product_update' }">
 		<c:set var="header_title" value="상품 수정" />
 	</c:when>
+	<c:when test="${param.active eq 'buy' }">
+		<c:set var="header_title" value="구매" />
+	</c:when>
 </c:choose>
 
 <header class="bg-dark py-5">

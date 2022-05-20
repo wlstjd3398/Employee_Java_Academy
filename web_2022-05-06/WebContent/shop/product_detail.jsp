@@ -65,6 +65,16 @@
         
         <script src="../js/jquery-3.6.0.min.js"></script>
          <script src="../js/functions.js"></script>
+         
+         <script>
+	   		// idx를 꺼내오기 javascript로 꺼내기 쉽게 함수화 할것임
+	      	let idx = getParameter("idx");
+	   		
+	   		
+	   		$("#update_btn").on("click", function(){
+	   			location.href = "/shoppingmall/manager/product_form2.jsp?active=product_update&idx="+idx;
+	   		});
+        </script>
         
         <%-- 로그인이 되어있지 않다면 --%>
 		<c:if test="${loginUserInfo eq null }">
@@ -78,22 +88,12 @@
 		<c:if test="${loginUserInfo ne null}">
 		<script>
 			$("#buy_btn").on("click", function() {
-				alert("구현 예정 중인 기능입니다.");
+				location.href = "/shoppingmall/buy/form.jsp?active=buy&productId="+idx;
 			});
 		</script>
 		</c:if>
         
-        <script>
-	   		// idx를 꺼내오기 javascript로 꺼내기 쉽게 함수화 할것임
-	      	let idx = getParameter("idx");
-	   		
-	   		
-	   		
-	   		
-	   		$("#update_btn").on("click", function(){
-	   			location.href = "/shoppingmall/manager/product_form2.jsp?active=product_update&idx="+idx;
-	   		});
-        </script>
+        
         
         <script>
         	$("#delete_btn").on("click", function(){

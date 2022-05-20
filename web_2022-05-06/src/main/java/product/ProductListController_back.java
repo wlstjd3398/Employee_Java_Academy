@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import dao.ProductInfoDao;
 import vo.ProductInfo;
 
-@WebServlet("/product/list")
-public class ProductListController extends HttpServlet {
+@WebServlet("/product/list/back")
+public class ProductListController_back extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		int pageNumber = 1;
@@ -36,11 +35,29 @@ public class ProductListController extends HttpServlet {
 		
 		List<ProductInfo> productInfoList = dao.selectAll(pageNumber);
 		
-		request.setAttribute("productList", productInfoList);
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/shop/product_list.jsp");
-		rd.forward(request, response);
+		String data = "{\"amount\": " + amountOfProductInfo + ",";
+		data += "\"list\":[";
 		
+		for(ProductInfo productInfo : productInfoList) {
+			int idx = productInfo.getIdx();
+			String name  = productInfo.getName();
+			String category = productInfo.getCategory();
+			int price = productInfo.getPrice();
+			String img = productInfo.getImg();
+			
+			String productJson = "{\"idx\":" + idx + ",\"name\":\"" + name + "\",\"category\":\"" + category + "\",\"price\":\"" + price + "\",\"img\":\"" + img + "\"},";
+			data += productJson;
+		}
+		
+		data = data.substring(0, data.length()-1);
+		data += "]}";
+		
+		response.setContentType("application/json;charset=utf-8");
+		
+		PrintWriter output = response.getWriter();
+		output.print(data);
+		output.close();
 		
 	}
 
