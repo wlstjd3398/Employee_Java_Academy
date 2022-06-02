@@ -11,7 +11,10 @@ public class Ex03 {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppContext.class);
 		
 		Calculator cal = ctx.getBean("calculator", Calculator.class);
-		cal.factorial(1000);
+		
+		for(int i=1; i<=10; i++) {
+			cal.factorial(1000);
+		}
 		
 		ctx.close();
 		
