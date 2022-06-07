@@ -3,8 +3,12 @@ package chapter07;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
+@EnableTransactionManagement
 public class AppContext {
 
 	// 스프링에 재공하는 DB 연동 기능을 활용하려면 DataSource 타입 빈을 컨테이너에 등록해야함
@@ -28,11 +32,28 @@ public class AppContext {
 		return ds;
 	}
 	
+	@Bean
+	public PlatformTransactionManager platformTransactionManager() {
+		DataSourceTransactionManager tm = new DataSourceTransactionManager();
+		tm.setDataSource(dataSource());
+		
+		return tm;
+	}
+	
+	
 	// dao의 커넥션풀을 사용
 	@Bean
 	public MemberDao memberDao() {
 		return new MemberDao(dataSource());
 	}
 	
+	@Bean
+	public ChangePasswordService changePasswordService() {
+		// 생성자 방식으로 의존주입을 받도록해서
+		ChangePasswordService changePasswordService = new ChangePasswordService();
+		changePasswordService.setMemberDao(memberDao());
+		
+		return changePasswordService;
+	}
 	
 }

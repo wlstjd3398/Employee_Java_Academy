@@ -135,6 +135,10 @@ public class MemberDao {
 			}
 			
 		});
+		
+		// WHERE 조건에 맞는 데이터가 없어서 UPDATE 쿼리가 정보를 수정하지 못했다면
+		// EmptyResultDataAccessException 예외가 발생함
+		
 	}
 	
 	
