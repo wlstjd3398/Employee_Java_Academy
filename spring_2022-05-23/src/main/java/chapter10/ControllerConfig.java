@@ -46,6 +46,10 @@ public class ControllerConfig {
 		return new RegistController(memberRegSvc());
 	}
 	
+	@Bean
+	public SurveyController surveyController() {
+		return new SurveyController();
+	}
 	
 	
 }
