@@ -13,23 +13,35 @@
 <body>
 <!-- 스프링이 제공하는 form태그를 사용한 코드 에서는 RegistController-->
 	<form:form action="/spring_2022-05-23/register/step3" modelAttribute="formData">
-		<form:hidden path="agree" />
+<%-- 		<form:hidden path="agree" /> --%>
 <!-- 		위 코드는 Spring이 제공하는 form 태그를 사용해서 hidden 태그를 생성 -->
 <!-- 		위 코드가 실제졸 어떻게 변환될지 아래에 작성해보세요 -->
 <%-- 		<input type="hidden" id="agree" name="agree" value="${formData.agree }"> --%>
 		
 		
 		<div>
-			<label><spring:message code="email" /> <form:input path="email" /></label>
+			<label><spring:message code="email" /> :
+				<form:input path="email" />
+				<form:errors path="email" element="" />
+			</label>
 		</div>
 		<div>
-			<label><spring:message code="name" /> <form:input path="name" /></label>
+			<label><spring:message code="name" /> : 
+				<form:input path="name" />
+				<form:errors path="name" />
+			</label>
 		</div>
 		<div>
-			<label><spring:message code="password" /> <form:password path="password" /></label>
+			<label><spring:message code="password" /> : 
+				<form:password path="password" />
+				<form:errors path="password" />
+			</label>
 		</div>
 		<div>
-			<label><spring:message code="password.confirm" /> <form:password path="confirmPassword" /></label>
+			<label><spring:message code="password.confirm" /> : 
+				<form:password path="confirmPassword" />
+				<form:errors path="confirmPassword" />
+			</label>
 		</div>
 		
 		<input type="submit" value="<spring:message code="register.btn" />" >
