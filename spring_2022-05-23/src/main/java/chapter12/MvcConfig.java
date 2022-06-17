@@ -1,4 +1,4 @@
-package chapter11;
+package chapter12;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +15,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 public class MvcConfig implements WebMvcConfigurer{
 
+	
+	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		registry.jsp("/WEB-INF/view/", ".jsp");
@@ -41,10 +43,10 @@ public class MvcConfig implements WebMvcConfigurer{
 		return ms;
 	}
 
-//	@Override
-//	public Validator getValidator() {
-//		return new RegisterRequestValidator();
-//	}
+	@Override
+	public Validator getValidator() {
+		return new RegisterRequestValidator();
+	}
 	
 	
 	

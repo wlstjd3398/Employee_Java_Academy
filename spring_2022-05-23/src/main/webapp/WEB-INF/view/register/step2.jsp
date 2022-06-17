@@ -22,7 +22,8 @@
 		<div>
 			<label><spring:message code="email" /> :
 				<form:input path="email" />
-				<form:errors path="email" element="" />
+				<form:errors path="email"/>
+<%-- 				<form:errors path="email" element="" /> --%>
 			</label>
 		</div>
 		<div>

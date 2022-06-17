@@ -1,4 +1,4 @@
-package chapter11;
+package chapter12;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -159,10 +159,10 @@ public class RegistController {
 	// 필요할 때마다 선언하면 불편하므로
 	// 해당 컨트롤러 한정으로 글로벌 Validator처럼 사용할 수 있는 Validator
 	
-//	@InitBinder // 단일 컨트롤러 범위의 Validator를 설정할 때 사용하는 애노테이션
-//	protected void initBinder(WebDataBinder binder) {
-//		binder.setValidator(new RegisterRequestValidator());
-//	}
+	@InitBinder // 단일 컨트롤러 범위의 Validator를 설정할 때 사용하는 애노테이션
+	protected void initBinder(WebDataBinder binder) {
+		binder.setValidator(new RegisterRequestValidator());
+	}
 	
 	// 지금 우리는 RegisterRequestValidator 타입의 Validator가
 	// 글로벌 Validator로 등록되어있고
