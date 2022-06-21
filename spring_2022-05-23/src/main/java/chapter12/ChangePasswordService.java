@@ -30,4 +30,7 @@ public class ChangePasswordService {
 		memberDao.update(member);
 	}
 	
+	
+	
+	
 }
