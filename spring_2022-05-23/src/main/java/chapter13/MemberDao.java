@@ -31,8 +31,9 @@ public class MemberDao {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
+	// 날짜from to를 사용해서 회원정보를 조회
 	public List<Member> selectByRegdate(LocalDateTime from, LocalDateTime to){
-		List<Member> results = jdbcTemplate.query("SELECT * FROM member WHERE regdate BETWEEN ? AND ? ORDER BY redate DESC", new MemberMapper(), from, to);
+		List<Member> results = jdbcTemplate.query("SELECT * FROM member WHERE regdate BETWEEN ? AND ? ORDER BY regdate DESC", new MemberMapper(), from, to);
 	
 		return results;
 	}

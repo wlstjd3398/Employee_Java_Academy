@@ -91,7 +91,9 @@ public class ControllerConfig {
 		MemberListController memberListController = new MemberListController();
 		memberListController.setMemberDao(memberDao());
 		
-		return new MemberListController();
+		return memberListController;
 	}
+	
+	
 	
 }
