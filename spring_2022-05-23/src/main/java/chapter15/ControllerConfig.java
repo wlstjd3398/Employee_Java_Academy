@@ -1,4 +1,4 @@
-package chapter13;
+package chapter15;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
@@ -94,6 +94,12 @@ public class ControllerConfig {
 		return memberListController;
 	}
 	
-	
+//	@Bean
+//	public MemberDetailController memberDetailController() {
+//		MemberDetailController memberDetailController = new MemberDetailController();
+//		memberDetailController.setMemberDao(memberDao());
+//		
+//		return memberDetailController;
+//	}
 	
 }

@@ -1,8 +1,7 @@
-package chapter13;
+package chapter15;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import chapter15.MemberDao;
 import exception.MemberNotFoundException;
 import exception.WrongIdPasswordException;
 

@@ -1,23 +1,18 @@
-package chapter13;
+package chapter15;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
-import org.springframework.stereotype.Component;
 
 public class MemberDao {
 
@@ -29,6 +24,12 @@ public class MemberDao {
 	
 	public MemberDao(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
+	}
+	
+	public Member selectById(long memberId) {
+		List<Member> results = jdbcTemplate.query("SELECT * FROM member WHERE memberNumber = ?", new MemberMapper(), memberId);
+		
+		return results.isEmpty() ? null : results.get(0);
 	}
 	
 	// 날짜from to를 사용해서 회원정보를 조회

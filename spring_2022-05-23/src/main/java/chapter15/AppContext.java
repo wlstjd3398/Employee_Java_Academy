@@ -1,4 +1,4 @@
-package chapter13;
+package chapter15;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import chapter10.MemberRegisterService;
-import chapter15.MemberDao;
 
 @Configuration
 @EnableTransactionManagement

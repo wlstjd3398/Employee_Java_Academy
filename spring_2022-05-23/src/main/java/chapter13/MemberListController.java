@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import chapter15.MemberDao;
+
 @Controller
 public class MemberListController {
 	private MemberDao memberDao;

@@ -1,6 +1,5 @@
-package chapter13;
+package chapter15;
 
-import chapter15.MemberDao;
 import exception.WrongIdPasswordException;
 
 public class AuthService {

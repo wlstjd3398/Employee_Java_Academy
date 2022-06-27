@@ -1,4 +1,4 @@
-package chapter13;
+package chapter15;
 
 import java.time.LocalDateTime;
 
@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import chapter15.MemberDao;
 import exception.DuplicateMemberException;
 
 public class MemberRegisterService {
