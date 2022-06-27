@@ -7,9 +7,6 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import chapter10.MemberRegisterService;
-import chapter15.MemberDao;
-
 @Configuration
 @EnableTransactionManagement
 public class AppContext {
@@ -17,7 +14,6 @@ public class AppContext {
 	@Bean(destroyMethod = "close")
 	public DataSource dataSource() {
 		DataSource ds = new DataSource();
-		
 		
 		ds.setDriverClassName("org.mariadb.jdbc.Driver");
 		ds.setUrl("jdbc:mariadb://localhost:3306/spring_2022-06-02");
@@ -37,7 +33,6 @@ public class AppContext {
 		
 		return tm;
 	}
-	
 	
 	@Bean
 	public MemberDao memberDao() {
@@ -59,4 +54,5 @@ public class AppContext {
 		
 		return memberRegisterService;
 	}
+	
 }

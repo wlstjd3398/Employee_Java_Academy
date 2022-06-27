@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class RegisterRequest {
+	
 	@NotEmpty
 	@Email
 	private String email;
@@ -53,6 +54,7 @@ public class RegisterRequest {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	
 	
 	

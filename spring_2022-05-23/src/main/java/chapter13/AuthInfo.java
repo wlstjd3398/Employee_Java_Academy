@@ -35,7 +35,4 @@ public class AuthInfo {
 		this.name = name;
 	}
 	
-	
-		
-	
 }

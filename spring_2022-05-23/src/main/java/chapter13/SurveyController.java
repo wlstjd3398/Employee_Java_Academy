@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +25,11 @@ public class SurveyController {
 //		
 //		return "survey/form";
 //	}
-	// surveyController model에 데이터를 저장 
+	// surveyController model에 데이터를 저장
 	// 결과를 보여줄 view 이름 반환하지만
 	
-	// 다른 방법을(ModelAndView) 보여주면
-	//(Dispatcher 동작방식을 설명하면서 설명했었음) = HandlerAdapter가 하는일이 없게 하는 방식
+	// 다른방법을(ModelAndView) 보여주면
+	//(Dispatcher 동작방식을 설명하면서 설명했었음) = HandlerAdapter가 하는 일이 없게 하는 방식
 	@GetMapping
 	public ModelAndView form() {
 		List<Question> questions = createQuestions();

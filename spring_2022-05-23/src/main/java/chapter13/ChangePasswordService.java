@@ -1,12 +1,14 @@
 package chapter13;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import chapter15.MemberDao;
-import exception.MemberNotFoundException;
-import exception.WrongIdPasswordException;
-
+import spring.MemberNotFoundException;
+import spring.WrongIdPasswordException;
+@Component
 public class ChangePasswordService {
+
 	private MemberDao memberDao;
 	// 스프링이 자동으로 멤버변수에 의존주입을 함
 	
@@ -18,9 +20,11 @@ public class ChangePasswordService {
 	// 스프링이 알아서 트랜잭션 기능을 붙여줌
 	// 메서드 안의 코드가 정상적으로 동작해서 컴퓨터가 메서드 끝까지 도달했다면 commit이 이뤄지고
 	// 메서드 안의 코드가 동작하다 예외가 발생하면 rollback이 이루어짐
+	
 	@Transactional
 	public void changePassword(String email, String oldPw, String newPw) throws MemberNotFoundException, WrongIdPasswordException {
 		Member member = memberDao.selectByEmail(email);
+		// service가 memberDao에 의존하고있음
 		
 		if(member == null) {
 			throw new MemberNotFoundException();
@@ -30,8 +34,5 @@ public class ChangePasswordService {
 		
 		memberDao.update(member);
 	}
-	
-	
-	
 	
 }

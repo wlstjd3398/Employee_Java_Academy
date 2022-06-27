@@ -14,6 +14,4 @@ public class LogoutController {
 		
 		return "redirect:/main";
 	}
-	
-	
 }

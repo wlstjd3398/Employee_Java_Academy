@@ -1,6 +1,5 @@
 package chapter13;
 
-import chapter15.MemberDao;
 import exception.WrongIdPasswordException;
 
 public class AuthService {
@@ -22,6 +21,5 @@ public class AuthService {
 		
 		return new AuthInfo(member.getId(), member.getEmail(), member.getName());
 	}
-	
 	
 }

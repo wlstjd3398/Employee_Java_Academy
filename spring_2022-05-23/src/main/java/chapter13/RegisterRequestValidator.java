@@ -8,6 +8,7 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 public class RegisterRequestValidator implements Validator{
+	// 검증에서 사용할 정규표현식을 사용
 	private static String emailRegExp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
 	private Pattern pattern;
 	
@@ -19,7 +20,7 @@ public class RegisterRequestValidator implements Validator{
 	public boolean supports(Class<?> clazz) {
 		
 //		매개변수로 전달된 clazz의 데이터타입이 RegisterRequestValidator 데이터 타입인지 확인
-		return RegisterRequestValidator.class.isAssignableFrom(clazz);
+		return RegisterRequest.class.isAssignableFrom(clazz);
 	}
 
 	// 일반적으로 구현하는 방법
@@ -28,10 +29,11 @@ public class RegisterRequestValidator implements Validator{
 	
 	@Override
 	public void validate(Object target, Errors errors) {
-		RegisterRequest regReq = (RegisterRequest) target;	
+RegisterRequest regReq = (RegisterRequest) target;	
 		
 		if(regReq.getEmail() == null || regReq.getEmail().trim().isEmpty()) {
 			errors.rejectValue("email", "required");
+			// email코드에  required이라는 값을 저장
 		} else{
 			Matcher matcher = pattern.matcher(regReq.getEmail());
 			if(!matcher.matches()) {
@@ -40,10 +42,11 @@ public class RegisterRequestValidator implements Validator{
 			}
 		}
 		
-		// 여기서 이상한 건 검사 대상 객체의 
-		// errors안에 검사 대상 객체가 들어가있음 ->  
+		// 여기서 이상한 건(매개변수에 검사 대상 객체를 전달해주는 것이 없음)
+		// 검사 대상 객체의 errors안에 검사 대상 객체가 들어가있음  
 		
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "required");
+//		name 멤버변수 값이 올바르지 않으면 required를 errors에 담음
 		ValidationUtils.rejectIfEmpty(errors, "password", "required");
 		ValidationUtils.rejectIfEmpty(errors, "confirmPassword", "required");
 		
@@ -53,6 +56,4 @@ public class RegisterRequestValidator implements Validator{
 			}
 		}
 	}
-
-	
 }
