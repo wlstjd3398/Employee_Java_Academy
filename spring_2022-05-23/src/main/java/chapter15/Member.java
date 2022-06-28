@@ -16,6 +16,10 @@ public class Member {
 	private String password;
 	private String name;
 //	@JsonFormat(pattern = "yyyy년 MM월 dd일 HH시 mm분 ss초")
+	
+	// JsonFormat 애노테이션은 서버가 클라이언트에게 데이터를 보낼 때 이와 같은 형식으로 변환해서 보냄
+	// 또한 클라이언트가 서버로 데이터를 보냈을 때 이와 같은 형식으로 보냈다면 멤버변수의 데이터 타입에 맞게 변환해서 저장함
+//	@JsonFormat(pattern = "yyyyMMddHHmmss")
 	private LocalDateTime registerDateTime;
 	
 	public Member(String email, String password, String name, LocalDateTime registerDateTime) {

@@ -114,6 +114,8 @@ public class MemberDao {
 		
 		System.out.println("가입한 사용자의 번호는 " + memberNumber + "번입니다.");
 		
+		member.setId(memberNumber);
+		
 	}
 	
 	

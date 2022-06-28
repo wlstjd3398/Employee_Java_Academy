@@ -22,6 +22,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 
 @Configuration
@@ -98,7 +99,11 @@ public class MvcConfig implements WebMvcConfigurer{
 		
 		ObjectMapper objectMapper = Jackson2ObjectMapperBuilder
 				.json()
+				// serializerByType : 서버가 클라이언트에게 데이터를 보낼때 동작하는 메서드
 				.serializerByType(LocalDateTime.class, new LocalDateTimeSerializer(dtf))
+				.deserializerByType(LocalDateTime.class, new LocalDateTimeDeserializer(dtf))
+				// deserializerByType : 클라이언트가 이러한 위의 패턴형식의 데이터를 보냈을때 
+				// 내가 원하는 형태로 서버에게 데이터를 보낼때 동작하는 메서드
 				.build();
 		
 		converters.add(0, new MappingJackson2HttpMessageConverter(objectMapper));

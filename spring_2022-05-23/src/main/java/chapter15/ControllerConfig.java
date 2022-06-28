@@ -91,6 +91,12 @@ public class ControllerConfig {
 		MemberListController memberListController = new MemberListController();
 		memberListController.setMemberDao(memberDao());
 		
+		// 세터 방식으로 의존주입
+		MemberRegisterService memberRegSvc = new MemberRegisterService();
+		memberRegSvc.setMemberDao(memberDao());
+		
+		memberListController.setMemberRegSvc(memberRegSvc);
+		
 		return memberListController;
 	}
 	
