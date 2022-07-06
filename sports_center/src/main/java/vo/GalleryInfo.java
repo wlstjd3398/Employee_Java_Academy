@@ -11,13 +11,22 @@ public class GalleryInfo {
 	private LocalDateTime insertDate;
 	private int hits;
 	
-	
-	public GalleryInfo(String title, String content, String writer, String img, LocalDateTime insertDate) {
+	public GalleryInfo() {
+		
+	}
+	public GalleryInfo(String title, String content, String writer, String img, LocalDateTime insertDate, int hits) {
 		this.title = title;
 		this.content = content;
 		this.img = img;
 		this.writer = writer;
 		this.insertDate = insertDate;
+		this.hits = hits;
+	}
+	
+	public GalleryInfo(int idx, String title, String content) {
+		this.idx = idx;
+		this.title = title;
+		this.content = content;
 	}
 	
 	public GalleryInfo(int idx, String title, String content, String img) {
